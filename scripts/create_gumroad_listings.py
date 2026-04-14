@@ -339,7 +339,7 @@ def main():
                     "name": name,
                     "slug": slug,
                     "status": "existing",
-                    "url": f"https://fruverse.gumroad.com/l/{slug}",
+                    "url": f"https://frudev.gumroad.com/l/{slug}",
                 }
             )
             continue
@@ -349,7 +349,7 @@ def main():
 
         if data.get("success"):
             product = data["product"]
-            url = f"https://fruverse.gumroad.com/l/{slug}"
+            url = f"https://frudev.gumroad.com/l/{slug}"
             print(f"    ✅  CREATED  {name}  →  {url}")
             results.append(
                 {
@@ -382,7 +382,7 @@ def main():
                     "name": bundle["name"],
                     "slug": bundle["slug"],
                     "status": "existing",
-                    "url": f"https://fruverse.gumroad.com/l/{bundle['slug']}",
+                    "url": f"https://frudev.gumroad.com/l/{bundle['slug']}",
                 }
             )
             continue
@@ -391,7 +391,7 @@ def main():
         data = create_product(bundle["name"], desc, bundle["price"], bundle["slug"])
 
         if data.get("success"):
-            url = f"https://fruverse.gumroad.com/l/{bundle['slug']}"
+            url = f"https://frudev.gumroad.com/l/{bundle['slug']}"
             print(f"    ✅  CREATED  {bundle['name']}  →  {url}")
             results.append(
                 {
