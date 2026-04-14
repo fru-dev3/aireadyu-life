@@ -49,10 +49,10 @@ PLUGINS = [
     # (slug, name, price_cents, tagline, skills_count, tier)
     # $29 plugins
     (
-        "aireadylife-ben",
-        "AI Ready Life: Ben",
+        "aireadylife-chief",
+        "AI Ready Life: Chief of Staff",
         2900,
-        "Chief of Staff — daily briefs across all life domains",
+        "Daily briefs, open loops, and cross-domain status across your entire life",
         4,
         "core",
     ),
@@ -158,7 +158,7 @@ PLUGINS = [
         "AI Ready Life: Explore",
         1900,
         "Trips, passport status, and travel wishlist",
-        2,
+        9,
         "lite",
     ),
     (
@@ -166,7 +166,7 @@ PLUGINS = [
         "AI Ready Life: Home",
         1900,
         "Home maintenance, expenses, and seasonal tasks",
-        3,
+        10,
         "lite",
     ),
     (
@@ -174,7 +174,7 @@ PLUGINS = [
         "AI Ready Life: Intel",
         1900,
         "Daily news briefing filtered to your interests",
-        3,
+        9,
         "lite",
     ),
     (
@@ -182,7 +182,7 @@ PLUGINS = [
         "AI Ready Life: Learning",
         1900,
         "Courses, certifications, reading list, and learning goals",
-        3,
+        10,
         "lite",
     ),
     (
@@ -190,7 +190,7 @@ PLUGINS = [
         "AI Ready Life: Real Estate",
         1900,
         "Market analysis, buy vs. rent, and portfolio strategy",
-        3,
+        9,
         "lite",
     ),
     (
@@ -198,7 +198,7 @@ PLUGINS = [
         "AI Ready Life: Records",
         1900,
         "Document inventory, expiring IDs, and subscription tracker",
-        2,
+        9,
         "lite",
     ),
     (
@@ -206,7 +206,7 @@ PLUGINS = [
         "AI Ready Life: Social",
         1900,
         "Birthdays, relationship health, and outreach queue",
-        3,
+        9,
         "lite",
     ),
 ]
@@ -216,13 +216,13 @@ BUNDLES = [
         "slug": "aireadylife-bundle",
         "name": "AI Ready Life: Complete Bundle",
         "price": 19900,  # $199
-        "desc": "All 20 AI Ready Life plugins — every domain of your life in one package.",
+        "desc": "All 20 AI Ready Life vault templates — every domain of your life in one package.",
     },
     {
         "slug": "aireadylife-core-bundle",
         "name": "AI Ready Life: Core Bundle",
         "price": 7900,  # $79
-        "desc": "The 4 essential AI Ready Life plugins: Health, Wealth, Tax, and Career.",
+        "desc": "The 4 essential AI Ready Life vault templates: Health, Wealth, Tax, and Career.",
     },
 ]
 
@@ -234,34 +234,27 @@ def build_description(slug, name, tagline, skills_count, price_cents):
 
     return f"""<p><strong>{tagline}</strong></p>
 
-<p>AI Ready Life: {domain.title()} is a self-contained AI agent plugin with {skills_count} skills, a pre-built vault schema, and a Node.js MCP server for direct Claude.ai integration.</p>
+<p>AI Ready Life: {domain.title()} is a free Claude Code plugin with {skills_count} AI skills for managing your {domain} life domain. This vault template is what transforms the free plugin into a fully personalized AI system.</p>
 
-<h3>What's free (GitHub)</h3>
+<h3>What the vault template includes</h3>
 <ul>
-  <li>Agent shells with capabilities defined</li>
-  <li>Skill definitions ({skills_count} skills using <code>arlive-</code> prefix)</li>
-  <li>Vault schema (domain-organized folder structure)</li>
-  <li>Demo vault — synthetic "Alex Rivera" data so you can explore before connecting your own</li>
+  <li>Pre-built folder structure — organized exactly how the AI expects it</li>
+  <li>config.md template — fill in your details once, every skill reads it</li>
+  <li>QUICKSTART.md — step-by-step setup guide, under 10 minutes</li>
+  <li>PROMPTS.md — 30+ example prompts covering every scenario in this domain</li>
+  <li>Demo vault — synthetic data (Alex Rivera) so you see the full output before entering your own</li>
 </ul>
 
-<h3>What you get with this pack (${price:.0f})</h3>
-<ul>
-  <li>Full agent instructions (100+ lines of domain expertise)</li>
-  <li>Onboarding guide for connecting your data sources</li>
-  <li>50+ prompts covering every scenario in this domain</li>
-  <li>Configuration templates for all supported apps and portals</li>
-</ul>
-
-<h3>Install (Paperclip)</h3>
-<pre><code>npx companies.sh add fru-dev3/aireadyu-life/{domain} --include plugin,agents,skills</code></pre>
-
-<h3>Install (Claude.ai — MCP)</h3>
-<p>Settings → Integrations → Add MCP Server:</p>
-<pre><code>npx -y @aireadylife/{domain}-plugin</code></pre>
-<p>Demo mode: <code>VAULT_MODE=demo npx -y @aireadylife/{domain}-plugin</code></p>
+<h3>How it works</h3>
+<ol>
+  <li>Install the free plugin: github.com/fru-dev3/aireadyu-life (add via Claude Code)</li>
+  <li>Buy this vault template and unzip to ~/Documents/AIReadyLife/vault/{domain}/</li>
+  <li>Fill in config.md with your details (15 minutes)</li>
+  <li>Open Claude and say: "run my {domain} weekly review"</li>
+</ol>
 
 <h3>Part of AI Ready Life</h3>
-<p>AI Ready Life packages your most important life domains as installable AI agent plugins. Install one. Add more as your system grows.</p>
+<p>20 domain plugins. Install one. Add more as your system grows.</p>
 <p>
   <a href="https://aireadyu.dev">aireadyu.dev</a> ·
   <a href="https://youtube.com/@frudev">youtube.com/@frudev</a> ·
@@ -270,18 +263,37 @@ def build_description(slug, name, tagline, skills_count, price_cents):
 
 
 def build_bundle_description(bundle):
+    is_complete = "Complete" in bundle["name"]
+    plugins_list = (
+        "All 20 vault templates: Chief of Staff, Benefits, Brand, Business, Calendar, "
+        "Career, Content, Estate, Explore, Health, Home, Insurance, Intel, Learning, "
+        "Real Estate, Records, Social, Tax, Vision, Wealth."
+        if is_complete
+        else "Health, Wealth, Tax, and Career — the 4 most impactful life domains to start with."
+    )
+    prompt_count = "700+" if is_complete else "120+"
+
     return f"""<p><strong>{bundle['desc']}</strong></p>
 
 <h3>What's included</h3>
-{'<p>All 20 plugins: Ben (Chief of Staff), Benefits, Brand, Business, Calendar, Career, Content, Estate, Explore, Health, Home, Insurance, Intel, Learning, Real Estate, Records, Social, Tax, Vision, Wealth.</p>' if 'Complete' in bundle['name'] else '<p>Health, Wealth, Tax, and Career — the 4 most impactful life domains to start with.</p>'}
+<p>{plugins_list}</p>
 
-<h3>What you get</h3>
+<h3>What you get in each vault template</h3>
 <ul>
-  <li>Full agent instructions for every included plugin</li>
-  <li>Onboarding guides for all data sources</li>
-  <li>300+ prompts (Complete) or 150+ prompts (Core)</li>
-  <li>Configuration templates for all supported apps</li>
+  <li>Pre-built folder structure — organized exactly how the AI expects it</li>
+  <li>config.md template — fill in your details once, every skill reads it</li>
+  <li>QUICKSTART.md — step-by-step setup guide per domain</li>
+  <li>PROMPTS.md — {prompt_count} example prompts across all included domains</li>
+  <li>Demo vault — synthetic data (Alex Rivera) for all domains</li>
 </ul>
+
+<h3>How it works</h3>
+<ol>
+  <li>Install the free plugins: github.com/fru-dev3/aireadyu-life (add via Claude Code)</li>
+  <li>Buy this bundle and unzip each domain to ~/Documents/AIReadyLife/vault/{{domain}}/</li>
+  <li>Fill in config.md for each domain you want to activate</li>
+  <li>Open Claude and say: "run my daily brief"</li>
+</ol>
 
 <h3>Part of AI Ready Life</h3>
 <p>
@@ -333,11 +345,14 @@ def main():
     for slug, name, price, tagline, skills, tier in PLUGINS:
         domain = slug.replace("aireadylife-", "")
         if slug in existing:
+            prod = existing[slug]
             print(f"    ⏭  SKIP  {name} (already exists)")
             results.append(
                 {
                     "name": name,
                     "slug": slug,
+                    "domain": domain,
+                    "product_id": prod.get("id", ""),
                     "status": "existing",
                     "url": f"https://frudev.gumroad.com/l/{slug}",
                 }
@@ -355,6 +370,8 @@ def main():
                 {
                     "name": name,
                     "slug": slug,
+                    "domain": domain,
+                    "product_id": product.get("id", ""),
                     "status": "created",
                     "price": f"${price/100:.0f}",
                     "url": url,
@@ -366,6 +383,8 @@ def main():
                 {
                     "name": name,
                     "slug": slug,
+                    "domain": domain,
+                    "product_id": "",
                     "status": "failed",
                     "error": data.get("message"),
                 }
@@ -376,11 +395,14 @@ def main():
     print("\n🎁  Creating bundle listings…")
     for bundle in BUNDLES:
         if bundle["slug"] in existing:
+            prod = existing[bundle["slug"]]
             print(f"    ⏭  SKIP  {bundle['name']} (already exists)")
             results.append(
                 {
                     "name": bundle["name"],
                     "slug": bundle["slug"],
+                    "domain": bundle["slug"].replace("aireadylife-", ""),
+                    "product_id": prod.get("id", ""),
                     "status": "existing",
                     "url": f"https://frudev.gumroad.com/l/{bundle['slug']}",
                 }
@@ -391,12 +413,15 @@ def main():
         data = create_product(bundle["name"], desc, bundle["price"], bundle["slug"])
 
         if data.get("success"):
+            product = data["product"]
             url = f"https://frudev.gumroad.com/l/{bundle['slug']}"
             print(f"    ✅  CREATED  {bundle['name']}  →  {url}")
             results.append(
                 {
                     "name": bundle["name"],
                     "slug": bundle["slug"],
+                    "domain": bundle["slug"].replace("aireadylife-", ""),
+                    "product_id": product.get("id", ""),
                     "status": "created",
                     "price": f"${bundle['price']/100:.0f}",
                     "url": url,
@@ -405,6 +430,16 @@ def main():
         else:
             print(
                 f"    ❌  FAILED   {bundle['name']}  —  {data.get('message', 'unknown error')}"
+            )
+            results.append(
+                {
+                    "name": bundle["name"],
+                    "slug": bundle["slug"],
+                    "domain": bundle["slug"].replace("aireadylife-", ""),
+                    "product_id": "",
+                    "status": "failed",
+                    "error": data.get("message"),
+                }
             )
         time.sleep(0.5)
 
@@ -422,17 +457,18 @@ def main():
     if created:
         print("\n  New listings (drafts — go publish in Gumroad dashboard):")
         for r in created:
-            print(f"    {r['price']:>6}  {r['url']}")
+            print(f"    {r.get('price', ''):>6}  {r['url']}")
 
     if failed:
         print("\n  Failed:")
         for r in failed:
             print(f"    {r['name']} — {r.get('error', '?')}")
 
-    # Save results
+    # Save results (includes product_id needed by upload_to_gumroad.py)
     out = Path(__file__).parent / "gumroad_listings.json"
     out.write_text(json.dumps(results, indent=2))
     print(f"\n  Full results saved to: scripts/gumroad_listings.json")
+    print("  (product_id fields are used by upload_to_gumroad.py)")
     print("\n⚠️   All listings created as DRAFTS.")
     print("    Review at https://app.gumroad.com/products then publish each one.")
 
