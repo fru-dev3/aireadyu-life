@@ -5,13 +5,13 @@ Packages each domain vault template into a downloadable zip.
 
 Usage:
   python3 scripts/build_vault_packages.py [domain]   # single domain
-  python3 scripts/build_vault_packages.py             # all 20 domains
+  python3 scripts/build_vault_packages.py             # all 20 domains + bundles
   python3 scripts/build_vault_packages.py --no-pdf   # skip PDF generation
 
-Output: scripts/dist/aireadylife-{domain}-vault.zip
+Output: scripts/dist/aireadylife-{domain}.zip
 
 Each zip contains:
-  aireadylife-{domain}-vault/
+  aireadylife-{domain}/
     get-started/
       QUICKSTART.md                        (from vault-demo/{domain}/QUICKSTART.md)
       PROMPTS.md                           (from vault-demo/{domain}/PROMPTS.md)
@@ -23,6 +23,10 @@ Each zip contains:
       01_prior/2024/.gitkeep
       01_prior/2023/.gitkeep
       02_briefs/.gitkeep
+
+Bundles (built automatically when all domains are packaged):
+  aireadylife-core.zip     — health + wealth + tax + career
+  aireadylife-complete.zip — all 20 domains
 
 PDF generation requires:
   - Node.js installed
@@ -42,6 +46,8 @@ DIST_DIR = Path(__file__).parent / "dist"
 PDF_DIR = DIST_DIR / "pdfs"
 PREVIEW_DIR = DIST_DIR / "previews"
 PDF_GEN = REPO_ROOT.parent / "fd-apps-aireadyu-pdf"  # sibling project
+
+CORE_DOMAINS = ["health", "wealth", "tax", "career"]
 
 DOMAINS = [
     "health",
@@ -134,9 +140,9 @@ def build_package(
         print(f"  FAIL  {domain}: vault-demo/{domain}/ not found — skipping")
         return False
 
-    zip_name = f"aireadylife-{domain}-vault.zip"
+    zip_name = f"aireadylife-{domain}.zip"
     zip_path = DIST_DIR / zip_name
-    zip_root = f"aireadylife-{domain}-vault"
+    zip_root = f"aireadylife-{domain}"
 
     # Source files
     # config.md comes from the blank template in {domain}/vault/config.md
@@ -199,6 +205,36 @@ def build_package(
     return True
 
 
+def build_bundle(name: str, domains: list[str]) -> bool:
+    """
+    Build a bundle zip containing all domain zips merged into one archive.
+    Each domain's aireadylife-{domain}/ tree is included at the top level.
+    Returns True on success.
+    """
+    missing = [d for d in domains if not (DIST_DIR / f"aireadylife-{d}.zip").exists()]
+    if missing:
+        print(
+            f"  FAIL  {name}: missing domain zips: {', '.join(missing)} — skipping bundle"
+        )
+        return False
+
+    bundle_path = DIST_DIR / f"aireadylife-{name}.zip"
+    with zipfile.ZipFile(
+        bundle_path, "w", compression=zipfile.ZIP_DEFLATED
+    ) as bundle_zf:
+        for domain in domains:
+            domain_zip_path = DIST_DIR / f"aireadylife-{domain}.zip"
+            with zipfile.ZipFile(domain_zip_path, "r") as domain_zf:
+                for item in domain_zf.infolist():
+                    bundle_zf.writestr(item, domain_zf.read(item.filename))
+
+    size_kb = bundle_path.stat().st_size / 1024
+    print(
+        f"  OK  {name}: aireadylife-{name}.zip ({size_kb:.1f} KB) [{len(domains)} domains]"
+    )
+    return True
+
+
 def main():
     DIST_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -241,7 +277,7 @@ def main():
         if preview.exists():
             preview_map[domain] = preview
 
-    # Step 2: Package zips
+    # Step 2: Package individual domain zips
     print(f"Packaging vault zips...")
     success, failed = [], []
     for domain in targets:
@@ -252,20 +288,40 @@ def main():
         )
         (success if ok else failed).append(domain)
 
+    # Step 3: Build bundles (only when packaging all domains)
+    bundle_success = []
+    if not args:  # full run, not a single-domain call
+        print(f"\nBuilding bundles...")
+        bundles = [
+            ("core", CORE_DOMAINS),
+            ("complete", DOMAINS),
+        ]
+        for bundle_name, bundle_domains in bundles:
+            ok = build_bundle(bundle_name, bundle_domains)
+            if ok:
+                bundle_success.append(bundle_name)
+
     print(f"\n{'─' * 60}")
     print("SUMMARY")
     print("─" * 60)
     print(f"  Built:    {len(success)}")
     print(f"  Failed:   {len(failed)}")
+    print(f"  Bundles:  {len(bundle_success)}")
     print(f"  Guides:   {len(pdf_map)}/{len(targets)}")
     print(f"  Previews: {len(preview_map)}/{len(targets)}")
 
     if success:
         print(f"\n  Output -> {DIST_DIR}")
         for domain in success:
-            zip_path = DIST_DIR / f"aireadylife-{domain}-vault.zip"
+            zip_path = DIST_DIR / f"aireadylife-{domain}.zip"
             size_kb = zip_path.stat().st_size / 1024
-            print(f"    {f'aireadylife-{domain}-vault.zip':<45} {size_kb:>6.1f} KB")
+            print(f"    {f'aireadylife-{domain}.zip':<40} {size_kb:>6.1f} KB")
+        for bundle_name in bundle_success:
+            zip_path = DIST_DIR / f"aireadylife-{bundle_name}.zip"
+            size_kb = zip_path.stat().st_size / 1024
+            print(
+                f"    {f'aireadylife-{bundle_name}.zip':<40} {size_kb:>6.1f} KB  [bundle]"
+            )
 
     if failed:
         print(f"\n  Failed: {', '.join(failed)}")
