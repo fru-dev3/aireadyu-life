@@ -35,9 +35,33 @@ If `~/Documents/AIReadyLife/vault/records/` does not exist or is empty:
 
 Skills are located under `records/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
-## Checking Vault Status
+## First Run
 
-Before running any skill, confirm the vault exists:
-- Check that `~/Documents/AIReadyLife/vault/records/config.md` is present and filled in
-- If it is missing, direct the user to purchase the vault template above
-- If it exists but config fields are blank, prompt the user to complete setup before proceeding
+Before running any skill, check `~/Documents/AIReadyLife/vault/records/config.md`:
+
+1. **Vault missing** → tell the user to purchase the vault template and link to the Gumroad listing above.
+2. **Config filled in** → proceed with the requested skill normally.
+3. **Config exists but fields are blank** (values empty after the `:`) → do NOT run the skill. Show the first-run message below instead.
+
+### First-Run Message (show when config is blank)
+
+> **Welcome to AI Ready Life: Records!**
+>
+> Your vault is installed at `~/Documents/AIReadyLife/vault/records/`. Before skills can run, your config and documents need to be in place.
+>
+> **Step 1 — Complete your config**
+> Open `~/Documents/AIReadyLife/vault/records/config.md` and fill in every field. Leave a field blank rather than guessing — the skills will flag anything that's missing.
+>
+> **Step 2 — Gather your documents and add them to `00_current/`**
+> Here's what this domain needs:
+>
+- **Identity documents** — passport (number, expiry), driver's license (state, expiry), any government IDs.
+- **Active subscriptions** — service name, monthly or annual cost, renewal date, and whether you still use it. Check your credit card statements.
+- **Legal documents** — location of your will, power of attorney, healthcare directive, and any trust documents.
+- **Insurance policy numbers** — reference numbers for health, auto, home, life, and any other active policies.
+- **Key account numbers** — masked last-4 for bank accounts, investment accounts, and tax ID if relevant.
+>
+> **Step 3 — Run your first skill**
+> Once config.md is filled in and at least a few documents are in `00_current/`, try: *"document audit"*
+>
+> You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.

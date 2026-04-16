@@ -35,9 +35,33 @@ If `~/Documents/AIReadyLife/vault/home/` does not exist or is empty:
 
 Skills are located under `home/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
-## Checking Vault Status
+## First Run
 
-Before running any skill, confirm the vault exists:
-- Check that `~/Documents/AIReadyLife/vault/home/config.md` is present and filled in
-- If it is missing, direct the user to purchase the vault template above
-- If it exists but config fields are blank, prompt the user to complete setup before proceeding
+Before running any skill, check `~/Documents/AIReadyLife/vault/home/config.md`:
+
+1. **Vault missing** → tell the user to purchase the vault template and link to the Gumroad listing above.
+2. **Config filled in** → proceed with the requested skill normally.
+3. **Config exists but fields are blank** (values empty after the `:`) → do NOT run the skill. Show the first-run message below instead.
+
+### First-Run Message (show when config is blank)
+
+> **Welcome to AI Ready Life: Home!**
+>
+> Your vault is installed at `~/Documents/AIReadyLife/vault/home/`. Before skills can run, your config and documents need to be in place.
+>
+> **Step 1 — Complete your config**
+> Open `~/Documents/AIReadyLife/vault/home/config.md` and fill in every field. Leave a field blank rather than guessing — the skills will flag anything that's missing.
+>
+> **Step 2 — Gather your documents and add them to `00_current/`**
+> Here's what this domain needs:
+>
+- **Home details** — address, purchase price, purchase date, and estimated current value (or lease start date and monthly rent if renting).
+- **Open maintenance items** — anything that needs repair, inspection, or replacement. Note the room, issue, priority, and how long it's been open.
+- **Seasonal task list** — recurring tasks by season (HVAC filter, gutter cleaning, winterizing, etc.) with when they were last done.
+- **Home expense records** — any major repairs, appliance purchases, or improvement costs from the current year.
+- **HOA or utility contacts** — HOA management company, property insurance policy number, and utility providers.
+>
+> **Step 3 — Run your first skill**
+> Once config.md is filled in and at least a few documents are in `00_current/`, try: *"home review"*
+>
+> You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.

@@ -35,9 +35,33 @@ If `~/Documents/AIReadyLife/vault/brand/` does not exist or is empty:
 
 Skills are located under `brand/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
-## Checking Vault Status
+## First Run
 
-Before running any skill, confirm the vault exists:
-- Check that `~/Documents/AIReadyLife/vault/brand/config.md` is present and filled in
-- If it is missing, direct the user to purchase the vault template above
-- If it exists but config fields are blank, prompt the user to complete setup before proceeding
+Before running any skill, check `~/Documents/AIReadyLife/vault/brand/config.md`:
+
+1. **Vault missing** → tell the user to purchase the vault template and link to the Gumroad listing above.
+2. **Config filled in** → proceed with the requested skill normally.
+3. **Config exists but fields are blank** (values empty after the `:`) → do NOT run the skill. Show the first-run message below instead.
+
+### First-Run Message (show when config is blank)
+
+> **Welcome to AI Ready Life: Brand!**
+>
+> Your vault is installed at `~/Documents/AIReadyLife/vault/brand/`. Before skills can run, your config and documents need to be in place.
+>
+> **Step 1 — Complete your config**
+> Open `~/Documents/AIReadyLife/vault/brand/config.md` and fill in every field. Leave a field blank rather than guessing — the skills will flag anything that's missing.
+>
+> **Step 2 — Gather your documents and add them to `00_current/`**
+> Here's what this domain needs:
+>
+- **Platform handles** — your username on LinkedIn, Twitter/X, Instagram, TikTok, YouTube, or wherever you publish. Include the full URL.
+- **Follower counts** — current counts per platform. A screenshot or manual note is fine.
+- **Recent analytics export (optional)** — LinkedIn Creator Analytics, Twitter Analytics, or YouTube Studio CSV for the past 90 days.
+- **Bio copy** — your current bio as it appears on your primary platform. Used for consistency audits.
+- **Content cadence goal** — how often you intend to publish per platform (e.g., LinkedIn: 3x/week, newsletter: 2x/month).
+>
+> **Step 3 — Run your first skill**
+> Once config.md is filled in and at least a few documents are in `00_current/`, try: *"brand brief"*
+>
+> You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.

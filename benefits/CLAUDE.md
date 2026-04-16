@@ -35,9 +35,33 @@ If `~/Documents/AIReadyLife/vault/benefits/` does not exist or is empty:
 
 Skills are located under `benefits/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
-## Checking Vault Status
+## First Run
 
-Before running any skill, confirm the vault exists:
-- Check that `~/Documents/AIReadyLife/vault/benefits/config.md` is present and filled in
-- If it is missing, direct the user to purchase the vault template above
-- If it exists but config fields are blank, prompt the user to complete setup before proceeding
+Before running any skill, check `~/Documents/AIReadyLife/vault/benefits/config.md`:
+
+1. **Vault missing** → tell the user to purchase the vault template and link to the Gumroad listing above.
+2. **Config filled in** → proceed with the requested skill normally.
+3. **Config exists but fields are blank** (values empty after the `:`) → do NOT run the skill. Show the first-run message below instead.
+
+### First-Run Message (show when config is blank)
+
+> **Welcome to AI Ready Life: Benefits!**
+>
+> Your vault is installed at `~/Documents/AIReadyLife/vault/benefits/`. Before skills can run, your config and documents need to be in place.
+>
+> **Step 1 — Complete your config**
+> Open `~/Documents/AIReadyLife/vault/benefits/config.md` and fill in every field. Leave a field blank rather than guessing — the skills will flag anything that's missing.
+>
+> **Step 2 — Gather your documents and add them to `00_current/`**
+> Here's what this domain needs:
+>
+- **Benefits confirmation** — the enrollment summary or confirmation PDF from Workday, ADP, or your HR portal. Lists every elected benefit with coverage amounts.
+- **401k statement** — most recent, showing contribution rate, employer match rate, and current balance.
+- **HSA account statement** — current balance, YTD contributions, and investment balance if applicable.
+- **Pay stub** — most recent, to verify benefit deductions (medical, dental, vision, life, 401k) are being withheld.
+- **Benefits guide or SBC** — the Summary of Benefits and Coverage document for your medical plan, showing deductible, OOP max, and copay structure.
+>
+> **Step 3 — Run your first skill**
+> Once config.md is filled in and at least a few documents are in `00_current/`, try: *"benefits brief"*
+>
+> You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.

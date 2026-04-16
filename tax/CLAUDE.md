@@ -35,9 +35,35 @@ If `~/Documents/AIReadyLife/vault/tax/` does not exist or is empty:
 
 Skills are located under `tax/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
-## Checking Vault Status
+## First Run
 
-Before running any skill, confirm the vault exists:
-- Check that `~/Documents/AIReadyLife/vault/tax/config.md` is present and filled in
-- If it is missing, direct the user to purchase the vault template above
-- If it exists but config fields are blank, prompt the user to complete setup before proceeding
+Before running any skill, check `~/Documents/AIReadyLife/vault/tax/config.md`:
+
+1. **Vault missing** → tell the user to purchase the vault template and link to the Gumroad listing above.
+2. **Config filled in** → proceed with the requested skill normally.
+3. **Config exists but fields are blank** (values empty after the `:`) → do NOT run the skill. Show the first-run message below instead.
+
+### First-Run Message (show when config is blank)
+
+> **Welcome to AI Ready Life: Tax!**
+>
+> Your vault is installed at `~/Documents/AIReadyLife/vault/tax/`. Before skills can run, your config and documents need to be in place.
+>
+> **Step 1 — Complete your config**
+> Open `~/Documents/AIReadyLife/vault/tax/config.md` and fill in every field. Leave a field blank rather than guessing — the skills will flag anything that's missing.
+>
+> **Step 2 — Gather your documents and add them to `00_current/`**
+> Here's what this domain needs:
+>
+- **Prior year tax return** — your most recent federal and state return (PDF from your tax software or accountant).
+- **W-2 or 1099s** — from all income sources. Download from your employer portal, brokerage, or freelance platforms.
+- **HSA contribution statement** — total contributions for the year (from your HSA custodian or W-2 Box 12 code W).
+- **Charitable donation receipts** — any letter or receipt for donations over $250.
+- **Business expense records** — if self-employed or a freelancer, receipts or summaries by category.
+- **Mortgage interest statement (Form 1098)** — from your lender if you own a home.
+- **Quarterly estimated payment receipts** — if you pay estimated taxes, your payment confirmations.
+>
+> **Step 3 — Run your first skill**
+> Once config.md is filled in and at least a few documents are in `00_current/`, try: *"tax deadline watch"*
+>
+> You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.

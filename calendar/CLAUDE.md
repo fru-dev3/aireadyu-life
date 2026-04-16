@@ -35,9 +35,32 @@ If `~/Documents/AIReadyLife/vault/calendar/` does not exist or is empty:
 
 Skills are located under `calendar/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
-## Checking Vault Status
+## First Run
 
-Before running any skill, confirm the vault exists:
-- Check that `~/Documents/AIReadyLife/vault/calendar/config.md` is present and filled in
-- If it is missing, direct the user to purchase the vault template above
-- If it exists but config fields are blank, prompt the user to complete setup before proceeding
+Before running any skill, check `~/Documents/AIReadyLife/vault/calendar/config.md`:
+
+1. **Vault missing** → tell the user to purchase the vault template and link to the Gumroad listing above.
+2. **Config filled in** → proceed with the requested skill normally.
+3. **Config exists but fields are blank** (values empty after the `:`) → do NOT run the skill. Show the first-run message below instead.
+
+### First-Run Message (show when config is blank)
+
+> **Welcome to AI Ready Life: Calendar!**
+>
+> Your vault is installed at `~/Documents/AIReadyLife/vault/calendar/`. Before skills can run, your config and documents need to be in place.
+>
+> **Step 1 — Complete your config**
+> Open `~/Documents/AIReadyLife/vault/calendar/config.md` and fill in every field. Leave a field blank rather than guessing — the skills will flag anything that's missing.
+>
+> **Step 2 — Gather your documents and add them to `00_current/`**
+> Here's what this domain needs:
+>
+- **Upcoming deadlines** — any time-sensitive items: tax dates, insurance renewals, lease expirations, enrollment windows. One per line with the due date.
+- **Recurring commitments** — weekly or monthly obligations (team meetings, therapy, gym, etc.) with day and time.
+- **Focus time targets** — how many hours of deep work per week you're trying to protect, and your preferred focus window (morning, afternoon).
+- **Key annual dates** — dates that require advance prep: performance reviews, open enrollment, lease renewal, annual subscriptions that auto-renew.
+>
+> **Step 3 — Run your first skill**
+> Once config.md is filled in and at least a few documents are in `00_current/`, try: *"weekly agenda"*
+>
+> You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.
