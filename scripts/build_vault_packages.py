@@ -207,26 +207,56 @@ def build_package(
 
 def build_bundle(name: str, domains: list[str]) -> bool:
     """
-    Build a bundle zip containing all domain zips merged into one archive.
-    Each domain's aireadylife-{domain}/ tree is included at the top level.
+    Build a unified bundle zip with a single vault/ folder containing all domains.
+
+    Structure:
+      aireadylife-{name}/
+        get-started/
+          QUICKSTART.md
+          PROMPTS.md
+        vault/
+          {domain}/
+            config.md
+            00_current/.gitkeep
+            01_prior/2025/.gitkeep
+            ...
+            02_briefs/.gitkeep
+
     Returns True on success.
     """
-    missing = [d for d in domains if not (DIST_DIR / f"aireadylife-{d}.zip").exists()]
-    if missing:
-        print(
-            f"  FAIL  {name}: missing domain zips: {', '.join(missing)} — skipping bundle"
-        )
+    bundle_demo = VAULT_DEMO / name
+    qs_path = bundle_demo / "QUICKSTART.md"
+    pr_path = bundle_demo / "PROMPTS.md"
+
+    if not bundle_demo.exists():
+        print(f"  FAIL  {name}: vault-demo/{name}/ not found — skipping bundle")
         return False
 
     bundle_path = DIST_DIR / f"aireadylife-{name}.zip"
-    with zipfile.ZipFile(
-        bundle_path, "w", compression=zipfile.ZIP_DEFLATED
-    ) as bundle_zf:
+    zip_root = f"aireadylife-{name}"
+
+    with zipfile.ZipFile(bundle_path, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+        # get-started/
+        if qs_path.exists():
+            zf.write(qs_path, f"{zip_root}/get-started/QUICKSTART.md")
+        if pr_path.exists():
+            zf.write(pr_path, f"{zip_root}/get-started/PROMPTS.md")
+
+        # vault/{domain}/ — config.md + folder stubs for each domain
         for domain in domains:
-            domain_zip_path = DIST_DIR / f"aireadylife-{domain}.zip"
-            with zipfile.ZipFile(domain_zip_path, "r") as domain_zf:
-                for item in domain_zf.infolist():
-                    bundle_zf.writestr(item, domain_zf.read(item.filename))
+            domain_vault_template = REPO_ROOT / domain / "vault" / "config.md"
+            cfg_path = (
+                domain_vault_template
+                if domain_vault_template.exists()
+                else VAULT_DEMO / domain / "config.md"
+            )
+            if cfg_path.exists():
+                zf.write(cfg_path, f"{zip_root}/vault/{domain}/config.md")
+            else:
+                print(f"  WARNING  {name}: no config.md for {domain} — omitted")
+
+            for stub in VAULT_STUBS:
+                zf.writestr(f"{zip_root}/vault/{domain}/{stub}", "")
 
     size_kb = bundle_path.stat().st_size / 1024
     print(
