@@ -52,6 +52,7 @@ This op reviews every active tenancy across the portfolio and evaluates it acros
 
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — all tenant records, lease dates, payment history, security deposit amounts
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — property state/jurisdiction for rent control check
+- `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -87,6 +88,7 @@ Required in `~/Documents/AIReadyLife/vault/estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/estate/00_current/YYYY-MM-tenant-report.md`

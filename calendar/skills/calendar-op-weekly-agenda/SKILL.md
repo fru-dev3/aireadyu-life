@@ -53,6 +53,7 @@ Finally, it calls `calendar-task-update-open-loops` to ensure any newly surfaced
 
 - ~/Documents/AIReadyLife/vault/*/open-loops.md (all installed plugins)
 - ~/Documents/AIReadyLife/vault/calendar/00_current/ (prior deadline records)
+- `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records for trend comparison
 - Google Calendar events for the coming week (via gcalendar skill, if configured)
 - ~/Documents/AIReadyLife/vault/calendar/config.md
 
@@ -104,5 +105,6 @@ Required in vault/calendar/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/*/open-loops.md, ~/Documents/AIReadyLife/vault/calendar/00_current/
 - Writes to: ~/Documents/AIReadyLife/vault/calendar/00_current/YYYY-MM-DD-week-agenda.md, ~/Documents/AIReadyLife/vault/calendar/open-loops.md

@@ -49,6 +49,7 @@ Runs monthly on the 1st (typically triggered by the monthly sync) to evaluate wh
 - `~/Documents/AIReadyLife/vault/learning/00_current/` — active courses, certs, books with start date and target date
 - `~/Documents/AIReadyLife/vault/learning/00_current/` — monthly milestone targets
 - `~/Documents/AIReadyLife/vault/learning/00_current/` — study hours logs for certifications
+- `~/Documents/AIReadyLife/vault/learning/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -98,5 +99,6 @@ Each active learning item in `vault/learning/00_current/` needs: `start_date`, `
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/learning/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/learning/00_current/`, `~/Documents/AIReadyLife/vault/learning/00_current/`, `~/Documents/AIReadyLife/vault/learning/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/learning/00_current/progress-YYYY-MM.md`, `~/Documents/AIReadyLife/vault/learning/open-loops.md`

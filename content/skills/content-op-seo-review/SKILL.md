@@ -47,6 +47,7 @@ Calls `aireadylife-content-task-flag-seo-gap` for each keyword or content piece 
 - `~/Documents/AIReadyLife/vault/content/00_current/{prior YYYY-MM}-rankings.md` — prior month for comparison
 - `~/Documents/AIReadyLife/vault/content/00_current/keyword-gaps.md` — known keyword gaps
 - `~/Documents/AIReadyLife/vault/content/00_current/` — content publication dates for freshness check
+- `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/content/config.md` — topic areas, volume thresholds
 
 ## Output Format
@@ -92,5 +93,6 @@ Required in `~/Documents/AIReadyLife/vault/content/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/content/00_current/seo-review-{YYYY-MM}.md`, `~/Documents/AIReadyLife/vault/content/open-loops.md`

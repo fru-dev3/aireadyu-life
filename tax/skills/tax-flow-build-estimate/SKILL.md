@@ -58,6 +58,7 @@ Reads YTD income and withholding data from across the tax vault and produces a c
 
 - `vault/tax/00_current/` — W-2 pay stubs and 1099 documents for YTD income
 - `vault/tax/00_current/` — prior quarterly payments this year
+- `vault/tax/01_prior/` — prior period records for trend comparison
 - `vault/tax/config.md` — prior year tax liability, filing status, deduction method, SE income flag, QBI eligibility
 - Income records from `vault/wealth/` or `vault/business/` if cross-plugin sharing is configured
 
@@ -90,6 +91,7 @@ Required in `vault/tax/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/tax/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/` (income records)
 - Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/` (prior payments)
 - Reads from: `~/Documents/AIReadyLife/vault/tax/config.md`

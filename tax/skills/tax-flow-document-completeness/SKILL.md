@@ -69,6 +69,7 @@ Reads the expected document checklist from `vault/tax/00_current/expected-docs.m
 
 - `vault/tax/00_current/` — all received document files
 - `vault/tax/00_current/expected-docs.md` — expected document checklist
+- `vault/tax/01_prior/` — prior period records for trend comparison
 - `vault/tax/config.md` — income sources, entities, institutions
 
 ## Output Format
@@ -97,6 +98,7 @@ Required in `vault/tax/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/tax/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/YYYY/` (received documents)
 - Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/expected-docs.md`
 - Reads from: `~/Documents/AIReadyLife/vault/tax/config.md`

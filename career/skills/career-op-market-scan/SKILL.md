@@ -49,6 +49,7 @@ The scan also monitors company-specific signals: if a company on your target lis
 
 - `~/Documents/AIReadyLife/vault/career/config.md` — target criteria, company preferences, comp floor
 - `~/Documents/AIReadyLife/vault/career/00_current/` — prior month scan data for trend comparison
+- `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records for trend comparison
 - Live data from LinkedIn Jobs, Glassdoor Jobs, Levels.fyi (via configured app integrations)
 
 ## Output Format
@@ -95,5 +96,6 @@ Required fields in `vault/career/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/career/config.md`, `~/Documents/AIReadyLife/vault/career/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/career/02_briefs/`, `~/Documents/AIReadyLife/vault/career/00_current/`, `~/Documents/AIReadyLife/vault/career/00_current/YYYY-MM-scan.md`, `~/Documents/AIReadyLife/vault/career/open-loops.md`

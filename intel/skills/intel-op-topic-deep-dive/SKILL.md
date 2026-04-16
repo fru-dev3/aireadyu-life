@@ -45,6 +45,7 @@ Also checks vault/intel/config.md to see whether this topic should be added to t
 - `~/Documents/AIReadyLife/vault/intel/00_current/` — for existing thread check
 - `~/Documents/AIReadyLife/vault/intel/02_briefs/` — for prior coverage context
 - `~/Documents/AIReadyLife/vault/intel/00_current/` — source registry for credibility reference
+- `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/intel/config.md` — current active topics
 
 ## Output Format
@@ -100,5 +101,6 @@ Required in `~/Documents/AIReadyLife/vault/intel/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/intel/00_current/`, `~/Documents/AIReadyLife/vault/intel/02_briefs/`, `~/Documents/AIReadyLife/vault/intel/00_current/`, `~/Documents/AIReadyLife/vault/intel/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/intel/00_current/{topic-slug}.md` (if thread created), `~/Documents/AIReadyLife/vault/intel/02_briefs/{YYYY-MM-DD}-{topic-slug}-deep-dive.md` (if saved as brief)

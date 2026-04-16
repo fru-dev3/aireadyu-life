@@ -33,12 +33,7 @@ If `~/Documents/AIReadyLife/vault/real-estate/` does not exist or is empty:
 
 ## Skills
 
-Skills are organized under `domains/real-estate/skills/`:
-
-- `00_ops/` — recurring operations (reviews, syncs, watches)
-- `01_flows/` — data flows that build summaries and reports
-- `02_tasks/` — atomic write tasks (flag, log, update)
-- `apps/` — app integrations
+Skills are located under `real-estate/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
 ## Checking Vault Status
 

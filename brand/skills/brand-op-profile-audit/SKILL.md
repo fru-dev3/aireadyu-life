@@ -45,6 +45,7 @@ Also checks for the user's author presence across any blogs, guest publications,
 
 - `~/Documents/AIReadyLife/vault/brand/00_current/master-profile.md` — canonical brand identity
 - `~/Documents/AIReadyLife/vault/brand/00_current/{platform}.md` — per-platform snapshots
+- `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/brand/config.md` — platforms, LinkedIn completeness targets, external publication list
 
 ## Output Format
@@ -94,5 +95,6 @@ Required in `~/Documents/AIReadyLife/vault/brand/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/brand/02_briefs/profile-audit-{Q}-{YYYY}.md`, `~/Documents/AIReadyLife/vault/brand/open-loops.md`

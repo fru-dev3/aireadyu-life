@@ -36,6 +36,7 @@ Called by `aireadylife-career-op-comp-review` to produce the core compensation b
 
 - `~/Documents/AIReadyLife/vault/career/config.md` — role, level, company tier, metro, salary, bonus target, RSU grant info
 - `~/Documents/AIReadyLife/vault/career/00_current/` — pay stubs, equity grant docs
+- `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records for trend comparison
 - Levels.fyi (live query or cached data not more than 90 days old)
 - Glassdoor salary data (live query or cached)
 
@@ -66,5 +67,6 @@ Required in `vault/career/config.md`: `base_salary`, `bonus_target_pct`, `rsu_sh
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/career/config.md`, `~/Documents/AIReadyLife/vault/career/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/career/00_current/bench-history.md`

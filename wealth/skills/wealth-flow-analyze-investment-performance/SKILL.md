@@ -59,6 +59,7 @@ Reads all investment account records from `vault/wealth/00_current/` — one dir
 - `vault/wealth/00_current/[account-name]/holdings.md` — current holdings for each account
 - `vault/wealth/00_current/[account-name]/values.csv` — historical account values by date
 - `vault/wealth/00_current/[account-name]/contributions.md` — YTD contribution log
+- `vault/wealth/01_prior/` — prior period records for trend comparison
 - `vault/wealth/config.md` — target allocation, account types, IRS limit overrides for catch-up contributions
 
 ## Output Format
@@ -86,6 +87,7 @@ Required in `vault/wealth/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/` (all account subdirectories)
 - Reads from: `~/Documents/AIReadyLife/vault/wealth/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/wealth/00_current/YYYY-MM-performance.md`

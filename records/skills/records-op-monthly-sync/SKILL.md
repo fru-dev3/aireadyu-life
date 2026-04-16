@@ -55,6 +55,7 @@ After these three updates, the sync triggers the records review brief.
 - `~/Documents/AIReadyLife/vault/records/00_current/`
 - `~/Documents/AIReadyLife/vault/records/00_current/`
 - `~/Documents/AIReadyLife/vault/records/00_current/subscriptions.md`
+- `~/Documents/AIReadyLife/vault/records/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -80,6 +81,7 @@ Required in `~/Documents/AIReadyLife/vault/records/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/records/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/records/config.md`, `00_identity/`, `01_legal/`, `02_subscriptions/`
 - Writes to: `~/Documents/AIReadyLife/vault/records/00_current/last-sync.md`
 - Writes to: `~/Documents/AIReadyLife/vault/records/02_briefs/YYYY-MM-records-brief.md`

@@ -55,6 +55,7 @@ Action items are sorted by urgency and categorized: things to do this week (rene
 - `~/Documents/AIReadyLife/vault/real-estate/00_current/YYYY-MM-affordability.md`
 - `~/Documents/AIReadyLife/vault/real-estate/00_current/YYYY-MM-market-report.md`
 - `~/Documents/AIReadyLife/vault/real-estate/00_current/`
+- `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/real-estate/open-loops.md`
 
 ## Output Format
@@ -100,6 +101,7 @@ Required: `~/Documents/AIReadyLife/vault/real-estate/config.md` populated and va
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/00_current/`, `00_markets/`, `01_listings/`, `open-loops.md`
 - Writes to: `~/Documents/AIReadyLife/vault/real-estate/02_briefs/YYYY-MM-realestate-brief.md`
 - Writes to: `~/Documents/AIReadyLife/vault/real-estate/open-loops.md`

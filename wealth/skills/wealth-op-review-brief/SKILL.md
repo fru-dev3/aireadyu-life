@@ -48,3 +48,9 @@ None
 ## Vault Output
 
 - `vault/wealth/02_briefs/YYYY-MM-wealth-brief.md` — monthly wealth review brief
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/02_briefs/` — prior briefs for period-over-period context

@@ -57,6 +57,7 @@ The planning session document (written to vault/vision/00_current/) captures the
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (prior quarter OKRs)
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (life vision document, milestones, BHAG)
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (monthly scorecard history)
+- `~/Documents/AIReadyLife/vault/vision/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/*/open-loops.md (domain health for scorecard)
 - ~/Documents/AIReadyLife/vault/vision/config.md
 
@@ -98,5 +99,6 @@ Required in vault/vision/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/vision/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/vision/00_current/, ~/Documents/AIReadyLife/vault/vision/00_current/, ~/Documents/AIReadyLife/vault/vision/00_current/, ~/Documents/AIReadyLife/vault/*/open-loops.md
 - Writes to: ~/Documents/AIReadyLife/vault/vision/00_current/YYYY-QN-okrs.md, ~/Documents/AIReadyLife/vault/vision/00_current/YYYY-QN-planning-session.md

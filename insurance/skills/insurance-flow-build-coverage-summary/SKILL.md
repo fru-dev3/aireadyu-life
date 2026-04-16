@@ -33,6 +33,7 @@ Called by `aireadylife-insurance-op-review-brief` and `aireadylife-insurance-op-
 
 - `~/Documents/AIReadyLife/vault/insurance/00_current/` — active policy summary records
 - `~/Documents/AIReadyLife/vault/insurance/00_current/` — policy documents for limit details
+- `~/Documents/AIReadyLife/vault/insurance/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/insurance/config.md` — user profile for baseline determination
 
 ## Output Format
@@ -83,5 +84,6 @@ Detailed policy documents (declarations pages, full policies) stored in `vault/i
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/insurance/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/insurance/00_current/`, `~/Documents/AIReadyLife/vault/insurance/00_current/`, `~/Documents/AIReadyLife/vault/insurance/config.md`
 - Writes to: None (returns data to calling op)

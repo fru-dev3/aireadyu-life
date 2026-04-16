@@ -41,6 +41,7 @@ Called internally by `aireadylife-intel-op-daily-briefing` and `aireadylife-inte
 ## Input
 
 - `~/Documents/AIReadyLife/vault/intel/00_current/source-list.md` — source registry with credibility tiers and topic tags
+- `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/intel/config.md` — include topics, exclude keywords, topic priorities, minimum score threshold
 - Article data from configured sources (passed by the calling op or read from vault if pre-fetched)
 
@@ -83,5 +84,6 @@ Required in `~/Documents/AIReadyLife/vault/intel/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/intel/00_current/source-list.md`, `~/Documents/AIReadyLife/vault/intel/config.md`
 - Writes to: called by ops that write to `~/Documents/AIReadyLife/vault/intel/02_briefs/`

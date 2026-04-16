@@ -60,6 +60,7 @@ Entity deadlines: S-Corp and partnership return (March 15 or extension); LLC ann
 
 - `vault/tax/00_current/deadline-calendar.md` — master deadline calendar
 - `vault/tax/00_current/` — quarterly estimate calculations for payment amounts
+- `vault/tax/01_prior/` — prior period records for trend comparison
 - `vault/tax/config.md` — filing status, entities, states, extension status
 
 ## Output Format
@@ -87,6 +88,7 @@ Required in `vault/tax/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/tax/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/deadline-calendar.md`
 - Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/tax/config.md`

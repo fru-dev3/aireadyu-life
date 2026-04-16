@@ -41,6 +41,7 @@ Called internally by `aireadylife-content-op-revenue-review`. Not invoked direct
 - `~/Documents/AIReadyLife/vault/content/00_current/{prior YYYY-MM}.md` — prior month newsletter data
 - `~/Documents/AIReadyLife/vault/content/00_current/{YYYY-MM}.md` — product sales by product
 - `~/Documents/AIReadyLife/vault/content/00_current/{prior YYYY-MM}.md` — prior month Gumroad data
+- `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -78,5 +79,6 @@ Required file fields in each monthly analytics file:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`
 - Writes to: returns data to calling op; no direct file writes

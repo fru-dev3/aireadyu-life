@@ -55,6 +55,7 @@ The op calls `calendar-flow-collect-deadlines` to scan the open-loops.md from ev
 
 - ~/Documents/AIReadyLife/vault/*/open-loops.md (all installed plugins)
 - ~/Documents/AIReadyLife/vault/calendar/00_current/ (existing deadline records)
+- `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/calendar/config.md
 
 ## Output Format
@@ -93,5 +94,6 @@ Required in vault/calendar/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/*/open-loops.md, ~/Documents/AIReadyLife/vault/calendar/00_current/
 - Writes to: ~/Documents/AIReadyLife/vault/calendar/00_current/alert-YYYY-MM-DD.md, ~/Documents/AIReadyLife/vault/calendar/open-loops.md

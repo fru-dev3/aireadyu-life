@@ -61,6 +61,7 @@ The completed brief is written as a dated markdown file to vault/chief/02_briefs
 - ~/Documents/AIReadyLife/vault/*/state.md (per-domain status)
 - ~/Documents/AIReadyLife/vault/calendar/00_current/ (if calendar plugin installed)
 - ~/Documents/AIReadyLife/vault/calendar/00_current/ (if calendar plugin installed)
+- `vault/chief/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/chief/config.md (plugin list, Notion/GDrive credentials)
 
 ## Output Format
@@ -108,5 +109,6 @@ Required fields in vault/chief/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/chief/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/*/open-loops.md, ~/Documents/AIReadyLife/vault/*/state.md, ~/Documents/AIReadyLife/vault/calendar/00_current/, ~/Documents/AIReadyLife/vault/calendar/00_current/
 - Writes to: ~/Documents/AIReadyLife/vault/chief/02_briefs/daily-YYYY-MM-DD.md, ~/Documents/AIReadyLife/vault/chief/00_current/YYYY-MM-DD-{domain}-{slug}.md

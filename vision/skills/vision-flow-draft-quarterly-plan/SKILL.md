@@ -45,6 +45,7 @@ This flow synthesizes life vision context, current domain health, and the backlo
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (life vision document, BHAG)
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (most recent monthly scorecard)
 - ~/Documents/AIReadyLife/vault/vision/00_current/milestones.md (carry-forward milestone backlog)
+- `~/Documents/AIReadyLife/vault/vision/01_prior/` — prior period records for trend comparison
 - Domain selection composite data from calling op
 
 ## Output Format
@@ -86,5 +87,6 @@ No configuration required. Vision document must exist in vault/vision/00_current
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/vision/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/vision/00_current/, ~/Documents/AIReadyLife/vault/vision/00_current/, ~/Documents/AIReadyLife/vault/vision/00_current/milestones.md
 - Writes to: ~/Documents/AIReadyLife/vault/vision/00_current/YYYY-QN-draft-okrs.md

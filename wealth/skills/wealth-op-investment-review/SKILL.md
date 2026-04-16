@@ -41,3 +41,9 @@ None (reads from vault; Fidelity, M1, or brokerage downloads must be in vault be
 
 - `vault/wealth/00_current/YYYY-MM-performance.md` — performance and allocation summary
 - `vault/wealth/open-loops.md` — rebalancing flags and 401k pace alerts
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/02_briefs/` — prior briefs for period-over-period context

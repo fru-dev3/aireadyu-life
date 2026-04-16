@@ -43,6 +43,7 @@ Produces a source health report with a status per source and a coverage gap asse
 ## Input
 
 - `~/Documents/AIReadyLife/vault/intel/00_current/source-list.md` — source registry with last-activity dates
+- `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/intel/config.md` — interest topics, priority topics
 
 ## Output Format
@@ -88,5 +89,6 @@ Required in `~/Documents/AIReadyLife/vault/intel/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/intel/00_current/source-list.md`, `~/Documents/AIReadyLife/vault/intel/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/intel/00_current/{YYYY-MM-DD}-source-health.md`, `~/Documents/AIReadyLife/vault/intel/open-loops.md`

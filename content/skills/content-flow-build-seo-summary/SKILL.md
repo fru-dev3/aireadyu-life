@@ -39,6 +39,7 @@ Called internally by `aireadylife-content-op-seo-review`. Not invoked directly b
 - `~/Documents/AIReadyLife/vault/content/00_current/{YYYY-MM}-rankings.md` — keyword rankings current month
 - `~/Documents/AIReadyLife/vault/content/00_current/{prior YYYY-MM}-rankings.md` — prior month rankings for comparison
 - `~/Documents/AIReadyLife/vault/content/00_current/keyword-gaps.md` — keyword gap list (optional)
+- `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/content/config.md` — keyword volume threshold, topic areas
 
 ## Output Format
@@ -86,5 +87,6 @@ Required file format in `03_seo/{YYYY-MM}-rankings.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/config.md`
 - Writes to: returns data to calling op; no direct file writes

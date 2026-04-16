@@ -50,6 +50,7 @@ The portfolio-level summary aggregates across all properties: total portfolio eq
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — all property records
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — current rent and occupancy
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — most recent cash flow data
+- `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -79,6 +80,7 @@ Required in `~/Documents/AIReadyLife/vault/estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`

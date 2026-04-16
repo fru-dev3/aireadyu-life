@@ -53,3 +53,9 @@ None directly (each sub-op uses its own configured data sources)
 - `vault/wealth/00_current/current-net-worth.md` — updated headline number
 - `vault/wealth/open-loops.md` — all new flags from all sub-reviews
 - `vault/wealth/02_briefs/YYYY-MM-wealth-brief.md` — monthly brief (produced by triggered op)
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/02_briefs/` — prior briefs for period-over-period context

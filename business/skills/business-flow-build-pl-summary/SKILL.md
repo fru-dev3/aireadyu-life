@@ -40,6 +40,7 @@ Called internally by `aireadylife-business-op-pl-review` and `aireadylife-busine
 - `~/Documents/AIReadyLife/vault/business/00_current/` — invoice and revenue records for current month; each file should include: date, client, amount, stream type, payment status
 - `~/Documents/AIReadyLife/vault/business/00_current/` — expense records for current month; each file should include: date, vendor, amount, category
 - `~/Documents/AIReadyLife/vault/business/00_current/pl-{YYYY-MM}.md` — prior month P&L for MoM comparison (optional; if missing, MoM columns show "N/A")
+- `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/business/config.md` — monthly budget targets per expense category (optional; used for variance flags)
 
 ## Output Format
@@ -88,5 +89,6 @@ Required fields in `~/Documents/AIReadyLife/vault/business/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/config.md`
 - Writes to: called by ops that write to `~/Documents/AIReadyLife/vault/business/02_briefs/`

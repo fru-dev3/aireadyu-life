@@ -52,6 +52,7 @@ After these three updates, the monthly sync triggers the review brief, which for
 - `~/Documents/AIReadyLife/vault/real-estate/00_current/` (prior snapshots)
 - `~/Documents/AIReadyLife/vault/real-estate/00_current/` (saved listings to update)
 - `~/Documents/AIReadyLife/vault/real-estate/00_current/` (prior affordability worksheet)
+- `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records for trend comparison
 - Live data from Zillow or Redfin via web research
 
 ## Output Format
@@ -82,6 +83,7 @@ Required fields in `~/Documents/AIReadyLife/vault/real-estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/config.md`
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/00_current/`, `01_listings/`, `02_analysis/`
 - Writes to: `~/Documents/AIReadyLife/vault/real-estate/00_current/YYYY-MM-market-report.md`

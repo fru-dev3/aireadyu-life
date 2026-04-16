@@ -43,3 +43,9 @@ None
 
 - `vault/tax/00_current/YYYY-deductions.md` — updated YTD deduction totals by category
 - `vault/tax/open-loops.md` — documentation gap flags and pace flags
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/tax/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/tax/02_briefs/` — prior briefs for period-over-period context

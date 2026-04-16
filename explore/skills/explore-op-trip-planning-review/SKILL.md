@@ -53,6 +53,7 @@ The trip planning review is the comprehensive pre-trip readiness check — a ful
 
 - ~/Documents/AIReadyLife/vault/explore/00_current/ (trip record)
 - ~/Documents/AIReadyLife/vault/explore/00_current/ (traveler documents)
+- `~/Documents/AIReadyLife/vault/explore/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/explore/config.md (travelers, citizenship, travel budget)
 
 ## Output Format
@@ -112,5 +113,6 @@ Required in vault/explore/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/explore/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/explore/00_current/, ~/Documents/AIReadyLife/vault/explore/00_current/, ~/Documents/AIReadyLife/vault/explore/config.md
 - Writes to: ~/Documents/AIReadyLife/vault/explore/00_current/YYYY-{destination}-trip.md, ~/Documents/AIReadyLife/vault/explore/open-loops.md

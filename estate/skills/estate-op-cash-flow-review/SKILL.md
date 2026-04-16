@@ -53,6 +53,7 @@ The op also computes the recommended monthly reserves that should be held back f
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — rent payment records
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — expense logs and prior month report
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — mortgage, insurance, tax data
+- `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -85,6 +86,7 @@ Required in `~/Documents/AIReadyLife/vault/estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`, `01_tenants/`, `03_cashflow/`
 - Writes to: `~/Documents/AIReadyLife/vault/estate/00_current/YYYY-MM-cashflow.md`
 - Writes to: `~/Documents/AIReadyLife/vault/estate/open-loops.md`

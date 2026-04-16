@@ -60,6 +60,7 @@ For both scenarios, the "freed cash flow" is shown: when the highest-rate debt i
 ## Input
 
 - `vault/wealth/00_current/` — all debt record files
+- `vault/wealth/01_prior/` — prior period records for trend comparison
 - `vault/wealth/config.md` — gross monthly income (for DTI), debt milestone thresholds
 
 ## Output Format
@@ -85,6 +86,7 @@ Required in `vault/wealth/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/` (all debt files)
 - Reads from: `~/Documents/AIReadyLife/vault/wealth/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/wealth/00_current/YYYY-MM-debt-summary.md`

@@ -52,6 +52,7 @@ After both phases complete, the op writes open-loop flags for any action items d
 
 - ~/Documents/AIReadyLife/vault/explore/00_current/ (passport, Global Entry, TSA PreCheck, visas, vaccinations)
 - ~/Documents/AIReadyLife/vault/explore/00_current/ (booked trips)
+- `~/Documents/AIReadyLife/vault/explore/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/explore/config.md (travelers, loyalty programs, citizenship)
 
 ## Output Format
@@ -102,5 +103,6 @@ Required in vault/explore/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/explore/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/explore/00_current/, ~/Documents/AIReadyLife/vault/explore/00_current/, ~/Documents/AIReadyLife/vault/explore/config.md
 - Writes to: ~/Documents/AIReadyLife/vault/explore/00_current/state.md, ~/Documents/AIReadyLife/vault/explore/02_briefs/YYYY-MM-explore-brief.md, ~/Documents/AIReadyLife/vault/explore/open-loops.md

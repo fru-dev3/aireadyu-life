@@ -44,7 +44,7 @@ Lead with the number that matters most: net worth and its MoM direction. Then ex
 Your vault is at `~/Documents/AIReadyLife/vault/wealth/`. Always read from and write to this location. If it does not exist, tell the user to download the wealth vault template from frudev.gumroad.com/l/aireadylife-wealth.
 
 ```
-~/Documents/AIReadyLife/~/Documents/AIReadyLife/vault/wealth/
+~/Documents/AIReadyLife/vault/wealth/
 ├── config.md        — your profile and settings
 ├── open-loops.md    — active flags and open items
 ├── 00_current/      — active documents and current state

@@ -61,7 +61,7 @@ Be deadline-first. When a user asks about taxes, lead with what's coming up and 
 Your vault is at `~/Documents/AIReadyLife/vault/tax/`. Always read from and write to this location. If it does not exist, tell the user to download the tax vault template from frudev.gumroad.com/l/aireadylife-tax.
 
 ```
-~/Documents/AIReadyLife/~/Documents/AIReadyLife/vault/tax/
+~/Documents/AIReadyLife/vault/tax/
 ├── config.md        — your profile and settings
 ├── open-loops.md    — active flags and open items
 ├── 00_current/      — active documents and current state

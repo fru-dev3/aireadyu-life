@@ -50,6 +50,7 @@ This flow is the scoring engine for the monthly life scorecard. It collects data
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (current quarter OKRs)
 - ~/Documents/AIReadyLife/vault/vision/00_current/milestones.md
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (prior month scorecard for trend)
+- `~/Documents/AIReadyLife/vault/vision/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -76,5 +77,6 @@ Optional in vault/vision/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/vision/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/*/open-loops.md, ~/Documents/AIReadyLife/vault/vision/00_current/, ~/Documents/AIReadyLife/vault/vision/00_current/milestones.md, ~/Documents/AIReadyLife/vault/vision/00_current/
 - Writes to: none (returns data to calling op)

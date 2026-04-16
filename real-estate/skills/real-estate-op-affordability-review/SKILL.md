@@ -54,6 +54,7 @@ The op also applies the 3–5x income rule as a secondary sanity check: most fin
 
 - `~/Documents/AIReadyLife/vault/real-estate/config.md`
 - `~/Documents/AIReadyLife/vault/real-estate/00_current/` (target market median prices)
+- `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -92,6 +93,7 @@ Required fields in `~/Documents/AIReadyLife/vault/real-estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/config.md`
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/real-estate/00_current/YYYY-MM-affordability.md`

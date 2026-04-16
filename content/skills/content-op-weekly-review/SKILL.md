@@ -47,6 +47,7 @@ Surfaces the top 3 action items for the current week based on: what is scheduled
 - `~/Documents/AIReadyLife/vault/content/00_current/` — most recent video's early performance metrics (if recently published)
 - `~/Documents/AIReadyLife/vault/content/00_current/` — most recent issue's open rate
 - `~/Documents/AIReadyLife/vault/content/00_current/` — 7-day sales data
+- `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/content/open-loops.md` — current action items from monthly reviews
 - `~/Documents/AIReadyLife/vault/content/config.md` — cadence targets, primary platforms
 
@@ -90,5 +91,6 @@ Required in `~/Documents/AIReadyLife/vault/content/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/open-loops.md`, `~/Documents/AIReadyLife/vault/content/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/content/00_current/weekly-snapshot.md`

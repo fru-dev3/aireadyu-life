@@ -41,6 +41,7 @@ Called by `aireadylife-benefits-op-hsa-review` to produce the core HSA analysis 
 - `~/Documents/AIReadyLife/vault/benefits/config.md` — coverage tier, enrollment date, investment threshold, age (for catch-up)
 - `~/Documents/AIReadyLife/vault/benefits/00_current/` — most recent HSA statement
 - `~/Documents/AIReadyLife/vault/benefits/00_current/pending-reimbursements.md` — pending expenses
+- `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -94,5 +95,6 @@ paid: no
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/benefits/config.md`, `~/Documents/AIReadyLife/vault/benefits/00_current/`
 - Writes to: None (returns data to calling op)

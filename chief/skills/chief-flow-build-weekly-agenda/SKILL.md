@@ -43,6 +43,7 @@ This flow receives the collected domain alerts, calendar data, and backlog summa
 - Sorted domain alerts list with due dates (from chief-flow-collect-domain-alerts, via calling op)
 - Per-day calendar meeting load data (from vault/calendar/, via calling op)
 - OKR data (from vault/vision/00_current/, optional, via calling op)
+- `vault/chief/01_prior/` — prior period records for trend comparison
 - Backlog counts by domain and tier (from chief-task-check-open-loops, via calling op)
 
 ## Output Format
@@ -96,5 +97,6 @@ Focus-hostile days:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/chief/01_prior/` — prior period records
 - Reads from: inputs passed by calling op (no direct vault reads)
 - Writes to: ~/Documents/AIReadyLife/vault/chief/00_current/week-YYYY-MM-DD.md (via calling op)

@@ -44,6 +44,7 @@ This flow performs the raw mathematical analysis of time allocation that powers 
 
 - Google Calendar events for specified date range (via gcalendar skill)
 - ~/Documents/AIReadyLife/vault/calendar/config.md (working hours, focus block minimum)
+- `vault/calendar/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -87,5 +88,6 @@ In vault/calendar/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records
 - Reads from: Google Calendar (via gcalendar), ~/Documents/AIReadyLife/vault/calendar/config.md
 - Writes to: none (returns data to calling op)
