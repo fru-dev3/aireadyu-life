@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated health state
 
 ## Step 1 — Place your vault
 
-Move this `health/` folder to:
+Move this `health/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/health/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/health/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/health/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\health\` |
 
 ## Step 2 — Fill in config.md
 

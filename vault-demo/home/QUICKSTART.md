@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated home state l
 
 ## Step 1 — Place your vault
 
-Move this `home/` folder to:
+Move this `home/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/home/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/home/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/home/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\home\` |
 
 ## Step 2 — Fill in config.md
 

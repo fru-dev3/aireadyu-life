@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated brand state 
 
 ## Step 1 — Place your vault
 
-Move this `brand/` folder to:
+Move this `brand/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/brand/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/brand/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/brand/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\brand\` |
 
 ## Step 2 — Fill in config.md
 

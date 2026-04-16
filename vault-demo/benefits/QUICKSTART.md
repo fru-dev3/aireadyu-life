@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated benefits sta
 
 ## Step 1 — Place your vault
 
-Move this `benefits/` folder to:
+Move this `benefits/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/benefits/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/benefits/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/benefits/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\benefits\` |
 
 ## Step 2 — Fill in config.md
 

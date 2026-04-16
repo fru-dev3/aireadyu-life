@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated content stat
 
 ## Step 1 — Place your vault
 
-Move this `content/` folder to:
+Move this `content/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/content/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/content/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/content/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\content\` |
 
 ## Step 2 — Fill in config.md
 

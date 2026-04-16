@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated records stat
 
 ## Step 1 — Place your vault
 
-Move this `records/` folder to:
+Move this `records/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/records/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/records/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/records/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\records\` |
 
 ## Step 2 — Fill in config.md
 

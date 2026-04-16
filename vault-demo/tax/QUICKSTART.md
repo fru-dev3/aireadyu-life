@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated tax state lo
 
 ## Step 1 — Place your vault
 
-Move this `tax/` folder to:
+Move this `tax/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/tax/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/tax/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/tax/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\tax\` |
 
 ## Step 2 — Fill in config.md
 
