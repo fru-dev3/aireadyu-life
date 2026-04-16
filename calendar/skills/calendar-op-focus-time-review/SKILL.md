@@ -58,6 +58,7 @@ Updates vault/calendar/open-loops.md if a recurring deficit pattern is detected 
 
 - Google Calendar events for past 7 days and upcoming 7 days (via gcalendar skill)
 - ~/Documents/AIReadyLife/vault/calendar/00_current/ (prior focus audit files for trend comparison)
+- `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/calendar/config.md
 
 ## Output Format
@@ -109,5 +110,6 @@ Required in vault/calendar/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records
 - Reads from: Google Calendar (via gcalendar), ~/Documents/AIReadyLife/vault/calendar/00_current/
 - Writes to: ~/Documents/AIReadyLife/vault/calendar/00_current/YYYY-MM-DD-focus-audit.md, ~/Documents/AIReadyLife/vault/calendar/open-loops.md

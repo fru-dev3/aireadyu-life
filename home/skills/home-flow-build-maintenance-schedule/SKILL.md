@@ -69,6 +69,7 @@ The built-in seasonal maintenance calendar covers the following recurring tasks 
 ## Input
 
 - `~/Documents/AIReadyLife/vault/home/00_current/` — task completion history records
+- `~/Documents/AIReadyLife/vault/home/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/home/config.md` — vendor assignments per task, home-specific details (1-inch vs. 4-inch HVAC filter, whether home has irrigation system, chimney/fireplace)
 
 ## Output Format
@@ -95,6 +96,7 @@ Required in `~/Documents/AIReadyLife/vault/home/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/home/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/home/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/home/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/home/00_current/YYYY-{season}-schedule.md`

@@ -37,6 +37,7 @@ Called internally by `aireadylife-content-op-channel-review`. Not invoked direct
 - `~/Documents/AIReadyLife/vault/content/00_current/{YYYY-MM}.md` — YouTube analytics, current + prior 3 months
 - `~/Documents/AIReadyLife/vault/content/00_current/{YYYY-MM}.md` — newsletter metrics, current + prior 3 months
 - `~/Documents/AIReadyLife/vault/content/00_current/{YYYY-MM}.md` — Gumroad sales data, current + prior 3 months
+- `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -73,5 +74,6 @@ Required file naming in vault content subfolders:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`
 - Writes to: returns data to calling op; no direct file writes

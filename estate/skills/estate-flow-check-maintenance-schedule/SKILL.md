@@ -43,6 +43,7 @@ This flow reads all open maintenance records across every rental property and ev
 
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — open maintenance items per property
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — property records with major capital item installation dates
+- `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records for trend comparison
 - Built-in seasonal maintenance calendar (hardcoded schedule, no vault source required)
 
 ## Output Format
@@ -78,6 +79,7 @@ Required in `~/Documents/AIReadyLife/vault/estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/estate/00_current/YYYY-MM-maintenance-status.md`

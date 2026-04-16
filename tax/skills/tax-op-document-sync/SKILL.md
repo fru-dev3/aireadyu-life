@@ -44,3 +44,9 @@ None (documents placed manually in vault; portal-specific apps handle downloadin
 - `vault/tax/00_current/YYYY/[document-file]` — saved tax document (user places; op confirms)
 - `vault/tax/00_current/YYYY-completeness.md` — updated completeness report
 - `vault/tax/open-loops.md` — missing document flags
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/tax/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/tax/02_briefs/` — prior briefs for period-over-period context

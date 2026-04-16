@@ -62,6 +62,7 @@ Reads all transaction records and uploaded receipts from `vault/tax/00_current/`
 - `vault/tax/00_current/mileage-log.md` — mileage records for vehicle deduction
 - `vault/tax/00_current/charitable.md` — charitable contribution records
 - `vault/tax/00_current/YYYY-1-deductions.md` — prior year deduction totals for pace comparison
+- `vault/tax/01_prior/` — prior period records for trend comparison
 - `vault/tax/config.md` — home office sq ft, deduction methods, estimated AGI
 
 ## Output Format
@@ -90,6 +91,7 @@ Required in `vault/tax/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/tax/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/` (all deduction records)
 - Reads from: `~/Documents/AIReadyLife/vault/tax/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/tax/00_current/YYYY-deductions.md`

@@ -56,6 +56,7 @@ Reads all income and expense transaction records from `vault/wealth/00_current/`
 
 - `vault/wealth/00_current/YYYY-MM/` — transaction records for the current month (from Monarch Money CSV export or manual entry)
 - `vault/wealth/00_current/YYYY-MM-1/` — prior month transactions for MoM comparison
+- `vault/wealth/01_prior/` — prior period records for trend comparison
 - `vault/wealth/config.md` — budget targets per category, income source list
 
 ## Output Format
@@ -82,6 +83,7 @@ Required fields in `vault/wealth/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/YYYY-MM/`
 - Reads from: `~/Documents/AIReadyLife/vault/wealth/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/wealth/00_current/YYYY-MM-cashflow.md`

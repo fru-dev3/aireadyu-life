@@ -44,6 +44,7 @@ For full documentation on logic, steps, and output format, see `aireadylife-chie
 - ~/Documents/AIReadyLife/vault/*/state.md
 - ~/Documents/AIReadyLife/vault/calendar/ (if installed)
 - ~/Documents/AIReadyLife/vault/chief/config.md
+- `vault/chief/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -76,5 +77,6 @@ Same as `aireadylife-chief-op-daily-brief`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/chief/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/*/open-loops.md, ~/Documents/AIReadyLife/vault/*/state.md, ~/Documents/AIReadyLife/vault/calendar/
 - Writes to: ~/Documents/AIReadyLife/vault/chief/02_briefs/daily-YYYY-MM-DD.md

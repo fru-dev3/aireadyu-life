@@ -39,6 +39,7 @@ The filtered listing table shows individual active listings that match the searc
 
 - `~/Documents/AIReadyLife/vault/real-estate/config.md` — target markets, search filters, Zillow/Redfin preference
 - `~/Documents/AIReadyLife/vault/real-estate/00_current/` — prior month snapshots for MoM comparison
+- `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records for trend comparison
 - Live data: Zillow or Redfin active listings for each target market (via web research)
 
 ## Output Format
@@ -70,6 +71,7 @@ Required fields in `~/Documents/AIReadyLife/vault/real-estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/config.md`
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/00_current/` (prior snapshots)
 - Writes to: `~/Documents/AIReadyLife/vault/real-estate/00_current/YYYY-MM-{market-slug}-snapshot.md`

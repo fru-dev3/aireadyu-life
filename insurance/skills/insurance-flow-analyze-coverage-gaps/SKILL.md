@@ -39,6 +39,7 @@ Called by `aireadylife-insurance-op-coverage-audit` to perform the quantitative 
 
 - `~/Documents/AIReadyLife/vault/insurance/00_current/` — current coverage limits
 - `~/Documents/AIReadyLife/vault/insurance/00_current/` — policy documents for limit verification
+- `~/Documents/AIReadyLife/vault/insurance/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/insurance/config.md` — income, net worth, mortgage, dependents, properties
 
 ## Output Format
@@ -82,5 +83,6 @@ All required data comes from `vault/insurance/config.md` and `vault/insurance/00
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/insurance/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/insurance/00_current/`, `~/Documents/AIReadyLife/vault/insurance/00_current/`, `~/Documents/AIReadyLife/vault/insurance/config.md`
 - Writes to: None (returns data to calling op)

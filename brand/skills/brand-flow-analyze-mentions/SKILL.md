@@ -36,6 +36,7 @@ Called internally by `aireadylife-brand-op-monthly-synthesis`. Not invoked direc
 ## Input
 
 - `~/Documents/AIReadyLife/vault/brand/00_current/` — mention records; each should include: platform, author, author-handle, author-follower-count, date, sentiment, content-summary, link, responded-status
+- `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/brand/config.md` — notable follower threshold, response window days
 
 ## Output Format
@@ -75,5 +76,6 @@ Required in `~/Documents/AIReadyLife/vault/brand/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/config.md`
 - Writes to: returns data to calling op; no direct file writes

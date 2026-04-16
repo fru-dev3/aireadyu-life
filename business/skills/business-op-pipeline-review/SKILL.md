@@ -41,6 +41,7 @@ Calculates MoM pipeline change: is the total opportunity book growing or shrinki
 ## Input
 
 - `~/Documents/AIReadyLife/vault/business/00_current/` — proposal and contract records
+- `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/business/02_briefs/pipeline-{prior month}.md` — prior month brief for MoM comparison
 - `~/Documents/AIReadyLife/vault/business/config.md` — follow-up threshold, minimum pipeline value target
 
@@ -83,5 +84,6 @@ Required in `~/Documents/AIReadyLife/vault/business/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/business/02_briefs/pipeline-{YYYY-MM}.md`, `~/Documents/AIReadyLife/vault/business/open-loops.md`

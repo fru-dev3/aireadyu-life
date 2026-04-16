@@ -46,6 +46,7 @@ Calls `aireadylife-content-flow-analyze-channel-performance` to run the 90-day b
 - `~/Documents/AIReadyLife/vault/content/00_current/{YYYY-MM}.md` — YouTube analytics
 - `~/Documents/AIReadyLife/vault/content/00_current/{YYYY-MM}.md` — newsletter metrics
 - `~/Documents/AIReadyLife/vault/content/00_current/{YYYY-MM}.md` — Gumroad sales
+- `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/content/config.md` — channel list, cadence targets, benchmarks
 
 ## Output Format
@@ -98,5 +99,6 @@ Required in `~/Documents/AIReadyLife/vault/content/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/content/00_current/channel-review-{YYYY-MM}.md`, `~/Documents/AIReadyLife/vault/content/open-loops.md`

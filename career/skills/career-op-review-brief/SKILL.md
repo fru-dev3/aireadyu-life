@@ -46,6 +46,7 @@ The brief is formatted for a 2-minute read — executive summary at the top, det
 - `~/Documents/AIReadyLife/vault/career/00_current/` — active application pipeline
 - `~/Documents/AIReadyLife/vault/career/00_current/` — skills gap analysis
 - `~/Documents/AIReadyLife/vault/career/00_current/status.md` — sync status
+- `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/career/open-loops.md` — all outstanding flags
 
 ## Output Format
@@ -100,5 +101,6 @@ No additional configuration beyond standard `vault/career/config.md`. Brief cade
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/career/02_briefs/`, `~/Documents/AIReadyLife/vault/career/00_current/`, `~/Documents/AIReadyLife/vault/career/00_current/`, `~/Documents/AIReadyLife/vault/career/00_current/status.md`, `~/Documents/AIReadyLife/vault/career/open-loops.md`
 - Writes to: `~/Documents/AIReadyLife/vault/career/02_briefs/YYYY-MM-career-brief.md`, `~/Documents/AIReadyLife/vault/career/open-loops.md`

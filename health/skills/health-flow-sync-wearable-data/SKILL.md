@@ -50,6 +50,7 @@ New records are appended to the unified wearable log at `vault/health/00_current
 
 - `vault/health/config.md` — wearable type, export path, API key, sync folder
 - New export file(s) in the configured sync folder (Oura JSON or Apple Health CSV/XML)
+- `vault/health/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -79,6 +80,7 @@ Required fields in `vault/health/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/health/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/health/config.md`
 - Reads from: configured export folder (typically Downloads or iCloud Drive path)
 - Writes to: `~/Documents/AIReadyLife/vault/health/00_current/wearable-log.csv`

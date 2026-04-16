@@ -48,6 +48,7 @@ Ends by triggering `aireadylife-learning-op-review-brief` with the freshly synce
 - Learning platforms via Playwright (Coursera, Udemy, LinkedIn Learning, etc.)
 - Goodreads RSS or `~/Documents/AIReadyLife/vault/learning/00_current/current-reading.md`
 - `~/Documents/AIReadyLife/vault/learning/00_current/certs.md` — certification goals and exam dates
+- `~/Documents/AIReadyLife/vault/learning/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -91,5 +92,6 @@ Required in `vault/learning/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/learning/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/learning/config.md`, `~/Documents/AIReadyLife/vault/learning/00_current/certs.md`, `~/Documents/AIReadyLife/vault/learning/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/learning/00_current/`, `~/Documents/AIReadyLife/vault/learning/00_current/`, `~/Documents/AIReadyLife/vault/learning/00_current/status.md`, `~/Documents/AIReadyLife/vault/learning/open-loops.md`

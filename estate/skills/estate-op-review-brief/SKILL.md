@@ -55,6 +55,7 @@ Action items are compiled from open-loops.md and sorted: critical (emergency mai
 - `~/Documents/AIReadyLife/vault/estate/00_current/`
 - `~/Documents/AIReadyLife/vault/estate/00_current/`
 - `~/Documents/AIReadyLife/vault/estate/00_current/`
+- `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/estate/open-loops.md`
 
 ## Output Format
@@ -98,6 +99,7 @@ Required: vault populated, config.md complete, at least one monthly sync complet
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`, `02_maintenance/`, `01_tenants/`, `00_properties/`, `open-loops.md`
 - Writes to: `~/Documents/AIReadyLife/vault/estate/02_briefs/YYYY-MM-estate-brief.md`
 - Writes to: `~/Documents/AIReadyLife/vault/estate/open-loops.md`

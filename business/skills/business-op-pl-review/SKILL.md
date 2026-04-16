@@ -46,6 +46,7 @@ Calls `aireadylife-business-task-flag-overdue-invoice` to scan the invoice file 
 
 - `~/Documents/AIReadyLife/vault/business/00_current/` — monthly revenue records
 - `~/Documents/AIReadyLife/vault/business/00_current/` — monthly expense records
+- `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/business/config.md` — entity settings, budget targets, accounting method
 - `~/Documents/AIReadyLife/vault/business/02_briefs/pl-{prior month}.md` — prior month brief for MoM comparison (optional)
 
@@ -89,5 +90,6 @@ Required in `~/Documents/AIReadyLife/vault/business/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/business/02_briefs/pl-{YYYY-MM}.md`, `~/Documents/AIReadyLife/vault/business/open-loops.md`

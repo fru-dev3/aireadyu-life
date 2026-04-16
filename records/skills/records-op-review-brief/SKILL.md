@@ -57,6 +57,7 @@ Action items are sorted by urgency across all sections. The user should be able 
 - `~/Documents/AIReadyLife/vault/records/00_current/YYYY-MM-expiration-report.md`
 - `~/Documents/AIReadyLife/vault/records/00_current/YYYY-MM-subscription-summary.md`
 - `~/Documents/AIReadyLife/vault/records/00_current/`
+- `~/Documents/AIReadyLife/vault/records/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/records/open-loops.md`
 
 ## Output Format
@@ -97,6 +98,7 @@ Required: vault populated, config.md complete, monthly sync completed at least o
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/records/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/records/00_current/`, `01_legal/`, `02_subscriptions/`, `open-loops.md`
 - Writes to: `~/Documents/AIReadyLife/vault/records/02_briefs/YYYY-MM-records-brief.md`
 - Writes to: `~/Documents/AIReadyLife/vault/records/open-loops.md`

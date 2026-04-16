@@ -41,6 +41,7 @@ This flow is the deadline aggregation engine. It discovers all installed plugins
 ## Input
 
 - ~/Documents/AIReadyLife/vault/*/open-loops.md (all installed plugins)
+- `vault/calendar/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -69,5 +70,6 @@ Optional override via calling op:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/*/open-loops.md
 - Writes to: ~/Documents/AIReadyLife/vault/calendar/00_current/ (via calling op, not directly)

@@ -35,6 +35,7 @@ Called by `aireadylife-career-op-monthly-sync` and `aireadylife-career-op-networ
 ## Input
 
 - `~/Documents/AIReadyLife/vault/career/00_current/` — all active pipeline entries
+- `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -86,5 +87,6 @@ posting_url: "[url for watch-list staleness check]"
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/career/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/career/00_current/` (archive updates)

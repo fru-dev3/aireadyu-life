@@ -46,3 +46,9 @@ None
 
 - `vault/tax/00_current/YYYY-QN-compliance.md` — per-entity compliance status table
 - `vault/tax/open-loops.md` — entity compliance gap flags and approaching deadline alerts
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/tax/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/tax/02_briefs/` — prior briefs for period-over-period context

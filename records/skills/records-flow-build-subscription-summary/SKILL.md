@@ -43,6 +43,7 @@ The output table is sorted by monthly cost descending — this prioritization en
 ## Input
 
 - `~/Documents/AIReadyLife/vault/records/00_current/subscriptions.md` — active subscription registry
+- `~/Documents/AIReadyLife/vault/records/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -74,5 +75,6 @@ Required in `~/Documents/AIReadyLife/vault/records/00_current/subscriptions.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/records/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/records/00_current/subscriptions.md`
 - Writes to: `~/Documents/AIReadyLife/vault/records/00_current/YYYY-MM-subscription-summary.md`

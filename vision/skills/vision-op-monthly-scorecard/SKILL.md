@@ -57,6 +57,7 @@ After building the scorecard, the op calls `vision-task-flag-stalled-goal` for a
 - ~/Documents/AIReadyLife/vault/vision/00_current/milestones.md (milestone log, for positive signal)
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (prior month scorecard, for trend)
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (goal list, for stall check)
+- `~/Documents/AIReadyLife/vault/vision/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/vision/config.md
 
 ## Output Format
@@ -112,5 +113,6 @@ Required in vault/vision/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/vision/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/*/open-loops.md, ~/Documents/AIReadyLife/vault/vision/00_current/, ~/Documents/AIReadyLife/vault/vision/00_current/, ~/Documents/AIReadyLife/vault/vision/00_current/
 - Writes to: ~/Documents/AIReadyLife/vault/vision/00_current/YYYY-MM-scorecard.md, ~/Documents/AIReadyLife/vault/vision/open-loops.md

@@ -58,3 +58,9 @@ Set in `vault/health/config.md`:
 - `vault/health/00_current/deductible-tracker.md` — updated balance
 - `vault/health/00_current/hsa-balance.md` — updated balance
 - `vault/health/02_briefs/YYYY-MM-health-brief.md` — monthly review brief (produced by triggered op)
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/health/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/health/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/health/02_briefs/` — prior briefs for period-over-period context

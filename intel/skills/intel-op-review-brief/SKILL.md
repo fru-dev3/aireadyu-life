@@ -44,6 +44,7 @@ The resulting brief has three sections: today's top stories, ongoing thread upda
 - `~/Documents/AIReadyLife/vault/intel/config.md` — topics, sources, priorities
 - `~/Documents/AIReadyLife/vault/intel/00_current/source-list.md` — source registry
 - `~/Documents/AIReadyLife/vault/intel/00_current/` — active story threads
+- `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/intel/open-loops.md` — outstanding priority flags
 - `~/Documents/AIReadyLife/vault/intel/02_briefs/` — prior briefs for thread context
 
@@ -84,5 +85,6 @@ Same as intel-op-daily-briefing. No additional configuration required.
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/intel/config.md`, `~/Documents/AIReadyLife/vault/intel/00_current/`, `~/Documents/AIReadyLife/vault/intel/00_current/`, `~/Documents/AIReadyLife/vault/intel/open-loops.md`
 - Writes to: `~/Documents/AIReadyLife/vault/intel/02_briefs/{YYYY-MM-DD}-morning.md`, `~/Documents/AIReadyLife/vault/intel/open-loops.md`

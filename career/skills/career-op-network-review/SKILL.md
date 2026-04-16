@@ -44,6 +44,7 @@ The op also scans for new first-degree connections added in the last 30 days and
 
 - `~/Documents/AIReadyLife/vault/career/` — contact log with relationship recency data
 - `~/Documents/AIReadyLife/vault/career/00_current/` — active pipeline for contact overlap check
+- `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/career/config.md` — target companies and industries for contact prioritization
 
 ## Output Format
@@ -91,5 +92,6 @@ Contact records should be stored in `vault/career/` with fields: name, current c
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/career/` (contact log), `~/Documents/AIReadyLife/vault/career/00_current/`, `~/Documents/AIReadyLife/vault/career/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/career/02_briefs/`, `~/Documents/AIReadyLife/vault/career/open-loops.md`, `~/Documents/AIReadyLife/vault/career/` (contact log updates)

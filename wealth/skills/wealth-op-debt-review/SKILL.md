@@ -41,3 +41,9 @@ None
 
 - `vault/wealth/00_current/YYYY-MM-debt-summary.md` — debt table with payoff timelines and scenarios
 - `vault/wealth/open-loops.md` — milestone flags and DTI alerts
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/02_briefs/` — prior briefs for period-over-period context

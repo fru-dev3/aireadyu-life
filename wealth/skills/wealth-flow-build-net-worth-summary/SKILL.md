@@ -57,6 +57,7 @@ Reads all account balance records from `vault/wealth/00_current/` — one file p
 
 - `vault/wealth/00_current/` — one file per account with current and prior balance
 - `vault/wealth/00_current/` — all liability records
+- `vault/wealth/01_prior/` — prior period records for trend comparison
 - `vault/wealth/02_briefs/` — prior month net worth file (for MoM comparison)
 - `vault/wealth/config.md` — real estate estimated values, account type classifications
 
@@ -84,6 +85,7 @@ Required fields in `vault/wealth/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/` (all account files)
 - Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/` (all liability files)
 - Reads from: `~/Documents/AIReadyLife/vault/wealth/02_briefs/` (prior month file)

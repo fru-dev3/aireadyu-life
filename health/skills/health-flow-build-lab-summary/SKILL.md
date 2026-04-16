@@ -52,6 +52,7 @@ The output document deliberately contains no free-text narrative about what valu
 
 - `vault/health/00_current/YYYY-MM-*.pdf` or `vault/health/00_current/YYYY-MM-*.md` — incoming lab result (newest file)
 - `vault/health/00_current/` — prior panel files for trend comparison
+- `vault/health/01_prior/` — prior period records for trend comparison
 - `vault/health/config.md` — provider-configured reference range overrides (e.g., LDL target <70 if cardiac history noted)
 
 ## Output Format
@@ -79,6 +80,7 @@ Required fields in `vault/health/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/health/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/health/00_current/` (all files)
 - Reads from: `~/Documents/AIReadyLife/vault/health/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/health/00_current/YYYY-MM-lab-summary.md`

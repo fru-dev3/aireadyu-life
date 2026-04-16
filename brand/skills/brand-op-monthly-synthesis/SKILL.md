@@ -50,6 +50,7 @@ Tracks the health score trend: current month vs. prior 3 months average. A score
 - `~/Documents/AIReadyLife/vault/brand/00_current/` — content log for cadence evaluation
 - `~/Documents/AIReadyLife/vault/brand/config.md` — platforms, posting targets, scoring weights
 - `~/Documents/AIReadyLife/vault/brand/00_current/synthesis-{prior YYYY-MM}.md` — prior month score for trend
+- `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -96,5 +97,6 @@ Required in `~/Documents/AIReadyLife/vault/brand/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/brand/00_current/synthesis-{YYYY-MM}.md`, `~/Documents/AIReadyLife/vault/brand/open-loops.md`

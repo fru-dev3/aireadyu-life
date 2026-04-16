@@ -36,6 +36,7 @@ Called internally by `aireadylife-business-op-compliance-review` and `aireadylif
 
 - `~/Documents/AIReadyLife/vault/business/00_current/compliance-checklist.md` — master list of all entity obligations with frequencies and dates
 - `~/Documents/AIReadyLife/vault/business/00_current/` — backing documentation files (annual report confirmations, registered agent receipts, etc.)
+- `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/business/config.md` — entity list, states of formation, registered agent name and address
 
 ## Output Format
@@ -70,5 +71,6 @@ Required in `~/Documents/AIReadyLife/vault/business/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/business/00_current/compliance-checklist.md`, `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/config.md`
 - Writes to: called by ops that write to `~/Documents/AIReadyLife/vault/business/02_briefs/`

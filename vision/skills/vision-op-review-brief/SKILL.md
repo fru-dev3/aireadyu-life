@@ -57,6 +57,7 @@ The brief is designed to be read in under 5 minutes and to produce no more than 
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (most recent monthly scorecard)
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (current quarter OKRs)
 - ~/Documents/AIReadyLife/vault/calendar/00_current/ (if calendar plugin installed, for alignment check)
+- `~/Documents/AIReadyLife/vault/vision/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/*/open-loops.md (for on-demand scorecard if needed)
 - ~/Documents/AIReadyLife/vault/vision/config.md
 
@@ -103,5 +104,6 @@ Required in vault/vision/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/vision/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/vision/00_current/, ~/Documents/AIReadyLife/vault/vision/00_current/, ~/Documents/AIReadyLife/vault/calendar/00_current/, ~/Documents/AIReadyLife/vault/*/open-loops.md
 - Writes to: ~/Documents/AIReadyLife/vault/vision/02_briefs/YYYY-MM-vision-brief.md

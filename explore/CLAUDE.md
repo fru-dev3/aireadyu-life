@@ -33,12 +33,7 @@ If `~/Documents/AIReadyLife/vault/explore/` does not exist or is empty:
 
 ## Skills
 
-Skills are organized under `domains/explore/skills/`:
-
-- `00_ops/` — recurring operations (reviews, syncs, watches)
-- `01_flows/` — data flows that build summaries and reports
-- `02_tasks/` — atomic write tasks (flag, log, update)
-- `apps/` — app integrations
+Skills are located under `explore/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
 ## Checking Vault Status
 

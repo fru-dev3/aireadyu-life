@@ -44,6 +44,7 @@ Manages insurance claims from the moment an incident occurs through final settle
 
 - `~/Documents/AIReadyLife/vault/insurance/00_current/` — active and recent claims log
 - `~/Documents/AIReadyLife/vault/insurance/00_current/` — policy documents for coverage verification
+- `~/Documents/AIReadyLife/vault/insurance/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/insurance/config.md` — carrier contact information
 
 ## Output Format
@@ -91,5 +92,6 @@ Claim log entries at `vault/insurance/00_current/` with fields: claim_number, po
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/insurance/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/insurance/00_current/`, `~/Documents/AIReadyLife/vault/insurance/00_current/`, `~/Documents/AIReadyLife/vault/insurance/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/insurance/00_current/`, `~/Documents/AIReadyLife/vault/insurance/open-loops.md`

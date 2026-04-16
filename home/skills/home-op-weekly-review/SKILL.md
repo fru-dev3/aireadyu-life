@@ -49,6 +49,7 @@ When the op does identify items, it writes a brief weekly snapshot with only the
 
 - `~/Documents/AIReadyLife/vault/home/00_current/`
 - `~/Documents/AIReadyLife/vault/home/00_current/` (prior week's snapshot for comparison)
+- `~/Documents/AIReadyLife/vault/home/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -76,5 +77,6 @@ No additional configuration required beyond vault existing and seasonal checklis
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/home/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/home/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/home/00_current/weekly-snapshot.md` (only when items flagged)

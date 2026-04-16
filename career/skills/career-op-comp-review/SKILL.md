@@ -49,6 +49,7 @@ All output is saved to `vault/career/02_briefs/` and all flags are appended to `
 
 - `~/Documents/AIReadyLife/vault/career/config.md` — role, level, company, metro, bonus structure
 - `~/Documents/AIReadyLife/vault/career/00_current/` — pay stubs, equity grant docs, offer letter
+- `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records for trend comparison
 - Market data from Levels.fyi, Glassdoor, LinkedIn Salary (pulled live or from cached vault files)
 
 ## Output Format
@@ -90,5 +91,6 @@ Required fields in `vault/career/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/career/config.md`, `~/Documents/AIReadyLife/vault/career/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/career/02_briefs/`, `~/Documents/AIReadyLife/vault/career/open-loops.md`, `~/Documents/AIReadyLife/vault/career/00_current/bench-history.md`

@@ -56,6 +56,7 @@ The brief is designed to be specific and executable — not a list of "you shoul
 - ~/Documents/AIReadyLife/vault/social/00_current/contacts.md
 - ~/Documents/AIReadyLife/vault/social/00_current/ (interaction log for last-contact dates)
 - ~/Documents/AIReadyLife/vault/social/00_current/ (birthday and milestone calendar)
+- `~/Documents/AIReadyLife/vault/social/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/social/open-loops.md
 - ~/Documents/AIReadyLife/vault/social/config.md
 
@@ -114,5 +115,6 @@ Required in vault/social/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/social/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/social/00_current/contacts.md, ~/Documents/AIReadyLife/vault/social/00_current/, ~/Documents/AIReadyLife/vault/social/00_current/, ~/Documents/AIReadyLife/vault/social/open-loops.md
 - Writes to: ~/Documents/AIReadyLife/vault/social/02_briefs/YYYY-MM-DD-social-brief.md, ~/Documents/AIReadyLife/vault/social/open-loops.md

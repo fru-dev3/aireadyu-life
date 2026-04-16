@@ -40,6 +40,7 @@ This flow receives pre-collected inputs from the calling op — deadline items, 
 - Deadline items list (from calendar-flow-collect-deadlines, via calling op)
 - Calendar event data and available focus slots (from calendar-flow-analyze-focus-time, via calling op)
 - High-priority open loops from all installed plugins (via calling op)
+- `vault/calendar/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -87,5 +88,6 @@ This flow receives pre-collected inputs from the calling op — deadline items, 
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records
 - Reads from: inputs passed by calling op (no direct vault reads)
 - Writes to: ~/Documents/AIReadyLife/vault/calendar/00_current/YYYY-MM-DD-week-agenda.md (via calling op)

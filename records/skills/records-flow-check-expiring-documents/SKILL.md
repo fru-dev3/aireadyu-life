@@ -51,6 +51,7 @@ The flow processes six document categories with distinct expiration and renewal 
 
 - `~/Documents/AIReadyLife/vault/records/00_current/` — identity document records
 - `~/Documents/AIReadyLife/vault/records/00_current/` — legal document records
+- `~/Documents/AIReadyLife/vault/records/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/records/config.md` — household members, recent life events
 
 ## Output Format
@@ -83,6 +84,7 @@ Required in `~/Documents/AIReadyLife/vault/records/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/records/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/records/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/records/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/records/config.md`

@@ -37,6 +37,7 @@ Called internally by `aireadylife-brand-op-monthly-synthesis` and `aireadylife-b
 - `~/Documents/AIReadyLife/vault/brand/00_current/{platform}-{YYYY-MM}.md` — monthly analytics snapshot per platform; fields: followers, impressions, engagements
 - `~/Documents/AIReadyLife/vault/brand/00_current/{platform}-{prior YYYY-MM}.md` — prior month for MoM comparison
 - `~/Documents/AIReadyLife/vault/brand/00_current/` — content performance log for top content identification
+- `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/brand/config.md` — configured platforms, engagement rate benchmarks
 
 ## Output Format
@@ -80,5 +81,6 @@ Required file naming convention in `01_analytics/`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/config.md`
 - Writes to: returns data to calling op; no direct file writes

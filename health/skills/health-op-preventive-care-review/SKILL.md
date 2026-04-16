@@ -39,3 +39,9 @@ None
 
 - `vault/health/00_current/care-schedule.md` — updated with last-review date and status per item
 - `vault/health/open-loops.md` — new care gap flags appended
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/health/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/health/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/health/02_briefs/` — prior briefs for period-over-period context

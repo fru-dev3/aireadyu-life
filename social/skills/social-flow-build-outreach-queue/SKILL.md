@@ -47,6 +47,7 @@ This flow builds the outreach queue — the list of specific people to reach out
 - Relationship health data from calling op (contacts, tiers, days since contact, health status)
 - ~/Documents/AIReadyLife/vault/social/00_current/ (for birthday check)
 - ~/Documents/AIReadyLife/vault/social/00_current/ (for context generation)
+- `~/Documents/AIReadyLife/vault/social/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -75,5 +76,6 @@ Optional in vault/social/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/social/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/social/00_current/, ~/Documents/AIReadyLife/vault/social/00_current/
 - Writes to: none (returns data to calling op)

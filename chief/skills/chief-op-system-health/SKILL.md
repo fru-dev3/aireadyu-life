@@ -56,6 +56,7 @@ The health report also runs a configuration check: it verifies that vault/chief/
 - ~/Documents/AIReadyLife/vault/*/state.md
 - ~/Documents/AIReadyLife/vault/*/open-loops.md
 - ~/Documents/AIReadyLife/vault/chief/00_current/ (persistent 🔴 item tracker)
+- `~/Documents/AIReadyLife/vault/chief/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/chief/02_briefs/ (prior brief archive for trend comparison)
 - ~/Documents/AIReadyLife/vault/chief/config.md
 
@@ -101,5 +102,6 @@ Required fields in vault/chief/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/chief/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/ (all), ~/Documents/AIReadyLife/vault/*/state.md, ~/Documents/AIReadyLife/vault/*/open-loops.md, ~/Documents/AIReadyLife/vault/chief/00_current/, ~/Documents/AIReadyLife/vault/chief/02_briefs/
 - Writes to: ~/Documents/AIReadyLife/vault/chief/00_current/health-YYYY-MM-DD.md
