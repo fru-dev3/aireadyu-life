@@ -54,6 +54,7 @@ Runs once per year (January is the standard timing) or immediately after a major
 
 - `~/Documents/AIReadyLife/vault/insurance/config.md` — income, net worth, dependents, properties, vehicles
 - `~/Documents/AIReadyLife/vault/insurance/00_current/` — all active policy documents
+- `~/Documents/AIReadyLife/vault/insurance/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -116,5 +117,6 @@ Required in `vault/insurance/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/insurance/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/insurance/config.md`, `~/Documents/AIReadyLife/vault/insurance/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/insurance/00_current/coverage-audit-YYYY.md`, `~/Documents/AIReadyLife/vault/insurance/open-loops.md`

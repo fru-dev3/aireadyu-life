@@ -39,3 +39,9 @@ All anomalies detected are passed to `aireadylife-health-update-open-loops` with
 
 - `vault/health/00_current/wearable-log.csv` — updated with latest data
 - `vault/health/open-loops.md` — new anomaly flags appended
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/health/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/health/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/health/02_briefs/` — prior briefs for period-over-period context

@@ -48,3 +48,9 @@ The op flags the payment with the due date and specific payment method: IRS Dire
 
 - `vault/tax/00_current/YYYY-QN-estimate.md` — full estimated tax calculation with both methods
 - `vault/tax/open-loops.md` — payment due flag with amount, deadline, and method
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/tax/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/tax/02_briefs/` — prior briefs for period-over-period context

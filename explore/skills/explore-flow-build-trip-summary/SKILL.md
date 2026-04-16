@@ -39,6 +39,7 @@ This flow reads a specific trip record from vault/explore/00_current/ and assemb
 ## Input
 
 - ~/Documents/AIReadyLife/vault/explore/00_current/{trip-file.md}
+- `~/Documents/AIReadyLife/vault/explore/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -74,5 +75,6 @@ No configuration required. Trip record file format determines parsing.
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/explore/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/explore/00_current/{trip-file.md}
 - Writes to: none (returns data to calling op)

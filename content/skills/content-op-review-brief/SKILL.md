@@ -40,6 +40,7 @@ If the monthly channel review, revenue review, or SEO review have not yet been r
 - `~/Documents/AIReadyLife/vault/content/00_current/channel-review-{YYYY-MM}.md`
 - `~/Documents/AIReadyLife/vault/content/00_current/revenue-{YYYY-MM}.md`
 - `~/Documents/AIReadyLife/vault/content/00_current/seo-review-{YYYY-MM}.md`
+- `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/content/open-loops.md`
 - `~/Documents/AIReadyLife/vault/content/config.md`
 
@@ -84,5 +85,6 @@ Same as constituent ops (channel review, revenue review, SEO review). No additio
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/content/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/00_current/`, `~/Documents/AIReadyLife/vault/content/open-loops.md`, `~/Documents/AIReadyLife/vault/content/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/content/02_briefs/{YYYY-MM}-content-brief.md`

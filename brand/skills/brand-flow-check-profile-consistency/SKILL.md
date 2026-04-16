@@ -36,6 +36,7 @@ Called internally by `aireadylife-brand-op-profile-audit`. Not invoked directly 
 
 - `~/Documents/AIReadyLife/vault/brand/00_current/master-profile.md` — canonical brand identity fields
 - `~/Documents/AIReadyLife/vault/brand/00_current/{platform}.md` — per-platform current-state snapshots
+- `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/brand/config.md` — list of configured platforms, platform-specific override fields
 
 ## Output Format
@@ -75,5 +76,6 @@ Required in `~/Documents/AIReadyLife/vault/brand/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/config.md`
 - Writes to: returns data to calling op; no direct file writes

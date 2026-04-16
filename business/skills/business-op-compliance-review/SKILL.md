@@ -46,6 +46,7 @@ Checks for backing documentation — a filed annual report should have a confirm
 - `~/Documents/AIReadyLife/vault/business/00_current/` — backing documentation
 - `~/Documents/AIReadyLife/vault/business/config.md` — entity list, states, registered agent details
 - `~/Documents/AIReadyLife/vault/business/00_current/` — contractor payment records for 1099 threshold check
+- `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -86,5 +87,6 @@ Required in `~/Documents/AIReadyLife/vault/business/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/config.md`, `~/Documents/AIReadyLife/vault/business/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/business/02_briefs/compliance-{Q}-{YYYY}.md`, `~/Documents/AIReadyLife/vault/business/open-loops.md`

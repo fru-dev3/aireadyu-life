@@ -40,6 +40,7 @@ Called internally by `aireadylife-intel-op-topic-deep-dive`. Not invoked directl
 - `~/Documents/AIReadyLife/vault/intel/00_current/` — existing thread files on related topics
 - `~/Documents/AIReadyLife/vault/intel/02_briefs/` — prior briefs for context and history
 - `~/Documents/AIReadyLife/vault/intel/00_current/source-list.md` — source registry for credibility reference
+- `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/intel/config.md` — topic priorities for relevance weighting
 
 ## Output Format
@@ -92,5 +93,6 @@ Required in `~/Documents/AIReadyLife/vault/intel/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/intel/00_current/`, `~/Documents/AIReadyLife/vault/intel/02_briefs/`, `~/Documents/AIReadyLife/vault/intel/00_current/`, `~/Documents/AIReadyLife/vault/intel/config.md`
 - Writes to: called by ops that write to `~/Documents/AIReadyLife/vault/intel/00_current/` or `01_briefs/`

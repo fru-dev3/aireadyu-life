@@ -47,6 +47,7 @@ Routes market-moving stories (Federal Reserve actions, significant earnings rele
 - `~/Documents/AIReadyLife/vault/intel/00_current/source-list.md` — source registry
 - `~/Documents/AIReadyLife/vault/intel/config.md` — topics, keywords, source priorities
 - `~/Documents/AIReadyLife/vault/intel/00_current/` — active story threads for update
+- `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records for trend comparison
 - Recent article data from configured sources
 
 ## Output Format
@@ -95,5 +96,6 @@ Required in `~/Documents/AIReadyLife/vault/intel/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/intel/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/intel/00_current/`, `~/Documents/AIReadyLife/vault/intel/config.md`, `~/Documents/AIReadyLife/vault/intel/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/intel/02_briefs/{YYYY-MM-DD}-morning.md`, `~/Documents/AIReadyLife/vault/intel/00_current/` (thread updates), `~/Documents/AIReadyLife/vault/intel/open-loops.md`

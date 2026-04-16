@@ -52,6 +52,7 @@ Buy-window signals are flagged when three or more of the following conditions ex
 
 - `~/Documents/AIReadyLife/vault/real-estate/config.md` — target markets, search filters
 - `~/Documents/AIReadyLife/vault/real-estate/00_current/` — prior snapshots for comparison
+- `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records for trend comparison
 - Live market data from Zillow or Redfin (via web research)
 
 ## Output Format
@@ -83,6 +84,7 @@ Required fields in `~/Documents/AIReadyLife/vault/real-estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/config.md`
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/00_current/` (prior snapshots)
 - Writes to: `~/Documents/AIReadyLife/vault/real-estate/00_current/YYYY-MM-market-report.md`

@@ -57,6 +57,7 @@ The completed weekly agenda is written to vault/chief/00_current/week-YYYY-MM-DD
 - ~/Documents/AIReadyLife/vault/*/open-loops.md (all installed plugin vaults)
 - ~/Documents/AIReadyLife/vault/calendar/ (if calendar plugin installed, for meeting load data)
 - ~/Documents/AIReadyLife/vault/vision/00_current/ (if vision plugin installed, for OKR alignment)
+- `vault/chief/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/chief/config.md
 
 ## Output Format
@@ -106,5 +107,6 @@ Required fields in vault/chief/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/chief/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/*/open-loops.md, ~/Documents/AIReadyLife/vault/calendar/, ~/Documents/AIReadyLife/vault/vision/00_current/
 - Writes to: ~/Documents/AIReadyLife/vault/chief/00_current/week-YYYY-MM-DD.md

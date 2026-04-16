@@ -58,6 +58,7 @@ The headline figure — total monthly subscription spend — is always shown pro
 ## Input
 
 - `~/Documents/AIReadyLife/vault/records/00_current/subscriptions.md`
+- `~/Documents/AIReadyLife/vault/records/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -90,6 +91,7 @@ Required in `~/Documents/AIReadyLife/vault/records/00_current/subscriptions.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/records/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/records/00_current/subscriptions.md`
 - Writes to: `~/Documents/AIReadyLife/vault/records/00_current/YYYY-MM-subscription-review.md`
 - Writes to: `~/Documents/AIReadyLife/vault/records/open-loops.md`

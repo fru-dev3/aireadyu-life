@@ -38,6 +38,7 @@ Called by `aireadylife-benefits-op-401k-review` to produce the investment alloca
 - `~/Documents/AIReadyLife/vault/benefits/config.md` — match formula, vesting schedule, tenure, target retirement age
 - `~/Documents/AIReadyLife/vault/benefits/00_current/` — most recent 401k statement
 - `~/Documents/AIReadyLife/vault/benefits/00_current/target-allocation.md` — desired fund allocation
+- `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -92,5 +93,6 @@ Required in `vault/benefits/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/benefits/config.md`, `~/Documents/AIReadyLife/vault/benefits/00_current/`
 - Writes to: None (returns data to calling op)

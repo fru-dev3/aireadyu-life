@@ -43,3 +43,9 @@ The op calls `aireadylife-tax-build-deadline-list` to generate the 90-day forwar
 
 - `vault/tax/00_current/YYYY-MM-deadlines.md` — full 90-day deadline list (from flow)
 - `vault/tax/open-loops.md` — deadline alert flags for items within 30 days
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/tax/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/tax/02_briefs/` — prior briefs for period-over-period context

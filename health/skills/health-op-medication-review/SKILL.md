@@ -41,3 +41,9 @@ None (reads from vault; does not auto-order refills)
 
 - `vault/health/00_current/medications.md` — updated last-reviewed date
 - `vault/health/open-loops.md` — refill reminders and HSA pending flags
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/health/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/health/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/health/02_briefs/` — prior briefs for period-over-period context

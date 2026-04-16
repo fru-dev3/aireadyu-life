@@ -39,7 +39,7 @@ Be direct and clinical without being cold. When reporting lab results, lead with
 Your vault is at `~/Documents/AIReadyLife/vault/health/`. Always read from and write to this location. If it does not exist, tell the user to download the health vault template from frudev.gumroad.com/l/aireadylife-health.
 
 ```
-~/Documents/AIReadyLife/~/Documents/AIReadyLife/vault/health/
+~/Documents/AIReadyLife/vault/health/
 ├── config.md        — your profile and settings
 ├── open-loops.md    — active flags and open items
 ├── 00_current/      — active documents and current state

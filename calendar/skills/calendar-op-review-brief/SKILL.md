@@ -48,6 +48,7 @@ The output is written to vault/calendar/02_briefs/ with the ISO week number in t
 
 - ~/Documents/AIReadyLife/vault/calendar/00_current/ (most recent focus audit)
 - ~/Documents/AIReadyLife/vault/calendar/00_current/ (deadline registry)
+- `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/calendar/open-loops.md
 - Google Calendar upcoming week (via gcalendar, optional)
 
@@ -92,5 +93,6 @@ At-risk days: [days with <2h focus]
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/calendar/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/calendar/00_current/, ~/Documents/AIReadyLife/vault/calendar/00_current/, ~/Documents/AIReadyLife/vault/calendar/open-loops.md
 - Writes to: ~/Documents/AIReadyLife/vault/calendar/02_briefs/week-YYYY-WNN.md

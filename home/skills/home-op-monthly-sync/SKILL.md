@@ -51,6 +51,7 @@ The sync also checks for any time-sensitive renewals: if the home is a rental, l
 - `~/Documents/AIReadyLife/vault/home/config.md`
 - `~/Documents/AIReadyLife/vault/home/00_current/`
 - `~/Documents/AIReadyLife/vault/home/00_current/YYYY-MM-expenses.md`
+- `~/Documents/AIReadyLife/vault/home/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/home/open-loops.md`
 
 ## Output Format
@@ -78,6 +79,7 @@ Required in `~/Documents/AIReadyLife/vault/home/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/home/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/home/config.md`, `01_maintenance/`, `02_expenses/`, `open-loops.md`
 - Writes to: `~/Documents/AIReadyLife/vault/home/00_current/last-sync.md`
 - Writes to: `~/Documents/AIReadyLife/vault/home/02_briefs/YYYY-MM-home-brief.md`

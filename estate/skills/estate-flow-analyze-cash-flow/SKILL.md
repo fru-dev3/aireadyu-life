@@ -44,6 +44,7 @@ Key health metrics calculated: expense ratio (total operating expenses ÷ gross 
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — property records (purchase price, current value, mortgage P&I, insurance premium, annual taxes, total cash invested)
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — scheduled rent and payment history per unit
 - `~/Documents/AIReadyLife/vault/estate/00_current/{property-slug}-expenses.md` — logged variable expenses for the period
+- `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -74,6 +75,7 @@ Required in `~/Documents/AIReadyLife/vault/estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`

@@ -41,3 +41,9 @@ The op concludes by calling `aireadylife-health-update-open-loops` to consolidat
 
 - `vault/health/00_current/YYYY-MM-lab-summary.md` — formatted lab summary
 - `vault/health/open-loops.md` — out-of-range biomarker flags
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/health/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/health/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/health/02_briefs/` — prior briefs for period-over-period context

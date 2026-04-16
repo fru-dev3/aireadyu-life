@@ -43,6 +43,7 @@ This flow receives the pre-collected domain alerts and calendar items from the c
 - Sorted domain alerts list (from chief-flow-collect-domain-alerts)
 - Per-domain status records (from chief-task-pull-domain-status)
 - Calendar items for today (passed by calling op from vault/calendar/)
+- `vault/chief/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -90,5 +91,6 @@ This flow receives the pre-collected domain alerts and calendar items from the c
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/chief/01_prior/` — prior period records
 - Reads from: inputs passed by calling op (no direct vault reads)
 - Writes to: ~/Documents/AIReadyLife/vault/chief/02_briefs/daily-YYYY-MM-DD.md (via calling op)

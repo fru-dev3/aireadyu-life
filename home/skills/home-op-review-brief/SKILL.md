@@ -56,6 +56,7 @@ For homeowners, the brief optionally includes a home value section: the most rec
 
 - `~/Documents/AIReadyLife/vault/home/00_current/`
 - `~/Documents/AIReadyLife/vault/home/00_current/YYYY-MM-expenses.md`
+- `~/Documents/AIReadyLife/vault/home/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/home/open-loops.md`
 - `~/Documents/AIReadyLife/vault/home/config.md`
 
@@ -102,6 +103,7 @@ Required in `~/Documents/AIReadyLife/vault/home/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/home/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/home/00_current/`, `02_expenses/`, `open-loops.md`, `config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/home/02_briefs/YYYY-MM-DD-home-brief.md`
 - Writes to: `~/Documents/AIReadyLife/vault/home/open-loops.md`

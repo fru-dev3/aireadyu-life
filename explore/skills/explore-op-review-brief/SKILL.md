@@ -45,6 +45,7 @@ The brief is structured around four sections. Section 1 — Upcoming Trips: list
 - ~/Documents/AIReadyLife/vault/explore/00_current/
 - ~/Documents/AIReadyLife/vault/explore/00_current/
 - ~/Documents/AIReadyLife/vault/explore/00_current/
+- `~/Documents/AIReadyLife/vault/explore/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/explore/open-loops.md
 - ~/Documents/AIReadyLife/vault/explore/config.md
 
@@ -92,5 +93,6 @@ Required in vault/explore/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/explore/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/explore/00_current/, ~/Documents/AIReadyLife/vault/explore/00_current/, ~/Documents/AIReadyLife/vault/explore/00_current/, ~/Documents/AIReadyLife/vault/explore/open-loops.md
 - Writes to: ~/Documents/AIReadyLife/vault/explore/02_briefs/YYYY-MM-explore-brief.md

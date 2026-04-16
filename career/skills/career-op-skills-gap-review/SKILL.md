@@ -49,6 +49,7 @@ The quarterly cadence prevents the list from shifting so frequently it loses foc
 
 - `~/Documents/AIReadyLife/vault/career/00_current/skills.md` — current skills inventory with proficiency levels
 - `~/Documents/AIReadyLife/vault/career/00_current/` — last 3 months of market scan required skills data
+- `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/career/config.md` — target roles context
 
 ## Output Format
@@ -107,5 +108,6 @@ notes: [optional context]
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/career/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/career/00_current/skills.md`, `~/Documents/AIReadyLife/vault/career/00_current/`, `~/Documents/AIReadyLife/vault/career/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/career/00_current/YYYY-QN-skills-gap.md`, `~/Documents/AIReadyLife/vault/career/open-loops.md`

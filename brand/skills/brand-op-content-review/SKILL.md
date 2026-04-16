@@ -45,6 +45,7 @@ Surfaces content gaps: any platform that had zero output in the prior month, and
 
 - `~/Documents/AIReadyLife/vault/brand/00_current/` — content log for the period; each entry: platform, date, format, title, topic-pillar, engagement-metrics
 - `~/Documents/AIReadyLife/vault/brand/00_current/` — monthly platform analytics
+- `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/brand/config.md` — cadence targets per platform, content pillars list
 
 ## Output Format
@@ -92,5 +93,6 @@ Required in `~/Documents/AIReadyLife/vault/brand/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/brand/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/00_current/`, `~/Documents/AIReadyLife/vault/brand/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/brand/02_briefs/content-review-{YYYY-MM}.md`, `~/Documents/AIReadyLife/vault/brand/open-loops.md`

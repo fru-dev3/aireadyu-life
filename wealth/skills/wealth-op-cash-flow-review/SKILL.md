@@ -39,3 +39,9 @@ None (reads from vault; Monarch Money CSV export or bank transaction files must 
 
 - `vault/wealth/00_current/YYYY-MM-cashflow.md` — full cash flow summary
 - `vault/wealth/open-loops.md` — budget variance flags and savings rate alerts
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/02_briefs/` — prior briefs for period-over-period context

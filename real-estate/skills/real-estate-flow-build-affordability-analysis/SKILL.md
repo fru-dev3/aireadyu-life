@@ -41,6 +41,7 @@ The flow also calculates the 20% down payment amount required to avoid PMI, so t
 
 - `~/Documents/AIReadyLife/vault/real-estate/config.md` — gross monthly income, monthly debts, available down payment, target down payment %, current 30-year fixed rate, local property tax rate
 - `~/Documents/AIReadyLife/vault/real-estate/00_current/` — prior month worksheet (for MoM comparison)
+- `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -89,6 +90,7 @@ Required fields in `~/Documents/AIReadyLife/vault/real-estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/real-estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/config.md`
 - Reads from: `~/Documents/AIReadyLife/vault/real-estate/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/real-estate/00_current/YYYY-MM-affordability.md`

@@ -47,6 +47,7 @@ This flow is the measurement engine for the social domain. It joins the contact 
 
 - ~/Documents/AIReadyLife/vault/social/00_current/contacts.md
 - ~/Documents/AIReadyLife/vault/social/00_current/ (all interaction logs)
+- `~/Documents/AIReadyLife/vault/social/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/social/config.md (tier thresholds)
 
 ## Output Format
@@ -87,5 +88,6 @@ Required in vault/social/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/social/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/social/00_current/contacts.md, ~/Documents/AIReadyLife/vault/social/00_current/, ~/Documents/AIReadyLife/vault/social/config.md
 - Writes to: none (returns data to calling op)

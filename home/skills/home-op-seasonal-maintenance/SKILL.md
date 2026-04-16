@@ -58,6 +58,7 @@ The op calculates total estimated seasonal maintenance cost across all planned t
 ## Input
 
 - `~/Documents/AIReadyLife/vault/home/00_current/` — maintenance history
+- `~/Documents/AIReadyLife/vault/home/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/home/config.md` — vendor assignments, home type details, HVAC filter type, irrigation/chimney presence
 
 ## Output Format
@@ -89,6 +90,7 @@ Required in `~/Documents/AIReadyLife/vault/home/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/home/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/home/00_current/`, `config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/home/00_current/YYYY-{season}-checklist.md`
 - Writes to: `~/Documents/AIReadyLife/vault/home/open-loops.md`

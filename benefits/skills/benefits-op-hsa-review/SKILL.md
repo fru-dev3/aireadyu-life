@@ -47,6 +47,7 @@ Runs monthly to maximize the value of your HSA — the only triple-tax-advantage
 
 - `~/Documents/AIReadyLife/vault/benefits/config.md` — coverage tier, employer contribution, investment threshold
 - `~/Documents/AIReadyLife/vault/benefits/00_current/` — statements, pending-reimbursements.md
+- `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -109,5 +110,6 @@ notes: "[optional]"
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/benefits/config.md`, `~/Documents/AIReadyLife/vault/benefits/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/benefits/00_current/hsa-review-YYYY-MM.md`, `~/Documents/AIReadyLife/vault/benefits/open-loops.md`

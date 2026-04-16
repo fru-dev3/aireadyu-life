@@ -49,6 +49,7 @@ Runs monthly to ensure your 401k is capturing every employer match dollar availa
 
 - `~/Documents/AIReadyLife/vault/benefits/config.md` — employer, match formula, match cap, vesting schedule
 - `~/Documents/AIReadyLife/vault/benefits/00_current/` — 401k statements, target-allocation.md
+- `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -107,5 +108,6 @@ Maintain `vault/benefits/00_current/target-allocation.md` with desired fund allo
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/benefits/config.md`, `~/Documents/AIReadyLife/vault/benefits/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/benefits/00_current/401k-review-YYYY-MM.md`, `~/Documents/AIReadyLife/vault/benefits/open-loops.md`

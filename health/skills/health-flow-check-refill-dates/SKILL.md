@@ -49,6 +49,7 @@ HSA eligibility is checked against the IRS Publication 502 category list: all pr
 ## Input
 
 - `vault/health/00_current/medications.md` — active medication list with fill metadata
+- `vault/health/01_prior/` — prior period records for trend comparison
 - `vault/health/config.md` — any pharmacy-specific buffer overrides
 
 ## Output Format
@@ -73,6 +74,7 @@ Required fields in `vault/health/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/health/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/health/00_current/medications.md`
 - Reads from: `~/Documents/AIReadyLife/vault/health/config.md`
 - Writes to: None (returns data to calling op)

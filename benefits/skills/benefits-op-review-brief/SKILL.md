@@ -46,6 +46,7 @@ The brief also monitors the benefits calendar for upcoming events: enrollment wi
 
 - `~/Documents/AIReadyLife/vault/benefits/00_current/` — most recent 401k review
 - `~/Documents/AIReadyLife/vault/benefits/00_current/` — most recent HSA review
+- `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/benefits/02_briefs/` — most recent coverage audit
 - `~/Documents/AIReadyLife/vault/benefits/open-loops.md` — all outstanding flags
 - `~/Documents/AIReadyLife/vault/benefits/config.md` — benefits calendar events
@@ -100,5 +101,6 @@ No additional configuration beyond standard `vault/benefits/config.md`. If sub-d
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/benefits/00_current/`, `~/Documents/AIReadyLife/vault/benefits/00_current/`, `~/Documents/AIReadyLife/vault/benefits/02_briefs/`, `~/Documents/AIReadyLife/vault/benefits/open-loops.md`, `~/Documents/AIReadyLife/vault/benefits/config.md`
 - Writes to: `~/Documents/AIReadyLife/vault/benefits/00_current/brief-YYYY-MM.md`, `~/Documents/AIReadyLife/vault/benefits/open-loops.md`

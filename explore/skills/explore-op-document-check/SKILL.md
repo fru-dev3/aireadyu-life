@@ -50,6 +50,7 @@ The quarterly document check is a dedicated deep audit of every travel document 
 
 - ~/Documents/AIReadyLife/vault/explore/00_current/ (all travel documents)
 - ~/Documents/AIReadyLife/vault/explore/00_current/ (planned destinations for forward validation)
+- `~/Documents/AIReadyLife/vault/explore/01_prior/` — prior period records for trend comparison
 - ~/Documents/AIReadyLife/vault/explore/config.md (travelers, citizenship)
 
 ## Output Format
@@ -95,5 +96,6 @@ Required in vault/explore/config.md:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/explore/01_prior/` — prior period records
 - Reads from: ~/Documents/AIReadyLife/vault/explore/00_current/, ~/Documents/AIReadyLife/vault/explore/00_current/, ~/Documents/AIReadyLife/vault/explore/config.md
 - Writes to: ~/Documents/AIReadyLife/vault/explore/00_current/document-audit-YYYY-MM-DD.md, ~/Documents/AIReadyLife/vault/explore/open-loops.md

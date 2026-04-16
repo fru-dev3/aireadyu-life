@@ -55,6 +55,7 @@ Capital improvement ROI modeling: for each property where significant deferred m
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — current tenant and rent data
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — quarterly cash flow data
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — deferred maintenance records
+- `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -89,6 +90,7 @@ Required in `~/Documents/AIReadyLife/vault/estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`, `01_tenants/`, `03_cashflow/`, `02_maintenance/`
 - Writes to: `~/Documents/AIReadyLife/vault/estate/00_current/YYYY-Q{N}-portfolio-review.md`
 - Writes to: `~/Documents/AIReadyLife/vault/estate/open-loops.md`

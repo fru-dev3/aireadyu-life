@@ -47,3 +47,9 @@ Items sourced directly from `vault/tax/open-loops.md`, filtered to OPEN status, 
 
 - `vault/tax/02_briefs/YYYY-MM-tax-brief.md` — monthly tax review brief
 - `vault/tax/open-loops.md` — resolved items closed if applicable
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/tax/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/tax/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/tax/02_briefs/` — prior briefs for period-over-period context

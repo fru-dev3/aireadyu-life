@@ -54,6 +54,7 @@ Fourth, warranty tracking: the op checks all appliances and HVAC systems recorde
 
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — all open maintenance items and vendor notes
 - `~/Documents/AIReadyLife/vault/estate/00_current/` — appliance/HVAC warranty records and capital item installation dates
+- `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records for trend comparison
 
 ## Output Format
 
@@ -91,6 +92,7 @@ Required in `~/Documents/AIReadyLife/vault/estate/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/estate/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`
 - Reads from: `~/Documents/AIReadyLife/vault/estate/00_current/`
 - Writes to: `~/Documents/AIReadyLife/vault/estate/00_current/YYYY-MM-maintenance-report.md`

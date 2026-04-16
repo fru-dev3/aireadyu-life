@@ -48,6 +48,7 @@ Reviews open-loops.md for any business items that have been unresolved for more 
 - `~/Documents/AIReadyLife/vault/business/00_current/` — current and prior month expense records
 - `~/Documents/AIReadyLife/vault/business/02_briefs/pl-*.md` — all prior monthly P&L briefs for YTD rollup
 - `~/Documents/AIReadyLife/vault/business/00_current/compliance-checklist.md` — compliance calendar
+- `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/business/config.md` — entity settings, prior year tax liability
 - `~/Documents/AIReadyLife/vault/business/open-loops.md` — current open items
 
@@ -93,5 +94,6 @@ Required in `~/Documents/AIReadyLife/vault/business/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/02_briefs/`, `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/config.md`, `~/Documents/AIReadyLife/vault/business/open-loops.md`
 - Writes to: `~/Documents/AIReadyLife/vault/business/02_briefs/synthesis-{YYYY-MM}.md`, `~/Documents/AIReadyLife/vault/business/00_current/pl-{YYYY}.md`, `~/Documents/AIReadyLife/vault/business/open-loops.md`

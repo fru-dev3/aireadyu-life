@@ -44,6 +44,7 @@ The brief has five sections. Active policies: a matrix of all current policies w
 - `~/Documents/AIReadyLife/vault/insurance/00_current/` — active policy records and renewal alerts
 - `~/Documents/AIReadyLife/vault/insurance/00_current/` — active claims
 - `~/Documents/AIReadyLife/vault/insurance/00_current/` — most recent coverage audit
+- `~/Documents/AIReadyLife/vault/insurance/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/insurance/open-loops.md` — all outstanding flags
 
 ## Output Format
@@ -94,5 +95,6 @@ No additional configuration beyond standard `vault/insurance/config.md`. Brief r
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/insurance/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/insurance/00_current/`, `~/Documents/AIReadyLife/vault/insurance/00_current/`, `~/Documents/AIReadyLife/vault/insurance/00_current/`, `~/Documents/AIReadyLife/vault/insurance/open-loops.md`
 - Writes to: `~/Documents/AIReadyLife/vault/insurance/02_briefs/YYYY-MM-insurance-brief.md`, `~/Documents/AIReadyLife/vault/insurance/open-loops.md`

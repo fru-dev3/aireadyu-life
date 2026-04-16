@@ -34,6 +34,7 @@ Called internally by `aireadylife-business-op-pipeline-review`. Not invoked dire
 ## Input
 
 - `~/Documents/AIReadyLife/vault/business/00_current/` — proposal and contract records; each should include: client name, proposal name, value, stage, last-contact date, response status, expected close date
+- `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/business/02_briefs/pipeline-{YYYY-MM}.md` — prior month pipeline brief for MoM comparison (optional)
 - `~/Documents/AIReadyLife/vault/business/config.md` — follow-up threshold in days (default: 7)
 
@@ -83,5 +84,6 @@ Optional in `~/Documents/AIReadyLife/vault/business/config.md`:
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/business/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/business/00_current/`, `~/Documents/AIReadyLife/vault/business/02_briefs/`, `~/Documents/AIReadyLife/vault/business/config.md`
 - Writes to: called by ops that write to `~/Documents/AIReadyLife/vault/business/02_briefs/`

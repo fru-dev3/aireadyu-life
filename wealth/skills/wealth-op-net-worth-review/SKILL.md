@@ -40,3 +40,9 @@ None (reads from vault; account balances must be updated manually or via configu
 - `vault/wealth/02_briefs/YYYY-MM-net-worth.md` — full net worth table
 - `vault/wealth/00_current/current-net-worth.md` — headline number for quick reference
 - `vault/wealth/open-loops.md` — unexplained movement flags and emergency fund alerts
+
+## Vault Paths
+
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/00_current/` — active records and current state
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/01_prior/` — prior period records for trend comparison
+- Reads from: `~/Documents/AIReadyLife/vault/wealth/02_briefs/` — prior briefs for period-over-period context

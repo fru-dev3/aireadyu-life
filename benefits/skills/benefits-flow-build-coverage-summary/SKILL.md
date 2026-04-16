@@ -45,6 +45,7 @@ Called by `aireadylife-benefits-op-enrollment-review`, `aireadylife-benefits-op-
 - `~/Documents/AIReadyLife/vault/benefits/00_current/` — EOBs and claim records for YTD spend
 - `~/Documents/AIReadyLife/vault/benefits/00_current/` — 401k data
 - `~/Documents/AIReadyLife/vault/benefits/00_current/` — HSA data
+- `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records for trend comparison
 - `~/Documents/AIReadyLife/vault/benefits/config.md` — annual salary, coverage tier
 
 ## Output Format
@@ -90,5 +91,6 @@ Plan documents must be saved to `vault/benefits/00_current/` in legible text or 
 
 ## Vault Paths
 
+- Reads from: `~/Documents/AIReadyLife/vault/benefits/01_prior/` — prior period records
 - Reads from: `~/Documents/AIReadyLife/vault/benefits/00_current/`, `~/Documents/AIReadyLife/vault/benefits/00_current/`, `~/Documents/AIReadyLife/vault/benefits/00_current/`, `~/Documents/AIReadyLife/vault/benefits/00_current/`, `~/Documents/AIReadyLife/vault/benefits/config.md`
 - Writes to: None (returns data to calling op)
