@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated career state
 
 ## Step 1 — Place your vault
 
-Move this `career/` folder to:
+Move this `career/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/career/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/career/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/career/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\career\` |
 
 ## Step 2 — Fill in config.md
 

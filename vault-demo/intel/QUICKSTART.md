@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated intel state 
 
 ## Step 1 — Place your vault
 
-Move this `intel/` folder to:
+Move this `intel/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/intel/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/intel/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/intel/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\intel\` |
 
 ## Step 2 — Fill in config.md
 

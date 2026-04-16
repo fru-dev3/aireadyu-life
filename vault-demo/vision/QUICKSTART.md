@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated vision state
 
 ## Step 1 — Place your vault
 
-Move this `vision/` folder to:
+Move this `vision/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/vision/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/vision/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/vision/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\vision\` |
 
 ## Step 2 — Fill in config.md
 

@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated wealth state
 
 ## Step 1 — Place your vault
 
-Move this `wealth/` folder to:
+Move this `wealth/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/wealth/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/wealth/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/wealth/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\wealth\` |
 
 ## Step 2 — Fill in config.md
 

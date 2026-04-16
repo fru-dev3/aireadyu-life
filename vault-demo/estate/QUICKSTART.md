@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated estate state
 
 ## Step 1 — Place your vault
 
-Move this `estate/` folder to:
+Move this `estate/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/estate/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/estate/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/estate/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\estate\` |
 
 ## Step 2 — Fill in config.md
 

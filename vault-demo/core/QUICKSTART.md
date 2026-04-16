@@ -42,9 +42,8 @@ Priority order: **health → wealth → tax → career**
 
 In Claude Desktop, set your AI Ready Life project folder to:
 
-```
-~/Documents/aireadylife/
-```
+- **Mac:** `~/Documents/aireadylife/`
+- **Windows:** `%USERPROFILE%\Documents\aireadylife\`
 
 Install each domain plugin from GitHub. Once installed, the agent reads your vault automatically.
 

@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated explore stat
 
 ## Step 1 — Place your vault
 
-Move this `explore/` folder to:
+Move this `explore/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/explore/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/explore/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/explore/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\explore\` |
 
 ## Step 2 — Fill in config.md
 

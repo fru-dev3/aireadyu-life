@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated chief state 
 
 ## Step 1 — Place your vault
 
-Move this `chief/` folder to:
+Move this `chief/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/chief/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/chief/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/chief/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\chief\` |
 
 ## Step 2 — Fill in config.md
 

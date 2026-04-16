@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated calendar sta
 
 ## Step 1 — Place your vault
 
-Move this `calendar/` folder to:
+Move this `calendar/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/calendar/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/calendar/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/calendar/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\calendar\` |
 
 ## Step 2 — Fill in config.md
 

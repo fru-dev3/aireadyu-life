@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated insurance st
 
 ## Step 1 — Place your vault
 
-Move this `insurance/` folder to:
+Move this `insurance/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/insurance/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/insurance/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/insurance/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\insurance\` |
 
 ## Step 2 — Fill in config.md
 

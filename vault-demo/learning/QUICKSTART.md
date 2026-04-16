@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated learning sta
 
 ## Step 1 — Place your vault
 
-Move this `learning/` folder to:
+Move this `learning/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/learning/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/learning/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/learning/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\learning\` |
 
 ## Step 2 — Fill in config.md
 

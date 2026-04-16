@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated real-estate 
 
 ## Step 1 — Place your vault
 
-Move this `real-estate/` folder to:
+Move this `real-estate/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/real-estate/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/real-estate/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/real-estate/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\real-estate\` |
 
 ## Step 2 — Fill in config.md
 

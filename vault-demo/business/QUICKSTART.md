@@ -14,13 +14,12 @@ The `state.md` file in this demo vault shows what a fully populated business sta
 
 ## Step 1 — Place your vault
 
-Move this `business/` folder to:
+Move this `business/` folder to the correct location for your OS:
 
-```
-~/Documents/aireadylife/vault/business/
-```
-
-Your full vault path will be: `~/Documents/aireadylife/vault/business/`
+| OS | Vault path |
+|----|------------|
+| **Mac** | `~/Documents/aireadylife/vault/business/` |
+| **Windows** | `%USERPROFILE%\Documents\aireadylife\vault\business\` |
 
 ## Step 2 — Fill in config.md
 
