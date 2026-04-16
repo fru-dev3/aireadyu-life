@@ -35,9 +35,34 @@ If `~/Documents/AIReadyLife/vault/real-estate/` does not exist or is empty:
 
 Skills are located under `real-estate/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
-## Checking Vault Status
+## First Run
 
-Before running any skill, confirm the vault exists:
-- Check that `~/Documents/AIReadyLife/vault/real-estate/config.md` is present and filled in
-- If it is missing, direct the user to purchase the vault template above
-- If it exists but config fields are blank, prompt the user to complete setup before proceeding
+Before running any skill, check `~/Documents/AIReadyLife/vault/real-estate/config.md`:
+
+1. **Vault missing** → tell the user to purchase the vault template and link to the Gumroad listing above.
+2. **Config filled in** → proceed with the requested skill normally.
+3. **Config exists but fields are blank** (values empty after the `:`) → do NOT run the skill. Show the first-run message below instead.
+
+### First-Run Message (show when config is blank)
+
+> **Welcome to AI Ready Life: Real Estate!**
+>
+> Your vault is installed at `~/Documents/AIReadyLife/vault/real-estate/`. Before skills can run, your config and documents need to be in place.
+>
+> **Step 1 — Complete your config**
+> Open `~/Documents/AIReadyLife/vault/real-estate/config.md` and fill in every field. Leave a field blank rather than guessing — the skills will flag anything that's missing.
+>
+> **Step 2 — Gather your documents and add them to `00_current/`**
+> Here's what this domain needs:
+>
+- **Target area** — city, zip codes, or neighborhoods you're looking in.
+- **Budget and down payment** — maximum purchase price and available down payment amount.
+- **Pre-approval letter (if available)** — lender, pre-approved amount, and expiration date.
+- **Wishlist criteria** — must-haves and nice-to-haves: bedrooms, bathrooms, lot size, school district, commute limits.
+- **Active listings (if tracking)** — addresses or Zillow/Redfin links for any properties you're already watching.
+- **Current housing cost** — monthly rent or mortgage payment, so buy vs. rent analysis has a baseline.
+>
+> **Step 3 — Run your first skill**
+> Once config.md is filled in and at least a few documents are in `00_current/`, try: *"market scan"*
+>
+> You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.

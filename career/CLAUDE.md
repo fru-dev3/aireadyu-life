@@ -35,9 +35,33 @@ If `~/Documents/AIReadyLife/vault/career/` does not exist or is empty:
 
 Skills are located under `career/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
-## Checking Vault Status
+## First Run
 
-Before running any skill, confirm the vault exists:
-- Check that `~/Documents/AIReadyLife/vault/career/config.md` is present and filled in
-- If it is missing, direct the user to purchase the vault template above
-- If it exists but config fields are blank, prompt the user to complete setup before proceeding
+Before running any skill, check `~/Documents/AIReadyLife/vault/career/config.md`:
+
+1. **Vault missing** → tell the user to purchase the vault template and link to the Gumroad listing above.
+2. **Config filled in** → proceed with the requested skill normally.
+3. **Config exists but fields are blank** (values empty after the `:`) → do NOT run the skill. Show the first-run message below instead.
+
+### First-Run Message (show when config is blank)
+
+> **Welcome to AI Ready Life: Career!**
+>
+> Your vault is installed at `~/Documents/AIReadyLife/vault/career/`. Before skills can run, your config and documents need to be in place.
+>
+> **Step 1 — Complete your config**
+> Open `~/Documents/AIReadyLife/vault/career/config.md` and fill in every field. Leave a field blank rather than guessing — the skills will flag anything that's missing.
+>
+> **Step 2 — Gather your documents and add them to `00_current/`**
+> Here's what this domain needs:
+>
+- **Offer letter or pay stub** — to confirm your current base salary, bonus target, and equity grant details.
+- **Job description** — your current role title and key responsibilities (copy/paste from your company's internal job posting or LinkedIn).
+- **Skills inventory** — a list of your technical and domain skills, with rough proficiency level (beginner / proficient / expert).
+- **Comp data (optional)** — any Levels.fyi, LinkedIn Salary, or Glassdoor data you've collected for your role and location.
+- **Active applications (if job searching)** — company, role, date applied, current status, and recruiter contact for each.
+>
+> **Step 3 — Run your first skill**
+> Once config.md is filled in and at least a few documents are in `00_current/`, try: *"career brief"*
+>
+> You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.

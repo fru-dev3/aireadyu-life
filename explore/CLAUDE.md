@@ -35,9 +35,33 @@ If `~/Documents/AIReadyLife/vault/explore/` does not exist or is empty:
 
 Skills are located under `explore/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
-## Checking Vault Status
+## First Run
 
-Before running any skill, confirm the vault exists:
-- Check that `~/Documents/AIReadyLife/vault/explore/config.md` is present and filled in
-- If it is missing, direct the user to purchase the vault template above
-- If it exists but config fields are blank, prompt the user to complete setup before proceeding
+Before running any skill, check `~/Documents/AIReadyLife/vault/explore/config.md`:
+
+1. **Vault missing** → tell the user to purchase the vault template and link to the Gumroad listing above.
+2. **Config filled in** → proceed with the requested skill normally.
+3. **Config exists but fields are blank** (values empty after the `:`) → do NOT run the skill. Show the first-run message below instead.
+
+### First-Run Message (show when config is blank)
+
+> **Welcome to AI Ready Life: Explore!**
+>
+> Your vault is installed at `~/Documents/AIReadyLife/vault/explore/`. Before skills can run, your config and documents need to be in place.
+>
+> **Step 1 — Complete your config**
+> Open `~/Documents/AIReadyLife/vault/explore/config.md` and fill in every field. Leave a field blank rather than guessing — the skills will flag anything that's missing.
+>
+> **Step 2 — Gather your documents and add them to `00_current/`**
+> Here's what this domain needs:
+>
+- **Passport info** — full name as printed, passport number, issue date, and expiration date.
+- **Visa info** — any current visas (country, visa type, expiration date). Include ESTA or eTA if applicable.
+- **Upcoming trip bookings** — destination, travel dates, flight confirmation numbers, hotel reservations.
+- **Loyalty program numbers** — airline frequent flyer numbers and hotel loyalty membership IDs.
+- **Travel documents expiring within 12 months** — flag now so you have time to renew.
+>
+> **Step 3 — Run your first skill**
+> Once config.md is filled in and at least a few documents are in `00_current/`, try: *"travel brief"*
+>
+> You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.

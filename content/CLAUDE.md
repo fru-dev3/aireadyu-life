@@ -35,9 +35,33 @@ If `~/Documents/AIReadyLife/vault/content/` does not exist or is empty:
 
 Skills are located under `content/skills/` — each skill has its own folder containing a `SKILL.md` file.
 
-## Checking Vault Status
+## First Run
 
-Before running any skill, confirm the vault exists:
-- Check that `~/Documents/AIReadyLife/vault/content/config.md` is present and filled in
-- If it is missing, direct the user to purchase the vault template above
-- If it exists but config fields are blank, prompt the user to complete setup before proceeding
+Before running any skill, check `~/Documents/AIReadyLife/vault/content/config.md`:
+
+1. **Vault missing** → tell the user to purchase the vault template and link to the Gumroad listing above.
+2. **Config filled in** → proceed with the requested skill normally.
+3. **Config exists but fields are blank** (values empty after the `:`) → do NOT run the skill. Show the first-run message below instead.
+
+### First-Run Message (show when config is blank)
+
+> **Welcome to AI Ready Life: Content!**
+>
+> Your vault is installed at `~/Documents/AIReadyLife/vault/content/`. Before skills can run, your config and documents need to be in place.
+>
+> **Step 1 — Complete your config**
+> Open `~/Documents/AIReadyLife/vault/content/config.md` and fill in every field. Leave a field blank rather than guessing — the skills will flag anything that's missing.
+>
+> **Step 2 — Gather your documents and add them to `00_current/`**
+> Here's what this domain needs:
+>
+- **Channel or publication list** — for each platform: name, URL, current subscriber/follower count, and publishing cadence target.
+- **Revenue breakdown** — earnings by source (AdSense, sponsorships, affiliate, digital products, newsletter) for the current year.
+- **Analytics export** — YouTube Studio CSV, Beehiiv analytics, or Google Analytics for the past 90 days.
+- **Content pipeline** — list of posts, videos, or articles in progress, scheduled, or recently published.
+- **SEO targets (optional)** — keyword targets or topics you're trying to rank for.
+>
+> **Step 3 — Run your first skill**
+> Once config.md is filled in and at least a few documents are in `00_current/`, try: *"content brief"*
+>
+> You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.
