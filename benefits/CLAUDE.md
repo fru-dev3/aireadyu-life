@@ -13,7 +13,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/benefits/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Benefits Vault** at [frudev.app-gumroad.api.com/l/aireadylife-benefits](https://frudev.app-gumroad.api.com/l/aireadylife-benefits)
+1. Purchase the **AI Ready Life: Benefits Vault** at [frudev.gumroad.com/l/aireadylife-benefits](https://frudev.gumroad.com/l/aireadylife-benefits)
 2. Unzip the download
 3. Move the `benefits/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/benefits/config.md` and fill in your details
@@ -49,7 +49,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your benefits vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-benefits](https://frudev.app-gumroad.api.com/l/aireadylife-benefits), unzip, and place the `benefits/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your benefits vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-benefits](https://frudev.gumroad.com/l/aireadylife-benefits), unzip, and place the `benefits/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -69,7 +69,7 @@ Before running **any skill or flow** in this domain — including flows called b
 > **Step 2 — Gather your documents and add them to `00_current/`**
 > Here's what this domain needs:
 >
-- **Benefits confirmation** — the enrollment summary or confirmation PDF from Workday, ADP, or your HR app-insurance-portal.portal. Lists every elected benefit with coverage amounts.
+- **Benefits confirmation** — the enrollment summary or confirmation PDF from Workday, ADP, or your HR portal. Lists every elected benefit with coverage amounts.
 - **401k statement** — most recent, showing contribution rate, employer match rate, and current balance.
 - **HSA account statement** — current balance, YTD contributions, and investment balance if applicable.
 - **Pay stub** — most recent, to verify benefit deductions (medical, dental, vision, life, 401k) are being withheld.

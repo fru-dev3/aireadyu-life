@@ -14,7 +14,7 @@ description: >
 
 ## What It Provides
 
-Kindle is the most common e-reader for professional and nonfiction reading. This skill provides two pathways for reading progress data — an automated Goodreads RSS sync for users who sync their Kindle reading to Goodreads, and a manual/semi-manual Amazon library export for users who prefer to track directly. Reading highlights from app-kindle.amazon.com provide the most granular per-book insight, including the specific passages the user marked during reading — these are stored in `vault/learning/00_current/highlights/` for future reference.
+Kindle is the most common e-reader for professional and nonfiction reading. This skill provides two pathways for reading progress data — an automated Goodreads RSS sync for users who sync their Kindle reading to Goodreads, and a manual/semi-manual Amazon library export for users who prefer to track directly. Reading highlights from kindle.amazon.com provide the most granular per-book insight, including the specific passages the user marked during reading — these are stored in `vault/learning/00_current/highlights/` for future reference.
 
 ## Sync Methods
 
@@ -41,11 +41,11 @@ Amazon's Kindle Notebook at read.amazon.com/kp/notebook provides exported highli
 
 Add to `vault/learning/config.md`:
 ```yaml
-app-kindle_sync_method: goodreads  # goodreads or manual
+kindle_sync_method: goodreads  # goodreads or manual
 goodreads_user_id: "YOUR_USER_ID"  # found in your Goodreads profile URL
 goodreads_rss_currently_reading: "https://www.goodreads.com/review/list_rss/YOURID?shelf=currently-reading"
 goodreads_rss_read: "https://www.goodreads.com/review/list_rss/YOURID?shelf=read&sort=date_read"
-app-kindle_highlights_export_path: "vault/learning/00_current/highlights/"
+kindle_highlights_export_path: "vault/learning/00_current/highlights/"
 ```
 
 ## Technical Notes

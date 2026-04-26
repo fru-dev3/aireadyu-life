@@ -10,7 +10,7 @@ description: >
 # Airbnb — Explore Plugin
 
 **Auth:** Playwright + Chrome cookies (optional — public listings accessible without login; login enables saved searches and wish lists)
-**URL:** https://www.app-airbnb.portal.com
+**URL:** https://www.airbnb.com
 **Configuration:** Set preferences in `vault/explore/config.md`
 
 ## Data Available
@@ -30,7 +30,7 @@ description: >
 
 Add to `vault/explore/config.md`:
 ```
-app-airbnb.portal_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+airbnb_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 explore_min_bedrooms: 1
 explore_max_nightly_price: 250
 explore_min_rating: 4.5
@@ -39,7 +39,7 @@ explore_min_rating: 4.5
 ## Notes
 
 - Requires headless=False — Airbnb uses JavaScript rendering and bot detection that blocks headless browsers
-- Search URL format: `app-airbnb.portal.com/s/{destination}/homes?checkin=YYYY-MM-DD&checkout=YYYY-MM-DD&adults=N`
+- Search URL format: `airbnb.com/s/{destination}/homes?checkin=YYYY-MM-DD&checkout=YYYY-MM-DD&adults=N`
 - For best results: log in with Chrome profile to access saved searches and wishlist sync
 - Price shown on listing card includes nightly rate; total price (with fees) shown after clicking through
 - Focus the scrape on top 5-10 results for comparison rather than exhaustive listing scraping

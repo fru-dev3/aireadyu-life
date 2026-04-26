@@ -9,7 +9,7 @@ description: >
 # Angi
 
 **Auth:** Playwright + Chrome cookies (headless=False required for booking history; public search works without login)
-**URL:** https://www.app-angi.com
+**URL:** https://www.angi.com
 **Configuration:** Set zip code and Chrome profile path in `~/Documents/aireadylife/vault/home/config.md`
 
 ## Data Available
@@ -27,15 +27,15 @@ description: >
 Add to `~/Documents/aireadylife/vault/home/config.md`:
 ```
 home_zip_code: "55344"
-app-angi_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
-app-angi_email: YOUR_ANGI_EMAIL   # optional; for booking history access
+angi_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+angi_email: YOUR_ANGI_EMAIL   # optional; for booking history access
 ```
 
 ## Key Workflows
 
 **Finding a contractor for a maintenance task:** Search by service type (e.g., "HVAC maintenance", "gutter cleaning", "roof inspection") and zip code. Filter to pros with 4+ stars and 20+ reviews as a baseline. Check for verified license status. Read 3–5 recent reviews to assess communication quality and punctuality — not just work quality. Request 3 quotes from top-rated candidates and compare.
 
-**Using cost guides for budget estimates:** Angi's cost guide (app-angi.com/costs) provides national and regional average costs for hundreds of home service types. Use these to validate vendor quotes — a gutter cleaning quote of $500 on a single-story home ($75–$200 national average) deserves an explanation.
+**Using cost guides for budget estimates:** Angi's cost guide (angi.com/costs) provides national and regional average costs for hundreds of home service types. Use these to validate vendor quotes — a gutter cleaning quote of $500 on a single-story home ($75–$200 national average) deserves an explanation.
 
 **Vetting a contractor before hiring:** For any repair above $500, verify: (1) license is valid in your state via Angi or your state licensing board, (2) they carry general liability insurance (ask for certificate of insurance), (3) they have at least 15+ reviews with consistent 4+ star ratings, (4) recent reviews (within 6 months) match the service category you need.
 

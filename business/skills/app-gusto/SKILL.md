@@ -9,7 +9,7 @@ description: >
 # Gusto
 
 **Auth:** Playwright + Chrome cookies
-**URL:** https://app.app-gusto.com
+**URL:** https://app.gusto.com
 **Configuration:** Set your Chrome profile path in `vault/business/config.md`
 
 ## Data Available
@@ -26,8 +26,8 @@ description: >
 
 Add to `vault/business/config.md`:
 ```
-app-gusto_email: YOUR_GUSTO_EMAIL
-app-gusto_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+gusto_email: YOUR_GUSTO_EMAIL
+gusto_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 ```
 
 ## Notes

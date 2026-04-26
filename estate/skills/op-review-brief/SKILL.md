@@ -92,7 +92,7 @@ Required: vault populated, config.md complete, at least one monthly sync complet
 
 ## Error Handling
 
-- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-estate
+- If vault missing: direct to frudev.gumroad.com/l/aireadylife-estate
 - If monthly cash flow report not yet generated: offer to run cash-flow-review first
 - If no tenant records: note "No tenant data — add leases to vault/estate/00_current/ to enable lease tracking"
 

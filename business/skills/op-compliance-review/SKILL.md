@@ -58,7 +58,7 @@ Checks for backing documentation — a filed annual report should have a confirm
 ## Compliance Status Table
 | Obligation             | Entity  | Due Date   | Status | Days | Notes              |
 |------------------------|---------|------------|--------|------|--------------------|
-| Annual Report          | LLC A   | 2026-04-15 | 🟡     | 12   | File via SOS app-insurance-portal.portal |
+| Annual Report          | LLC A   | 2026-04-15 | 🟡     | 12   | File via SOS portal |
 | Registered Agent       | LLC A   | 2026-08-01 | 🟢     | 110  | Current             |
 | Q2 Estimated Tax       | All     | 2026-06-15 | 🟡     | 63   | ~$X,XXX owed        |
 | 1099-NEC (Contractor X)| LLC A   | 2026-02-15 | 🟢     | Filed| Confirmed           |

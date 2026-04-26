@@ -46,7 +46,7 @@ Flag proactively. If a property's cash-on-cash return has dropped below 4% or a 
 
 `~/Documents/aireadylife/vault/estate/`
 
-If vault is missing: direct user to frudev.app-gumroad.api.com/l/aireadylife-estate.
+If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-estate.
 
 ## Skills Available
 

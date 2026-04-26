@@ -2,15 +2,15 @@
 type: app
 description: >
   Downloads owner statements, lease documents, maintenance requests, and tenant ledgers from an
-  AppFolio owner app-insurance-portal.portal via Playwright. Used by estate-agent for cash flow review and tenant
-  management when a property management company uses AppFolio. Configure app-insurance-portal.portal URL in vault/estate/config.md.
+  AppFolio owner portal via Playwright. Used by estate-agent for cash flow review and tenant
+  management when a property management company uses AppFolio. Configure portal URL in vault/estate/config.md.
 ---
 
 # AppFolio
 
-**Auth:** Playwright + Chrome cookies (headless=False required — owner app-insurance-portal.portal uses session cookies)
-**URL:** Configured per property management company (format: `https://YOURCOMPANY.app-appfolio.portal.com/ownerweb`)
-**Configuration:** Set owner app-insurance-portal.portal URL and Chrome profile in `~/Documents/aireadylife/vault/estate/config.md`
+**Auth:** Playwright + Chrome cookies (headless=False required — owner portal uses session cookies)
+**URL:** Configured per property management company (format: `https://YOURCOMPANY.appfolio.com/ownerweb`)
+**Configuration:** Set owner portal URL and Chrome profile in `~/Documents/aireadylife/vault/estate/config.md`
 
 ## Data Available
 
@@ -25,23 +25,23 @@ description: >
 
 Add to `~/Documents/aireadylife/vault/estate/config.md`:
 ```
-app-appfolio.portal_app-insurance-portal.portal_url: https://YOURCOMPANY.app-appfolio.portal.com/ownerweb
-app-appfolio.portal_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+appfolio_portal_url: https://YOURCOMPANY.appfolio.com/ownerweb
+appfolio_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 ```
 
 ## Key Data Workflows
 
-**Monthly owner statement pull:** Log in to owner app-insurance-portal.portal → Statements → select property and month → Download PDF → Parse for rent collected, management fee, maintenance charges, and net distribution. Use to verify or supplement manually logged expense data in the vault.
+**Monthly owner statement pull:** Log in to owner portal → Statements → select property and month → Download PDF → Parse for rent collected, management fee, maintenance charges, and net distribution. Use to verify or supplement manually logged expense data in the vault.
 
-**Maintenance request download:** Owner app-insurance-portal.portal → Maintenance → filter by property → export or read open work orders. This feeds directly into the estate maintenance review — vendor name, quoted cost, status, and completion date are all available here if the property manager uses AppFolio for work order tracking.
+**Maintenance request download:** Owner portal → Maintenance → filter by property → export or read open work orders. This feeds directly into the estate maintenance review — vendor name, quoted cost, status, and completion date are all available here if the property manager uses AppFolio for work order tracking.
 
-**Tenant payment history:** Owner app-insurance-portal.portal → Tenants → select tenant → Ledger → shows all transactions. Compare against scheduled rent to identify late payments and patterns. This is the authoritative record for tenant payment history.
+**Tenant payment history:** Owner portal → Tenants → select tenant → Ledger → shows all transactions. Compare against scheduled rent to identify late payments and patterns. This is the authoritative record for tenant payment history.
 
 ## Notes
 
 - Requires headless=False — AppFolio owner portals use modern authentication that breaks headless Chrome sessions
 - Portal URL is specific to each property management company's AppFolio account — get it from your property manager
-- If owner app-insurance-portal.portal is not available, request owner statements by email from property manager and log data manually
+- If owner portal is not available, request owner statements by email from property manager and log data manually
 - AppFolio is used by mid-to-large property management companies; smaller companies may use Buildium, Rent Manager, or manual email statements
 
 ## Used By

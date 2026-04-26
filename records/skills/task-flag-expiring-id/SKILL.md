@@ -3,7 +3,7 @@ type: task
 description: >
   Writes an ID expiration flag to open-loops.md with document type, holder name, expiration
   date, days until effective renewal deadline (using document-specific lead times), step-by-step
-  renewal action, official renewal app-insurance-portal.portal link, and cost. Urgency calibrated by document type.
+  renewal action, official renewal portal link, and cost. Urgency calibrated by document type.
 ---
 
 # records-flag-expiring-id
@@ -59,7 +59,7 @@ Document-specific flag content:
 1. Receive document type, holder name, expiration date from calling flow
 2. Determine the effective renewal deadline (expiration minus travel rule if applicable) and start-renewal-by date using document-specific lead times
 3. Calculate urgency: days between today and start-renewal-by date
-4. Select document-specific renewal steps, cost, and official app-insurance-portal.portal link
+4. Select document-specific renewal steps, cost, and official portal link
 5. Classify urgency: start-renewal-by date > 90 days away = medium; 30–90 days = high; <30 days = critical; past start-renewal-by = critical/overdue
 6. Write flag entry to `~/Documents/aireadylife/vault/records/open-loops.md`
 7. Return flag summary to calling op
@@ -82,7 +82,7 @@ Each flag entry in open-loops.md:
 **Steps:**
 1. {Step 1}
 2. {Step 2}
-**Official app-insurance-portal.portal:** {URL}
+**Official portal:** {URL}
 **Action by:** YYYY-MM-DD (= start-renewal-by date)
 **Status:** open
 ```

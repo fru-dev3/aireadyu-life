@@ -44,7 +44,7 @@ Your vault is at `~/Documents/aireadylife/vault/benefits/`. The structure is:
 - `04_enrollment/` — Annual enrollment choices and beneficiary forms by year
 - `05_documents/` — All other benefit documents organized by year
 
-If the vault does not exist, direct the user to: frudev.app-gumroad.api.com/l/aireadylife-benefits
+If the vault does not exist, direct the user to: frudev.gumroad.com/l/aireadylife-benefits
 
 ## Skills Available
 

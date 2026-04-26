@@ -34,7 +34,7 @@ Urgency tiers:
 - **OVERDUE** — 91+ days overdue; call to schedule immediately; note in action item
 - **DUE SOON** — not yet overdue but coming due within 30 days; schedule proactively
 
-Each flag entry includes: care type, last completed date (or "Never" if no record), interval, days overdue, urgency tier, and a specific action step ("Call Dr. [provider name] at [phone from config] to schedule" or "Use [app-insurance-portal.portal name] online scheduling"). When the provider's contact info is not in config, the action step says "Schedule via your PCP's app-insurance-portal.portal or call your provider."
+Each flag entry includes: care type, last completed date (or "Never" if no record), interval, days overdue, urgency tier, and a specific action step ("Call Dr. [provider name] at [phone from config] to schedule" or "Use [portal name] online scheduling"). When the provider's contact info is not in config, the action step says "Schedule via your PCP's portal or call your provider."
 
 ## Apps
 

@@ -23,7 +23,7 @@ Called internally by `op-profile-audit`. Not invoked directly by the user.
 ## Steps
 
 1. Read `~/Documents/aireadylife/vault/brand/00_current/master-profile.md` and extract all canonical field values
-2. List all platform snapshot files present in `~/Documents/aireadylife/vault/brand/00_current/` (e.g., app-linkedin.portal.md, app-twitter.md, app-youtube.api.md, github.md, personal-site.md)
+2. List all platform snapshot files present in `~/Documents/aireadylife/vault/brand/00_current/` (e.g., linkedin.md, twitter.md, youtube.md, github.md, personal-site.md)
 3. For each configured platform in config.md: check whether a snapshot file exists; if missing, record as "unknown — manual verification needed"
 4. For each existing platform snapshot: compare each field to master; record any field where the values differ
 5. Assign priority to each discrepancy: website URL or primary handle mismatch = 🔴; headline or bio drift = 🟡 if LinkedIn/YouTube, 🟢 if secondary platform; headshot mismatch = 🟡; cosmetic bio wording variation = 🟢

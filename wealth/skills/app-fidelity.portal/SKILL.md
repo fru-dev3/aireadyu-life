@@ -12,7 +12,7 @@ description: >
 # Fidelity
 
 **Auth:** Playwright + Chrome cookies (cookie-based session; headless=False required)
-**URL:** https://www.app-fidelity.portal.com
+**URL:** https://www.fidelity.com
 **Configuration:** Set Chrome profile path in `vault/wealth/config.md`
 
 ## Data Available
@@ -31,8 +31,8 @@ description: >
 
 Add to `vault/wealth/config.md`:
 ```
-app-fidelity.portal_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Profile 1
-app-fidelity.portal_accounts:
+fidelity_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Profile 1
+fidelity_accounts:
   - nickname: "Fidelity 401k Rollover"
     type: ira-traditional
   - nickname: "Fidelity Roth IRA"
@@ -56,6 +56,6 @@ app-fidelity.portal_accounts:
 
 ## Vault Output
 
-- `vault/wealth/00_current/app-fidelity.portal/` — holdings snapshots and performance records
-- `vault/wealth/00_current/app-fidelity.portal/statements/` — monthly statement PDFs
-- `vault/wealth/00_current/app-fidelity.portal/tax-docs/` — 1099-R, 1099-B, 1099-DIV
+- `vault/wealth/00_current/fidelity/` — holdings snapshots and performance records
+- `vault/wealth/00_current/fidelity/statements/` — monthly statement PDFs
+- `vault/wealth/00_current/fidelity/tax-docs/` — 1099-R, 1099-B, 1099-DIV

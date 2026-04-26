@@ -9,8 +9,8 @@ description: >
 # Beehiiv
 
 **Auth:** API key (`BEEHIIV_API_KEY`)
-**URL:** https://app.app-beehiiv.api.com
-**API:** https://api.app-beehiiv.api.com/v2
+**URL:** https://app.beehiiv.com
+**API:** https://api.beehiiv.com/v2
 **Configuration:** Set your API key and publication ID in `vault/content/config.md`
 
 ## Data Available
@@ -26,15 +26,15 @@ description: >
 
 Add to `vault/content/config.md`:
 ```
-app-beehiiv.api_api_key: YOUR_BEEHIIV_API_KEY
-app-beehiiv.api_publication_id: pub_YOUR_PUBLICATION_ID
+beehiiv_api_key: YOUR_BEEHIIV_API_KEY
+beehiiv_publication_id: pub_YOUR_PUBLICATION_ID
 ```
 
 ## Key Endpoints
 
 ```
-GET https://api.app-beehiiv.api.com/v2/publications/{publicationId}/subscriptions
-GET https://api.app-beehiiv.api.com/v2/publications/{publicationId}/posts
+GET https://api.beehiiv.com/v2/publications/{publicationId}/subscriptions
+GET https://api.beehiiv.com/v2/publications/{publicationId}/posts
 Authorization: Bearer $BEEHIIV_API_KEY
 ```
 

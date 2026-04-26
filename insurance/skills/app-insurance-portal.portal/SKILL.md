@@ -1,20 +1,20 @@
 ---
 type: app
 description: >
-  Accesses policy documents, coverage details, premium amounts, renewal dates, and claim status from any personal insurance carrier's online app-insurance-portal.portal via Playwright with Chrome cookie session. Used by insurance-agent for coverage audits, renewal date verification, and claims status checking. Requires headless=False. Configure carrier app-insurance-portal.portal URLs in vault/insurance/config.md.
+  Accesses policy documents, coverage details, premium amounts, renewal dates, and claim status from any personal insurance carrier's online portal via Playwright with Chrome cookie session. Used by insurance-agent for coverage audits, renewal date verification, and claims status checking. Requires headless=False. Configure carrier portal URLs in vault/insurance/config.md.
 ---
 
 # Insurance Portal
 
 **Auth:** Playwright + Chrome cookies (carrier-specific login — session cookies from existing Chrome login)
 **URL:** Configured per carrier in `vault/insurance/config.md`
-**Configuration:** Set carrier app-insurance-portal.portal URL and Chrome profile path in `vault/insurance/config.md`
+**Configuration:** Set carrier portal URL and Chrome profile path in `vault/insurance/config.md`
 
 ## What It Provides
 
 Most insurance carriers provide online portals where policyholders can view declarations pages, download policy documents, check claim status, make payments, and see renewal information. This skill provides read access to those portals to keep vault data current without manual downloads.
 
-The primary use case is annual or semi-annual document refresh: when the coverage audit runs, it needs current declarations pages with the latest coverage limits and premiums. Rather than prompting the user to manually download documents, this skill retrieves them automatically from the carrier app-insurance-portal.portal.
+The primary use case is annual or semi-annual document refresh: when the coverage audit runs, it needs current declarations pages with the latest coverage limits and premiums. Rather than prompting the user to manually download documents, this skill retrieves them automatically from the carrier portal.
 
 ## Supported Carrier Types
 
@@ -36,7 +36,7 @@ The primary use case is annual or semi-annual document refresh: when the coverag
 - MetLife: metlife.com → My Benefits
 
 **Umbrella:**
-- Usually with home carrier — access through same app-insurance-portal.portal
+- Usually with home carrier — access through same portal
 
 ## Data Available
 
@@ -55,30 +55,30 @@ Add to `vault/insurance/config.md`:
 insurance_portals:
   - name: "Auto Insurance"
     carrier: "Progressive"
-    app-insurance-portal.portal_url: "https://www.progressive.com/loggedIn/overview"
+    portal_url: "https://www.progressive.com/loggedIn/overview"
     chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
   - name: "Home Insurance"
     carrier: "Nationwide"
-    app-insurance-portal.portal_url: "https://www.nationwide.com/personal/manage-your-policy"
+    portal_url: "https://www.nationwide.com/personal/manage-your-policy"
     chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
   - name: "Term Life"
     carrier: "Principal"
-    app-insurance-portal.portal_url: "https://www.principal.com/individuals/my-accounts"
+    portal_url: "https://www.principal.com/individuals/my-accounts"
     chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
 ```
 
 ## Technical Notes
 
 - **Always headless=False** — most insurance carrier portals use bot detection; headless Chrome is blocked
-- **Session freshness:** Log into each carrier app-insurance-portal.portal in Chrome before running the skill; cookies are typically valid for 30-90 days depending on carrier
+- **Session freshness:** Log into each carrier portal in Chrome before running the skill; cookies are typically valid for 30-90 days depending on carrier
 - **Download path:** PDF documents are downloaded to `vault/insurance/00_current/{type}/` with carrier and date in filename
 - **Rate limiting:** Add 3-5 second delays between page loads; insurance portals are not high-throughput platforms
 
 ## Used By
 
 - `op-coverage-audit` — download current declarations pages before running gap analysis
-- `op-renewal-watch` — verify renewal date and current premium from carrier app-insurance-portal.portal
-- `op-claims-review` — check open claim status from carrier claims app-insurance-portal.portal
+- `op-renewal-watch` — verify renewal date and current premium from carrier portal
+- `op-claims-review` — check open claim status from carrier claims portal
 
 ## Vault Output
 

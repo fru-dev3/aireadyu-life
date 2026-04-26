@@ -7,7 +7,7 @@ description: >
 # PolicyGenius
 
 **Auth:** None required for most quote flows (some require email for full quote delivery)
-**URL:** https://www.app-policygenius.com
+**URL:** https://www.policygenius.com
 **Configuration:** Set coverage targets in `vault/insurance/config.md`
 
 ## What It Provides
@@ -45,7 +45,7 @@ This skill is used during the annual coverage audit when gaps are identified —
 
 Add to `vault/insurance/config.md`:
 ```yaml
-app-policygenius:
+policygenius:
   life_coverage_target: 1500000     # target face value for term life gap
   life_term_years: 20               # preferred term length
   life_health_class: preferred      # super-preferred / preferred / standard (estimate)
@@ -64,9 +64,9 @@ app-policygenius:
 ## Key Quote Pages
 
 ```
-https://www.app-policygenius.com/life-insurance/
-https://www.app-policygenius.com/disability-insurance/
-https://www.app-policygenius.com/homeowners-insurance/
+https://www.policygenius.com/life-insurance/
+https://www.policygenius.com/disability-insurance/
+https://www.policygenius.com/homeowners-insurance/
 ```
 
 ## Used By

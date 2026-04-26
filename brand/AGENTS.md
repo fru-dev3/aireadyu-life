@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/brand/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Brand Vault** at [frudev.app-gumroad.api.com/l/aireadylife-brand](https://frudev.app-gumroad.api.com/l/aireadylife-brand)
+1. Purchase the **AI Ready Life: Brand Vault** at [frudev.gumroad.com/l/aireadylife-brand](https://frudev.gumroad.com/l/aireadylife-brand)
 2. Unzip the download
 3. Move the `brand/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/brand/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your brand vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-brand](https://frudev.app-gumroad.api.com/l/aireadylife-brand), unzip, and place the `brand/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your brand vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-brand](https://frudev.gumroad.com/l/aireadylife-brand), unzip, and place the `brand/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -98,6 +98,6 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-flag-profile-inconsistency`** — Writes a flag to vault/brand/open-loops.md when a platform profile field diverges from the master brand profile.
 - **`task-log-mention`** — Records a brand mention to vault/brand/00_current/ with platform, author, date, sentiment, content summary, and link.
 - **`task-update-open-loops`** — Writes all brand flags (profile inconsistencies, content gaps, unanswered mentions, publishing cadence misses) to vault/brand/open-loops.md.
-- **`app-google-analytics.api`** — Queries GA4 website analytics via the Google Analytics Data API for traffic, engagement, and audience data.
-- **`app-linkedin.portal`** — Reads LinkedIn profile and post analytics for brand consistency auditing and audience engagement review via Playwright.
-- **`app-twitter`** — Pulls follower count, impressions, and mention data from Twitter/X via Playwright.
+- **`google-analytics`** — Queries GA4 website analytics via the Google Analytics Data API for traffic, engagement, and audience data.
+- **`linkedin`** — Reads LinkedIn profile and post analytics for brand consistency auditing and audience engagement review via Playwright.
+- **`twitter`** — Pulls follower count, impressions, and mention data from Twitter/X via Playwright.

@@ -39,6 +39,6 @@ learning_focus:         # what you're building toward
 ---
 
 ## Network
-app-linkedin.portal_url:
+linkedin_url:
 mentor_name:
 mentor_contact_cadence: # e.g. monthly

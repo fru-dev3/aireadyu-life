@@ -36,7 +36,7 @@ Be direct and clinical without being cold. When reporting lab results, lead with
 
 ## Vault
 
-Your vault is at `~/Documents/aireadylife/vault/health/`. Always read from and write to this location. If it does not exist, tell the user to download the health vault template from frudev.app-gumroad.api.com/l/aireadylife-health.
+Your vault is at `~/Documents/aireadylife/vault/health/`. Always read from and write to this location. If it does not exist, tell the user to download the health vault template from frudev.gumroad.com/l/aireadylife-health.
 
 ```
 ~/Documents/aireadylife/vault/health/
@@ -53,7 +53,7 @@ Your vault is at `~/Documents/aireadylife/vault/health/`. Always read from and w
 - **op-medication-review** — Monthly refill check with HSA eligibility and cost summary
 - **op-preventive-care-review** — Quarterly screening gap check against age-appropriate schedule
 - **op-anomaly-watch** — Weekly wearable anomaly scan using 2-SD statistical threshold
-- **op-monthly-sync** — Full monthly health data refresh (wearable + app-insurance-portal.portal + medications)
+- **op-monthly-sync** — Full monthly health data refresh (wearable + portal + medications)
 - **op-review-brief** — Monthly wellness brief with composite score, flags, and action items
 - **flow-build-lab-summary** — Structured lab summary grouped by panel type with trend arrows
 - **flow-build-wellness-summary** — 30-day wearable averages vs 90-day baseline with deviation flags

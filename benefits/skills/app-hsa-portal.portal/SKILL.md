@@ -1,25 +1,25 @@
 ---
 type: app
 description: >
-  Accesses HSA account balance (cash and invested), YTD employee and employer contributions vs. IRS limit, investment allocation and performance, and eligible expense transaction history from any major HSA carrier app-insurance-portal.portal via Playwright with Chrome cookie session. Supports Fidelity, HSA Bank, Optum/ConnectYourCare, HealthEquity, and WEX. Requires headless=False. Configure carrier URL and Chrome profile in vault/benefits/config.md.
+  Accesses HSA account balance (cash and invested), YTD employee and employer contributions vs. IRS limit, investment allocation and performance, and eligible expense transaction history from any major HSA carrier portal via Playwright with Chrome cookie session. Supports Fidelity, HSA Bank, Optum/ConnectYourCare, HealthEquity, and WEX. Requires headless=False. Configure carrier URL and Chrome profile in vault/benefits/config.md.
 ---
 
 # HSA Portal
 
 **Auth:** Playwright + Chrome cookies (carrier-specific login — session cookies from Chrome)
 **URL:** Carrier-specific (configured in `vault/benefits/config.md`)
-**Configuration:** Set your HSA carrier name and app-insurance-portal.portal URL in `vault/benefits/config.md`
+**Configuration:** Set your HSA carrier name and portal URL in `vault/benefits/config.md`
 
 ## What It Provides
 
-HSA accounts are held at dedicated HSA carriers — not at regular banks — and each carrier has its own online app-insurance-portal.portal. This skill provides read access to HSA account data for the monthly HSA review: current balance (cash and invested separately), YTD contributions by source, and the investment allocation within the HSA investment sleeve. This data is required to determine whether the account is above the investment threshold, on pace for the annual IRS limit, and whether uninvested cash should be moved to the investment sleeve.
+HSA accounts are held at dedicated HSA carriers — not at regular banks — and each carrier has its own online portal. This skill provides read access to HSA account data for the monthly HSA review: current balance (cash and invested separately), YTD contributions by source, and the investment allocation within the HSA investment sleeve. This data is required to determine whether the account is above the investment threshold, on pace for the annual IRS limit, and whether uninvested cash should be moved to the investment sleeve.
 
 ## Supported Carriers
 
-The major HSA carriers and their app-insurance-portal.portal URLs:
+The major HSA carriers and their portal URLs:
 
 **Fidelity HSA** (offered through many large employers):
-- URL: `https://www.app-fidelity.portal.com/hsa`
+- URL: `https://www.fidelity.com/hsa`
 - Login: Same as Fidelity brokerage login
 - Best-in-class investment options (Fidelity index funds, zero expense ratio options available)
 
@@ -49,14 +49,14 @@ The major HSA carriers and their app-insurance-portal.portal URLs:
 - **Investment allocation:** Current fund holdings with allocation percentages and balances
 - **Transaction history:** All contributions (payroll, out-of-pocket), eligible expense withdrawals, and investment purchases/sales
 - **Prior year 5498-SA:** IRS tax form showing annual HSA contribution totals for prior year (available by May of following year)
-- **Eligible expense receipts:** If receipts are submitted through the app-insurance-portal.portal, these are visible in the app-insurance-portal.portal
+- **Eligible expense receipts:** If receipts are submitted through the portal, these are visible in the portal
 
 ## Configuration
 
 Add to `vault/benefits/config.md`:
 ```yaml
 hsa_carrier: "Fidelity"  # Fidelity / HSA Bank / Optum / HealthEquity / WEX
-hsa_app-insurance-portal.portal_url: "https://www.app-fidelity.portal.com/hsa"
+hsa_portal_url: "https://www.fidelity.com/hsa"
 hsa_chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
 hsa_investment_threshold: 2000  # dollar amount to keep in cash; invest excess
 ```
@@ -72,8 +72,8 @@ The 5498-SA is provided by the HSA carrier each May showing total contributions 
 ## Technical Notes
 
 - **Always headless=False** — HSA portals use bot detection similar to banking portals
-- **Session freshness:** HSA app-insurance-portal.portal sessions are typically valid for 30 days; re-authenticate in Chrome if the skill receives a login redirect
-- **Fidelity note:** Fidelity's HSA app-insurance-portal.portal is integrated with their broader brokerage platform — the investment allocation page requires navigating to the HSA-specific investment section, not the general brokerage holdings
+- **Session freshness:** HSA portal sessions are typically valid for 30 days; re-authenticate in Chrome if the skill receives a login redirect
+- **Fidelity note:** Fidelity's HSA portal is integrated with their broader brokerage platform — the investment allocation page requires navigating to the HSA-specific investment section, not the general brokerage holdings
 
 ## Used By
 

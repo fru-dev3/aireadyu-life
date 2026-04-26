@@ -13,7 +13,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/social/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Social Vault** at [frudev.app-gumroad.api.com/l/aireadylife-social](https://frudev.app-gumroad.api.com/l/aireadylife-social)
+1. Purchase the **AI Ready Life: Social Vault** at [frudev.gumroad.com/l/aireadylife-social](https://frudev.gumroad.com/l/aireadylife-social)
 2. Unzip the download
 3. Move the `social/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/social/config.md` and fill in your details
@@ -49,7 +49,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your social vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-social](https://frudev.app-gumroad.api.com/l/aireadylife-social), unzip, and place the `social/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your social vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-social](https://frudev.gumroad.com/l/aireadylife-social), unzip, and place the `social/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -69,8 +69,8 @@ Before running **any skill or flow** in this domain — including flows called b
 > **Step 2 — Gather your documents and add them to `00_current/`**
 > Here's what this domain needs:
 >
-- **Key app-contacts list** — for each person you want to track: full name, relationship (friend, mentor, colleague, family), and last time you connected.
-- **Upcoming birthdays and anniversaries** — name, date, and relationship. Check your phone app-contacts or Facebook for dates.
+- **Key contacts list** — for each person you want to track: full name, relationship (friend, mentor, colleague, family), and last time you connected.
+- **Upcoming birthdays and anniversaries** — name, date, and relationship. Check your phone contacts or Facebook for dates.
 - **Contacts to reconnect with** — anyone you've been meaning to reach out to but haven't in 3+ months.
 - **Outreach notes** — for anyone you want to stay close to: what to talk about, shared interests, or where they are in their career.
 >

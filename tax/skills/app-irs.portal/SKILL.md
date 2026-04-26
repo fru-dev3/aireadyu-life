@@ -13,7 +13,7 @@ description: >
 # IRS
 
 **Auth:** Playwright + Chrome cookies (IRS ID.me authentication; headless=False required)
-**Primary URL:** https://www.app-irs.portal.gov
+**Primary URL:** https://www.irs.gov
 **EFTPS URL:** https://www.eftps.gov
 **Configuration:** Set ID.me email and Chrome profile in `vault/tax/config.md`
 
@@ -31,14 +31,14 @@ description: >
 
 Add to `vault/tax/config.md`:
 ```
-app-irs.portal_idme_email: YOUR_IDME_EMAIL
-app-irs.portal_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+irs_idme_email: YOUR_IDME_EMAIL
+irs_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 eftps_enrolled: true
 ```
 
 ## IRS Direct Pay: Making an Estimated Payment
 
-1. Navigate to https://www.app-irs.portal.gov/payments
+1. Navigate to https://www.irs.gov/payments
 2. Click "Make a Payment"
 3. Select: "Estimated Tax" as reason for payment
 4. Select: "1040-ES" as tax form
@@ -69,6 +69,6 @@ EFTPS requires enrollment (5–7 business days to receive PIN by mail). Once enr
 
 ## Vault Output
 
-- `vault/tax/app-irs.portal/transcripts/` — downloaded account and return transcript PDFs
-- `vault/tax/app-irs.portal/notices/` — downloaded IRS notices and letters
+- `vault/tax/irs/transcripts/` — downloaded account and return transcript PDFs
+- `vault/tax/irs/notices/` — downloaded IRS notices and letters
 - `vault/tax/00_current/payment-log.md` — confirmation numbers recorded after each Direct Pay submission

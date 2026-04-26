@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/tax/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Tax Vault** at [frudev.app-gumroad.api.com/l/aireadylife-tax](https://frudev.app-gumroad.api.com/l/aireadylife-tax)
+1. Purchase the **AI Ready Life: Tax Vault** at [frudev.gumroad.com/l/aireadylife-tax](https://frudev.gumroad.com/l/aireadylife-tax)
 2. Unzip the download
 3. Move the `tax/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/tax/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your tax vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-tax](https://frudev.app-gumroad.api.com/l/aireadylife-tax), unzip, and place the `tax/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your tax vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-tax](https://frudev.gumroad.com/l/aireadylife-tax), unzip, and place the `tax/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -72,7 +72,7 @@ Before running **any skill or flow** in this domain — including flows called b
 > Here's what this domain needs:
 >
 - **Prior year tax return** — your most recent federal and state return (PDF from your tax software or accountant).
-- **W-2 or 1099s** — from all income sources. Download from your employer app-insurance-portal.portal, brokerage, or freelance platforms.
+- **W-2 or 1099s** — from all income sources. Download from your employer portal, brokerage, or freelance platforms.
 - **HSA contribution statement** — total contributions for the year (from your HSA custodian or W-2 Box 12 code W).
 - **Charitable donation receipts** — any letter or receipt for donations over $250.
 - **Business expense records** — if self-employed or a freelancer, receipts or summaries by category.
@@ -90,8 +90,8 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`app-irs.portal`** — Accesses IRS.gov for account transcripts (payments applied, balance due, prior year tax summary), IRS Direct Pay for estimated tax payments (1040-ES), and notice/letter downloads via Playwright with ID.me authentication.
-- **`app-quickbooks`** — Pulls Profit & Loss reports, Balance Sheet, and transaction-level expense data from QuickBooks Online via Playwright with Intuit account authentication.
+- **`irs`** — Accesses IRS.gov for account transcripts (payments applied, balance due, prior year tax summary), IRS Direct Pay for estimated tax payments (1040-ES), and notice/letter downloads via Playwright with ID.me authentication.
+- **`quickbooks`** — Pulls Profit & Loss reports, Balance Sheet, and transaction-level expense data from QuickBooks Online via Playwright with Intuit account authentication.
 - **`flow-build-deadline-list`** — Builds a prioritized list of all tax deadlines falling within the next 90 days, sorted by days remaining.
 - **`flow-build-estimate`** — Projects the current quarter's estimated federal tax payment by aggregating YTD income across all sources (W-2 wages, 1099-NEC, rental, capital gains, dividends, business income), subtracting YTD withholding and prior estimated payments, and running both the safe harbor method (110% of prior year liability if AGI >$150k) and the actual current-year liability method.
 - **`flow-document-completeness`** — Checks the expected tax document checklist for the current tax year against files actually received in vault/tax/00_current/ and flags anything expected but not yet received.
@@ -106,4 +106,4 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-flag-approaching-deadline`** — Writes a deadline alert to vault/tax/open-loops.md when a tax deadline is within 30 days.
 - **`task-log-deductible-expense`** — Records a deductible expense to vault/tax/00_current/ with all metadata required to support the deduction at filing: date, vendor/payee, amount, deduction category (home office, vehicle/mileage, business expense, charitable, medical), IRS basis for deductibility, supporting document reference, business purpose note (for meals/travel), and tax year.
 - **`task-update-open-loops`** — The single write point for vault/tax/open-loops.md.
-- **`app-turbotax.portal`** — Accesses TurboTax Online for prior year return downloads (PDF), current year filing status, imported W-2 and 1099 data summary, estimated refund or amount owed, and key return metrics (AGI, effective tax rate, total deductions).
+- **`turbotax`** — Accesses TurboTax Online for prior year return downloads (PDF), current year filing status, imported W-2 and 1099 data summary, estimated refund or amount owed, and key return metrics (AGI, effective tax rate, total deductions).

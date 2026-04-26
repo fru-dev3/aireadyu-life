@@ -10,8 +10,8 @@ description: >
 # Notion — Vision Plugin
 
 **Auth:** Notion integration token (`NOTION_API_KEY`)
-**URL:** https://www.app-notion.so
-**API:** https://api.app-notion.com/v1
+**URL:** https://www.notion.so
+**API:** https://api.notion.com/v1
 **Configuration:** Set token and page IDs in `vault/vision/config.md`
 
 ## Data Available
@@ -27,10 +27,10 @@ description: >
 
 Add to `vault/vision/config.md`:
 ```
-app-notion_api_key: secret_YOUR_NOTION_TOKEN
-app-notion_vision_page_id: YOUR_MAIN_VISION_PAGE_ID
-app-notion_goals_database_id: YOUR_GOALS_DATABASE_ID
-app-notion_scorecard_page_id: YOUR_SCORECARD_PAGE_ID
+notion_api_key: secret_YOUR_NOTION_TOKEN
+notion_vision_page_id: YOUR_MAIN_VISION_PAGE_ID
+notion_goals_database_id: YOUR_GOALS_DATABASE_ID
+notion_scorecard_page_id: YOUR_SCORECARD_PAGE_ID
 ```
 
 To get page/database IDs: open the page in Notion → Share → Copy link → the ID is the 32-character string in the URL.
@@ -38,10 +38,10 @@ To get page/database IDs: open the page in Notion → Share → Copy link → th
 ## Key API
 
 ```
-POST https://api.app-notion.com/v1/pages
-PATCH https://api.app-notion.com/v1/pages/{page_id}
-GET  https://api.app-notion.com/v1/databases/{id}/query
-POST https://api.app-notion.com/v1/blocks/{block_id}/children
+POST https://api.notion.com/v1/pages
+PATCH https://api.notion.com/v1/pages/{page_id}
+GET  https://api.notion.com/v1/databases/{id}/query
+POST https://api.notion.com/v1/blocks/{block_id}/children
 Authorization: Bearer $NOTION_API_KEY
 Notion-Version: 2022-06-28
 ```

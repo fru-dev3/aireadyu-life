@@ -100,7 +100,7 @@ Maintain `vault/benefits/00_current/target-allocation.md` with desired fund allo
 
 ## Error Handling
 
-- **No 401k statement in vault:** Prompt user to download the most recent statement from their 401k provider app-insurance-portal.portal (Fidelity, Vanguard, Empower, Principal, etc.) and save it to `vault/benefits/00_current/`.
+- **No 401k statement in vault:** Prompt user to download the most recent statement from their 401k provider portal (Fidelity, Vanguard, Empower, Principal, etc.) and save it to `vault/benefits/00_current/`.
 - **Target allocation not configured:** Skip drift analysis and note that target allocation must be configured for drift analysis to work.
 - **Contribution rate unavailable:** Request current contribution rate from user directly to proceed with match capture calculation.
 - **Catch-up eligibility unclear:** Ask user's age if not in config — catch-up contributions apply starting the calendar year you turn 50.

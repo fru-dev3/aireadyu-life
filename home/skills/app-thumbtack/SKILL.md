@@ -10,7 +10,7 @@ description: >
 # Thumbtack
 
 **Auth:** Playwright + Chrome cookies (account required for quote requests; public search available without login)
-**URL:** https://www.app-thumbtack.com
+**URL:** https://www.thumbtack.com
 **Configuration:** Set zip code and Chrome profile in `~/Documents/aireadylife/vault/home/config.md`
 
 ## Data Available
@@ -28,8 +28,8 @@ description: >
 Add to `~/Documents/aireadylife/vault/home/config.md`:
 ```
 home_zip_code: "55344"
-app-thumbtack_email: YOUR_THUMBTACK_EMAIL
-app-thumbtack_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+thumbtack_email: YOUR_THUMBTACK_EMAIL
+thumbtack_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 ```
 
 ## Key Workflows

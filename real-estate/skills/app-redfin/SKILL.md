@@ -9,7 +9,7 @@ description: >
 # Redfin
 
 **Auth:** No authentication required for public data (web research)
-**URL:** https://www.app-redfin.com
+**URL:** https://www.redfin.com
 **Configuration:** Set target search areas and filters in `~/Documents/aireadylife/vault/real-estate/config.md`
 
 ## Data Available
@@ -26,7 +26,7 @@ description: >
 
 Add to `~/Documents/aireadylife/vault/real-estate/config.md`:
 ```
-listing_source: app-redfin
+listing_source: redfin
 target_markets:
   - "Minneapolis MN"
   - "Eden Prairie MN"
@@ -48,7 +48,7 @@ min_sqft: 1500
 
 - Redfin data is available publicly without login for most metrics
 - CSV download of search results available via search results page (may require login)
-- Market stats available under "Housing Market" section for each city: app-redfin.com/city/[name]/housing-market
+- Market stats available under "Housing Market" section for each city: redfin.com/city/[name]/housing-market
 - Redfin Estimate may differ from Zillow Zestimate by 2–5%; use both when precision matters
 - For sold comparables, filter to "sold in the last 6 months" for most relevant pricing data
 

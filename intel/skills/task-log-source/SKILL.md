@@ -52,7 +52,7 @@ Entry added to `~/Documents/aireadylife/vault/intel/00_current/source-list.md`:
 name: {Source Name}
 url: {https://example.com}
 rss_feed: {https://example.com/feed/ or "none"}
-source_type: {RSS / newsletter / app-twitter / podcast / website}
+source_type: {RSS / newsletter / twitter / podcast / website}
 topic_tags: [{tag1}, {tag2}, {tag3}]
 credibility_tier: {1 / 2 / 3}
 status: active

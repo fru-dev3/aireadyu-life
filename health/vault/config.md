@@ -18,7 +18,7 @@ blood_type:             # A+ | A- | B+ | B- | AB+ | AB- | O+ | O-
 primary_care_provider:  # Dr. First Last
 pcp_practice:
 pcp_phone:
-pcp_patient_app-insurance-portal.portal:     # URL (e.g. app-mychart.portal.example.com)
+pcp_patient_portal:     # URL (e.g. mychart.example.com)
 
 ---
 
@@ -68,8 +68,8 @@ medications:
 ## Specialists
 
 # One line per specialist you see regularly
-# Format: specialty | Dr. Name | phone | app-insurance-portal.portal_url
-# Example: Cardiologist | Dr. Jane Smith | 612-555-0100 | app-mychart.portal.allina.com
+# Format: specialty | Dr. Name | phone | portal_url
+# Example: Cardiologist | Dr. Jane Smith | 612-555-0100 | mychart.allina.com
 specialists:
   #
 
@@ -79,7 +79,7 @@ specialists:
 
 last_lab_date:          # YYYY-MM-DD of most recent blood draw
 lab_provider:           # e.g. Quest Diagnostics, LabCorp, hospital lab
-lab_app-insurance-portal.portal:             # URL where results appear
+lab_portal:             # URL where results appear
 
 ---
 

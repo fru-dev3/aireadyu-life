@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/calendar/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Calendar Vault** at [frudev.app-gumroad.api.com/l/aireadylife-calendar](https://frudev.app-gumroad.api.com/l/aireadylife-calendar)
+1. Purchase the **AI Ready Life: Calendar Vault** at [frudev.gumroad.com/l/aireadylife-calendar](https://frudev.gumroad.com/l/aireadylife-calendar)
 2. Unzip the download
 3. Move the `calendar/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/calendar/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your calendar vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-calendar](https://frudev.app-gumroad.api.com/l/aireadylife-calendar), unzip, and place the `calendar/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your calendar vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-calendar](https://frudev.gumroad.com/l/aireadylife-calendar), unzip, and place the `calendar/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -98,5 +98,5 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-add-deadline`** — Records a new deadline to vault/calendar/00_current/ with item description, due date, domain, effort estimate, priority, and linked open loop.
 - **`task-flag-approaching-deadline`** — Writes a deadline alert to vault/calendar/open-loops.md when a cross-domain item is due within 7 days with no preparation activity started.
 - **`task-update-open-loops`** — Writes calendar flags (upcoming deadline clusters, focus time deficits, unscheduled high-priority items) to vault/calendar/open-loops.md and resolves completed items.
-- **`app-gcalendar`** — Reads and creates calendar events via the Google Calendar API.
-- **`app-notion`** — Reads and writes Notion pages and databases via the Notion API.
+- **`gcalendar`** — Reads and creates calendar events via the Google Calendar API.
+- **`notion`** — Reads and writes Notion pages and databases via the Notion API.

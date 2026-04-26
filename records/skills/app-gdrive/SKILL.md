@@ -25,11 +25,11 @@ description: >
 
 Add to `~/Documents/aireadylife/vault/records/config.md`:
 ```
-app-gdrive_credentials: ~/Documents/aireadylife/vault/records/00_current/gdrive-oauth.json
-app-gdrive_records_folder_id: YOUR_RECORDS_FOLDER_ID
-app-gdrive_ids_subfolder_id: YOUR_IDS_SUBFOLDER_ID
-app-gdrive_legal_subfolder_id: YOUR_LEGAL_SUBFOLDER_ID
-app-gdrive_scans_folder_id: YOUR_SCANS_FOLDER_ID
+gdrive_credentials: ~/Documents/aireadylife/vault/records/00_current/gdrive-oauth.json
+gdrive_records_folder_id: YOUR_RECORDS_FOLDER_ID
+gdrive_ids_subfolder_id: YOUR_IDS_SUBFOLDER_ID
+gdrive_legal_subfolder_id: YOUR_LEGAL_SUBFOLDER_ID
+gdrive_scans_folder_id: YOUR_SCANS_FOLDER_ID
 ```
 
 Add to `~/.ai/env/.env`:

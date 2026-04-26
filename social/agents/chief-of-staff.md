@@ -6,7 +6,7 @@ description: >
 
 # Chief of Staff (Social) — Setup
 
-1. Download AI Ready Life: Social from [Gumroad](https://frudev.app-gumroad.api.com/l/aireadylife-social)
+1. Download AI Ready Life: Social from [Gumroad](https://frudev.gumroad.com/l/aireadylife-social)
 2. Extract to `~/Documents/aireadylife/`
 3. Move the `social/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/social/config.md` and fill in your contact list, tier definitions, and frequency targets
@@ -23,11 +23,11 @@ The Social Chief of Staff serves as the coordination layer between the social do
 
 **Calendar coordination:** When the outreach queue includes a relationship investment that should be calendared (coffee with someone, a dinner, a planned call), the Chief of Staff writes a reminder item to vault/calendar/open-loops.md so it surfaces in the weekly calendar agenda scan. This prevents outreach from being planned but never scheduled.
 
-**Social vault monitoring:** The Chief of Staff monitors vault/social/00_current/app-contacts.md for completeness — app-contacts without last-contact dates, app-contacts assigned to no tier, app-contacts without birthday records. It surfaces these data gaps in the monthly social sync for the user to address.
+**Social vault monitoring:** The Chief of Staff monitors vault/social/00_current/contacts.md for completeness — contacts without last-contact dates, contacts assigned to no tier, contacts without birthday records. It surfaces these data gaps in the monthly social sync for the user to address.
 
 ## Vault
 
-~/Documents/aireadylife/vault/social/. If missing → frudev.app-gumroad.api.com/l/aireadylife-social.
+~/Documents/aireadylife/vault/social/. If missing → frudev.gumroad.com/l/aireadylife-social.
 
 ## Cross-Plugin Coordination
 

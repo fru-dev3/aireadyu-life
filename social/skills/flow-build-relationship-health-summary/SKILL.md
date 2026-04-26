@@ -2,7 +2,7 @@
 type: flow
 trigger: called-by-op
 description: >
-  Generates a relationship health table showing all tracked app-contacts with last contact date, health
+  Generates a relationship health table showing all tracked contacts with last contact date, health
   status, and relationship tier.
 ---
 
@@ -13,7 +13,7 @@ description: >
 
 ## What It Does
 
-This flow is the measurement engine for the social domain. It joins the contact roster (vault/social/00_current/app-contacts.md) with the interaction log (vault/social/00_current/) to produce a full health assessment of every tracked relationship.
+This flow is the measurement engine for the social domain. It joins the contact roster (vault/social/00_current/contacts.md) with the interaction log (vault/social/00_current/) to produce a full health assessment of every tracked relationship.
 
 **Last-contact calculation:** For each contact in the roster, the flow reads their interaction log file (or scans the combined interaction log for their name) and finds the most recent entry. The date of the most recent entry is the last-contact date. "Contact" is defined as a meaningful interaction — a logged interaction entry in vault/social/00_current/. The flow does not count implicit signals (like seeing someone's LinkedIn post) as contact — only explicitly logged interactions count.
 
@@ -23,15 +23,15 @@ This flow is the measurement engine for the social domain. It joins the contact 
 - Tier 3 (Active): Healthy = <90 days, Fading = 90-180 days, Overdue = 180+ days
 - Tier 4 (Dormant): No active health tracking; show last-contact date only
 
-**Table construction:** The flow builds a contact-by-contact health table. Columns: name, tier, last contact date (or "No log" if no interaction recorded), days since contact, health status, and next-recommended-contact-date (today for overdue, the threshold date minus 7 days for healthy/fading — a proactive date that keeps the user ahead of the threshold). The table is sorted by urgency: overdue app-contacts first (sorted by most-overdue first), then fading (sorted by most-at-risk first), then healthy.
+**Table construction:** The flow builds a contact-by-contact health table. Columns: name, tier, last contact date (or "No log" if no interaction recorded), days since contact, health status, and next-recommended-contact-date (today for overdue, the threshold date minus 7 days for healthy/fading — a proactive date that keeps the user ahead of the threshold). The table is sorted by urgency: overdue contacts first (sorted by most-overdue first), then fading (sorted by most-at-risk first), then healthy.
 
-**Statistical summary:** After the full contact table, the flow calculates aggregate statistics: total app-contacts by tier, total overdue by tier, total fading by tier, and the percentage of each tier in healthy status. These aggregate numbers feed the portfolio health summary section of the calling op's output.
+**Statistical summary:** After the full contact table, the flow calculates aggregate statistics: total contacts by tier, total overdue by tier, total fading by tier, and the percentage of each tier in healthy status. These aggregate numbers feed the portfolio health summary section of the calling op's output.
 
-**Data quality flags:** The flow identifies app-contacts in the roster with missing data: no interaction log entries (never tracked — "No log" in the table), no tier assignment (defaults to Tier 3), no birthday record (flagged as a data gap). These are returned as data quality notes for the calling op to include in its vault hygiene section.
+**Data quality flags:** The flow identifies contacts in the roster with missing data: no interaction log entries (never tracked — "No log" in the table), no tier assignment (defaults to Tier 3), no birthday record (flagged as a data gap). These are returned as data quality notes for the calling op to include in its vault hygiene section.
 
 ## Steps
 
-1. Read vault/social/00_current/app-contacts.md for complete contact roster
+1. Read vault/social/00_current/contacts.md for complete contact roster
 2. Read tier definitions and health thresholds from vault/social/config.md
 3. For each contact: read vault/social/00_current/ for most recent interaction entry
 4. Calculate days since last contact for each contact (or flag as "No log")
@@ -44,7 +44,7 @@ This flow is the measurement engine for the social domain. It joins the contact 
 
 ## Input
 
-- ~/Documents/aireadylife/vault/social/00_current/app-contacts.md
+- ~/Documents/aireadylife/vault/social/00_current/contacts.md
 - ~/Documents/aireadylife/vault/social/00_current/ (all interaction logs)
 - `~/Documents/aireadylife/vault/social/01_prior/` — prior period records for trend comparison
 - ~/Documents/aireadylife/vault/social/config.md (tier thresholds)
@@ -54,7 +54,7 @@ This flow is the measurement engine for the social domain. It joins the contact 
 Returns structured data to calling op:
 ```
 {
-  app-contacts: [
+  contacts: [
     { name: "[Name]", tier: "T1", last_contact: "2025-12-12", days_since: 122, status: "Overdue", next_recommended: "Today" },
     { name: "[Name]", tier: "T2", last_contact: "2026-01-15", days_since: 88, status: "Overdue", next_recommended: "Today" },
     { name: "[Name]", tier: "T1", last_contact: "2026-03-08", days_since: 36, status: "Fading", next_recommended: "Apr 17" },
@@ -81,12 +81,12 @@ Required in vault/social/config.md:
 
 ## Error Handling
 
-- **app-contacts.md missing:** Cannot run. Return error to calling op: "Contact roster missing. Create vault/social/00_current/app-contacts.md to enable health tracking."
-- **No interaction log entries for any contact:** Return table with all app-contacts as "No log" status; note "No interactions logged — the social domain requires vault/social/00_current/ data."
+- **contacts.md missing:** Cannot run. Return error to calling op: "Contact roster missing. Create vault/social/00_current/contacts.md to enable health tracking."
+- **No interaction log entries for any contact:** Return table with all contacts as "No log" status; note "No interactions logged — the social domain requires vault/social/00_current/ data."
 - **config.md missing health thresholds:** Use defaults (T1: 30/60, T2: 60/90, T3: 90/180).
 
 ## Vault Paths
 
 - Reads from: `~/Documents/aireadylife/vault/social/01_prior/` — prior period records
-- Reads from: ~/Documents/aireadylife/vault/social/00_current/app-contacts.md, ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/config.md
+- Reads from: ~/Documents/aireadylife/vault/social/00_current/contacts.md, ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/config.md
 - Writes to: none (returns data to calling op)

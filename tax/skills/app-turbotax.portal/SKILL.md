@@ -12,7 +12,7 @@ description: >
 # TurboTax
 
 **Auth:** Intuit account login via Playwright + Chrome cookies (headless=False)
-**URL:** https://app-turbotax.portal.intuit.com (online version)
+**URL:** https://turbotax.intuit.com (online version)
 **Configuration:** Set Intuit email and Chrome profile in `vault/tax/config.md`
 
 ## Data Available
@@ -30,8 +30,8 @@ description: >
 
 Add to `vault/tax/config.md`:
 ```
-app-turbotax.portal_email: YOUR_INTUIT_EMAIL
-app-turbotax.portal_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+turbotax_email: YOUR_INTUIT_EMAIL
+turbotax_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 ```
 
 If the user files with a CPA instead of TurboTax, the prior year return PDF can be obtained directly from the CPA and placed in `vault/tax/01_prior/YYYY/` — the IRS skill's transcript download is an alternative source for key figures (prior year AGI, prior year tax liability).
@@ -52,7 +52,7 @@ From the prior year return PDF (Form 1040):
 
 ## Notes
 
-- TurboTax Online stores returns for 7 years in the app-insurance-portal.portal
+- TurboTax Online stores returns for 7 years in the portal
 - If using TurboTax Desktop (installed software), export the PDF before the tax year window closes in the desktop app
 - The "Intuit account" credentials are shared between TurboTax and QuickBooks — the same Chrome profile can be used for both if logged in as the same Intuit account
 

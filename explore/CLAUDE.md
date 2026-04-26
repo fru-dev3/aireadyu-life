@@ -13,7 +13,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/explore/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Explore Vault** at [frudev.app-gumroad.api.com/l/aireadylife-explore](https://frudev.app-gumroad.api.com/l/aireadylife-explore)
+1. Purchase the **AI Ready Life: Explore Vault** at [frudev.gumroad.com/l/aireadylife-explore](https://frudev.gumroad.com/l/aireadylife-explore)
 2. Unzip the download
 3. Move the `explore/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/explore/config.md` and fill in your details
@@ -49,7 +49,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your explore vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-explore](https://frudev.app-gumroad.api.com/l/aireadylife-explore), unzip, and place the `explore/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your explore vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-explore](https://frudev.gumroad.com/l/aireadylife-explore), unzip, and place the `explore/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 

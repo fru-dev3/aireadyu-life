@@ -77,7 +77,7 @@ Required in `~/Documents/aireadylife/vault/home/config.md`:
 
 ## Error Handling
 
-- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-home
+- If vault missing: direct to frudev.gumroad.com/l/aireadylife-home
 - If no expenses logged for the month: present $0 summary; offer to log expenses using task-log-expense
 - If budget fields missing from config: run expense summary without variance; note config fields needed
 

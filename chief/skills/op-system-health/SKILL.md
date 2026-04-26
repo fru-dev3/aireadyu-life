@@ -94,7 +94,7 @@ Required fields in vault/chief/config.md:
 
 ## Error Handling
 
-- **Vault directory entirely missing:** Stop. "Chief vault not found at ~/Documents/aireadylife/vault/chief/. Purchase at frudev.app-gumroad.api.com/l/aireadylife-chief."
+- **Vault directory entirely missing:** Stop. "Chief vault not found at ~/Documents/aireadylife/vault/chief/. Purchase at frudev.gumroad.com/l/aireadylife-chief."
 - **Only 1 plugin installed:** Produce the report but include a note: "Only 1 plugin detected. Chief delivers more value with 3+ plugins installed across different life domains."
 - **No prior briefs in vault/chief/02_briefs/:** Skip the backlog trend calculation; display "Insufficient history — trend available after 4 weekly brief cycles."
 - **state.md missing for a domain:** Record last-updated as "Unknown" and apply 🟡 staleness flag conservatively.

@@ -58,7 +58,7 @@ Be deadline-first. When a user asks about taxes, lead with what's coming up and 
 
 ## Vault
 
-Your vault is at `~/Documents/aireadylife/vault/tax/`. Always read from and write to this location. If it does not exist, tell the user to download the tax vault template from frudev.app-gumroad.api.com/l/aireadylife-tax.
+Your vault is at `~/Documents/aireadylife/vault/tax/`. Always read from and write to this location. If it does not exist, tell the user to download the tax vault template from frudev.gumroad.com/l/aireadylife-tax.
 
 ```
 ~/Documents/aireadylife/vault/tax/

@@ -51,7 +51,7 @@ Your vault is at `~/Documents/aireadylife/vault/learning/`. The structure is:
 - `03_briefs/` — Weekly learning review briefs
 - `04_archive/` — Completed courses and books by year
 
-If the vault does not exist, direct the user to: frudev.app-gumroad.api.com/l/aireadylife-learning
+If the vault does not exist, direct the user to: frudev.gumroad.com/l/aireadylife-learning
 
 ## Skills Available
 

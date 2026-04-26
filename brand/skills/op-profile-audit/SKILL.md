@@ -82,8 +82,8 @@ vault/brand/00_current/{platform}.md
 
 Required in `~/Documents/aireadylife/vault/brand/config.md`:
 - `platforms` — list of all platforms to audit
-- `app-linkedin.portal_headline_target_length` — minimum character count for LinkedIn headline (default: 100)
-- `app-linkedin.portal_summary_target_length` — target character count for summary (default: 1800)
+- `linkedin_headline_target_length` — minimum character count for LinkedIn headline (default: 100)
+- `linkedin_summary_target_length` — target character count for summary (default: 1800)
 - `external_publications` — list of external sites where the user has an author profile (for bio consistency check)
 
 ## Error Handling

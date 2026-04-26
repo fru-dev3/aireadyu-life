@@ -10,7 +10,7 @@ description: >
 # Contacts — Social Plugin
 
 **Auth:** iOS Shortcuts export (device-local vCard) or Google People API (OAuth2)
-**URL:** iOS Contacts app / app-contacts.google.com / Google People API
+**URL:** iOS Contacts app / contacts.google.com / Google People API
 **Configuration:** Set sync method and export path in `vault/social/config.md`
 
 ## What It Does
@@ -34,18 +34,18 @@ Interaction notes logged via `task-log-interaction` may be stored in the contact
 
 Add to `vault/social/config.md`:
 ```
-app-contacts_sync_method: google_people_api   # options: google_people_api | ios_vcf
+contacts_sync_method: google_people_api   # options: google_people_api | ios_vcf
 google_people_api_credentials: vault/social/keys/google-people-oauth.json
-app-contacts_export_path: ~/Documents/aireadylife/vault/social/00_current/contacts-export.vcf
-app-contacts_birthday_field: birthday         # standard vCard field
+contacts_export_path: ~/Documents/aireadylife/vault/social/00_current/contacts-export.vcf
+contacts_birthday_field: birthday         # standard vCard field
 ```
 
 **Google People API method (recommended):** Provides structured JSON with all fields. Requires
 OAuth2 credentials — create a project in Google Cloud Console, enable the People API, download
 credentials to `vault/social/keys/google-people-oauth.json`.
 
-**iOS vCard method:** Export all app-contacts from iPhone: Contacts app → Select All → Share → AirDrop
-to Mac → save to `app-contacts_export_path`. Parse vCard format (RFC 6350) to extract BDAY, TEL, EMAIL,
+**iOS vCard method:** Export all contacts from iPhone: Contacts app → Select All → Share → AirDrop
+to Mac → save to `contacts_export_path`. Parse vCard format (RFC 6350) to extract BDAY, TEL, EMAIL,
 and NOTE fields. Re-export monthly or when contact records change significantly.
 
 ## Export Methods
@@ -66,14 +66,14 @@ Extract: `FN` (full name), `BDAY` (birthday in YYYYMMDD or --MMDD format), `NOTE
 `TEL`, `EMAIL`.
 
 **Google Takeout (one-time export):**
-app-contacts.google.com → Export → Google CSV or vCard — useful for initial vault population. Not suitable
+contacts.google.com → Export → Google CSV or vCard — useful for initial vault population. Not suitable
 for ongoing sync; use People API for regular reads.
 
 ## Birthday Parsing
 
 Contacts store birthdays in multiple formats — handle all:
 - `BDAY:19850415` — full date with year
-- `BDAY:--0415` — no year (day/month only) — most common for casual app-contacts
+- `BDAY:--0415` — no year (day/month only) — most common for casual contacts
 - Google People API: `{"day": 15, "month": 4, "year": 1985}` or `{"day": 15, "month": 4}` (no year)
 
 When year is absent: use only for upcoming birthday detection (day/month match). Do not calculate age.
@@ -81,8 +81,8 @@ When year is present: calculate age and include in birthday alert context ("turn
 
 ## Used By
 
-- `op-birthday-watch` — scan all app-contacts with BDAY set for upcoming birthdays in the next 14 days
-- `op-monthly-sync` — full contact roster refresh; reconcile vault contact files against app-contacts export to detect new app-contacts, missing tiers, and birthday gaps
+- `op-birthday-watch` — scan all contacts with BDAY set for upcoming birthdays in the next 14 days
+- `op-monthly-sync` — full contact roster refresh; reconcile vault contact files against contacts export to detect new contacts, missing tiers, and birthday gaps
 - `flow-build-outreach-queue` — pull email/phone for outreach medium selection (e.g., if mobile number exists, SMS is an option for T1/T2)
 - `flow-build-relationship-health-summary` — cross-reference contact notes for supplemental last-interaction dates when vault interaction log is sparse
 - `task-log-interaction` — optionally update contact notes field in Google Contacts after logging to vault (configurable; off by default)

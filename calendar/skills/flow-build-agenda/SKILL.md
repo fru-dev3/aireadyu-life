@@ -81,7 +81,7 @@ This flow receives pre-collected inputs from the calling op — deadline items, 
 
 ## Error Handling
 
-- **No focus slot data available (app-gcalendar not configured):** Produce agenda without Focus Block Calendar; note "Configure Google Calendar to get focus block placement recommendations."
+- **No focus slot data available (gcalendar not configured):** Produce agenda without Focus Block Calendar; note "Configure Google Calendar to get focus block placement recommendations."
 - **Fewer than 3 Level 1-3 items:** Promote the highest Level 4 items to fill the priorities section.
 - **All items are deferred (no urgent or important work this week):** Note "No urgent or important items this week — this is a maintenance week. Use the time for backlog clearance or vision planning."
 

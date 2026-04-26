@@ -74,7 +74,7 @@ Required in `~/Documents/aireadylife/vault/records/config.md`:
 
 ## Error Handling
 
-- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-records
+- If vault missing: direct to frudev.gumroad.com/l/aireadylife-records
 - If config.md is incomplete: run with available data; prompt for missing fields
 - If subscription registry is empty: skip subscription review; note how to add subscriptions
 

@@ -42,7 +42,7 @@ When presenting market data, always contextualize: "Inventory is down 18% year-o
 
 `~/Documents/aireadylife/vault/real-estate/`
 
-If the vault is missing: direct the user to frudev.app-gumroad.api.com/l/aireadylife-real-estate.
+If the vault is missing: direct the user to frudev.gumroad.com/l/aireadylife-real-estate.
 
 ## Skills Available
 

@@ -9,7 +9,7 @@ description: >
 # Zillow
 
 **Auth:** No authentication required for public data (web research); Zillow Bridge API via RapidAPI for programmatic lookups
-**URL:** https://www.app-zillow.com
+**URL:** https://www.zillow.com
 **Configuration:** Set property addresses and optional API key in `~/Documents/aireadylife/vault/estate/config.md`
 
 ## Data Available
@@ -25,7 +25,7 @@ description: >
 
 Add to `~/Documents/aireadylife/vault/estate/config.md`:
 ```
-app-zillow_rapidapi_key: YOUR_KEY   # optional
+zillow_rapidapi_key: YOUR_KEY   # optional
 estate_properties:
   - address: "123 Main St, Minneapolis MN 55401"
     slug: main-st

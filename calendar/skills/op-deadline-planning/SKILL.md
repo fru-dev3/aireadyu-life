@@ -40,7 +40,7 @@ Deadline planning is the reverse-engineering op — the user provides a due date
 2. Calculate days remaining from today to deadline
 3. Classify task by effort tier (Light / Moderate / Heavy / Major) based on description
 4. Assign total effort estimate in hours for the effort tier
-5. If app-gcalendar configured: read calendar for available focus windows between now and deadline
+5. If gcalendar configured: read calendar for available focus windows between now and deadline
 6. Compare effort estimate to available focused hours; flag if runway is insufficient
 7. Generate milestone schedule with named phases, dates, effort estimates, and dependencies
 8. Assign each milestone to a specific recommended calendar date and time slot (if calendar data available)
@@ -52,7 +52,7 @@ Deadline planning is the reverse-engineering op — the user provides a due date
 ## Input
 
 - User-provided: deadline date, task description
-- Google Calendar (via app-gcalendar, optional): available focus windows between now and deadline
+- Google Calendar (via gcalendar, optional): available focus windows between now and deadline
 - ~/Documents/aireadylife/vault/calendar/config.md
 - `vault/calendar/01_prior/` — prior period records for trend comparison
 
@@ -76,7 +76,7 @@ Available focused hours before deadline: [N]h ([sufficient/tight/insufficient])
 | Finalize/Submit | [Date]    | [N]h   | [Specific action for this task]     |
 | Buffer          | [Date-1]  | —      | Final check; submit on deadline day |
 
-## Calendar Placement (if app-gcalendar configured)
+## Calendar Placement (if gcalendar configured)
 - [Date, time slot]: [Phase — N hours]
 - [Date, time slot]: [Phase — N hours]
 
@@ -97,10 +97,10 @@ Required in vault/calendar/config.md:
 - **No task description provided:** Ask: "What needs to be done before the deadline?"
 - **Deadline is in the past:** Note "This deadline has already passed. Log completion or update the date."
 - **Deadline within 48 hours:** Mark as critical. Generate condensed 1-2 milestone plan with immediate action emphasis. Note remaining window explicitly.
-- **app-gcalendar not configured:** Skip runway calculation; still produce the milestone schedule without calendar placement.
+- **gcalendar not configured:** Skip runway calculation; still produce the milestone schedule without calendar placement.
 
 ## Vault Paths
 
 - Reads from: `~/Documents/aireadylife/vault/calendar/01_prior/` — prior period records
-- Reads from: Google Calendar (optional, via app-gcalendar), ~/Documents/aireadylife/vault/calendar/config.md
+- Reads from: Google Calendar (optional, via gcalendar), ~/Documents/aireadylife/vault/calendar/config.md
 - Writes to: ~/Documents/aireadylife/vault/calendar/00_current/YYYY-MM-DD-{slug}.md, ~/Documents/aireadylife/vault/calendar/open-loops.md

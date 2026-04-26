@@ -28,10 +28,10 @@ description: >
 
 Add to `vault/vision/config.md`:
 ```
-app-gdrive_credentials: vault/vision/keys/gdrive-oauth.json
-app-gdrive_scorecards_folder_id: YOUR_SCORECARDS_FOLDER_ID
-app-gdrive_goals_folder_id: YOUR_GOALS_FOLDER_ID
-app-gdrive_annual_reviews_folder_id: YOUR_ANNUAL_REVIEWS_FOLDER_ID
+gdrive_credentials: vault/vision/keys/gdrive-oauth.json
+gdrive_scorecards_folder_id: YOUR_SCORECARDS_FOLDER_ID
+gdrive_goals_folder_id: YOUR_GOALS_FOLDER_ID
+gdrive_annual_reviews_folder_id: YOUR_ANNUAL_REVIEWS_FOLDER_ID
 ```
 
 To get folder IDs: open the folder in Google Drive → the ID is in the URL after `/folders/`.

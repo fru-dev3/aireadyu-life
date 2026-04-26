@@ -25,7 +25,7 @@ The op calls `tax-build-deadline-list` to generate the 90-day forward look, then
 
 **Quarterly payment amounts.** For each estimated payment deadline, the watch op checks whether a quarterly estimate has been calculated in `vault/tax/00_current/`. If yes, the flagged amount uses the calculated figure. If no estimate has been run, the flag includes "[Amount TBD — run quarterly estimate]" and triggers `tax-quarterly-estimate` as a recommended follow-on action.
 
-**Entity deadline specificity.** Entity deadlines are flagged with entity name, deadline type, specific state, amount (franchise tax or annual report fee where known), and the specific app-insurance-portal.portal or method. Minnesota LLC annual reports: filed online at SOS.state.mn.us, $0 fee. California LLC: $800 minimum franchise tax due April 15. Texas LLC: margin tax return due May 15. These specific amounts and portals are populated from config or the embedded entity compliance reference.
+**Entity deadline specificity.** Entity deadlines are flagged with entity name, deadline type, specific state, amount (franchise tax or annual report fee where known), and the specific portal or method. Minnesota LLC annual reports: filed online at SOS.state.mn.us, $0 fee. California LLC: $800 minimum franchise tax due April 15. Texas LLC: margin tax return due May 15. These specific amounts and portals are populated from config or the embedded entity compliance reference.
 
 **EFTPS enrollment warning.** If any estimated payment amount exceeds $1,000 and the user has not previously enrolled in EFTPS (Electronic Federal Tax Payment System), the flag includes a note: "EFTPS enrollment takes 5–7 business days — enroll now if you haven't already. For immediate payment, use IRS Direct Pay instead."
 
@@ -36,7 +36,7 @@ The op calls `tax-build-deadline-list` to generate the 90-day forward look, then
 
 ## Apps
 
-- `app-gcalendar` — optional; add deadline alerts to Google Calendar if configured
+- `gcalendar` — optional; add deadline alerts to Google Calendar if configured
 
 ## Vault Output
 

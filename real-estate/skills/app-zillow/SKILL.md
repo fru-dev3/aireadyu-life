@@ -9,7 +9,7 @@ description: >
 # Zillow
 
 **Auth:** No authentication required for public data (web research); Zillow Bridge API via RapidAPI for programmatic Zestimate lookups
-**URL:** https://www.app-zillow.com
+**URL:** https://www.zillow.com
 **Configuration:** Set search areas and API key in `~/Documents/aireadylife/vault/real-estate/config.md`
 
 ## Data Available
@@ -26,8 +26,8 @@ description: >
 
 Add to `~/Documents/aireadylife/vault/real-estate/config.md`:
 ```
-listing_source: app-zillow
-app-zillow_rapidapi_key: YOUR_KEY   # optional; for programmatic Zestimate lookups
+listing_source: zillow
+zillow_rapidapi_key: YOUR_KEY   # optional; for programmatic Zestimate lookups
 target_markets:
   - "Minneapolis MN"
   - "Eden Prairie MN"

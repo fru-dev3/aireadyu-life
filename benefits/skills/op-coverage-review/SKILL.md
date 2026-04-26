@@ -102,7 +102,7 @@ Optional: `vault/benefits/00_current/coverage-targets.md` with custom multiplier
 
 ## Error Handling
 
-- **No enrollment confirmation in vault:** Cannot verify elections. Prompt user to download the benefits confirmation from their HR app-insurance-portal.portal (Workday, ADP, etc.) and save to `vault/benefits/00_current/`.
+- **No enrollment confirmation in vault:** Cannot verify elections. Prompt user to download the benefits confirmation from their HR portal (Workday, ADP, etc.) and save to `vault/benefits/00_current/`.
 - **Income not configured:** Cannot calculate coverage needs. Request annual gross salary before proceeding.
 - **Deduction discrepancy found:** Flag immediately with specific benefit and discrepancy. Recommend user contact HR benefits team within 5 business days.
 

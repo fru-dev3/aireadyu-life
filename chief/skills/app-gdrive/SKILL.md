@@ -33,9 +33,9 @@ layer only. The chief-agent never reads from Drive as its primary data source; D
 
 Add to `vault/chief/config.md`:
 ```
-app-gdrive_credentials: ~/Documents/aireadylife/vault/chief/00_current/gdrive-oauth.json
-app-gdrive_briefs_folder_id: YOUR_BRIEFS_FOLDER_ID
-app-gdrive_system_folder_id: YOUR_SYSTEM_FOLDER_ID
+gdrive_credentials: ~/Documents/aireadylife/vault/chief/00_current/gdrive-oauth.json
+gdrive_briefs_folder_id: YOUR_BRIEFS_FOLDER_ID
+gdrive_system_folder_id: YOUR_SYSTEM_FOLDER_ID
 ```
 
 To get folder IDs: open the folder in Google Drive → the ID is in the URL after `/folders/`.
@@ -77,7 +77,7 @@ patch (update) the existing file rather than creating a duplicate.
 - Local vault write always happens first. If Drive write fails, log the error to
   `vault/chief/00_current/drive-sync-errors.md` and continue — do not block brief delivery on
   a Drive failure.
-- Drive is optional. If `app-gdrive_briefs_folder_id` is not configured, skip Drive archiving silently.
+- Drive is optional. If `gdrive_briefs_folder_id` is not configured, skip Drive archiving silently.
 - Do not use Drive as the input source for any chief skill. All reads come from the local vault.
   Drive is output-only for this plugin.
 

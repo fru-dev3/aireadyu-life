@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/real-estate/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Real Estate Vault** at [frudev.app-gumroad.api.com/l/aireadylife-real-estate](https://frudev.app-gumroad.api.com/l/aireadylife-real-estate)
+1. Purchase the **AI Ready Life: Real Estate Vault** at [frudev.gumroad.com/l/aireadylife-real-estate](https://frudev.gumroad.com/l/aireadylife-real-estate)
 2. Unzip the download
 3. Move the `real-estate/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/real-estate/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your real-estate vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-real-estate](https://frudev.app-gumroad.api.com/l/aireadylife-real-estate), unzip, and place the `real-estate/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your real-estate vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-real-estate](https://frudev.gumroad.com/l/aireadylife-real-estate), unzip, and place the `real-estate/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -98,5 +98,5 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-log-listing`** — Saves a listing of interest to vault/real-estate/00_current/ with address, price, beds/baths, sqft, price/sqft, days on market, Zestimate, list-to-Zestimate ratio, user notes, Zillow/Redfin link, and status.
 - **`task-run-buy-vs-rent`** — Runs a time-value-adjusted buy vs.
 - **`task-update-open-loops`** — Writes all real-estate flags (market shifts, affordability changes, buy-window signals, interesting listings) to ~/Documents/aireadylife/vault/real-estate/open-loops.md and resolves items that are no longer relevant.
-- **`app-redfin`** — Pulls active listings, comparable sales, market statistics, and property estimates from Redfin via web research.
-- **`app-zillow`** — Fetches Zestimate property valuations, active listings, rental estimates, and market trend data from Zillow via web research.
+- **`redfin`** — Pulls active listings, comparable sales, market statistics, and property estimates from Redfin via web research.
+- **`zillow`** — Fetches Zestimate property valuations, active listings, rental estimates, and market trend data from Zillow via web research.

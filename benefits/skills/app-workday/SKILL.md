@@ -7,7 +7,7 @@ description: >
 # Workday
 
 **Auth:** Playwright + Chrome cookies (employer SSO — session from existing Chrome login)
-**URL:** Employer-specific — e.g., `https://YOURCOMPANY.wd5.myworkdayjobs.com` or `https://YOURCOMPANY.app-workday.com`
+**URL:** Employer-specific — e.g., `https://YOURCOMPANY.wd5.myworkdayjobs.com` or `https://YOURCOMPANY.workday.com`
 **Configuration:** Set your employer Workday URL and Chrome profile in `vault/benefits/config.md`
 
 ## What It Provides
@@ -54,9 +54,9 @@ This skill provides read access to Workday's Benefits and Pay worklets to confir
 
 Add to `vault/benefits/config.md`:
 ```yaml
-app-workday_url: "https://YOURCOMPANY.wd5.myworkdayjobs.com"  # employer-specific
-app-workday_chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
-app-workday_payroll_in_app-workday: false  # true if your employer uses Workday payroll (not ADP)
+workday_url: "https://YOURCOMPANY.wd5.myworkdayjobs.com"  # employer-specific
+workday_chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
+workday_payroll_in_workday: false  # true if your employer uses Workday payroll (not ADP)
 ```
 
 Note: If your employer uses Okta SSO, the Chrome profile must have an active Okta session. The Workday URL will redirect to Okta → then back to Workday. The skill handles this redirect automatically if the Chrome session is active.
@@ -97,7 +97,7 @@ Home → Benefits → Change Benefits → [Select qualifying event]
 
 - **Always headless=False** — Workday enforces bot detection at the employer SSO layer and within the application itself; headless sessions are blocked
 - **Employer SSO:** Workday does not have a universal login page — every employer's Workday is behind their SSO provider (Okta, Microsoft Azure AD, Google Workspace, Ping Identity, ADFS). The Chrome profile must have an active SSO session before the skill runs. If the SSO session has expired, the user must log in manually in Chrome first.
-- **URL format:** Most Workday tenants follow `COMPANY.wd5.myworkdayjobs.com` or `COMPANY.app-workday.com`. Some employers use a vanity URL that redirects to their Workday instance — use the final destination URL in config.
+- **URL format:** Most Workday tenants follow `COMPANY.wd5.myworkdayjobs.com` or `COMPANY.workday.com`. Some employers use a vanity URL that redirects to their Workday instance — use the final destination URL in config.
 - **Worklet naming:** Workday's interface uses "worklets" (tiles on the home screen). Benefits is always a distinct worklet from Pay. If the employer has restricted pay stub access in Workday (routing to ADP instead), the Pay worklet may not be present.
 - **Open enrollment window detection:** The enrollment task only appears in Workday during the active enrollment window. Outside of OE, navigation to Benefits shows current elections only — no option to change plans without a qualifying life event.
 - **Session duration:** Workday sessions via SSO typically expire after 8-12 hours; re-authenticate in Chrome if the skill receives a redirect to the SSO login page

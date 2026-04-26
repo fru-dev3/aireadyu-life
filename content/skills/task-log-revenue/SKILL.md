@@ -30,7 +30,7 @@ Writes to the platform-specific subfolder using a consistent filename convention
 
 1. Identify the revenue event: ask for platform, amount, date, and type if not provided
 2. Validate: amount must be a positive number; platform must be a recognized value; date must be parseable
-3. Determine the target subfolder: YouTube = 00_app-youtube.api/, newsletter = 01_newsletter/, Gumroad = 02_app-gumroad.api/
+3. Determine the target subfolder: YouTube = 00_youtube/, newsletter = 01_newsletter/, Gumroad = 02_gumroad/
 4. Determine file type: monthly batch (if this covers a full month's earnings from one platform) or individual transaction
 5. For monthly batch: check if a revenue file already exists for this platform and month; if yes, ask whether to append or replace
 6. For individual transaction: generate a unique filename with date and type
@@ -71,7 +71,7 @@ Same fields with single-transaction data.
 
 Optional in `~/Documents/aireadylife/vault/content/config.md`:
 - `revenue_platforms` — recognized platform names (prevents typos in log files)
-- `app-gumroad.api_products` — list of product names for consistent product-level tracking
+- `gumroad_products` — list of product names for consistent product-level tracking
 
 ## Error Handling
 
@@ -82,4 +82,4 @@ Optional in `~/Documents/aireadylife/vault/content/config.md`:
 ## Vault Paths
 
 - Reads from: `~/Documents/aireadylife/vault/content/config.md`, target subfolder for duplicate check
-- Writes to: `~/Documents/aireadylife/vault/content/00_current/` or `01_newsletter/` or `02_app-gumroad.api/` depending on platform
+- Writes to: `~/Documents/aireadylife/vault/content/00_current/` or `01_newsletter/` or `02_gumroad/` depending on platform

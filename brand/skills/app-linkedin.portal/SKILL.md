@@ -9,7 +9,7 @@ description: >
 # LinkedIn
 
 **Auth:** Playwright + Chrome cookies
-**URL:** https://www.app-linkedin.portal.com
+**URL:** https://www.linkedin.com
 **Configuration:** Set your profile URL and Chrome profile path in `vault/brand/config.md`
 
 ## Data Available
@@ -25,8 +25,8 @@ description: >
 
 Add to `vault/brand/config.md`:
 ```
-app-linkedin.portal_profile_url: https://www.app-linkedin.portal.com/in/YOUR-HANDLE
-app-linkedin.portal_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+linkedin_profile_url: https://www.linkedin.com/in/YOUR-HANDLE
+linkedin_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 ```
 
 ## Notes

@@ -19,7 +19,7 @@ description: >
 
 A utility task called whenever a flow needs current year-to-date income and withholding figures. Rather than each flow reading every income document independently, this task centralizes income extraction and returns a clean, standardized record.
 
-**W-2 income.** Reads W-2 pay stub records from `vault/tax/00_current/YYYY/` — either downloaded app-insurance-portal.portal pay stubs or the user's most recent W-2 if available. Extracts: YTD gross wages, YTD federal income tax withheld, YTD Social Security withheld, YTD Medicare withheld, YTD state income tax withheld. If multiple employers are active (job change during the year), reads each separately and sums.
+**W-2 income.** Reads W-2 pay stub records from `vault/tax/00_current/YYYY/` — either downloaded portal pay stubs or the user's most recent W-2 if available. Extracts: YTD gross wages, YTD federal income tax withheld, YTD Social Security withheld, YTD Medicare withheld, YTD state income tax withheld. If multiple employers are active (job change during the year), reads each separately and sums.
 
 **Self-employment income (1099-NEC).** Reads 1099-NEC records and any freelance income logs from `vault/tax/00_current/` or `vault/tax/00_current/`. Returns gross 1099 income and deductible business expenses associated with each payer if available.
 

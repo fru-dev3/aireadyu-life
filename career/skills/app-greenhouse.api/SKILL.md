@@ -1,18 +1,18 @@
 ---
 type: app
 description: >
-  Tracks job application status, interview stages, offer details, and recruiter app-contacts from employer Greenhouse ATS candidate portals via Playwright. Used by career-agent for pipeline management, stage updates, and interview scheduling. Each employer has their own Greenhouse subdomain or custom URL. Configure target company app-insurance-portal.portal URL in vault/career/config.md.
+  Tracks job application status, interview stages, offer details, and recruiter contacts from employer Greenhouse ATS candidate portals via Playwright. Used by career-agent for pipeline management, stage updates, and interview scheduling. Each employer has their own Greenhouse subdomain or custom URL. Configure target company portal URL in vault/career/config.md.
 ---
 
 # Greenhouse
 
-**Auth:** Playwright + Chrome cookies (company-specific Greenhouse app-insurance-portal.portal, passwordless email link login)
-**URL:** https://boards.app-greenhouse.api.io/{company} (candidate-facing) or company custom domain
-**Configuration:** Set target company app-insurance-portal.portal URL in `vault/career/config.md`
+**Auth:** Playwright + Chrome cookies (company-specific Greenhouse portal, passwordless email link login)
+**URL:** https://boards.greenhouse.io/{company} (candidate-facing) or company custom domain
+**Configuration:** Set target company portal URL in `vault/career/config.md`
 
 ## What It Provides
 
-Greenhouse is the most widely used ATS at mid-to-large tech companies. As a candidate, you have access to the candidate app-insurance-portal.portal which shows your application status, interview stage, upcoming interviews, and offer details when extended. This skill reads that app-insurance-portal.portal to keep your pipeline entry in `vault/career/00_current/` accurate without manual updates.
+Greenhouse is the most widely used ATS at mid-to-large tech companies. As a candidate, you have access to the candidate portal which shows your application status, interview stage, upcoming interviews, and offer details when extended. This skill reads that portal to keep your pipeline entry in `vault/career/00_current/` accurate without manual updates.
 
 ## Data Available
 
@@ -21,8 +21,8 @@ Greenhouse is the most widely used ATS at mid-to-large tech companies. As a cand
 - Upcoming interview schedule (date, time, format, interviewer names if provided)
 - Offer details when extended: base salary, signing bonus, equity grant, start date, offer expiry date
 - Job description for the role you applied for (useful for ATS keyword analysis)
-- Recruiter name and email contact from the app-insurance-portal.portal
-- Hiring manager name (if provided in app-insurance-portal.portal)
+- Recruiter name and email contact from the portal
+- Hiring manager name (if provided in portal)
 
 ## How to Use
 
@@ -36,9 +36,9 @@ Greenhouse is the most widely used ATS at mid-to-large tech companies. As a cand
 
 Add to `vault/career/config.md`:
 ```yaml
-app-greenhouse.api_portals:
+greenhouse_portals:
   - company: "Company Name"
-    app-insurance-portal.portal_url: "https://app.app-greenhouse.api.io/candidates/YOUR_ID"
+    portal_url: "https://app.greenhouse.io/candidates/YOUR_ID"
     chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
 ```
 
@@ -48,8 +48,8 @@ Note: Greenhouse candidate portals use passwordless email links for login. You m
 
 - Run with headless=False (required for cookie-based auth — Chrome 127+ blocks headless cookie access)
 - Each employer's Greenhouse instance is separate — no single login covers multiple employers
-- The candidate app-insurance-portal.portal URL is in the format `https://app.app-greenhouse.api.io/candidates/{id}` or a custom employer domain
-- Some employers use Greenhouse internally but present a custom-branded career app-insurance-portal.portal — the underlying system is still Greenhouse
+- The candidate portal URL is in the format `https://app.greenhouse.io/candidates/{id}` or a custom employer domain
+- Some employers use Greenhouse internally but present a custom-branded career portal — the underlying system is still Greenhouse
 
 ## Used By
 

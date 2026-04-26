@@ -1,19 +1,19 @@
 ---
 type: app
 description: >
-  Accesses patient app-insurance-portal.portal records — lab results (PDF and structured values), visit
+  Accesses patient portal records — lab results (PDF and structured values), visit
   notes, after-visit summaries, upcoming appointments, current medication list, and
   immunization records — from a provider's MyChart instance via Playwright with
   Chrome cookie authentication. Used by the health agent to download clinical data
   for local review and vault storage. Requires headless=False due to Chrome app-bound
-  encryption. Configure your provider's app-insurance-portal.portal URL and username in vault/health/config.md.
+  encryption. Configure your provider's portal URL and username in vault/health/config.md.
 ---
 
 # MyChart
 
 **Auth:** Playwright + Chrome cookies (provider-specific login); headless=False required
-**URL:** Configured per provider in `vault/health/config.md` (e.g., https://app-mychart.portal.yourhospital.org)
-**Configuration:** Set app-insurance-portal.portal URL and username in `vault/health/config.md`
+**URL:** Configured per provider in `vault/health/config.md` (e.g., https://mychart.yourhospital.org)
+**Configuration:** Set portal URL and username in `vault/health/config.md`
 
 ## Data Available
 
@@ -30,9 +30,9 @@ description: >
 
 Add to `vault/health/config.md`:
 ```
-app-mychart.portal_url: https://app-mychart.portal.YOURPROVIDER.org
-app-mychart.portal_username: YOUR_USERNAME
-app-mychart.portal_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+mychart_url: https://mychart.YOURPROVIDER.org
+mychart_username: YOUR_USERNAME
+mychart_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 ```
 
 ## Setup Notes
@@ -40,7 +40,7 @@ app-mychart.portal_chrome_profile: /Users/YOU/Library/Application Support/Google
 - Requires `headless=False` — Chrome app-bound cookie encryption prevents headless auth as of Chrome 127+
 - After first login, the session cookie is cached in the Chrome profile; subsequent runs use the cached session
 - Re-authentication is typically needed every 30–60 days depending on the provider's session timeout
-- Different hospital systems use custom MyChart subdomains — find yours in your patient app-insurance-portal.portal invite email
+- Different hospital systems use custom MyChart subdomains — find yours in your patient portal invite email
 
 ## Provider-Specific Notes
 
@@ -57,4 +57,4 @@ app-mychart.portal_chrome_profile: /Users/YOU/Library/Application Support/Google
 
 - `vault/health/00_current/` — downloaded lab result PDFs
 - `vault/health/00_current/` — downloaded visit notes and AVS documents
-- `vault/health/00_current/` — app-insurance-portal.portal medication list for comparison against vault active list
+- `vault/health/00_current/` — portal medication list for comparison against vault active list

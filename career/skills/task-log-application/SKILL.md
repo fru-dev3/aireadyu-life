@@ -56,9 +56,9 @@ level: "[level if stated]"
 stage: applied / watch / offer
 date_applied: "YYYY-MM-DD"
 date_logged: "YYYY-MM-DD"
-source: app-linkedin.portal / referral / company-site / recruiter / cold
+source: linkedin / referral / company-site / recruiter / cold
 contact_name: "[name]"
-contact_email: "[email or app-linkedin.portal]"
+contact_email: "[email or linkedin]"
 comp_range: "$X–$X"
 remote_policy: remote / hybrid / onsite
 tech_stack_match: "X/Y required skills matched"

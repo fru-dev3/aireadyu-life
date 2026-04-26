@@ -9,8 +9,8 @@ description: >
 # Gumroad
 
 **Auth:** Bearer token (`GUMROAD_API_KEY`)
-**URL:** https://app.app-gumroad.api.com
-**API:** https://api.app-gumroad.api.com/v2
+**URL:** https://app.gumroad.com
+**API:** https://api.gumroad.com/v2
 **Configuration:** Set your API token in `vault/content/config.md`
 
 ## Data Available
@@ -26,14 +26,14 @@ description: >
 
 Add to `vault/content/config.md`:
 ```
-app-gumroad.api_api_key: YOUR_GUMROAD_ACCESS_TOKEN
+gumroad_api_key: YOUR_GUMROAD_ACCESS_TOKEN
 ```
 
 ## Key Endpoints
 
 ```
-GET https://api.app-gumroad.api.com/v2/products
-GET https://api.app-gumroad.api.com/v2/sales?after=YYYY-MM-DD
+GET https://api.gumroad.com/v2/products
+GET https://api.gumroad.com/v2/sales?after=YYYY-MM-DD
 Authorization: Bearer $GUMROAD_API_KEY
 ```
 

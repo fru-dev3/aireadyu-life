@@ -9,7 +9,7 @@ description: >
 # Twitter / X
 
 **Auth:** Playwright + Chrome cookies
-**URL:** https://x.com (formerly app-twitter.com)
+**URL:** https://x.com (formerly twitter.com)
 **Configuration:** Set your handle and Chrome profile path in `vault/brand/config.md`
 
 ## Data Available
@@ -25,13 +25,13 @@ description: >
 
 Add to `vault/brand/config.md`:
 ```
-app-twitter_handle: YOUR_HANDLE
-app-twitter_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+twitter_handle: YOUR_HANDLE
+twitter_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 ```
 
 ## Key URLs
 
-- Analytics: analytics.app-twitter.com
+- Analytics: analytics.twitter.com
 - Mentions: Notifications → Mentions tab
 
 ## Notes

@@ -7,7 +7,7 @@ description: >
 # Coursera
 
 **Auth:** Playwright + Chrome cookies (session from existing Chrome login)
-**URL:** https://www.app-coursera.org
+**URL:** https://www.coursera.org
 **Configuration:** Set Coursera email and Chrome profile in `vault/learning/config.md`
 
 ## What It Provides
@@ -18,7 +18,7 @@ This skill reads Coursera's "My Learning" dashboard to extract progress data for
 
 ## Data Available
 
-**From app-coursera.org/my-learning:**
+**From coursera.org/my-learning:**
 - All enrolled courses with status (In Progress / Completed / Dropped)
 - Completion percentage for each in-progress course
 - Certificate status: In Progress / Earned / Not started
@@ -36,14 +36,14 @@ This skill reads Coursera's "My Learning" dashboard to extract progress data for
 
 Add to `vault/learning/config.md`:
 ```yaml
-app-coursera_email: "YOUR_COURSERA_EMAIL"
-app-coursera_chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
+coursera_email: "YOUR_COURSERA_EMAIL"
+coursera_chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
 ```
 
 ## Technical Notes
 
 - **Always headless=False** — Coursera uses bot detection and may require CAPTCHA with headless Chrome
-- **Dashboard URL:** app-coursera.org/my-learning — shows all enrolled courses and progress
+- **Dashboard URL:** coursera.org/my-learning — shows all enrolled courses and progress
 - **Certificate download:** Available from the completed course page; download to `vault/learning/01_prior/certs/` for record-keeping
 - **Session freshness:** Coursera sessions typically persist for 30+ days; re-authenticate in Chrome if the skill receives a login redirect
 - **Free vs. paid courses:** Some courses are available to audit (free) but certificates require payment — note audit status in progress tracking
@@ -51,8 +51,8 @@ app-coursera_chrome_profile: "/Users/YOU/Library/Application Support/Google/Chro
 ## Key URLs
 
 ```
-https://www.app-coursera.org/my-learning  # main dashboard
-https://www.app-coursera.org/account-profile  # profile and learning activity
+https://www.coursera.org/my-learning  # main dashboard
+https://www.coursera.org/account-profile  # profile and learning activity
 ```
 
 ## Specializations and Professional Certificates
@@ -66,5 +66,5 @@ Coursera's most valuable credentials are Professional Certificates (Google Data 
 
 ## Vault Output
 
-- `~/Documents/aireadylife/vault/learning/00_current/app-coursera/` — course progress records
+- `~/Documents/aireadylife/vault/learning/00_current/coursera/` — course progress records
 - `~/Documents/aireadylife/vault/learning/01_prior/certs/` — downloaded certificates for completed courses

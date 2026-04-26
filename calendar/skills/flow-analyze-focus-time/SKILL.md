@@ -22,14 +22,14 @@ This flow performs the raw mathematical analysis of time allocation that powers 
 
 **Per-day focus quality score:** Each day receives a focus quality score from 1-10 based on three factors: longest single uninterrupted block (weight: 50%), total qualifying focus hours (weight: 30%), and number of context switches between meetings and focus blocks (weight: 20%, where more switches = lower score). A day with one 4-hour block scores higher than a day with four 60-minute blocks, even if total free time is similar, because the 4-hour block allows deeper work entry.
 
-**Deficit diagnosis:** When weekly qualifying focus time falls below the target (default 8 hours), the flow identifies the primary structural cause by analyzing which specific pattern consumed the most potential focus time: meeting-dense mornings (events before 10:00 AM), back-to-back clusters (consecutive meeting blocks with <30 min gaps), short-filler meetings (<30 min each) that fragment afternoons, or no recovery days (every app-workday has high meeting density). The diagnosis is returned as a plain-language finding with the specific meetings or patterns identified, not as a generic "too many meetings" observation.
+**Deficit diagnosis:** When weekly qualifying focus time falls below the target (default 8 hours), the flow identifies the primary structural cause by analyzing which specific pattern consumed the most potential focus time: meeting-dense mornings (events before 10:00 AM), back-to-back clusters (consecutive meeting blocks with <30 min gaps), short-filler meetings (<30 min each) that fragment afternoons, or no recovery days (every workday has high meeting density). The diagnosis is returned as a plain-language finding with the specific meetings or patterns identified, not as a generic "too many meetings" observation.
 
 ## Steps
 
 1. Receive date range (past week + upcoming week) from calling op
-2. Read all calendar events in the date range via app-gcalendar skill
+2. Read all calendar events in the date range via gcalendar skill
 3. Classify each event: meeting, non-meeting solo block, travel, non-work
-4. For each app-workday: calculate start-of-day and end-of-day bounds (from config or default 08:00-18:00)
+4. For each workday: calculate start-of-day and end-of-day bounds (from config or default 08:00-18:00)
 5. Identify all continuous free blocks (gaps between meetings within work hours)
 6. Classify each block: qualifying focus (≥90 min) or gap time (<90 min)
 7. Calculate per-day: total meeting time, gap time, qualifying focus time, longest single block, context switches
@@ -41,7 +41,7 @@ This flow performs the raw mathematical analysis of time allocation that powers 
 
 ## Input
 
-- Google Calendar events for specified date range (via app-gcalendar skill)
+- Google Calendar events for specified date range (via gcalendar skill)
 - ~/Documents/aireadylife/vault/calendar/config.md (working hours, focus block minimum)
 - `vault/calendar/01_prior/` — prior period records for trend comparison
 
@@ -81,12 +81,12 @@ In vault/calendar/config.md:
 
 ## Error Handling
 
-- **app-gcalendar not configured:** Cannot run. Return error to calling op: "app-gcalendar integration required."
-- **No events found for a day:** Treat the entire app-workday as qualifying focus time (a meeting-free day is the best possible focus day).
+- **gcalendar not configured:** Cannot run. Return error to calling op: "gcalendar integration required."
+- **No events found for a day:** Treat the entire workday as qualifying focus time (a meeting-free day is the best possible focus day).
 - **Events missing start/end times:** Skip those events in calculation; note count in metadata.
 
 ## Vault Paths
 
 - Reads from: `~/Documents/aireadylife/vault/calendar/01_prior/` — prior period records
-- Reads from: Google Calendar (via app-gcalendar), ~/Documents/aireadylife/vault/calendar/config.md
+- Reads from: Google Calendar (via gcalendar), ~/Documents/aireadylife/vault/calendar/config.md
 - Writes to: none (returns data to calling op)

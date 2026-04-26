@@ -10,7 +10,7 @@ description: >
 # 1Password
 
 **Auth:** Local CLI (`op`) with service account token stored in `~/.ai/env/.env`
-**URL:** https://app-1password.com
+**URL:** https://1password.com
 **Configuration:** Set service account token and vault name in `~/Documents/aireadylife/vault/records/config.md`
 
 ## Data Available
@@ -56,14 +56,14 @@ op item get "Document: US Passport" --fields label=expiry_date --format json
 
 ## Security Guidelines
 
-- The service account token must be read-only — configure it with read access only at app-1password.com/teams → Service Accounts
+- The service account token must be read-only — configure it with read access only at 1password.com/teams → Service Accounts
 - Never log, print, or store the token in any vault file — keep it exclusively in `~/.ai/env/.env`
 - Never read or log passwords from login items — the records agent uses 1Password for document metadata only
 - Token expiry: service account tokens can be set to expire; check the expiry date and rotate before it lapses
 
 ## Notes
 
-- Service account setup: app-1password.com/teams → Integrations → Service Accounts → Create Service Account → assign Read Access to the Personal vault
+- Service account setup: 1password.com/teams → Integrations → Service Accounts → Create Service Account → assign Read Access to the Personal vault
 - The `op` CLI must be installed: `brew install 1password-cli`
 - Authenticate: `export OP_SERVICE_ACCOUNT_TOKEN=ops_...` then commands work without interactive sign-in
 - 1Password's document feature allows storing scanned PDFs directly — these appear in `op document list` results

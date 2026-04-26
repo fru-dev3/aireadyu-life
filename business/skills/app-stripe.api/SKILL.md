@@ -9,8 +9,8 @@ description: >
 # Stripe
 
 **Auth:** API key (`STRIPE_API_KEY`)
-**URL:** https://dashboard.app-stripe.api.com
-**API:** https://api.app-stripe.api.com/v1
+**URL:** https://dashboard.stripe.com
+**API:** https://api.stripe.com/v1
 **Configuration:** Set your API key in `vault/business/config.md`
 
 ## Data Available
@@ -27,15 +27,15 @@ description: >
 
 Add to `vault/business/config.md`:
 ```
-app-stripe.api_api_key: sk_live_YOUR_STRIPE_KEY
+stripe_api_key: sk_live_YOUR_STRIPE_KEY
 ```
 
 ## Key Endpoints
 
 ```
-GET https://api.app-stripe.api.com/v1/charges?limit=100&created[gte]={epoch}
-GET https://api.app-stripe.api.com/v1/payouts?limit=50
-GET https://api.app-stripe.api.com/v1/balance_transactions
+GET https://api.stripe.com/v1/charges?limit=100&created[gte]={epoch}
+GET https://api.stripe.com/v1/payouts?limit=50
+GET https://api.stripe.com/v1/balance_transactions
 Authorization: Bearer $STRIPE_API_KEY
 ```
 

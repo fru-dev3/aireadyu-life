@@ -26,8 +26,8 @@ description: >
 
 Add to `vault/intel/config.md`:
 ```
-app-pocket_access_token: YOUR_POCKET_ACCESS_TOKEN
-app-pocket_consumer_key: YOUR_POCKET_CONSUMER_KEY
+pocket_access_token: YOUR_POCKET_ACCESS_TOKEN
+pocket_consumer_key: YOUR_POCKET_CONSUMER_KEY
 ```
 
 ## Key Endpoints

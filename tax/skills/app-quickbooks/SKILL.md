@@ -30,9 +30,9 @@ description: >
 
 Add to `vault/tax/config.md`:
 ```
-app-quickbooks_email: YOUR_INTUIT_EMAIL
-app-quickbooks_company_id: YOUR_COMPANY_ID
-app-quickbooks_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+quickbooks_email: YOUR_INTUIT_EMAIL
+quickbooks_company_id: YOUR_COMPANY_ID
+quickbooks_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 ```
 
 Find company ID in QBO: Settings → Account and Settings → Billing & Subscription (shown in URL as `/app/homepage/orgs/{COMPANY_ID}`)

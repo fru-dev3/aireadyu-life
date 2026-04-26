@@ -26,9 +26,9 @@ description: >
 
 Add to `vault/business/config.md`:
 ```
-app-quickbooks_email: YOUR_INTUIT_EMAIL
-app-quickbooks_company_id: YOUR_COMPANY_ID
-app-quickbooks_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
+quickbooks_email: YOUR_INTUIT_EMAIL
+quickbooks_company_id: YOUR_COMPANY_ID
+quickbooks_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Default
 ```
 
 ## Key Reports

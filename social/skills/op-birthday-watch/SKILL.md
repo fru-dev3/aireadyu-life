@@ -16,11 +16,11 @@ description: >
 
 The birthday watch is the single most important social skill for day-of relationship maintenance. Missing a close friend's birthday costs relationship capital that takes months to recover. This op ensures that no birthday or meaningful milestone for any tracked contact passes without the user having been given advance notice and a suggested action.
 
-The op reads vault/social/00_current/ to find all birthdays and milestones scheduled in the next 14 days. The 14-day window is used because some close relationships deserve more than a same-day text — a planned phone call or a mailed card requires 3-7 days of lead time. The op also checks the milestone calendar for non-birthday events tracked for app-contacts: work anniversaries (which the contact may or may not celebrate depending on the relationship), first-year milestones after major life events (one year after a loss, one year in a new city, etc.), and any custom milestone dates the user has logged for specific app-contacts.
+The op reads vault/social/00_current/ to find all birthdays and milestones scheduled in the next 14 days. The 14-day window is used because some close relationships deserve more than a same-day text — a planned phone call or a mailed card requires 3-7 days of lead time. The op also checks the milestone calendar for non-birthday events tracked for contacts: work anniversaries (which the contact may or may not celebrate depending on the relationship), first-year milestones after major life events (one year after a loss, one year in a new city, etc.), and any custom milestone dates the user has logged for specific contacts.
 
 **Action calibration by tier and gap:** For each upcoming event, the op suggests a specific outreach action calibrated to two factors: the contact's tier and the days since last contact. A Tier 1 contact gets a personal phone call (unless the relationship context makes text more appropriate). A Tier 2 contact gets a personal text or short personal email. A Tier 3 contact gets a LinkedIn message or simple email. If the contact is also in the overdue zone (days since last contact exceeds the tier's overdue threshold), the birthday is explicitly flagged as a reconnect opportunity: "This contact is 85 days overdue — the birthday is a natural, low-awkwardness reconnect moment. Call, not text."
 
-The op calls `flow-build-outreach-queue` to incorporate the birthday app-contacts into the broader weekly outreach queue, ensuring birthday outreach is prioritized above other outreach items for the same week. It also calls `task-update-open-loops` to write any birthday items within 7 days as active open-loop flags so they surface in the Chief morning brief under the social domain.
+The op calls `flow-build-outreach-queue` to incorporate the birthday contacts into the broader weekly outreach queue, ensuring birthday outreach is prioritized above other outreach items for the same week. It also calls `task-update-open-loops` to write any birthday items within 7 days as active open-loop flags so they surface in the Chief morning brief under the social domain.
 
 ## Triggers
 
@@ -35,19 +35,19 @@ The op calls `flow-build-outreach-queue` to incorporate the birthday app-contact
 
 1. Verify vault/social/00_current/ exists and has data
 2. Read all birthday and milestone entries; filter for the next 14 days
-3. For each upcoming event: read contact's tier from vault/social/00_current/app-contacts.md
+3. For each upcoming event: read contact's tier from vault/social/00_current/contacts.md
 4. For each upcoming event: read last-contact date from vault/social/00_current/; calculate days since contact
 5. Assign urgency: 🔴 if event in next 2 days, 🟡 if 3-7 days, 🟢 if 8-14 days
 6. Calibrate suggested outreach action based on tier + days-since-contact gap
-7. Flag app-contacts in overdue zone as reconnect opportunities at the birthday
-8. Call `flow-build-outreach-queue` to incorporate birthday app-contacts into ranked outreach queue
+7. Flag contacts in overdue zone as reconnect opportunities at the birthday
+8. Call `flow-build-outreach-queue` to incorporate birthday contacts into ranked outreach queue
 9. For events within 7 days: call `task-update-open-loops` to write as active flags
 10. Return formatted birthday and milestone list to user
 
 ## Input
 
 - ~/Documents/aireadylife/vault/social/00_current/ (birthday and milestone calendar)
-- ~/Documents/aireadylife/vault/social/00_current/app-contacts.md (tier assignments)
+- ~/Documents/aireadylife/vault/social/00_current/contacts.md (tier assignments)
 - ~/Documents/aireadylife/vault/social/00_current/ (last-contact dates)
 - `~/Documents/aireadylife/vault/social/01_prior/` — prior period records for trend comparison
 
@@ -80,11 +80,11 @@ Required in vault/social/00_current/:
 ## Error Handling
 
 - **vault/social/00_current/ empty or missing:** Note "No birthdays on file. Add contact birthdays to vault/social/00_current/ to receive birthday alerts."
-- **Contact not found in app-contacts.md:** Still surface the event; note tier as unknown and use default Tier 2 outreach suggestion.
+- **Contact not found in contacts.md:** Still surface the event; note tier as unknown and use default Tier 2 outreach suggestion.
 - **Interaction log missing for a contact:** Cannot calculate days-since-contact; note "No interaction log — add last-contact date to vault/social/00_current/ for health tracking."
 
 ## Vault Paths
 
 - Reads from: `~/Documents/aireadylife/vault/social/01_prior/` — prior period records
-- Reads from: ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/00_current/app-contacts.md, ~/Documents/aireadylife/vault/social/00_current/
+- Reads from: ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/00_current/contacts.md, ~/Documents/aireadylife/vault/social/00_current/
 - Writes to: ~/Documents/aireadylife/vault/social/open-loops.md (via task-update-open-loops)

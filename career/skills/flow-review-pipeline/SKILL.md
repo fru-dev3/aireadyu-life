@@ -72,7 +72,7 @@ date_applied: "YYYY-MM-DD"
 last_activity_date: "YYYY-MM-DD"
 contact_name: "[name]"
 contact_email: "[email]"
-source: app-linkedin.portal / referral / company-site / recruiter
+source: linkedin / referral / company-site / recruiter
 comp_range: "$X–$X"
 notes: "[interview notes, follow-up log]"
 posting_url: "[url for watch-list staleness check]"

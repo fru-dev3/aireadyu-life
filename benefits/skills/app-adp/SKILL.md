@@ -1,18 +1,18 @@
 ---
 type: app
 description: >
-  Accesses pay stubs, W-2 documents, YTD earnings breakdowns, 401k contribution deductions, and benefit deduction details from ADP Workforce Now or MyADP via Playwright with Chrome cookie session. Used by benefits-agent for monthly payroll verification, 401k match capture confirmation, and year-end document retrieval. Requires headless=False. Configure ADP app-insurance-portal.portal URL and Chrome profile in vault/benefits/config.md.
+  Accesses pay stubs, W-2 documents, YTD earnings breakdowns, 401k contribution deductions, and benefit deduction details from ADP Workforce Now or MyADP via Playwright with Chrome cookie session. Used by benefits-agent for monthly payroll verification, 401k match capture confirmation, and year-end document retrieval. Requires headless=False. Configure ADP portal URL and Chrome profile in vault/benefits/config.md.
 ---
 
 # ADP
 
-**Auth:** Playwright + Chrome cookies (session from existing Chrome login to ADP app-insurance-portal.portal)
-**URL:** https://workforcenow.app-adp.com (ADP Workforce Now) or https://my.app-adp.com (MyADP)
-**Configuration:** Set your ADP app-insurance-portal.portal URL and Chrome profile path in `vault/benefits/config.md`
+**Auth:** Playwright + Chrome cookies (session from existing Chrome login to ADP portal)
+**URL:** https://workforcenow.adp.com (ADP Workforce Now) or https://my.adp.com (MyADP)
+**Configuration:** Set your ADP portal URL and Chrome profile path in `vault/benefits/config.md`
 
 ## What It Provides
 
-ADP is the most widely used payroll and HR platform in the US, serving over 1 million businesses. Most employees encounter ADP as their pay stub and W-2 app-insurance-portal.portal. This skill provides automated access to payroll documents and contribution data for the monthly benefits sync, eliminating manual download steps that create friction and delays in vault data currency.
+ADP is the most widely used payroll and HR platform in the US, serving over 1 million businesses. Most employees encounter ADP as their pay stub and W-2 portal. This skill provides automated access to payroll documents and contribution data for the monthly benefits sync, eliminating manual download steps that create friction and delays in vault data currency.
 
 The primary use case is monthly pay stub retrieval: confirming that 401k deductions match the elected contribution rate, verifying that all benefit deductions are correct and haven't changed unexpectedly, and extracting YTD gross earnings for income tracking. A secondary use case is W-2 retrieval in January each year for tax preparation routing.
 
@@ -42,8 +42,8 @@ The primary use case is monthly pay stub retrieval: confirming that 401k deducti
 
 Add to `vault/benefits/config.md`:
 ```yaml
-app-adp_app-insurance-portal.portal_url: "https://workforcenow.app-adp.com"  # or https://my.app-adp.com
-app-adp_chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
+adp_portal_url: "https://workforcenow.adp.com"  # or https://my.adp.com
+adp_chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
 ```
 
 Note: Some employers use a custom SSO entry point for ADP. If the standard URLs redirect to an employer-specific login page, use that URL instead.
@@ -62,7 +62,7 @@ Login → Tax → W-2 Statements → Select year → Download PDF
 ## Technical Notes
 
 - **Always headless=False** — ADP uses bot detection; headless Chrome sessions are blocked
-- **Employer SSO:** Many employers configure ADP to require SSO via Okta, Microsoft Azure AD, or Google Workspace. The Chrome profile must have an active SSO session. If the session has expired, the user must log in manually in Chrome before the skill can access the app-insurance-portal.portal.
+- **Employer SSO:** Many employers configure ADP to require SSO via Okta, Microsoft Azure AD, or Google Workspace. The Chrome profile must have an active SSO session. If the session has expired, the user must log in manually in Chrome before the skill can access the portal.
 - **Session duration:** ADP sessions typically expire after 30-60 minutes of inactivity; the Chrome session cookies last longer but may require re-authentication after a few days
 - **Pay stub PDF naming:** Save to `vault/benefits/00_current/YYYY-MM-paystub.pdf` using the pay period end date as the month reference
 

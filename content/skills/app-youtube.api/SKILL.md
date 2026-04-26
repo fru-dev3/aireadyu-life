@@ -9,7 +9,7 @@ description: >
 # YouTube
 
 **Auth:** OAuth2 via YouTube Data API v3 (`YOUTUBE_API_KEY`)
-**URL:** https://studio.app-youtube.api.com
+**URL:** https://studio.youtube.com
 **Configuration:** Set your API key and channel ID in `vault/content/config.md`
 
 ## Data Available
@@ -26,17 +26,17 @@ description: >
 
 Add to `vault/content/config.md`:
 ```
-app-youtube.api_api_key: YOUR_YOUTUBE_API_KEY
-app-youtube.api_channel_id: YOUR_CHANNEL_ID
-app-youtube.api_oauth_token: vault/content/keys/youtube-oauth.json
+youtube_api_key: YOUR_YOUTUBE_API_KEY
+youtube_channel_id: YOUR_CHANNEL_ID
+youtube_oauth_token: vault/content/keys/youtube-oauth.json
 ```
 
 ## Key API
 
 ```
-GET https://www.googleapis.com/app-youtube.api/v3/channels?part=statistics&id={channelId}
+GET https://www.googleapis.com/youtube/v3/channels?part=statistics&id={channelId}
 GET https://youtubeanalytics.googleapis.com/v2/reports?ids=channel=={channelId}
-Scopes: https://www.googleapis.com/auth/app-youtube.api.readonly
+Scopes: https://www.googleapis.com/auth/youtube.readonly
         https://www.googleapis.com/auth/yt-analytics.readonly
 ```
 

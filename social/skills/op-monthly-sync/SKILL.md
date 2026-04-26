@@ -16,15 +16,15 @@ description: >
 
 The monthly sync is the comprehensive maintenance operation for the social domain — it recalculates everything and brings the vault fully up to date. Where the weekly brief focuses on the most urgent 5 outreach actions, and the monthly relationship review produces the full contact health picture, the monthly sync handles the underlying data refresh that both depend on.
 
-**Contact roster refresh:** The sync reads vault/social/00_current/app-contacts.md and checks for: app-contacts with no interaction log entries (never tracked), app-contacts with outdated tier assignments (the user may want to promote or demote based on how relationships have evolved), app-contacts missing birthday records, and app-contacts with no next-action note. Data gaps are surfaced as a brief "vault hygiene" section in the sync output, not as urgent flags — they're housekeeping reminders.
+**Contact roster refresh:** The sync reads vault/social/00_current/contacts.md and checks for: contacts with no interaction log entries (never tracked), contacts with outdated tier assignments (the user may want to promote or demote based on how relationships have evolved), contacts missing birthday records, and contacts with no next-action note. Data gaps are surfaced as a brief "vault hygiene" section in the sync output, not as urgent flags — they're housekeeping reminders.
 
-**Health recalculation:** The sync recalculates relationship health scores for all app-contacts from scratch, rather than relying on incremental updates. This ensures any interaction log entries added since the last sync are reflected. The full recalculation produces the most accurate picture of the social portfolio's health.
+**Health recalculation:** The sync recalculates relationship health scores for all contacts from scratch, rather than relying on incremental updates. This ensures any interaction log entries added since the last sync are reflected. The full recalculation produces the most accurate picture of the social portfolio's health.
 
 **Birthday calendar forward scan:** The sync reads vault/social/00_current/ and checks the next 30 days' birthdays — beyond the weekly 14-day window — to give the user a full month's awareness of upcoming social obligations. Any contact with a birthday in the next 30 days but no recent interaction is noted as a priority reconnect opportunity to plan for.
 
-**Outreach log review:** The sync reads vault/social/00_current/ for any interactions logged since the last sync. It identifies: follow-up promises made that haven't been logged as completed ("said I'd send the article"), reciprocity gaps (relationships where the user has been receiving but not giving recently), and positive momentum app-contacts (people the relationship is deepening with, worth recognizing and continuing to invest in).
+**Outreach log review:** The sync reads vault/social/00_current/ for any interactions logged since the last sync. It identifies: follow-up promises made that haven't been logged as completed ("said I'd send the article"), reciprocity gaps (relationships where the user has been receiving but not giving recently), and positive momentum contacts (people the relationship is deepening with, worth recognizing and continuing to invest in).
 
-**Monthly outreach plan:** After the full refresh, the sync generates the month's complete outreach plan — not just the immediate urgent queue but a month-level intention: which 15-20 app-contacts the user plans to meaningfully connect with over the month, allocated across the four weeks.
+**Monthly outreach plan:** After the full refresh, the sync generates the month's complete outreach plan — not just the immediate urgent queue but a month-level intention: which 15-20 contacts the user plans to meaningfully connect with over the month, allocated across the four weeks.
 
 ## Triggers
 
@@ -38,21 +38,21 @@ The monthly sync is the comprehensive maintenance operation for the social domai
 ## Steps
 
 1. Verify vault/social/ exists and config.md is filled in
-2. Read vault/social/00_current/app-contacts.md; identify data gaps (no interactions, no birthday, no tier)
+2. Read vault/social/00_current/contacts.md; identify data gaps (no interactions, no birthday, no tier)
 3. Read all interaction log entries in vault/social/00_current/ since the last sync date
-4. Recalculate health status for all app-contacts from full interaction history
-5. Read vault/social/00_current/ for next 30 days; note app-contacts with upcoming birthdays
+4. Recalculate health status for all contacts from full interaction history
+5. Read vault/social/00_current/ for next 30 days; note contacts with upcoming birthdays
 6. Review follow-up promises in interaction log for outstanding deliverables
-7. Check reciprocity balance for Tier 1 and Tier 2 app-contacts (give vs. ask ratio)
-8. Generate monthly outreach plan (15-20 app-contacts across the month)
-9. Update vault/social/00_current/app-contacts.md with refreshed health status and next-action notes
+7. Check reciprocity balance for Tier 1 and Tier 2 contacts (give vs. ask ratio)
+8. Generate monthly outreach plan (15-20 contacts across the month)
+9. Update vault/social/00_current/contacts.md with refreshed health status and next-action notes
 10. Call `task-update-open-loops` to write all overdue flags and resolve completed items
 11. Write monthly sync summary to vault/social/00_current/sync-YYYY-MM.md
 12. Return sync summary to user
 
 ## Input
 
-- ~/Documents/aireadylife/vault/social/00_current/app-contacts.md
+- ~/Documents/aireadylife/vault/social/00_current/contacts.md
 - ~/Documents/aireadylife/vault/social/00_current/ (complete interaction log)
 - ~/Documents/aireadylife/vault/social/00_current/
 - `~/Documents/aireadylife/vault/social/01_prior/` — prior period records for trend comparison
@@ -71,9 +71,9 @@ The monthly sync is the comprehensive maintenance operation for the social domai
 | T3 Active (35) | 35    | 18      | 12     | 5       |
 
 ## Vault Hygiene
-- 3 app-contacts with no birthday recorded: [Name], [Name], [Name]
+- 3 contacts with no birthday recorded: [Name], [Name], [Name]
 - 1 contact with no tier assigned: [Name]
-- 2 app-contacts with no interaction log entries: [Name], [Name]
+- 2 contacts with no interaction log entries: [Name], [Name]
 
 ## Upcoming Birthdays (Next 30 Days)
 - [Name] — Apr 18 (5 days) — T1 — 45 days since contact
@@ -95,15 +95,15 @@ Week 4 (May 5-11): [Name] birthday text, [Name] seasonal reconnect email
 
 Required in vault/social/config.md:
 - Tier definitions and health thresholds
-- `outreach_plan_app-contacts_per_month` — default 15-20
+- `outreach_plan_contacts_per_month` — default 15-20
 
 ## Error Handling
 
-- **Interaction log empty:** Run sync with no health data; note "No interaction history — add app-contacts and start logging interactions to enable health tracking."
-- **Contact list empty:** Note "No app-contacts on file. Populate vault/social/00_current/app-contacts.md to start relationship tracking."
+- **Interaction log empty:** Run sync with no health data; note "No interaction history — add contacts and start logging interactions to enable health tracking."
+- **Contact list empty:** Note "No contacts on file. Populate vault/social/00_current/contacts.md to start relationship tracking."
 
 ## Vault Paths
 
 - Reads from: `~/Documents/aireadylife/vault/social/01_prior/` — prior period records
-- Reads from: ~/Documents/aireadylife/vault/social/00_current/app-contacts.md, ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/config.md
-- Writes to: ~/Documents/aireadylife/vault/social/00_current/app-contacts.md (refreshed health), ~/Documents/aireadylife/vault/social/00_current/sync-YYYY-MM.md, ~/Documents/aireadylife/vault/social/open-loops.md
+- Reads from: ~/Documents/aireadylife/vault/social/00_current/contacts.md, ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/config.md
+- Writes to: ~/Documents/aireadylife/vault/social/00_current/contacts.md (refreshed health), ~/Documents/aireadylife/vault/social/00_current/sync-YYYY-MM.md, ~/Documents/aireadylife/vault/social/open-loops.md

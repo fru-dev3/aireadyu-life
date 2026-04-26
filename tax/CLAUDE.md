@@ -13,7 +13,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/tax/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Tax Vault** at [frudev.app-gumroad.api.com/l/aireadylife-tax](https://frudev.app-gumroad.api.com/l/aireadylife-tax)
+1. Purchase the **AI Ready Life: Tax Vault** at [frudev.gumroad.com/l/aireadylife-tax](https://frudev.gumroad.com/l/aireadylife-tax)
 2. Unzip the download
 3. Move the `tax/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/tax/config.md` and fill in your details
@@ -49,7 +49,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your tax vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-tax](https://frudev.app-gumroad.api.com/l/aireadylife-tax), unzip, and place the `tax/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your tax vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-tax](https://frudev.gumroad.com/l/aireadylife-tax), unzip, and place the `tax/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -70,7 +70,7 @@ Before running **any skill or flow** in this domain — including flows called b
 > Here's what this domain needs:
 >
 - **Prior year tax return** — your most recent federal and state return (PDF from your tax software or accountant).
-- **W-2 or 1099s** — from all income sources. Download from your employer app-insurance-portal.portal, brokerage, or freelance platforms.
+- **W-2 or 1099s** — from all income sources. Download from your employer portal, brokerage, or freelance platforms.
 - **HSA contribution statement** — total contributions for the year (from your HSA custodian or W-2 Box 12 code W).
 - **Charitable donation receipts** — any letter or receipt for donations over $250.
 - **Business expense records** — if self-employed or a freelancer, receipts or summaries by category.

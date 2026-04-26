@@ -83,7 +83,7 @@ Required in `~/Documents/aireadylife/vault/estate/config.md`:
 
 - If no tenant records in vault: note "Add lease data to vault/estate/00_current/ to enable tenant review"
 - If payment history not logged: note "No payment records found — log payments monthly using task-log-expense to enable payment trend analysis"
-- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-estate
+- If vault missing: direct to frudev.gumroad.com/l/aireadylife-estate
 
 ## Vault Paths
 

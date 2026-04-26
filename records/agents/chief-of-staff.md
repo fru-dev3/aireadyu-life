@@ -41,7 +41,7 @@ You operate in the background and activate for routing decisions and morning bri
 
 `~/Documents/aireadylife/vault/records/`
 
-If vault is missing: direct user to frudev.app-gumroad.api.com/l/aireadylife-records.
+If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-records.
 
 ## Skills Available
 

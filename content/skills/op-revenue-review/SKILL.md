@@ -34,7 +34,7 @@ Writes a structured revenue log entry via `task-log-revenue` so the vault has a 
 2. Call `flow-build-revenue-summary` for per-channel and total revenue figures with MoM deltas
 3. Calculate quality metrics: YouTube RPM this month vs prior (RPM = AdSense earnings / views × 1000); newsletter subscriber LTV (MRR / paid subscribers); Gumroad conversion rate (units sold / page visits if traffic data available)
 4. Calculate content revenue as a % of total income if total income context is available in config.md
-5. Calculate YTD total content revenue by summing all monthly log files in vault/content/00_current/, 00_app-youtube.api/, 01_newsletter/
+5. Calculate YTD total content revenue by summing all monthly log files in vault/content/00_current/, 00_youtube/, 01_newsletter/
 6. Flag any channel with >20% MoM decline; assess whether it is seasonal (YouTube RPM always drops in January) or anomalous
 7. Flag any channel with >50% MoM spike; note which activity drove it (promotional email, viral video, etc.) for repeatability assessment
 8. Call `task-log-revenue` to write a structured monthly revenue record to the vault

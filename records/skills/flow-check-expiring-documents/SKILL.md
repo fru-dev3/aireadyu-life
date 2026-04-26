@@ -67,7 +67,7 @@ The flow processes six document categories with distinct expiration and renewal 
 | Document | Last Reviewed | Recommended Review | Trigger |
 
 **Action Items:**
-Per flagged document: title, holder, action steps, official renewal app-insurance-portal.portal link, cost
+Per flagged document: title, holder, action steps, official renewal portal link, cost
 
 ## Configuration
 

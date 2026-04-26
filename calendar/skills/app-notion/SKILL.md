@@ -10,8 +10,8 @@ description: >
 # Notion — Calendar Plugin
 
 **Auth:** Notion integration token (`NOTION_API_KEY`)
-**URL:** https://www.app-notion.so
-**API:** https://api.app-notion.com/v1
+**URL:** https://www.notion.so
+**API:** https://api.notion.com/v1
 **Configuration:** Set token and page IDs in `vault/calendar/config.md`
 
 ## What It Does
@@ -33,24 +33,24 @@ The calendar-agent never reads from Notion as its primary data source.
 
 Add to `vault/calendar/config.md`:
 ```
-app-notion_api_key: secret_YOUR_NOTION_TOKEN
-app-notion_calendar_page_id: YOUR_CALENDAR_PARENT_PAGE_ID
-app-notion_deadlines_database_id: YOUR_DEADLINES_DATABASE_ID
-app-notion_agenda_page_id: YOUR_WEEKLY_AGENDA_PAGE_ID
+notion_api_key: secret_YOUR_NOTION_TOKEN
+notion_calendar_page_id: YOUR_CALENDAR_PARENT_PAGE_ID
+notion_deadlines_database_id: YOUR_DEADLINES_DATABASE_ID
+notion_agenda_page_id: YOUR_WEEKLY_AGENDA_PAGE_ID
 ```
 
-**Integration setup:** Create a Notion integration at app-notion.so/my-integrations → copy the
-integration token to `app-notion_api_key`. Share the calendar parent page (and any databases) with the
+**Integration setup:** Create a Notion integration at notion.so/my-integrations → copy the
+integration token to `notion_api_key`. Share the calendar parent page (and any databases) with the
 integration: open the page → ... menu → Add Connections → select your integration. Without
 this step, API calls will return 404 even with a valid token.
 
 ## Key API
 
 ```
-POST https://api.app-notion.com/v1/pages
-PATCH https://api.app-notion.com/v1/pages/{page_id}
-GET  https://api.app-notion.com/v1/databases/{id}/query
-POST https://api.app-notion.com/v1/blocks/{block_id}/children
+POST https://api.notion.com/v1/pages
+PATCH https://api.notion.com/v1/pages/{page_id}
+GET  https://api.notion.com/v1/databases/{id}/query
+POST https://api.notion.com/v1/blocks/{block_id}/children
 Authorization: Bearer $NOTION_API_KEY
 Notion-Version: 2022-06-28
 Content-Type: application/json
@@ -86,7 +86,7 @@ The Notion deadlines database should have these properties:
 Before adding a new deadline row to the Notion database, query for existing entries with the
 same name and due date:
 ```
-POST https://api.app-notion.com/v1/databases/{id}/query
+POST https://api.notion.com/v1/databases/{id}/query
 Body: {"filter": {"and": [
   {"property": "Name", "title": {"equals": "{deadline_name}"}},
   {"property": "Due Date", "date": {"equals": "YYYY-MM-DD"}}
@@ -105,7 +105,7 @@ a duplicate entry.
 
 - Local vault write always happens first. If Notion write fails, log the error to
   `~/Documents/aireadylife/vault/calendar/02_briefs/notion-sync-errors.md` and continue.
-- Notion is optional. If `app-notion_calendar_page_id` is not configured, skip Notion sync silently.
+- Notion is optional. If `notion_calendar_page_id` is not configured, skip Notion sync silently.
 - Notion rate limits: 3 requests/second per integration. Batch block creation for agendas with
   many events — max 100 blocks per append request.
 

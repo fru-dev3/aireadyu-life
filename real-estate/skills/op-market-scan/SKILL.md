@@ -72,7 +72,7 @@ Buy-window signals are flagged when three or more of the following conditions ex
 Required fields in `~/Documents/aireadylife/vault/real-estate/config.md`:
 - `target_markets` — list of city/state pairs
 - `max_price`, `min_beds`, `min_baths`, `min_sqft`
-- `listing_source` — "app-zillow" or "app-redfin"
+- `listing_source` — "zillow" or "redfin"
 
 ## Error Handling
 

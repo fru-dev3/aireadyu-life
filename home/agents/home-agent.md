@@ -45,7 +45,7 @@ Stay silent on weeks when nothing needs attention. Output always means action.
 
 `~/Documents/aireadylife/vault/home/`
 
-If vault is missing: direct user to frudev.app-gumroad.api.com/l/aireadylife-home.
+If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-home.
 
 ## Skills Available
 

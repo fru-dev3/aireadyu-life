@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/chief/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Chief Vault** at [frudev.app-gumroad.api.com/l/aireadylife-chief](https://frudev.app-gumroad.api.com/l/aireadylife-chief)
+1. Purchase the **AI Ready Life: Chief Vault** at [frudev.gumroad.com/l/aireadylife-chief](https://frudev.gumroad.com/l/aireadylife-chief)
 2. Unzip the download
 3. Move the `chief/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/chief/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your chief vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-chief](https://frudev.app-gumroad.api.com/l/aireadylife-chief), unzip, and place the `chief/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your chief vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-chief](https://frudev.gumroad.com/l/aireadylife-chief), unzip, and place the `chief/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -96,5 +96,5 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-check-open-loops`** — Reads all open-loops.md files across installed plugin vaults and returns a count and priority summary.
 - **`task-flag-urgent-item`** — Writes a cross-domain urgent flag to vault/chief/00_current/ when an item from any domain is 🔴 priority.
 - **`task-pull-domain-status`** — Reads the state.md file from a specified plugin vault and returns a summary of current domain status: last updated, wellness or score if present, and open item count.
-- **`app-gdrive`** — Reads and writes files in configured Google Drive folders via the Drive API.
-- **`app-notion`** — Reads and writes Notion pages and databases via the Notion API.
+- **`gdrive`** — Reads and writes files in configured Google Drive folders via the Drive API.
+- **`notion`** — Reads and writes Notion pages and databases via the Notion API.

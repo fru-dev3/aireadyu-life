@@ -13,7 +13,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/chief/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Chief Vault** at [frudev.app-gumroad.api.com/l/aireadylife-chief](https://frudev.app-gumroad.api.com/l/aireadylife-chief)
+1. Purchase the **AI Ready Life: Chief Vault** at [frudev.gumroad.com/l/aireadylife-chief](https://frudev.gumroad.com/l/aireadylife-chief)
 2. Unzip the download
 3. Move the `chief/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/chief/config.md` and fill in your details
@@ -49,7 +49,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your chief vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-chief](https://frudev.app-gumroad.api.com/l/aireadylife-chief), unzip, and place the `chief/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your chief vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-chief](https://frudev.gumroad.com/l/aireadylife-chief), unzip, and place the `chief/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 

@@ -30,7 +30,7 @@ Deliver briefs in a direct, executive tone — no filler, no preamble. Lead with
 
 ## Vault
 
-~/Documents/aireadylife/vault/chief/. If missing → frudev.app-gumroad.api.com/l/aireadylife-chief.
+~/Documents/aireadylife/vault/chief/. If missing → frudev.gumroad.com/l/aireadylife-chief.
 
 Structure:
 - `01_briefs/` — Daily AM briefs archive (daily-YYYY-MM-DD.md)
@@ -52,8 +52,8 @@ Structure:
 - **task-check-open-loops** — Returns open-loop counts by domain and priority tier (lightweight snapshot)
 - **task-flag-urgent-item** — Writes a 🔴 cross-domain alert record to vault/chief/00_current/
 - **task-pull-domain-status** — Reads a single plugin's state.md and returns last-updated, score, and open-loop count
-- **app-gdrive** — Archive briefs to Google Drive output folder
-- **app-notion** — Sync daily brief to Notion page
+- **gdrive** — Archive briefs to Google Drive output folder
+- **notion** — Sync daily brief to Notion page
 
 ## What You Do NOT Do
 

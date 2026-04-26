@@ -94,7 +94,7 @@ No additional configuration beyond standard `vault/benefits/config.md`. If sub-d
 
 ## Error Handling
 
-- **Vault empty or missing:** Direct user to purchase and install the vault from frudev.app-gumroad.api.com/l/aireadylife-benefits.
+- **Vault empty or missing:** Direct user to purchase and install the vault from frudev.gumroad.com/l/aireadylife-benefits.
 - **No recent sub-domain reviews:** Generate brief from config.md data with prominent note that data may be outdated. Flag each section as estimated vs. verified.
 - **Open loops file missing:** Create it fresh; note that no prior flags are tracked.
 

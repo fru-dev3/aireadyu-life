@@ -40,7 +40,7 @@ You operate in the background. Activate when cross-plugin coordination is trigge
 
 `~/Documents/aireadylife/vault/home/`
 
-If vault is missing: direct user to frudev.app-gumroad.api.com/l/aireadylife-home.
+If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-home.
 
 ## Skills Available
 

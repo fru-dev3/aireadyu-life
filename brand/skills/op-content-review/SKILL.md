@@ -80,7 +80,7 @@ Surfaces content gaps: any platform that had zero output in the prior month, and
 ## Configuration
 
 Required in `~/Documents/aireadylife/vault/brand/config.md`:
-- `posting_target_{platform}` — monthly post target per platform (e.g., posting_target_app-linkedin.portal: 4)
+- `posting_target_{platform}` — monthly post target per platform (e.g., posting_target_linkedin: 4)
 - `content_pillars` — list of 3-5 topic areas (e.g., ["AI Tools", "Personal Finance", "Career"])
 - `platforms_primary` — which platforms get 🔴 escalation for cadence misses vs 🟡
 

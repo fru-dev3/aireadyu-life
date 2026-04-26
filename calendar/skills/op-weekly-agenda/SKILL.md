@@ -18,7 +18,7 @@ The weekly agenda op runs every Monday before anything else competes for attenti
 
 The op begins by calling `flow-collect-deadlines` to extract all items with due dates in the next 7 days from every installed plugin vault's open-loops.md. The deadline scan also picks up any hard-deadline records stored in vault/calendar/00_current/ from prior deadline-planning sessions. Each item is tagged as urgent (≤7 days), upcoming (8-30 days), or horizon (31-60 days) — but for the weekly agenda, only the urgent and upcoming buckets appear in the deadline table.
 
-Next, it reads the Google Calendar (via the app-gcalendar skill if configured) for the upcoming week's events. From this it calculates: total meeting hours per day, back-to-back meeting clusters (gaps <30 min), and the longest available uninterrupted block per day. Days with at least one 90+ minute free block are flagged as best for deep work. Days with back-to-back meeting clusters covering most of the morning or afternoon are flagged as focus-hostile.
+Next, it reads the Google Calendar (via the gcalendar skill if configured) for the upcoming week's events. From this it calculates: total meeting hours per day, back-to-back meeting clusters (gaps <30 min), and the longest available uninterrupted block per day. Days with at least one 90+ minute free block are flagged as best for deep work. Days with back-to-back meeting clusters covering most of the morning or afternoon are flagged as focus-hostile.
 
 The op then passes all inputs to `flow-build-agenda`, which ranks every item and produces the structured agenda document: a deadline table, a priority list (3-5 items requiring deep work), a focus block placement proposal (which specific days and time slots to use for the highest-effort priority items), and a deferred items section for anything on the radar but not requiring action this week.
 
@@ -39,7 +39,7 @@ Finally, it calls `task-update-open-loops` to ensure any newly surfaced items �
 1. Verify vault/calendar/config.md exists; if missing, stop and prompt setup
 2. Call `flow-collect-deadlines` to scan all plugin open-loops.md for items due in the next 60 days
 3. Separate results by urgency: urgent (≤7 days), upcoming (8-30 days), horizon (31-60 days)
-4. Read Google Calendar events for the coming week via `app-gcalendar` (if configured); calculate meeting load per day
+4. Read Google Calendar events for the coming week via `gcalendar` (if configured); calculate meeting load per day
 5. Identify 90+ minute free blocks per day; flag focus-hostile days (back-to-back meetings, <2 hours total free)
 6. Read high-priority (🔴/🟡) open loops from all installed plugin vaults for priority section
 7. Pass all inputs to `flow-build-agenda` for ranked document assembly
@@ -53,7 +53,7 @@ Finally, it calls `task-update-open-loops` to ensure any newly surfaced items �
 - ~/Documents/aireadylife/vault/*/open-loops.md (all installed plugins)
 - ~/Documents/aireadylife/vault/calendar/00_current/ (prior deadline records)
 - `~/Documents/aireadylife/vault/calendar/01_prior/` — prior period records for trend comparison
-- Google Calendar events for the coming week (via app-gcalendar skill, if configured)
+- Google Calendar events for the coming week (via gcalendar skill, if configured)
 - ~/Documents/aireadylife/vault/calendar/config.md
 
 ## Output Format
@@ -98,7 +98,7 @@ Required in vault/calendar/config.md:
 
 ## Error Handling
 
-- **app-gcalendar not configured:** Produce agenda without focus block analysis; note "Connect Google Calendar in config.md to enable focus time recommendations."
+- **gcalendar not configured:** Produce agenda without focus block analysis; note "Connect Google Calendar in config.md to enable focus time recommendations."
 - **No deadlines found this week:** Show deadline table with "No deadlines this week" note; still populate priorities section from domain open loops.
 - **No cross-domain open loops found:** Note "No active flags across installed plugins" in priorities section; still produce the agenda skeleton.
 

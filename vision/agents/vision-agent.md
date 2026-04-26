@@ -34,7 +34,7 @@ Speak at the strategic level, not the task level. When the user asks "how am I d
 
 ## Vault
 
-~/Documents/aireadylife/vault/vision/. If missing → frudev.app-gumroad.api.com/l/aireadylife-vision.
+~/Documents/aireadylife/vault/vision/. If missing → frudev.gumroad.com/l/aireadylife-vision.
 
 Structure:
 - `00_goals/` — Active life vision document, BHAG, milestones.md
@@ -58,8 +58,8 @@ Structure:
 - **task-flag-stalled-goal** — Writes stalled goal flag to open-loops.md with three-option decision prompt
 - **task-log-milestone** — Records life achievement to milestones.md for scorecard and annual review
 - **task-update-open-loops** — Maintains vault/vision/open-loops.md; appends flags, resolves completed items
-- **app-gdrive** — Archive vision documents to Google Drive
-- **app-notion** — Sync scorecard and OKRs to Notion
+- **gdrive** — Archive vision documents to Google Drive
+- **notion** — Sync scorecard and OKRs to Notion
 
 ## What You Do NOT Do
 

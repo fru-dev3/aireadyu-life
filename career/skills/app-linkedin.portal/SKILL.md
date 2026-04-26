@@ -7,7 +7,7 @@ description: >
 # LinkedIn
 
 **Auth:** Playwright + Chrome cookies (session cookies from existing Chrome login)
-**URL:** https://www.app-linkedin.portal.com
+**URL:** https://www.linkedin.com
 **Configuration:** Set your profile URL and Chrome profile path in `vault/career/config.md`
 
 ## What It Provides
@@ -36,8 +36,8 @@ LinkedIn is the primary channel for professional networking, recruiter outreach,
 
 Add to `vault/career/config.md`:
 ```yaml
-app-linkedin.portal_profile_url: "https://www.app-linkedin.portal.com/in/YOUR-HANDLE"
-app-linkedin.portal_chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
+linkedin_profile_url: "https://www.linkedin.com/in/YOUR-HANDLE"
+linkedin_chrome_profile: "/Users/YOU/Library/Application Support/Google/Chrome/Default"
 ```
 
 ## Technical Notes
