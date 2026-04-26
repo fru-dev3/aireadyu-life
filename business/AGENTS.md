@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/business/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Business Vault** at [frudev.gumroad.com/l/aireadylife-business](https://frudev.gumroad.com/l/aireadylife-business)
+1. Purchase the **AI Ready Life: Business Vault** at [frudev.app-gumroad.api.com/l/aireadylife-business](https://frudev.app-gumroad.api.com/l/aireadylife-business)
 2. Unzip the download
 3. Move the `business/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/business/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your business vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-business](https://frudev.gumroad.com/l/aireadylife-business), unzip, and place the `business/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your business vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-business](https://frudev.app-gumroad.api.com/l/aireadylife-business), unzip, and place the `business/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -99,6 +99,6 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-flag-overdue-invoice`** — Writes an overdue invoice flag to vault/business/open-loops.md when an invoice is unpaid more than 30 days past due.
 - **`task-log-invoice`** — Records a new invoice to vault/business/00_current/ with client, amount, date issued, due date, service description, and payment status.
 - **`task-update-open-loops`** — Writes all business flags (overdue invoices, compliance deadlines, stalled proposals, expense anomalies) to vault/business/open-loops.md.
-- **`gusto`** — Accesses payroll records, contractor payments, and year-end tax forms from Gusto via Playwright.
-- **`quickbooks`** — Pulls P&L, balance sheet, and transaction data from QuickBooks Online for business performance tracking and financial reporting.
-- **`stripe`** — Queries Stripe for payment, payout, and revenue data via the Stripe API.
+- **`app-gusto`** — Accesses payroll records, contractor payments, and year-end tax forms from Gusto via Playwright.
+- **`app-quickbooks`** — Pulls P&L, balance sheet, and transaction data from QuickBooks Online for business performance tracking and financial reporting.
+- **`app-stripe.api`** — Queries Stripe for payment, payout, and revenue data via the Stripe API.

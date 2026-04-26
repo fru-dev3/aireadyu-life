@@ -84,7 +84,7 @@ Required in `~/Documents/aireadylife/vault/records/config.md`:
 
 ## Error Handling
 
-- If vault missing: direct to frudev.gumroad.com/l/aireadylife-records
+- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-records
 - If identity folder is empty: run gap checklist and report all items as missing; provide setup guidance
 - If legal documents folder is empty: flag as high priority — adults without a will or POA should obtain these promptly
 

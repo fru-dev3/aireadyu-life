@@ -6,7 +6,7 @@ description: >
 
 # Chief of Staff (Explore) — Setup
 
-1. Download AI Ready Life: Explore from [Gumroad](https://frudev.gumroad.com/l/aireadylife-explore)
+1. Download AI Ready Life: Explore from [Gumroad](https://frudev.app-gumroad.api.com/l/aireadylife-explore)
 2. Extract to `~/Documents/aireadylife/`
 3. Move the `explore/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/explore/config.md` and fill in traveler details, passport information, loyalty program accounts, and travel preferences
@@ -27,7 +27,7 @@ The Explore Chief of Staff serves as the coordination layer between the travel d
 
 ## Vault
 
-~/Documents/aireadylife/vault/explore/. If missing → frudev.gumroad.com/l/aireadylife-explore.
+~/Documents/aireadylife/vault/explore/. If missing → frudev.app-gumroad.api.com/l/aireadylife-explore.
 
 ## Cross-Plugin Coordination
 

@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/home/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Home Vault** at [frudev.gumroad.com/l/aireadylife-home](https://frudev.gumroad.com/l/aireadylife-home)
+1. Purchase the **AI Ready Life: Home Vault** at [frudev.app-gumroad.api.com/l/aireadylife-home](https://frudev.app-gumroad.api.com/l/aireadylife-home)
 2. Unzip the download
 3. Move the `home/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/home/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your home vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-home](https://frudev.gumroad.com/l/aireadylife-home), unzip, and place the `home/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your home vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-home](https://frudev.app-gumroad.api.com/l/aireadylife-home), unzip, and place the `home/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -75,7 +75,7 @@ Before running **any skill or flow** in this domain — including flows called b
 - **Open maintenance items** — anything that needs repair, inspection, or replacement. Note the room, issue, priority, and how long it's been open.
 - **Seasonal task list** — recurring tasks by season (HVAC filter, gutter cleaning, winterizing, etc.) with when they were last done.
 - **Home expense records** — any major repairs, appliance purchases, or improvement costs from the current year.
-- **HOA or utility contacts** — HOA management company, property insurance policy number, and utility providers.
+- **HOA or utility app-contacts** — HOA management company, property insurance policy number, and utility providers.
 >
 > **Step 3 — Run your first skill**
 > Once config.md is filled in and at least a few documents are in `00_current/`, try: *"home review"*
@@ -88,7 +88,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`angi`** — Searches contractor listings, ratings, license status, and cost guides on Angi (formerly Angie's List) via Playwright.
+- **`app-angi`** — Searches contractor listings, ratings, license status, and cost guides on Angi (formerly Angie's List) via Playwright.
 - **`flow-build-expense-summary`** — Summarizes monthly home expenses by category (utilities, repairs, supplies, services) vs.
 - **`flow-build-maintenance-schedule`** — Generates the complete seasonal maintenance checklist for the current season: task name, frequency, last-done date, next-due date, urgency, assigned vendor, and estimated cost.
 - **`op-expense-review`** — Monthly home expense review.
@@ -99,4 +99,4 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-flag-maintenance-item`** — Writes a maintenance flag to open-loops.md and creates a maintenance item record in vault/home/00_current/.
 - **`task-log-expense`** — Records a home expense to vault/home/00_current/ with date, category (utilities/repairs/ supplies/services), subcategory, vendor, amount, notes, and receipt reference.
 - **`task-update-open-loops`** — Writes all home flags (overdue maintenance, budget overruns, expiring warranties, renewal deadlines) to open-loops.md and resolves completed items.
-- **`thumbtack`** — Searches local professional listings and quote requests on Thumbtack via Playwright.
+- **`app-thumbtack`** — Searches local professional listings and quote requests on Thumbtack via Playwright.

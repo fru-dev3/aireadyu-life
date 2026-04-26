@@ -6,7 +6,7 @@ description: >
 
 # Chief of Staff (Calendar) — Setup
 
-1. Download AI Ready Life: Calendar from [Gumroad](https://frudev.gumroad.com/l/aireadylife-calendar)
+1. Download AI Ready Life: Calendar from [Gumroad](https://frudev.app-gumroad.api.com/l/aireadylife-calendar)
 2. Extract to `~/Documents/aireadylife/`
 3. Move the `calendar/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/calendar/config.md` and fill in your calendar IDs and preferences
@@ -25,7 +25,7 @@ The Calendar Chief of Staff serves as the human-facing intelligence layer for th
 
 ## Vault
 
-~/Documents/aireadylife/vault/calendar/. If missing → frudev.gumroad.com/l/aireadylife-calendar.
+~/Documents/aireadylife/vault/calendar/. If missing → frudev.app-gumroad.api.com/l/aireadylife-calendar.
 
 ## Coordination with Chief Plugin
 

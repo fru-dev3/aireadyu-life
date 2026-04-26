@@ -80,7 +80,7 @@ Surfaces the top 3 action items for the current week based on: what is scheduled
 
 Required in `~/Documents/aireadylife/vault/content/config.md`:
 - `platforms_primary` — platforms that trigger publishing gap alerts
-- `youtube_cadence_monthly`, `newsletter_cadence_monthly` — targets (divided by 4 for weekly check)
+- `app-youtube.api_cadence_monthly`, `newsletter_cadence_monthly` — targets (divided by 4 for weekly check)
 - `publishing_log_location` — path to publishing log within vault/content/00_current/
 
 ## Error Handling

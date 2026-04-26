@@ -31,12 +31,12 @@ open_rate:              # e.g. 42%
 ---
 
 ## Revenue
-gumroad_url:
+app-gumroad.api_url:
 monthly_revenue_target:
 ytd_revenue:
 
 ---
 
 ## Publishing Schedule
-youtube_publish_day:    # e.g. Tuesday
+app-youtube.api_publish_day:    # e.g. Tuesday
 newsletter_send_day:    # e.g. Thursday

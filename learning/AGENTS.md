@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/learning/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Learning Vault** at [frudev.gumroad.com/l/aireadylife-learning](https://frudev.gumroad.com/l/aireadylife-learning)
+1. Purchase the **AI Ready Life: Learning Vault** at [frudev.app-gumroad.api.com/l/aireadylife-learning](https://frudev.app-gumroad.api.com/l/aireadylife-learning)
 2. Unzip the download
 3. Move the `learning/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/learning/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your learning vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-learning](https://frudev.gumroad.com/l/aireadylife-learning), unzip, and place the `learning/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your learning vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-learning](https://frudev.app-gumroad.api.com/l/aireadylife-learning), unzip, and place the `learning/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -88,8 +88,8 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`coursera`** — Tracks enrolled course progress, completion percentages, certificate status, and upcoming assignment deadlines on Coursera via Playwright with Chrome cookie session.
-- **`kindle`** — Accesses Kindle reading progress and highlights via Amazon's Manage Content page or Goodreads RSS sync.
+- **`app-coursera`** — Tracks enrolled course progress, completion percentages, certificate status, and upcoming assignment deadlines on Coursera via Playwright with Chrome cookie session.
+- **`app-kindle`** — Accesses Kindle reading progress and highlights via Amazon's Manage Content page or Goodreads RSS sync.
 - **`flow-build-progress-summary`** — Reads all active learning items from vault, calculates completion percentage vs.
 - **`flow-build-reading-summary`** — Reads the reading list and completion log to produce a reading progress summary: books completed YTD (count and titles), current book with percentage complete and projected completion date at current pace, books/month pace vs.
 - **`op-goal-review`** — Quarterly learning goal alignment review evaluating whether the active learning portfolio is pointed at career and life vision priorities for the next quarter.

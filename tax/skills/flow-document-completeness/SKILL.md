@@ -77,7 +77,7 @@ Markdown document at `vault/tax/00_current/YYYY-completeness.md`:
 - Summary: N expected | N received | N pending | N not yet due | N delinquent
 - Status table: Document Type | Payer/Issuer | Expected By | Status | File Name (if received)
 - Naming violations section: incorrect file name | correct file name
-- Delinquent items section: document, payer, action (call payer or download from portal)
+- Delinquent items section: document, payer, action (call payer or download from app-insurance-portal.portal)
 
 ## Configuration
 

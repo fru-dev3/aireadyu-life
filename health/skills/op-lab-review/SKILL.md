@@ -2,7 +2,7 @@
 type: op
 cadence: as-received
 description: >
-  Triggered when new lab results arrive from a patient portal (MyChart/Epic) or are
+  Triggered when new lab results arrive from a patient app-insurance-portal.portal (MyChart/Epic) or are
   uploaded manually. Parses each biomarker against clinical reference ranges (glucose,
   A1c, LDL, HDL, TSH, creatinine, CBC, and more), flags out-of-range values with
   severity tier, and builds a structured panel summary grouped by test category with
@@ -17,7 +17,7 @@ description: >
 
 ## What It Does
 
-Runs whenever new lab results arrive — downloaded from the configured patient portal (MyChart or equivalent) or manually placed in the vault by the user. This is the primary op for processing all clinical lab data and is the only op that writes to `vault/health/00_current/`.
+Runs whenever new lab results arrive — downloaded from the configured patient app-insurance-portal.portal (MyChart or equivalent) or manually placed in the vault by the user. This is the primary op for processing all clinical lab data and is the only op that writes to `vault/health/00_current/`.
 
 The op reads the incoming lab result file from `vault/health/00_current/` (PDF, structured text, or the standardized vault template). It calls `health-build-lab-summary` to parse every biomarker, compare against clinical reference ranges, compute trend direction vs. the prior panel, group results by panel type (metabolic, lipid, CBC, thyroid, hormones, vitamins), and write the formatted summary document.
 
@@ -34,7 +34,7 @@ The op concludes by calling `health-update-open-loops` to consolidate all new fl
 
 ## Apps
 
-- `mychart` — download lab results PDFs from patient portal (if auto-download is configured)
+- `app-mychart.portal` — download lab results PDFs from patient app-insurance-portal.portal (if auto-download is configured)
 
 ## Vault Output
 

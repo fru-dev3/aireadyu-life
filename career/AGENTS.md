@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/career/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Career Vault** at [frudev.gumroad.com/l/aireadylife-career](https://frudev.gumroad.com/l/aireadylife-career)
+1. Purchase the **AI Ready Life: Career Vault** at [frudev.app-gumroad.api.com/l/aireadylife-career](https://frudev.app-gumroad.api.com/l/aireadylife-career)
 2. Unzip the download
 3. Move the `career/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/career/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your career vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-career](https://frudev.gumroad.com/l/aireadylife-career), unzip, and place the `career/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your career vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-career](https://frudev.app-gumroad.api.com/l/aireadylife-career), unzip, and place the `career/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -102,6 +102,6 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-flag-comp-gap`** — Writes a structured compensation gap flag to vault/career/open-loops.md when current TC falls below market P50 for role, level, and metro.
 - **`task-log-application`** — Records a new job application (or pre-application watch item) to vault/career/00_current/ with full context: company, role, date, source, contact, comp range, tech stack, work arrangement, fit notes, and default follow-up window.
 - **`task-update-open-loops`** — Maintains vault/career/open-loops.md as the canonical list of outstanding career action items.
-- **`greenhouse`** — Tracks job application status, interview stages, offer details, and recruiter contacts from employer Greenhouse ATS candidate portals via Playwright.
-- **`levels-fyi`** — Scrapes compensation data by company, role, and level from Levels.fyi — the most accurate source for tech compensation benchmarking.
-- **`linkedin`** — Accesses LinkedIn for job market scanning, compensation research, professional network review, and recruiter message monitoring via Playwright with Chrome cookie session.
+- **`app-greenhouse.api`** — Tracks job application status, interview stages, offer details, and recruiter app-contacts from employer Greenhouse ATS candidate portals via Playwright.
+- **`app-levels-fyi.portal`** — Scrapes compensation data by company, role, and level from Levels.fyi — the most accurate source for tech compensation benchmarking.
+- **`app-linkedin.portal`** — Accesses LinkedIn for job market scanning, compensation research, professional network review, and recruiter message monitoring via Playwright with Chrome cookie session.

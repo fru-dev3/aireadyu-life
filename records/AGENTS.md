@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/records/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Records Vault** at [frudev.gumroad.com/l/aireadylife-records](https://frudev.gumroad.com/l/aireadylife-records)
+1. Purchase the **AI Ready Life: Records Vault** at [frudev.app-gumroad.api.com/l/aireadylife-records](https://frudev.app-gumroad.api.com/l/aireadylife-records)
 2. Unzip the download
 3. Move the `records/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/records/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your records vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-records](https://frudev.gumroad.com/l/aireadylife-records), unzip, and place the `records/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your records vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-records](https://frudev.app-gumroad.api.com/l/aireadylife-records), unzip, and place the `records/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -88,14 +88,14 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`1password`** — Accesses the 1Password vault via the local CLI (`op`) using a service account token.
-- **`gdrive`** — Reads and writes document scans and records files to configured Google Drive folders via the Drive API.
+- **`app-1password`** — Accesses the 1Password vault via the local CLI (`op`) using a service account token.
+- **`app-gdrive`** — Reads and writes document scans and records files to configured Google Drive folders via the Drive API.
 - **`flow-build-subscription-summary`** — Builds a complete subscription table: service name, billing cycle, monthly equivalent, annual equivalent, last-used date, usage flag (unused >2 months), annual renewal approaching within 30 days, and keep/cancel recommendation.
 - **`flow-check-expiring-documents`** — Scans all identity and legal documents for expiration dates within 12 months.
 - **`op-document-audit`** — Quarterly document audit.
 - **`op-monthly-sync`** — Full records data sync on the 1st of each month.
 - **`op-review-brief`** — Monthly records review brief.
 - **`op-subscription-review`** — Monthly subscription review.
-- **`task-flag-expiring-id`** — Writes an ID expiration flag to open-loops.md with document type, holder name, expiration date, days until effective renewal deadline (using document-specific lead times), step-by-step renewal action, official renewal portal link, and cost.
+- **`task-flag-expiring-id`** — Writes an ID expiration flag to open-loops.md with document type, holder name, expiration date, days until effective renewal deadline (using document-specific lead times), step-by-step renewal action, official renewal app-insurance-portal.portal link, and cost.
 - **`task-log-document`** — Adds a new document to vault/records/ with document type, holder, issue date, expiration date, issuing authority, physical storage location, and digital storage location.
 - **`task-update-open-loops`** — Writes records flags (expiring IDs with renewal deadlines, outdated legal documents, unused subscriptions approaching renewal, missing documents, storage gaps) to open-loops.md and resolves completed items.

@@ -96,7 +96,7 @@ Required in `~/Documents/aireadylife/vault/home/config.md`:
 
 ## Error Handling
 
-- If vault missing: direct to frudev.gumroad.com/l/aireadylife-home
+- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-home
 - If no open maintenance items: note "No open items — home is in routine maintenance mode"
 - If no expenses logged yet for the month: show $0 with note to log expenses
 

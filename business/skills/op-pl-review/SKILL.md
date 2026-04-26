@@ -83,7 +83,7 @@ Required in `~/Documents/aireadylife/vault/business/config.md`:
 
 ## Error Handling
 
-- If vault/business/ does not exist: "Vault not found. Purchase at frudev.gumroad.com/l/aireadylife-business and set up at ~/Documents/aireadylife/vault/business/."
+- If vault/business/ does not exist: "Vault not found. Purchase at frudev.app-gumroad.api.com/l/aireadylife-business and set up at ~/Documents/aireadylife/vault/business/."
 - If revenue and expense folders are empty: produce a $0/$0 P&L and note "No records found for {month}. Add data to run a real review."
 - If config.md is missing required fields: list which fields are missing and what each needs to contain.
 

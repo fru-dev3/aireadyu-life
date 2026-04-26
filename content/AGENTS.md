@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/content/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Content Vault** at [frudev.gumroad.com/l/aireadylife-content](https://frudev.gumroad.com/l/aireadylife-content)
+1. Purchase the **AI Ready Life: Content Vault** at [frudev.app-gumroad.api.com/l/aireadylife-content](https://frudev.app-gumroad.api.com/l/aireadylife-content)
 2. Unzip the download
 3. Move the `content/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/content/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your content vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-content](https://frudev.gumroad.com/l/aireadylife-content), unzip, and place the `content/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your content vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-content](https://frudev.app-gumroad.api.com/l/aireadylife-content), unzip, and place the `content/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -88,7 +88,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`beehiiv`** — Queries newsletter subscriber and revenue metrics from Beehiiv via their API.
+- **`app-beehiiv.api`** — Queries newsletter subscriber and revenue metrics from Beehiiv via their API.
 - **`flow-analyze-channel-performance`** — Builds a cross-channel performance dashboard with 30-day totals per platform, MoM comparisons, and flags for channels underperforming vs.
 - **`flow-build-revenue-summary`** — Aggregates revenue from all content channels into a single monthly summary with MoM comparison, identifying the top channel and flagging declines >20%.
 - **`flow-build-seo-summary`** — Summarizes keyword rankings, search impressions, and top content performance; identifies quick-win keywords (positions 4-15), ranking drops, and top 3 optimization opportunities.
@@ -100,5 +100,5 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-flag-seo-gap`** — Writes a flag to vault/content/open-loops.md when a content piece drops in ranking or a high-value keyword has no content coverage.
 - **`task-log-revenue`** — Records a revenue event to vault/content/ with: platform, amount, date, type (AdSense, sponsorship, product sale, subscription).
 - **`task-update-open-loops`** — Writes all content flags (revenue dips, SEO gaps, publishing misses, channel anomalies) to vault/content/open-loops.md and resolves completed items.
-- **`gumroad`** — Queries product sales and revenue data from Gumroad via their API.
-- **`youtube`** — Queries YouTube channel analytics (views, watch time, subscribers, revenue) via the YouTube Data API v3.
+- **`app-gumroad.api`** — Queries product sales and revenue data from Gumroad via their API.
+- **`app-youtube.api`** — Queries YouTube channel analytics (views, watch time, subscribers, revenue) via the YouTube Data API v3.

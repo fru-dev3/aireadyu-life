@@ -8,7 +8,7 @@ Fill in the fields below before running your first benefits skill.
 employer:
 hr_contact:
 hr_email:
-benefits_portal:        # URL e.g. workday.com, adp.com
+benefits_app-insurance-portal.portal:        # URL e.g. app-workday.com, app-adp.com
 open_enrollment_start:  # MM-DD
 open_enrollment_end:    # MM-DD
 

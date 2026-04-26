@@ -93,7 +93,7 @@ Required: `~/Documents/aireadylife/vault/real-estate/config.md` populated and va
 
 ## Error Handling
 
-- If vault does not exist: direct to frudev.gumroad.com/l/aireadylife-real-estate
+- If vault does not exist: direct to frudev.app-gumroad.api.com/l/aireadylife-real-estate
 - If monthly sync has not been run: note data may be stale; offer to run sync first
 - If no listings saved: omit listings section; note how to save a listing using the log-listing task
 - If prior month brief missing: skip delta comparison; note first brief

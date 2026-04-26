@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/estate/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Estate Vault** at [frudev.gumroad.com/l/aireadylife-estate](https://frudev.gumroad.com/l/aireadylife-estate)
+1. Purchase the **AI Ready Life: Estate Vault** at [frudev.app-gumroad.api.com/l/aireadylife-estate](https://frudev.app-gumroad.api.com/l/aireadylife-estate)
 2. Unzip the download
 3. Move the `estate/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/estate/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your estate vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-estate](https://frudev.gumroad.com/l/aireadylife-estate), unzip, and place the `estate/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your estate vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-estate](https://frudev.app-gumroad.api.com/l/aireadylife-estate), unzip, and place the `estate/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -88,7 +88,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`appfolio`** — Downloads owner statements, lease documents, maintenance requests, and tenant ledgers from an AppFolio owner portal via Playwright.
+- **`app-appfolio.portal`** — Downloads owner statements, lease documents, maintenance requests, and tenant ledgers from an AppFolio owner app-insurance-portal.portal via Playwright.
 - **`flow-analyze-cash-flow`** — Detailed cash flow analysis per rental property: gross rent, vacancy loss, all operating expenses, NOI, debt service, net cash flow, cash-on-cash return, and expense ratio.
 - **`flow-build-portfolio-summary`** — Generates a complete portfolio snapshot: all properties with address, purchase price, current value, equity, outstanding mortgage balance, monthly cash flow, cap rate, and cash-on-cash return.
 - **`flow-check-maintenance-schedule`** — Reviews all open maintenance items and upcoming seasonal tasks across all rental properties against the current date.
@@ -100,5 +100,5 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-flag-maintenance-item`** — Writes a maintenance flag to open-loops.md and creates a detailed maintenance item record in vault/estate/00_current/.
 - **`task-log-expense`** — Records a rental property expense to vault/estate/00_current/ with property address, date, vendor, IRS-standard expense category, amount, notes, and receipt reference.
 - **`task-update-open-loops`** — Writes estate flags (overdue maintenance, lease expirations, cash flow anomalies, vacancy risks, property tax deadlines, CapEx approaching) to open-loops.md and resolves completed items.
-- **`stessa`** — Accesses rental income, expense tracking, cash flow reports, and property valuations from Stessa via Playwright.
-- **`zillow`** — Fetches Zestimate property valuations, rental estimates, and market trend data from Zillow via web research.
+- **`app-stessa`** — Accesses rental income, expense tracking, cash flow reports, and property valuations from Stessa via Playwright.
+- **`app-zillow`** — Fetches Zestimate property valuations, rental estimates, and market trend data from Zillow via web research.

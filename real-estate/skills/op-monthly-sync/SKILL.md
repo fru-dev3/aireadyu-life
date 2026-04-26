@@ -75,7 +75,7 @@ Required fields in `~/Documents/aireadylife/vault/real-estate/config.md`:
 
 ## Error Handling
 
-- If config.md is missing or incomplete: halt; direct user to frudev.gumroad.com/l/aireadylife-real-estate
+- If config.md is missing or incomplete: halt; direct user to frudev.app-gumroad.api.com/l/aireadylife-real-estate
 - If market data pull fails for one market: continue sync; note data gap in brief
 - If rate not updated in 30+ days: warn user; use stale rate with disclaimer; recommend updating before making decisions
 - If prior month snapshot is missing: skip MoM comparison; note first-run status

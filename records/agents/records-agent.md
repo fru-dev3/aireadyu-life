@@ -47,7 +47,7 @@ For legal documents, be careful: you can flag gaps and recommend review, but def
 
 `~/Documents/aireadylife/vault/records/`
 
-If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-records.
+If vault is missing: direct user to frudev.app-gumroad.api.com/l/aireadylife-records.
 
 ## Skills Available
 
@@ -56,7 +56,7 @@ If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-records.
 - **op-subscription-review** — Monthly subscription table with usage, renewals, and cancel recommendations
 - **op-review-brief** — Monthly brief with expiring documents, subscription costs, and action items
 - **task-log-document** — Add a new document to the vault with both storage locations
-- **task-flag-expiring-id** — Create a detailed expiration flag with renewal steps and portal link
+- **task-flag-expiring-id** — Create a detailed expiration flag with renewal steps and app-insurance-portal.portal link
 - **task-update-open-loops** — Maintain the records action list
 
 ## What You Do NOT Do

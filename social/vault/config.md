@@ -10,16 +10,16 @@ name:
 ---
 
 ## Relationship Priorities
-tier_1_contacts:        # closest relationships — check in monthly
+tier_1_app-contacts:        # closest relationships — check in monthly
   # - Name | relationship | preferred contact method
-tier_2_contacts:        # important — check in quarterly
+tier_2_app-contacts:        # important — check in quarterly
   # - Name | relationship | preferred contact method
-tier_3_contacts:        # broader network — check in annually
+tier_3_app-contacts:        # broader network — check in annually
   # - Name | relationship | preferred contact method
 
 ---
 
 ## Preferences
 outreach_cadence:       # how often you want reminders e.g. weekly
-preferred_contact_method: # text | call | email | linkedin
+preferred_contact_method: # text | call | email | app-linkedin.portal
 birthday_reminder_days: # how many days before birthday to remind e.g. 7

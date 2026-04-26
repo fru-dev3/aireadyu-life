@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/intel/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Intel Vault** at [frudev.gumroad.com/l/aireadylife-intel](https://frudev.gumroad.com/l/aireadylife-intel)
+1. Purchase the **AI Ready Life: Intel Vault** at [frudev.app-gumroad.api.com/l/aireadylife-intel](https://frudev.app-gumroad.api.com/l/aireadylife-intel)
 2. Unzip the download
 3. Move the `intel/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/intel/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your intel vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-intel](https://frudev.gumroad.com/l/aireadylife-intel), unzip, and place the `intel/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your intel vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-intel](https://frudev.app-gumroad.api.com/l/aireadylife-intel), unzip, and place the `intel/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -87,7 +87,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`feedly`** — Reads RSS feed articles and trending topics from Feedly via API or Playwright.
+- **`app-feedly`** — Reads RSS feed articles and trending topics from Feedly via API or Playwright.
 - **`flow-build-news-digest`** — Pulls news from configured RSS feeds and sources, filters to priority topics, deduplicates, and formats as a scannable daily digest.
 - **`flow-build-topic-summary`** — Aggregates recent coverage on a specific topic into a structured summary: current state, key players, recent developments, and open questions.
 - **`op-daily-briefing`** — Generates a daily news digest filtered to configured priority topics and sources.
@@ -97,4 +97,4 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-flag-priority-story`** — Writes a flag to vault/intel/open-loops.md when a story on a configured priority topic appears from a high-credibility source, with headline, source, summary, why it matters, and action needed.
 - **`task-log-source`** — Adds a new news source to vault/intel/00_current/ with name, URL/feed, type, topic tags, and credibility rating.
 - **`task-update-open-loops`** — Writes all intel flags (breaking priority stories, source gaps, follow-up items) to vault/intel/open-loops.md and resolves completed items.
-- **`pocket`** — Accesses saved articles and reading queue from Pocket (Mozilla) via OAuth API.
+- **`app-pocket`** — Accesses saved articles and reading queue from Pocket (Mozilla) via OAuth API.

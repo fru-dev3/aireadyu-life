@@ -26,7 +26,7 @@ The calendar section reads from ~/Documents/aireadylife/vault/calendar/00_curren
 
 Every 🔴 item found during the brief run triggers `task-flag-urgent-item`, which writes a persistent alert record to vault/chief/00_current/ for cross-run tracking. This ensures that if a 🔴 item is not resolved, it will keep surfacing in every subsequent brief without relying on the source domain's open-loops.md alone.
 
-The completed brief is written as a dated markdown file to vault/chief/02_briefs/daily-YYYY-MM-DD.md. If Notion credentials are configured in vault/chief/config.md, the brief is also pushed to the configured Notion page via the notion skill.
+The completed brief is written as a dated markdown file to vault/chief/02_briefs/daily-YYYY-MM-DD.md. If Notion credentials are configured in vault/chief/config.md, the brief is also pushed to the configured Notion page via the app-notion skill.
 
 ## Triggers
 
@@ -51,7 +51,7 @@ The completed brief is written as a dated markdown file to vault/chief/02_briefs
 9. Pass all inputs to `flow-build-daily-brief` for document assembly
 10. Call `task-flag-urgent-item` for every 🔴 item to write persistent alert record
 11. Write completed brief to vault/chief/02_briefs/daily-YYYY-MM-DD.md
-12. If Notion configured: push brief to Notion page via `notion` skill
+12. If Notion configured: push brief to Notion page via `app-notion` skill
 13. Return formatted brief to user as chat output
 
 ## Input
@@ -94,13 +94,13 @@ The completed brief is written as a dated markdown file to vault/chief/02_briefs
 
 Required fields in vault/chief/config.md:
 - `installed_plugins` — comma-separated list of installed plugin names (or leave blank for auto-discovery)
-- `notion_api_key` — optional; enables Notion sync
-- `notion_briefs_page_id` — optional; Notion page where briefs are appended
-- `gdrive_briefs_folder_id` — optional; Google Drive folder for brief archiving
+- `app-notion_api_key` — optional; enables Notion sync
+- `app-notion_briefs_page_id` — optional; Notion page where briefs are appended
+- `app-gdrive_briefs_folder_id` — optional; Google Drive folder for brief archiving
 
 ## Error Handling
 
-- **vault/chief/config.md missing:** Stop. Display: "Chief vault not found. Purchase at frudev.gumroad.com/l/aireadylife-chief and complete setup."
+- **vault/chief/config.md missing:** Stop. Display: "Chief vault not found. Purchase at frudev.app-gumroad.api.com/l/aireadylife-chief and complete setup."
 - **No plugin vaults found:** Display: "No installed plugins detected. Install at least one AI Ready Life domain plugin and ensure its vault/ folder is present."
 - **Plugin vault exists but open-loops.md missing:** Record domain as "no active flags" — don't error.
 - **state.md missing for a domain:** Record as "not initialized" in the domain alert table — don't error.

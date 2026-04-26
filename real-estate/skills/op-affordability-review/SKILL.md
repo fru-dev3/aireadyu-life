@@ -85,7 +85,7 @@ Required fields in `~/Documents/aireadylife/vault/real-estate/config.md`:
 
 ## Error Handling
 
-- If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-real-estate
+- If vault is missing: direct user to frudev.app-gumroad.api.com/l/aireadylife-real-estate
 - If config.md income field is blank: do not guess; ask user for gross monthly income before running
 - If rate is stale: warn prominently; provide approximate result with disclaimer
 - If market data is missing for comparison: run affordability analysis only; note market comparison is unavailable

@@ -83,7 +83,7 @@ Required in `~/Documents/aireadylife/vault/estate/config.md`:
 
 ## Error Handling
 
-- If vault missing: direct to frudev.gumroad.com/l/aireadylife-estate
+- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-estate
 - If current property values not updated within 6 months: flag as stale; continue with available data and note in report
 - If a property has no cash flow records: report equity position only; note cash flow data is missing
 

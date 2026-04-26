@@ -17,7 +17,7 @@ Called by `op-network-review` for each contact selected for outreach. A generic 
 
 *Referral request*: purpose is to ask the contact to refer you to a specific open role at their company. Only used when you have an established, warm relationship with the person and a specific role in mind. References how you know them, states clearly and briefly why you would be a strong fit for the specific role, and makes a direct but polite ask: "Would you be comfortable passing along my profile to [hiring team]?" Never sent cold or to a near-stranger.
 
-*Networking maintenance* (active relationship, checking in): for contacts where the relationship is already active and warm. Shares something useful or relevant to them — an article, an intro they might value, a relevant event — rather than asking for anything. Positions you as a connector, not a taker.
+*Networking maintenance* (active relationship, checking in): for app-contacts where the relationship is already active and warm. Shares something useful or relevant to them — an article, an intro they might value, a relevant event — rather than asking for anything. Positions you as a connector, not a taker.
 
 *Intro request*: asking a mutual contact to make an introduction to someone in their network. States clearly who you want to meet and why (specific, not vague), makes it easy for the connector to say yes by offering a draft intro note, and gives the connector an easy out if the timing is not right.
 
@@ -60,7 +60,7 @@ Follow-up reminder: If no response in 14 days, [suggested follow-up action or ar
 
 ## Configuration
 
-Contact records at `vault/career/` with fields: name, current_company, current_role, how_we_met, last_contact_date, last_contact_notes, linkedin_url, email. The richer the record, the more specific the message.
+Contact records at `vault/career/` with fields: name, current_company, current_role, how_we_met, last_contact_date, last_contact_notes, app-linkedin.portal_url, email. The richer the record, the more specific the message.
 
 ## Error Handling
 

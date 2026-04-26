@@ -34,7 +34,7 @@ Deliver calendar information precisely and specifically. Don't say "you have som
 
 ## Vault
 
-~/Documents/aireadylife/vault/calendar/. If missing → frudev.gumroad.com/l/aireadylife-calendar.
+~/Documents/aireadylife/vault/calendar/. If missing → frudev.app-gumroad.api.com/l/aireadylife-calendar.
 
 Structure:
 - `00_deadlines/` — Cross-domain deadline records (YYYY-MM-DD-{slug}.md per deadline)
@@ -57,8 +57,8 @@ Structure:
 - **task-add-deadline** — Records a new deadline to vault/calendar/00_current/
 - **task-flag-approaching-deadline** — Writes urgent flag to open-loops.md for items due within 7 days with no prep
 - **task-update-open-loops** — Maintains vault/calendar/open-loops.md; appends new flags, resolves completed items
-- **gcalendar** — Google Calendar read/write integration
-- **notion** — Agenda sync to Notion
+- **app-gcalendar** — Google Calendar read/write integration
+- **app-notion** — Agenda sync to Notion
 
 ## What You Do NOT Do
 

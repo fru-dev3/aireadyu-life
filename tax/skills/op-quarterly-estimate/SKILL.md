@@ -32,7 +32,7 @@ The op calls `tax-build-estimate` to produce the full calculation. The calculati
 
 **Underpayment penalty.** If the recommended payment is not made, the op calculates the estimated underpayment penalty using the IRS underpayment rate (federal short-term rate + 3%; currently approximately 8%) applied to the shortfall for the days in the quarter.
 
-The op flags the payment with the due date and specific payment method: IRS Direct Pay for immediate one-time payments (irs.gov/payments, select "Estimated Tax"), EFTPS for scheduled payments, or state portal for state estimated payments.
+The op flags the payment with the due date and specific payment method: IRS Direct Pay for immediate one-time payments (app-irs.portal.gov/payments, select "Estimated Tax"), EFTPS for scheduled payments, or state app-insurance-portal.portal for state estimated payments.
 
 ## Calls
 
@@ -41,7 +41,7 @@ The op flags the payment with the due date and specific payment method: IRS Dire
 
 ## Apps
 
-- `irs` — optional; verify prior payments on IRS transcript and confirm payment received
+- `app-irs.portal` — optional; verify prior payments on IRS transcript and confirm payment received
 
 ## Vault Output
 

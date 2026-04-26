@@ -59,7 +59,7 @@ Required fields in `~/Documents/aireadylife/vault/real-estate/config.md`:
 - `min_beds` — minimum bedroom count
 - `min_baths` — minimum bathroom count
 - `min_sqft` — minimum square footage
-- `listing_source` — preferred source: "zillow" or "redfin"
+- `listing_source` — preferred source: "app-zillow" or "app-redfin"
 
 ## Error Handling
 

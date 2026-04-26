@@ -14,9 +14,9 @@ niche:                  # e.g. AI for personal life
 
 ## Platforms
 website_url:
-youtube_channel:
-linkedin_url:
-twitter_handle:
+app-youtube.api_channel:
+app-linkedin.portal_url:
+app-twitter_handle:
 instagram_handle:
 newsletter_platform:    # e.g. Beehiiv, Substack
 newsletter_url:
@@ -25,12 +25,12 @@ newsletter_url:
 
 ## Analytics
 google_analytics_id:    # e.g. G-XXXXXXXXXX
-youtube_channel_id:
+app-youtube.api_channel_id:
 primary_metric:         # what you track most (views, subs, revenue)
 
 ---
 
 ## Content Cadence
-youtube_frequency:      # e.g. weekly
+app-youtube.api_frequency:      # e.g. weekly
 newsletter_frequency:   # e.g. weekly
-linkedin_frequency:     # e.g. 3x per week
+app-linkedin.portal_frequency:     # e.g. 3x per week

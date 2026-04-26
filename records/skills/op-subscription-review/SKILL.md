@@ -84,7 +84,7 @@ Required in `~/Documents/aireadylife/vault/records/00_current/subscriptions.md`:
 
 ## Error Handling
 
-- If vault missing: direct to frudev.gumroad.com/l/aireadylife-records
+- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-records
 - If subscription registry is empty: output setup guidance — explain how to add subscriptions to the vault
 - If last-used dates are missing for all subscriptions: run usage-unknown mode — show costs and renewals without usage tier; prompt user to log usage dates
 

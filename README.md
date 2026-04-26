@@ -12,33 +12,33 @@ Works with **Claude Desktop / Claude Code** and **Codex CLI**. Install in either
 
 | Plugin | Domain |
 |--------|--------|
-| [`health`](https://frudev.gumroad.com/l/aireadylife-health) | Labs, medications, preventive care, wearables |
-| [`wealth`](https://frudev.gumroad.com/l/aireadylife-wealth) | Net worth, investments, debt, cash flow |
-| [`tax`](https://frudev.gumroad.com/l/aireadylife-tax) | Tax planning, filing, deadlines, deductions |
-| [`career`](https://frudev.gumroad.com/l/aireadylife-career) | Compensation, market data, job search, skills |
-| [`benefits`](https://frudev.gumroad.com/l/aireadylife-benefits) | 401k, HSA, employer benefits, enrollment |
-| [`brand`](https://frudev.gumroad.com/l/aireadylife-brand) | Personal brand, social analytics, content |
-| [`business`](https://frudev.gumroad.com/l/aireadylife-business) | Revenue, expenses, compliance, contracts |
-| [`calendar`](https://frudev.gumroad.com/l/aireadylife-calendar) | Deadlines, focus time, agenda |
-| [`chief`](https://frudev.gumroad.com/l/aireadylife-chief) | Cross-domain daily brief and life overview |
-| [`content`](https://frudev.gumroad.com/l/aireadylife-content) | Content pipeline, SEO, revenue tracking |
-| [`estate`](https://frudev.gumroad.com/l/aireadylife-estate) | Rental properties, tenants, cash flow |
-| [`explore`](https://frudev.gumroad.com/l/aireadylife-explore) | Travel, trips, documents, wishlist |
-| [`home`](https://frudev.gumroad.com/l/aireadylife-home) | Maintenance, expenses, seasonal tasks |
-| [`insurance`](https://frudev.gumroad.com/l/aireadylife-insurance) | Policies, claims, renewals, coverage gaps |
-| [`intel`](https://frudev.gumroad.com/l/aireadylife-intel) | News sources, topics, research briefs |
-| [`learning`](https://frudev.gumroad.com/l/aireadylife-learning) | Courses, books, goals, progress |
-| [`real-estate`](https://frudev.gumroad.com/l/aireadylife-real-estate) | Market data, listings, buy vs. rent |
-| [`records`](https://frudev.gumroad.com/l/aireadylife-records) | Identity documents, legal, subscriptions |
-| [`social`](https://frudev.gumroad.com/l/aireadylife-social) | Contacts, relationships, birthdays, outreach |
-| [`vision`](https://frudev.gumroad.com/l/aireadylife-vision) | Goals, OKRs, quarterly planning, scorecard |
+| [`health`](https://frudev.app-gumroad.api.com/l/aireadylife-health) | Labs, medications, preventive care, wearables |
+| [`wealth`](https://frudev.app-gumroad.api.com/l/aireadylife-wealth) | Net worth, investments, debt, cash flow |
+| [`tax`](https://frudev.app-gumroad.api.com/l/aireadylife-tax) | Tax planning, filing, deadlines, deductions |
+| [`career`](https://frudev.app-gumroad.api.com/l/aireadylife-career) | Compensation, market data, job search, skills |
+| [`benefits`](https://frudev.app-gumroad.api.com/l/aireadylife-benefits) | 401k, HSA, employer benefits, enrollment |
+| [`brand`](https://frudev.app-gumroad.api.com/l/aireadylife-brand) | Personal brand, social analytics, content |
+| [`business`](https://frudev.app-gumroad.api.com/l/aireadylife-business) | Revenue, expenses, compliance, contracts |
+| [`calendar`](https://frudev.app-gumroad.api.com/l/aireadylife-calendar) | Deadlines, focus time, agenda |
+| [`chief`](https://frudev.app-gumroad.api.com/l/aireadylife-chief) | Cross-domain daily brief and life overview |
+| [`content`](https://frudev.app-gumroad.api.com/l/aireadylife-content) | Content pipeline, SEO, revenue tracking |
+| [`estate`](https://frudev.app-gumroad.api.com/l/aireadylife-estate) | Rental properties, tenants, cash flow |
+| [`explore`](https://frudev.app-gumroad.api.com/l/aireadylife-explore) | Travel, trips, documents, wishlist |
+| [`home`](https://frudev.app-gumroad.api.com/l/aireadylife-home) | Maintenance, expenses, seasonal tasks |
+| [`insurance`](https://frudev.app-gumroad.api.com/l/aireadylife-insurance) | Policies, claims, renewals, coverage gaps |
+| [`intel`](https://frudev.app-gumroad.api.com/l/aireadylife-intel) | News sources, topics, research briefs |
+| [`learning`](https://frudev.app-gumroad.api.com/l/aireadylife-learning) | Courses, books, goals, progress |
+| [`real-estate`](https://frudev.app-gumroad.api.com/l/aireadylife-real-estate) | Market data, listings, buy vs. rent |
+| [`records`](https://frudev.app-gumroad.api.com/l/aireadylife-records) | Identity documents, legal, subscriptions |
+| [`social`](https://frudev.app-gumroad.api.com/l/aireadylife-social) | Contacts, relationships, birthdays, outreach |
+| [`vision`](https://frudev.app-gumroad.api.com/l/aireadylife-vision) | Goals, OKRs, quarterly planning, scorecard |
 
 ## Bundles
 
 | Bundle | Includes | Gumroad |
 |--------|----------|---------|
-| Core | health + wealth + tax + career | [frudev.gumroad.com/l/aireadylife-core](https://frudev.gumroad.com/l/aireadylife-core) |
-| Complete | All 20 domains | [frudev.gumroad.com/l/aireadylife-complete](https://frudev.gumroad.com/l/aireadylife-complete) |
+| Core | health + wealth + tax + career | [frudev.app-gumroad.api.com/l/aireadylife-core](https://frudev.app-gumroad.api.com/l/aireadylife-core) |
+| Complete | All 20 domains | [frudev.app-gumroad.api.com/l/aireadylife-complete](https://frudev.app-gumroad.api.com/l/aireadylife-complete) |
 
 ## How It Works
 
@@ -71,7 +71,7 @@ Each plugin has two parts:
 
 ### Step 1 — Get your vault template
 
-Purchase the vault template for your domain on Gumroad. Each domain has its own listing at `frudev.gumroad.com/l/aireadylife-{domain}`.
+Purchase the vault template for your domain on Gumroad. Each domain has its own listing at `frudev.app-gumroad.api.com/l/aireadylife-{domain}`.
 
 Unzip the download and place the vault folder at the correct path for your OS:
 
@@ -136,5 +136,5 @@ Vault templates are sold separately on Gumroad. Each template includes:
 ## Links
 
 - Website: [aireadyu.dev](https://aireadyu.dev)
-- YouTube: [youtube.com/@frudev](https://youtube.com/@frudev)
+- YouTube: [app-youtube.api.com/@frudev](https://app-youtube.api.com/@frudev)
 - Built by [fru.dev](https://fru.dev)

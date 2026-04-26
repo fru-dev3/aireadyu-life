@@ -72,7 +72,7 @@ Required in `~/Documents/aireadylife/vault/home/config.md`:
 
 ## Error Handling
 
-- If vault missing: direct to frudev.gumroad.com/l/aireadylife-home
+- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-home
 - If config.md is missing: halt monthly sync; prompt user to complete setup
 - If expense records not yet logged for the month: run expense review with $0 totals; note expenses can be added retroactively
 

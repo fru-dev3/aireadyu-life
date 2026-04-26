@@ -102,7 +102,7 @@ notes: "[optional]"
 
 ## Error Handling
 
-- **No HSA statement in vault:** Cannot review without current balance. Prompt user to download statement from HSA carrier portal and save to `vault/benefits/00_current/`.
+- **No HSA statement in vault:** Cannot review without current balance. Prompt user to download statement from HSA carrier app-insurance-portal.portal and save to `vault/benefits/00_current/`.
 - **HSA not enrolled:** If user is on a non-HDHP plan, note that HSA is not available and skip this review.
 - **Investment threshold not configured:** Use $1,500 as a reasonable default and note the assumption.
 - **Pending reimbursements log empty:** Note that no reimbursements are logged; if user has paid medical expenses out-of-pocket in the current or prior years, recommend logging them for future reimbursement.

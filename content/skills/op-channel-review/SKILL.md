@@ -88,7 +88,7 @@ Top video: "[Title]" — X,XXX views, X.X% CTR
 
 Required in `~/Documents/aireadylife/vault/content/config.md`:
 - `channels` — list of active content platforms
-- `youtube_cadence_monthly`, `newsletter_cadence_monthly` — publishing targets
+- `app-youtube.api_cadence_monthly`, `newsletter_cadence_monthly` — publishing targets
 - `underperformance_threshold_pct` — % below 90-day avg to flag (default: 15)
 
 ## Error Handling

@@ -15,7 +15,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/explore/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Explore Vault** at [frudev.gumroad.com/l/aireadylife-explore](https://frudev.gumroad.com/l/aireadylife-explore)
+1. Purchase the **AI Ready Life: Explore Vault** at [frudev.app-gumroad.api.com/l/aireadylife-explore](https://frudev.app-gumroad.api.com/l/aireadylife-explore)
 2. Unzip the download
 3. Move the `explore/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/explore/config.md` and fill in your details
@@ -51,7 +51,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your explore vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-explore](https://frudev.gumroad.com/l/aireadylife-explore), unzip, and place the `explore/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your explore vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-explore](https://frudev.app-gumroad.api.com/l/aireadylife-explore), unzip, and place the `explore/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -88,7 +88,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`airbnb`** — Scrapes Airbnb for property listings, availability, and pricing for target destinations and date ranges via Playwright.
+- **`app-airbnb.portal`** — Scrapes Airbnb for property listings, availability, and pricing for target destinations and date ranges via Playwright.
 - **`flow-build-trip-summary`** — Generates a trip brief for an upcoming trip covering destination, dates, lodging, transport, total budget, and open booking items.
 - **`flow-check-travel-docs`** — Verifies all travel documents are valid for upcoming trips, including the 6-month passport validity rule and vaccination requirements for wishlist destinations.
 - **`op-document-check`** — Quarterly travel document audit that checks passport, Global Entry, TSA PreCheck, and vaccination records for expiration within 12 months.
@@ -98,5 +98,5 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`task-flag-expiring-document`** — Writes a document expiration flag to vault/explore/open-loops.md with document type, person, expiration date, renewal timeline, and action needed.
 - **`task-log-trip`** — Records a new trip to vault/explore/00_current/ with destination, dates, purpose, total budget, booking status, and companions.
 - **`task-update-open-loops`** — Writes all explore flags (expiring documents, unbooked trip items, budget overruns) to vault/explore/open-loops.md and resolves completed items.
-- **`google-flights`** — Scrapes flight prices, route options, and price calendar data from Google Flights via Playwright.
-- **`trip-it`** — Reads unified trip itineraries from TripIt for travel tracking and confirmation aggregation.
+- **`app-google-flights`** — Scrapes flight prices, route options, and price calendar data from Google Flights via Playwright.
+- **`app-trip-it`** — Reads unified trip itineraries from TripIt for travel tracking and confirmation aggregation.

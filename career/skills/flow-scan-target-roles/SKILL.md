@@ -81,7 +81,7 @@ Required in `vault/career/config.md`:
 - `required_tech_stack` — list of required technologies
 - `comp_floor` — minimum acceptable annual TC
 - `remote_policy` — Remote / Hybrid / No preference
-- `linkedin_chrome_profile` — path to Chrome profile with saved LinkedIn session
+- `app-linkedin.portal_chrome_profile` — path to Chrome profile with saved LinkedIn session
 
 ## Error Handling
 

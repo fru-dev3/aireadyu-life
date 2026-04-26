@@ -78,7 +78,7 @@ Same as op-daily-briefing. No additional configuration required.
 
 ## Error Handling
 
-- If vault/intel/ is not set up: "Intel vault not found. Purchase at frudev.gumroad.com/l/aireadylife-intel and set up at ~/Documents/aireadylife/vault/intel/."
+- If vault/intel/ is not set up: "Intel vault not found. Purchase at frudev.app-gumroad.api.com/l/aireadylife-intel and set up at ~/Documents/aireadylife/vault/intel/."
 - If in demo mode (vault-demo/intel/): use demo data; prefix all content with "[DEMO]."
 - If config.md topics are empty: produce digest without topic filtering (all stories pass); warn "No topics configured — brief includes unfiltered content. Set topics_include in config.md."
 

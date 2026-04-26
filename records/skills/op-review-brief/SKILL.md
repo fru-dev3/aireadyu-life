@@ -19,7 +19,7 @@ This op generates the monthly records briefing document — a concise, action-or
 
 The brief opens with three headline numbers: total monthly subscription spend, number of documents expiring within 90 days (with holder names), and number of open action items. These three numbers tell the user immediately whether this brief is routine (low spend, no expirations, zero open loops) or requires immediate action (passport renewal overdue, large unused subscription renewing this week, will missing for a household member).
 
-The expiring documents section lists every document within its alert window sorted by urgency (most urgent first, calculated by days-to-renewal-deadline, not days-to-expiration). For each document: holder name, document type, expiration date, days until effective deadline (expiration minus renewal lead time), and the specific next action with the renewal portal link. This is meant to be copy-paste actionable: the user reads it, clicks the link, starts the renewal.
+The expiring documents section lists every document within its alert window sorted by urgency (most urgent first, calculated by days-to-renewal-deadline, not days-to-expiration). For each document: holder name, document type, expiration date, days until effective deadline (expiration minus renewal lead time), and the specific next action with the renewal app-insurance-portal.portal link. This is meant to be copy-paste actionable: the user reads it, clicks the link, starts the renewal.
 
 The subscription cost section shows the full subscription table from the subscription summary flow: every active subscription, monthly cost, last used, and recommendation. The section is headed with the total monthly and annual recurring spend so the number is visible even to a reader who skims. Subscriptions with renewals in the next 30 days are pulled to the top of the table with the renewal date bolded. Unused subscriptions (no use in 60+ days) are grouped at the bottom with the estimated annual savings from canceling all of them.
 
@@ -91,7 +91,7 @@ Required: vault populated, config.md complete, monthly sync completed at least o
 
 ## Error Handling
 
-- If vault missing: direct to frudev.gumroad.com/l/aireadylife-records
+- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-records
 - If monthly sync hasn't been run: run sync first; offer to do it now
 - If subscription registry is empty: omit subscription section; note how to add subscriptions
 

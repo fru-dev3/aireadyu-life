@@ -96,7 +96,7 @@ Required in `vault/benefits/config.md`:
 
 ## Error Handling
 
-- **Plan documents not in vault:** Cannot compare plans without plan details. Prompt user to download SBCs (Summary of Benefits and Coverage) from HR portal and save to `vault/benefits/00_current/`.
+- **Plan documents not in vault:** Cannot compare plans without plan details. Prompt user to download SBCs (Summary of Benefits and Coverage) from HR app-insurance-portal.portal and save to `vault/benefits/00_current/`.
 - **No claims history available:** Use standard utilization estimates by age group and family size as proxies for OOP estimation. Note that estimates are less accurate without historical data.
 - **Enrollment window missed:** Note that elections are locked for the plan year. Flag any coverage gaps to address via qualifying life event (marriage, birth, adoption, loss of other coverage) if applicable.
 

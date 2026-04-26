@@ -71,7 +71,7 @@ No configuration required. Called by the enrollment review op with specific date
 
 ## Error Handling
 
-- **Enrollment dates not provided:** Cannot write flag without dates. Return error to calling op with request to provide enrollment window dates (available from HR portal or benefits package communication).
+- **Enrollment dates not provided:** Cannot write flag without dates. Return error to calling op with request to provide enrollment window dates (available from HR app-insurance-portal.portal or benefits package communication).
 - **End date is in the past:** Enrollment has already closed. Write an "enrollment closed" informational entry noting the elections are locked for the plan year and next opportunity is next open enrollment or a qualifying life event.
 
 ## Vault Paths

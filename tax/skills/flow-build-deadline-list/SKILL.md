@@ -28,7 +28,7 @@ State personal deadlines: state income tax return or extension (most states mirr
 
 Entity deadlines: S-Corp and partnership return (March 15 or extension); LLC annual report per state (varies significantly — some states due on anniversary of formation, others January 1); franchise tax payment (California $800 minimum by April 15; Texas margin tax by May 15; others vary); registered agent renewal (annual, date specific to agent and state); Form 941 quarterly payroll tax return (April 30, July 31, October 31, January 31); FUTA (Form 940, January 31).
 
-**Deadline enrichment.** Each deadline is enriched with: the entity it applies to (personal, LLC name, S-Corp name), the estimated payment or fee amount (from the most recent estimate or known fixed fee), the specific payment or filing method (IRS Direct Pay at irs.gov/payments, EFTPS for large estimated payments, state revenue portal URL, registered agent's renewal portal), and whether an extension has already been filed.
+**Deadline enrichment.** Each deadline is enriched with: the entity it applies to (personal, LLC name, S-Corp name), the estimated payment or fee amount (from the most recent estimate or known fixed fee), the specific payment or filing method (IRS Direct Pay at app-irs.portal.gov/payments, EFTPS for large estimated payments, state revenue app-insurance-portal.portal URL, registered agent's renewal app-insurance-portal.portal), and whether an extension has already been filed.
 
 **Urgency tiering.** Deadlines within 7 days: CRITICAL. Deadlines 8–14 days out: URGENT. Deadlines 15–30 days out: APPROACHING. Deadlines 31–90 days out: UPCOMING.
 
@@ -68,7 +68,7 @@ Markdown document at `vault/tax/00_current/YYYY-MM-deadlines.md`:
 - Header: run date, days covered (next 90 days), count by urgency tier
 - Deadline table: Deadline | Entity | Due Date | Days Remaining | Amount | Method | Urgency
 - CRITICAL section (separate): any item within 7 days with bold formatting and action step
-- Notes section: any EFTPS enrollment needed, state portal registration required, etc.
+- Notes section: any EFTPS enrollment needed, state app-insurance-portal.portal registration required, etc.
 
 ## Configuration
 

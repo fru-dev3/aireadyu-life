@@ -83,7 +83,7 @@ Required in `~/Documents/aireadylife/vault/home/config.md`:
 
 ## Error Handling
 
-- If vault missing: direct to frudev.gumroad.com/l/aireadylife-home
+- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-home
 - If no maintenance history: treat all seasonal tasks as due; note this is first-run behavior
 - If vendor not assigned for a task: suggest searching Angi or Thumbtack for the service type and zip code
 

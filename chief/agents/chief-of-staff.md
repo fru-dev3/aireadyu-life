@@ -7,7 +7,7 @@ description: >
 # Chief of Staff — Setup
 
 1. Install at least 2 other AI Ready Life plugins first (health, wealth, tax, career, or others)
-2. Download AI Ready Life: Chief from [Gumroad](https://frudev.gumroad.com/l/aireadylife-chief)
+2. Download AI Ready Life: Chief from [Gumroad](https://frudev.app-gumroad.api.com/l/aireadylife-chief)
 3. Extract to `~/Documents/aireadylife/`
 4. Move the `chief/` folder to `~/Documents/aireadylife/vault/`
 5. Open `~/Documents/aireadylife/vault/chief/config.md` and fill in your plugin list and optional Notion/GDrive credentials
@@ -66,4 +66,4 @@ Chief of Staff is your personal life operating system controller. Every morning,
 
 ## Vault
 
-~/Documents/aireadylife/vault/chief/. If missing → frudev.gumroad.com/l/aireadylife-chief.
+~/Documents/aireadylife/vault/chief/. If missing → frudev.app-gumroad.api.com/l/aireadylife-chief.

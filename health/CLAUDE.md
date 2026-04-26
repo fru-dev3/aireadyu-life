@@ -13,7 +13,7 @@ Determine the user's OS from context (file paths they share, or ask if unclear).
 
 If `~/Documents/aireadylife/vault/health/` does not exist or is empty:
 
-1. Purchase the **AI Ready Life: Health Vault** at [frudev.gumroad.com/l/aireadylife-health](https://frudev.gumroad.com/l/aireadylife-health)
+1. Purchase the **AI Ready Life: Health Vault** at [frudev.app-gumroad.api.com/l/aireadylife-health](https://frudev.app-gumroad.api.com/l/aireadylife-health)
 2. Unzip the download
 3. Move the `health/` folder to `~/Documents/aireadylife/vault/`
 4. Open `~/Documents/aireadylife/vault/health/config.md` and fill in your details
@@ -49,7 +49,7 @@ Before running **any skill or flow** in this domain — including flows called b
 
 **Rules (follow exactly, no improvisation):**
 
-1. **Vault folder is missing entirely** → output only: *"Your health vault isn't installed. Download it at [frudev.gumroad.com/l/aireadylife-health](https://frudev.gumroad.com/l/aireadylife-health), unzip, and place the `health/` folder at `~/Documents/aireadylife/vault/`."* Stop.
+1. **Vault folder is missing entirely** → output only: *"Your health vault isn't installed. Download it at [frudev.app-gumroad.api.com/l/aireadylife-health](https://frudev.app-gumroad.api.com/l/aireadylife-health), unzip, and place the `health/` folder at `~/Documents/aireadylife/vault/`."* Stop.
 
 2. **Config fields are blank** (empty after `:`) → output the First-Run Message below verbatim. Stop. Do **not** scaffold files, offer alternatives, or ask questions.
 
@@ -69,11 +69,11 @@ Before running **any skill or flow** in this domain — including flows called b
 > **Step 2 — Gather your documents and add them to `00_current/`**
 > Here's what this domain needs:
 >
-- **Lab results** — PDF or text export from MyChart, Quest Diagnostics, LabCorp, or your doctor's portal. Save to `00_current/`.
+- **Lab results** — PDF or text export from MyChart, Quest Diagnostics, LabCorp, or your doctor's app-insurance-portal.portal. Save to `00_current/`.
 - **Medication list** — for each prescription: name, dosage, frequency, refill due date, prescribing provider. A text file is fine.
 - **Preventive care history** — dates of last physical, dental cleaning, eye exam, and any screenings (mammogram, colonoscopy, etc.).
 - **Insurance card** — plan name, member ID, group number, individual deductible, OOP max, primary care copay.
-- **Provider contacts** — primary care doctor name, phone, and portal URL. Same for any specialists you see regularly.
+- **Provider app-contacts** — primary care doctor name, phone, and app-insurance-portal.portal URL. Same for any specialists you see regularly.
 - **Wearable data (optional)** — Apple Health export, Oura CSV, or Garmin summary if you track sleep, HRV, or activity.
 >
 > **Step 3 — Run your first skill**

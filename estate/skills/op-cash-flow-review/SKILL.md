@@ -19,7 +19,7 @@ This op produces the monthly financial report for the rental portfolio. It is th
 
 The op reads all income and expense data that has been logged in the vault during the month, then calls the cash flow analysis flow to compute the full income statement. For most rental properties, the cash flow stack looks like this in a healthy scenario: gross rent collectable (e.g., $2,400/month) minus vacancy loss (5–8% assumed if not tracked explicitly, or actual if logged) minus operating expenses (property taxes ~$167/mo, insurance ~$100/mo, management fee ~$240/mo, maintenance ~$208/mo reserve) = NOI (~$1,485). NOI minus debt service (P&I on mortgage, e.g., $1,200/mo) = net cash flow (~$285/mo before CapEx reserve).
 
-The op flags four specific conditions that warrant attention. Negative net cash flow: the property is cash-flow negative after debt service — the landlord is subsidizing the property out of pocket. This is sustainable only if equity appreciation is the strategy; otherwise it needs investigation. Expense ratio above 50%: operating expenses are consuming more than half of gross rent — typical healthy range is 35–45% for a professionally managed property. DSCR below 1.25: annual NOI covers debt service with less than 25% cushion — lenders use 1.25 as the minimum for investment property loans; falling below this signals financial stress. QoQ cash flow decline above 15%: a significant and sudden drop in net cash flow may indicate unreported vacancy, a large unlogged expense, or a rent payment that wasn't collected.
+The op flags four specific conditions that warrant attention. Negative net cash flow: the property is cash-flow negative after debt service — the landlord is subsidizing the property out of app-pocket. This is sustainable only if equity appreciation is the strategy; otherwise it needs investigation. Expense ratio above 50%: operating expenses are consuming more than half of gross rent — typical healthy range is 35–45% for a professionally managed property. DSCR below 1.25: annual NOI covers debt service with less than 25% cushion — lenders use 1.25 as the minimum for investment property loans; falling below this signals financial stress. QoQ cash flow decline above 15%: a significant and sudden drop in net cash flow may indicate unreported vacancy, a large unlogged expense, or a rent payment that wasn't collected.
 
 The op also computes the recommended monthly reserves that should be held back from cash flow but are often excluded in simple calculations: maintenance reserve (1% of current property value ÷ 12 months) and CapEx reserve (amortized replacement cost of roof, HVAC, water heater based on age and replacement cost estimates). Including reserves gives the true economic cash flow — which is often lower than accounting cash flow.
 
@@ -79,7 +79,7 @@ Required in `~/Documents/aireadylife/vault/estate/config.md`:
 
 ## Error Handling
 
-- If vault missing: direct to frudev.gumroad.com/l/aireadylife-estate
+- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-estate
 - If no expenses logged for a property: run with $0 variable expenses; flag "No expenses logged this month — confirm accuracy"
 - If prior month report missing: skip QoQ comparison; note first run for this property
 

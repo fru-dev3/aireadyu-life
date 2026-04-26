@@ -20,9 +20,9 @@ The brief is designed to be specific and executable — not a list of "you shoul
 
 **Birthday and milestone section:** The brief opens with any birthdays or life milestones in the next 14 days, surfaced by `op-birthday-watch`. For each person: their name, the event (birthday, work anniversary, etc.), the date, their tier, days since last contact (the gap context), and a suggested outreach action. If a birthday contact is also overdue, this is noted explicitly — the birthday is an excellent reconnect opportunity.
 
-**Relationship health summary:** The brief includes a condensed version of the relationship health check: how many Tier 1, Tier 2, Tier 3 contacts are currently in each health status (healthy / fading / overdue). This gives the user a weekly pulse on overall relationship health without requiring them to scroll through every contact.
+**Relationship health summary:** The brief includes a condensed version of the relationship health check: how many Tier 1, Tier 2, Tier 3 app-contacts are currently in each health status (healthy / fading / overdue). This gives the user a weekly pulse on overall relationship health without requiring them to scroll through every contact.
 
-**Outreach queue:** The brief's core is the outreach queue — 5 specific people the user should reach out to this week, with suggested action and conversation context. The queue is built by `flow-build-outreach-queue` using the priority hierarchy: birthdays first, then overdue Tier 1 contacts, then overdue Tier 2 contacts, then fading Tier 1 contacts, then warm professional reconnects. For each person in the queue: name, relationship tier, days since last contact, suggested outreach medium (text/call/email/LinkedIn/coffee), and a brief context note (what was discussed last time, what's been happening in their life, why this week is a good time to reach out).
+**Outreach queue:** The brief's core is the outreach queue — 5 specific people the user should reach out to this week, with suggested action and conversation context. The queue is built by `flow-build-outreach-queue` using the priority hierarchy: birthdays first, then overdue Tier 1 app-contacts, then overdue Tier 2 app-contacts, then fading Tier 1 app-contacts, then warm professional reconnects. For each person in the queue: name, relationship tier, days since last contact, suggested outreach medium (text/call/email/LinkedIn/coffee), and a brief context note (what was discussed last time, what's been happening in their life, why this week is a good time to reach out).
 
 **Follow-up promises:** If any prior interaction log entry contains a "follow-up promised" note (e.g., "said I'd send the article on X" or "promised to make the intro to Y"), these appear as a standing section in the brief until the follow-up is logged as complete.
 
@@ -52,7 +52,7 @@ The brief is designed to be specific and executable — not a list of "you shoul
 
 ## Input
 
-- ~/Documents/aireadylife/vault/social/00_current/contacts.md
+- ~/Documents/aireadylife/vault/social/00_current/app-contacts.md
 - ~/Documents/aireadylife/vault/social/00_current/ (interaction log for last-contact dates)
 - ~/Documents/aireadylife/vault/social/00_current/ (birthday and milestone calendar)
 - `~/Documents/aireadylife/vault/social/01_prior/` — prior period records for trend comparison
@@ -104,16 +104,16 @@ The brief is designed to be specific and executable — not a list of "you shoul
 Required in vault/social/config.md:
 - `tier_definitions` — tier names and membership criteria
 - `health_thresholds` — days-since-contact thresholds per tier for healthy/fading/overdue
-- `outreach_queue_size` — default 5 (contacts per week); adjustable
+- `outreach_queue_size` — default 5 (app-contacts per week); adjustable
 
 ## Error Handling
 
-- **No contacts in vault:** Note "Contact list empty. Add contacts to vault/social/00_current/contacts.md to start relationship tracking."
+- **No app-contacts in vault:** Note "Contact list empty. Add app-contacts to vault/social/00_current/app-contacts.md to start relationship tracking."
 - **Interaction log missing or empty:** Cannot calculate last-contact dates — note "Run task-log-interaction after each meaningful contact to enable health calculations."
 - **Birthday calendar empty:** Skip birthday section; note "Add birthdays to vault/social/00_current/ to receive birthday reminders."
 
 ## Vault Paths
 
 - Reads from: `~/Documents/aireadylife/vault/social/01_prior/` — prior period records
-- Reads from: ~/Documents/aireadylife/vault/social/00_current/contacts.md, ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/open-loops.md
+- Reads from: ~/Documents/aireadylife/vault/social/00_current/app-contacts.md, ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/00_current/, ~/Documents/aireadylife/vault/social/open-loops.md
 - Writes to: ~/Documents/aireadylife/vault/social/02_briefs/YYYY-MM-DD-social-brief.md, ~/Documents/aireadylife/vault/social/open-loops.md

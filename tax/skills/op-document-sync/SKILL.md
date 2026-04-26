@@ -4,7 +4,7 @@ cadence: as-received
 description: >
   Tax document intake op, active January through April 15. Triggered each time a new
   tax document arrives (W-2, 1099-NEC, 1099-B, 1099-DIV, 1099-INT, 1099-R, K-1, 1098)
-  via email, mail, or portal download. Logs the document to the vault inventory, updates
+  via email, mail, or app-insurance-portal.portal download. Logs the document to the vault inventory, updates
   the completeness checklist, and flags any document expected but not yet received after
   its issuer deadline (January 31 for W-2s and 1099s; March 15 for K-1s). Triggers:
   "tax document arrived", "W-2 came in", "1099 received", "log a tax doc".
@@ -23,11 +23,11 @@ Serves as the intake op for all tax documents during filing season. Each time a 
 
 **Completeness check.** After logging the new document, the op calls `tax-document-completeness` to update the full expected vs. received picture. This ensures the completeness report is always current after each intake event rather than only during scheduled reviews.
 
-**Issuer deadline tracking.** W-2s and 1099s are due from issuers by January 31. If the deadline has passed for any expected document that hasn't been received, the flag escalates: for January 31 deadline, if running in mid-February and a W-2 from an active employer is still missing, the flag is HIGH severity with action: "Contact [employer HR/payroll] to resend W-2" or "Download from payroll portal." K-1s from partnerships are due March 15 but are frequently late — K-1 delays are noted as MEDIUM severity (a known, common occurrence) with an action: "Request estimated K-1 from partnership if filing before March 15; otherwise consider extension."
+**Issuer deadline tracking.** W-2s and 1099s are due from issuers by January 31. If the deadline has passed for any expected document that hasn't been received, the flag escalates: for January 31 deadline, if running in mid-February and a W-2 from an active employer is still missing, the flag is HIGH severity with action: "Contact [employer HR/payroll] to resend W-2" or "Download from payroll app-insurance-portal.portal." K-1s from partnerships are due March 15 but are frequently late — K-1 delays are noted as MEDIUM severity (a known, common occurrence) with an action: "Request estimated K-1 from partnership if filing before March 15; otherwise consider extension."
 
 **Amended documents.** When a corrected document arrives (1099-C, W-2C), the op logs it as a replacement and flags: "Amended [document type] received from [issuer] — prior version superseded. Confirm your CPA has the updated version."
 
-**Portal download queue.** Many institutions make tax documents available on their portal before mailing. The op includes a note for documents not yet received: which portal to check and when to check it (Fidelity: typically available by late January in Statements & Documents; brokerage 1099s: often ready February 15–28).
+**Portal download queue.** Many institutions make tax documents available on their app-insurance-portal.portal before mailing. The op includes a note for documents not yet received: which app-insurance-portal.portal to check and when to check it (Fidelity: typically available by late January in Statements & Documents; brokerage 1099s: often ready February 15–28).
 
 ## Calls
 

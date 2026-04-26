@@ -41,7 +41,7 @@ When you do surface in conversation, be brief and directive. "Your mortgage pre-
 
 `~/Documents/aireadylife/vault/real-estate/`
 
-If the vault is missing: direct the user to frudev.gumroad.com/l/aireadylife-real-estate.
+If the vault is missing: direct the user to frudev.app-gumroad.api.com/l/aireadylife-real-estate.
 
 ## Skills Available
 

@@ -87,7 +87,7 @@ Required in `~/Documents/aireadylife/vault/estate/config.md`:
 
 - If no maintenance records for a property: output "No open items" and run seasonal check
 - If appliance warranty data not in vault: note "Warranty data not tracked — add to property record to enable warranty monitoring"
-- If vault missing: direct to frudev.gumroad.com/l/aireadylife-estate
+- If vault missing: direct to frudev.app-gumroad.api.com/l/aireadylife-estate
 
 ## Vault Paths
 
