@@ -1,5 +1,4 @@
 ---
-name: gusto
 type: app
 description: >
   Accesses payroll records, contractor payments, and year-end tax forms from Gusto

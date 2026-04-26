@@ -1,5 +1,4 @@
 ---
-name: health-op-preventive-care-review
 type: op
 cadence: quarterly
 description: >

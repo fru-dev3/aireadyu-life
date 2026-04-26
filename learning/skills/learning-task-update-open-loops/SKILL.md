@@ -1,5 +1,4 @@
 ---
-name: learning-task-update-open-loops
 type: task
 description: >
   Maintains vault/learning/open-loops.md as the canonical list of outstanding learning action items. Appends new flags from learning ops and flows (courses falling behind, certification exam prep timeline risks, expiring certifications, learning goal misalignment). Resolves and removes items when the underlying issue is addressed. Called by learning ops and flows.

@@ -1,5 +1,4 @@
 ---
-name: business-task-flag-overdue-invoice
 type: task
 description: >
   Writes an overdue invoice flag to vault/business/open-loops.md when an invoice is unpaid more

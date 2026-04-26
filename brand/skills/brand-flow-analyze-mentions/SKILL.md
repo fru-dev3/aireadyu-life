@@ -1,5 +1,4 @@
 ---
-name: brand-flow-analyze-mentions
 type: flow
 trigger: called-by-op
 description: >

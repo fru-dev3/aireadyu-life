@@ -1,5 +1,4 @@
 ---
-name: quickbooks
 type: app
 description: >
   Pulls Profit & Loss reports, Balance Sheet, and transaction-level expense data from

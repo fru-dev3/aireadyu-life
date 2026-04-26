@@ -1,5 +1,4 @@
 ---
-name: intel-flow-build-topic-summary
 type: flow
 trigger: called-by-op
 description: >

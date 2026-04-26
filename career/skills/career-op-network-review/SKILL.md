@@ -1,5 +1,4 @@
 ---
-name: career-op-network-review
 type: op
 cadence: monthly
 description: >

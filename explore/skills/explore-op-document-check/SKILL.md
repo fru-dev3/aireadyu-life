@@ -1,5 +1,4 @@
 ---
-name: explore-op-document-check
 type: op
 cadence: quarterly
 description: >

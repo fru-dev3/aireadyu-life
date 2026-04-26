@@ -1,5 +1,4 @@
 ---
-name: linkedin
 type: app
 description: >
   Accesses LinkedIn connections list, profile data, and messaging via Playwright with Chrome

@@ -1,5 +1,4 @@
 ---
-name: tax-op-document-sync
 type: op
 cadence: as-received
 description: >

@@ -1,5 +1,4 @@
 ---
-name: notion
 type: app
 description: >
   Reads and writes Notion pages and databases via the Notion API. Used by calendar-agent to

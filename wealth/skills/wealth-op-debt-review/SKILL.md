@@ -1,5 +1,4 @@
 ---
-name: wealth-op-debt-review
 type: op
 cadence: quarterly
 description: >

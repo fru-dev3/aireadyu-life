@@ -1,5 +1,4 @@
 ---
-name: business-op-pipeline-review
 type: op
 cadence: monthly
 description: >

@@ -1,5 +1,4 @@
 ---
-name: career-op-skills-gap-review
 type: op
 cadence: quarterly
 description: >

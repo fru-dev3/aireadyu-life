@@ -1,5 +1,4 @@
 ---
-name: oura-ring
 type: app
 description: >
   Fetches daily sleep, readiness, and activity data from the Oura Ring API v2 using

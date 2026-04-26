@@ -1,5 +1,4 @@
 ---
-name: airbnb
 type: app
 description: >
   Scrapes Airbnb for property listings, availability, and pricing for target destinations and

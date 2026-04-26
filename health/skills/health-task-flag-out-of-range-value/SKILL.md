@@ -1,5 +1,4 @@
 ---
-name: health-task-flag-out-of-range-value
 type: task
 cadence: as-received
 description: >

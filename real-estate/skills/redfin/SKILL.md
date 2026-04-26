@@ -1,5 +1,4 @@
 ---
-name: redfin
 type: app
 description: >
   Pulls active listings, comparable sales, market statistics, and property estimates from Redfin

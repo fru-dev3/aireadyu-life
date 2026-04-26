@@ -1,5 +1,4 @@
 ---
-name: intel-op-source-scan
 type: op
 cadence: weekly
 description: >

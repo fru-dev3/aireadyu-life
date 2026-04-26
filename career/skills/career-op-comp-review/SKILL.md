@@ -1,5 +1,4 @@
 ---
-name: career-op-comp-review
 type: op
 cadence: quarterly
 description: >

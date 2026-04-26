@@ -1,5 +1,4 @@
 ---
-name: intel-task-flag-priority-story
 type: task
 description: >
   Writes a flag to vault/intel/open-loops.md when a story on a configured priority topic appears

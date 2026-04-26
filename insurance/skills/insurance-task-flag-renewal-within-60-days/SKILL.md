@@ -1,5 +1,4 @@
 ---
-name: insurance-task-flag-renewal-within-60-days
 type: task
 description: >
   Writes a structured renewal alert to vault/insurance/open-loops.md with policy type, carrier, renewal date, current premium, prior year premium (if available for change detection), action category (shop/auto-renew/coverage-review), and specific action steps. Action-by date is set 30 days before renewal. Called by insurance-op-renewal-watch for each flagged renewal.

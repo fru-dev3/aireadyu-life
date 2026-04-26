@@ -1,5 +1,4 @@
 ---
-name: feedly
 type: app
 description: >
   Reads RSS feed articles and trending topics from Feedly via API or Playwright.

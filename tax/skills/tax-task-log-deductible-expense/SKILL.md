@@ -1,5 +1,4 @@
 ---
-name: tax-task-log-deductible-expense
 type: task
 cadence: as-received
 description: >

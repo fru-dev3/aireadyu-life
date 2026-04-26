@@ -1,5 +1,4 @@
 ---
-name: home-op-review-brief
 type: op
 cadence: weekly
 description: >

@@ -1,5 +1,4 @@
 ---
-name: vision-op-quarterly-planning
 type: op
 cadence: quarterly
 description: >

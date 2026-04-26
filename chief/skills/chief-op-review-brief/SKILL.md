@@ -1,5 +1,4 @@
 ---
-name: chief-op-review-brief
 type: op
 cadence: daily
 description: >

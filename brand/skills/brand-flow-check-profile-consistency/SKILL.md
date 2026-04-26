@@ -1,5 +1,4 @@
 ---
-name: brand-flow-check-profile-consistency
 type: flow
 trigger: called-by-op
 description: >

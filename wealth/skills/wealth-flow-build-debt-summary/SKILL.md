@@ -1,5 +1,4 @@
 ---
-name: wealth-flow-build-debt-summary
 type: flow
 trigger: called-by-op
 description: >

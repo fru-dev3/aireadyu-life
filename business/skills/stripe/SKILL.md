@@ -1,5 +1,4 @@
 ---
-name: stripe
 type: app
 description: >
   Queries Stripe for payment, payout, and revenue data via the Stripe API. Used

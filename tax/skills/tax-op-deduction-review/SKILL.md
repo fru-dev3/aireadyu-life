@@ -1,5 +1,4 @@
 ---
-name: tax-op-deduction-review
 type: op
 cadence: monthly
 description: >

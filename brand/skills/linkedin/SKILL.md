@@ -1,5 +1,4 @@
 ---
-name: linkedin
 type: app
 description: >
   Reads LinkedIn profile and post analytics for brand consistency auditing and

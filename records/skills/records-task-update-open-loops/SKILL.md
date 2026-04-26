@@ -1,5 +1,4 @@
 ---
-name: records-task-update-open-loops
 type: task
 description: >
   Writes records flags (expiring IDs with renewal deadlines, outdated legal documents,

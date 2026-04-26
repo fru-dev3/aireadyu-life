@@ -1,5 +1,4 @@
 ---
-name: tax-op-review-brief
 type: op
 cadence: monthly
 description: >

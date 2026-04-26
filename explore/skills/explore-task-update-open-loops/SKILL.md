@@ -1,5 +1,4 @@
 ---
-name: explore-task-update-open-loops
 type: task
 description: >
   Writes all explore flags (expiring documents, unbooked trip items, budget overruns) to

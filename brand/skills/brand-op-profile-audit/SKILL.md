@@ -1,5 +1,4 @@
 ---
-name: brand-op-profile-audit
 type: op
 cadence: quarterly
 description: >

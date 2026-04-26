@@ -1,5 +1,4 @@
 ---
-name: calendar-op-focus-time-review
 type: op
 cadence: weekly
 description: >

@@ -1,5 +1,4 @@
 ---
-name: benefits-op-enrollment-review
 type: op
 cadence: annual
 description: >

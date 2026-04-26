@@ -1,5 +1,4 @@
 ---
-name: estate-op-portfolio-review
 type: op
 cadence: quarterly
 description: >

@@ -1,5 +1,4 @@
 ---
-name: content-flow-analyze-channel-performance
 type: flow
 trigger: called-by-op
 description: >

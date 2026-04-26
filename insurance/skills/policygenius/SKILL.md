@@ -1,5 +1,4 @@
 ---
-name: policygenius
 type: app
 description: >
   Accesses insurance comparison quotes for term life, disability income, and umbrella liability policies on PolicyGenius. Used by insurance-agent during annual coverage audits to compare existing coverage against current market rates and identify shopping opportunities. No authentication required for most quote flows. Configure coverage targets in vault/insurance/config.md.

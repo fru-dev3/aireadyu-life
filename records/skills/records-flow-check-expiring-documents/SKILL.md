@@ -1,5 +1,4 @@
 ---
-name: records-flow-check-expiring-documents
 type: flow
 trigger: called-by-op
 description: >

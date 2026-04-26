@@ -1,5 +1,4 @@
 ---
-name: vision-flow-draft-quarterly-plan
 type: flow
 trigger: called-by-op
 description: >

@@ -1,5 +1,4 @@
 ---
-name: insurance-op-renewal-watch
 type: op
 cadence: monthly
 description: >

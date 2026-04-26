@@ -1,5 +1,4 @@
 ---
-name: business-flow-check-compliance-status
 type: flow
 trigger: called-by-op
 description: >

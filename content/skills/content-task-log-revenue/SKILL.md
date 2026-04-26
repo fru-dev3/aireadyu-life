@@ -1,5 +1,4 @@
 ---
-name: content-task-log-revenue
 type: task
 cadence: as-received
 description: >

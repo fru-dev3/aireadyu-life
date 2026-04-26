@@ -1,5 +1,4 @@
 ---
-name: wealth-op-cash-flow-review
 type: op
 cadence: monthly
 description: >

@@ -1,5 +1,4 @@
 ---
-name: content-task-update-open-loops
 type: task
 description: >
   Writes all content flags (revenue dips, SEO gaps, publishing misses, channel

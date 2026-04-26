@@ -1,5 +1,4 @@
 ---
-name: vision-flow-score-domain-progress
 type: flow
 trigger: called-by-op
 description: >

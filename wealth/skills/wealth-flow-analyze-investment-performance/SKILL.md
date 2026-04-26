@@ -1,5 +1,4 @@
 ---
-name: wealth-flow-analyze-investment-performance
 type: flow
 trigger: called-by-op
 description: >

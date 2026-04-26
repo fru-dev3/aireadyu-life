@@ -1,5 +1,4 @@
 ---
-name: trip-it
 type: app
 description: >
   Reads unified trip itineraries from TripIt for travel tracking and confirmation aggregation.

@@ -1,5 +1,4 @@
 ---
-name: calendar-task-add-deadline
 type: task
 cadence: as-received
 description: >

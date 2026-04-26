@@ -1,5 +1,4 @@
 ---
-name: gdrive
 type: app
 description: >
   Reads and writes document scans and records files to configured Google Drive folders via

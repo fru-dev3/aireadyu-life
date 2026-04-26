@@ -1,5 +1,4 @@
 ---
-name: social-op-relationship-review
 type: op
 cadence: monthly
 description: >

@@ -1,5 +1,4 @@
 ---
-name: gcalendar
 type: app
 description: >
   Reads and creates calendar events via the Google Calendar API. Used by calendar-agent for

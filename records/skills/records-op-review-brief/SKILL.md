@@ -1,5 +1,4 @@
 ---
-name: records-op-review-brief
 type: op
 cadence: monthly
 description: >

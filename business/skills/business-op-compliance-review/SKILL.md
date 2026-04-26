@@ -1,5 +1,4 @@
 ---
-name: business-op-compliance-review
 type: op
 cadence: quarterly
 description: >

@@ -1,5 +1,4 @@
 ---
-name: intel-op-daily-briefing
 type: op
 cadence: daily
 description: >

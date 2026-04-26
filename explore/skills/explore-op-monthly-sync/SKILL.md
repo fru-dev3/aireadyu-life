@@ -1,5 +1,4 @@
 ---
-name: explore-op-monthly-sync
 type: op
 cadence: monthly
 description: >

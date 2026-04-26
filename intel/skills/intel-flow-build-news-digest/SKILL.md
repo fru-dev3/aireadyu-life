@@ -1,5 +1,4 @@
 ---
-name: intel-flow-build-news-digest
 type: flow
 trigger: called-by-op
 description: >

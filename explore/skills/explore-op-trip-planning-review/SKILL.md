@@ -1,5 +1,4 @@
 ---
-name: explore-op-trip-planning-review
 type: op
 cadence: on-demand
 description: >

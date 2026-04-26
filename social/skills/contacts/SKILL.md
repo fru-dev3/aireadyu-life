@@ -1,5 +1,4 @@
 ---
-name: contacts
 type: app
 description: >
   Reads contact data from iOS Contacts (via vCard export) or Google Contacts (via People API)

@@ -1,5 +1,4 @@
 ---
-name: real-estate-op-market-scan
 type: op
 cadence: monthly
 description: >

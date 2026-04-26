@@ -1,5 +1,4 @@
 ---
-name: mychart
 type: app
 description: >
   Accesses patient portal records — lab results (PDF and structured values), visit

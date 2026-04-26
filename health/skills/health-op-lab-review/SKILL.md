@@ -1,5 +1,4 @@
 ---
-name: health-op-lab-review
 type: op
 cadence: as-received
 description: >

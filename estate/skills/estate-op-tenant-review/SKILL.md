@@ -1,5 +1,4 @@
 ---
-name: estate-op-tenant-review
 type: op
 cadence: monthly
 description: >

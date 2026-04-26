@@ -1,5 +1,4 @@
 ---
-name: intel-op-topic-deep-dive
 type: op
 cadence: on-demand
 description: >

@@ -1,5 +1,4 @@
 ---
-name: beehiiv
 type: app
 description: >
   Queries newsletter subscriber and revenue metrics from Beehiiv via their API.

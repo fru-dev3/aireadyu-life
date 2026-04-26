@@ -1,5 +1,4 @@
 ---
-name: content-op-seo-review
 type: op
 cadence: monthly
 description: >

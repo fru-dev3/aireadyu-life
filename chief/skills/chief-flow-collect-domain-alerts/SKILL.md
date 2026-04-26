@@ -1,5 +1,4 @@
 ---
-name: chief-flow-collect-domain-alerts
 type: flow
 trigger: called-by-op
 description: >

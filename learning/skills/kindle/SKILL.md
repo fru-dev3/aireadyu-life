@@ -1,5 +1,4 @@
 ---
-name: kindle
 type: app
 description: >
   Accesses Kindle reading progress and highlights via Amazon's Manage Content page or Goodreads RSS sync. Used by learning-agent for reading list tracking and book progress reporting in the weekly learning brief. Two sync methods: Goodreads RSS for currently-reading shelf, or Amazon Kindle Content page for library overview. Configure sync method in vault/learning/config.md.

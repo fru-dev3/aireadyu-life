@@ -1,5 +1,4 @@
 ---
-name: wealth-op-investment-review
 type: op
 cadence: monthly
 description: >

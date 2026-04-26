@@ -1,5 +1,4 @@
 ---
-name: wealth-op-net-worth-review
 type: op
 cadence: monthly
 description: >

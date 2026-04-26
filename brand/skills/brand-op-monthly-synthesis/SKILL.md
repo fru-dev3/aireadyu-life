@@ -1,5 +1,4 @@
 ---
-name: brand-op-monthly-synthesis
 type: op
 cadence: monthly
 description: >

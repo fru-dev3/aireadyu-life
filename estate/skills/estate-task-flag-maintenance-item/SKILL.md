@@ -1,5 +1,4 @@
 ---
-name: estate-task-flag-maintenance-item
 type: task
 description: >
   Writes a maintenance flag to open-loops.md and creates a detailed maintenance item record

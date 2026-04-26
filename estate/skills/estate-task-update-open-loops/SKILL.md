@@ -1,5 +1,4 @@
 ---
-name: estate-task-update-open-loops
 type: task
 description: >
   Writes estate flags (overdue maintenance, lease expirations, cash flow anomalies, vacancy risks,

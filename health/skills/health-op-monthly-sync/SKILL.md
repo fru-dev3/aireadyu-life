@@ -1,5 +1,4 @@
 ---
-name: health-op-monthly-sync
 type: op
 cadence: monthly
 description: >

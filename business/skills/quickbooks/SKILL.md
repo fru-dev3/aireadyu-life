@@ -1,5 +1,4 @@
 ---
-name: quickbooks
 type: app
 description: >
   Pulls P&L, balance sheet, and transaction data from QuickBooks Online for

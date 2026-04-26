@@ -1,5 +1,4 @@
 ---
-name: records-task-log-document
 type: task
 cadence: as-received
 description: >

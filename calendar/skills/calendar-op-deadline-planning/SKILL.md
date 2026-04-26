@@ -1,5 +1,4 @@
 ---
-name: calendar-op-deadline-planning
 type: op
 cadence: on-demand
 description: >

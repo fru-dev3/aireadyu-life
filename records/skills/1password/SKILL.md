@@ -1,5 +1,4 @@
 ---
-name: 1password
 type: app
 description: >
   Accesses the 1Password vault via the local CLI (`op`) using a service account token.

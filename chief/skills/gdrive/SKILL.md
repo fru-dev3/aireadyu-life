@@ -1,5 +1,4 @@
 ---
-name: gdrive
 type: app
 description: >
   Reads and writes files in configured Google Drive folders via the Drive API. Used by

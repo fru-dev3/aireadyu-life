@@ -1,5 +1,4 @@
 ---
-name: career-task-draft-outreach-message
 type: task
 cadence: called-by-op
 description: >

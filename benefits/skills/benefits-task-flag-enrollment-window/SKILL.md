@@ -1,5 +1,4 @@
 ---
-name: benefits-task-flag-enrollment-window
 type: task
 cadence: annual
 description: >

@@ -1,5 +1,4 @@
 ---
-name: intel-task-log-source
 type: task
 cadence: as-added
 description: >

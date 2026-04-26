@@ -1,5 +1,4 @@
 ---
-name: zillow
 type: app
 description: >
   Fetches Zestimate property valuations, active listings, rental estimates, and market trend

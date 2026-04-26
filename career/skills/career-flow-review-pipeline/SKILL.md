@@ -1,5 +1,4 @@
 ---
-name: career-flow-review-pipeline
 type: flow
 trigger: called-by-op
 description: >

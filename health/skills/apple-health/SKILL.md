@@ -1,5 +1,4 @@
 ---
-name: apple-health
 type: app
 description: >
   Exports iPhone Health data — steps, active energy, resting heart rate, body weight,

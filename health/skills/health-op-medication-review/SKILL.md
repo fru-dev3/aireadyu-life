@@ -1,5 +1,4 @@
 ---
-name: health-op-medication-review
 type: op
 cadence: monthly
 description: >

@@ -1,5 +1,4 @@
 ---
-name: estate-op-maintenance-review
 type: op
 cadence: monthly
 description: >

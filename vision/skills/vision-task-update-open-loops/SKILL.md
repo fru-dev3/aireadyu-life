@@ -1,5 +1,4 @@
 ---
-name: vision-task-update-open-loops
 type: task
 description: >
   Writes all vision flags (stalled goals, OKRs off-pace, domain score declines)

@@ -1,5 +1,4 @@
 ---
-name: learning-flow-build-progress-summary
 type: flow
 trigger: called-by-op
 description: >

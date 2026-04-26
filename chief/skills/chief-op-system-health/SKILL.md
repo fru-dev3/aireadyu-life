@@ -1,5 +1,4 @@
 ---
-name: chief-op-system-health
 type: op
 cadence: weekly
 description: >

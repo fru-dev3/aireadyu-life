@@ -1,5 +1,4 @@
 ---
-name: tax-op-entity-compliance
 type: op
 cadence: quarterly
 description: >

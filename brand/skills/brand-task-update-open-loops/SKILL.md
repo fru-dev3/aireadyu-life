@@ -1,5 +1,4 @@
 ---
-name: brand-task-update-open-loops
 type: task
 description: >
   Writes all brand flags (profile inconsistencies, content gaps, unanswered mentions, publishing

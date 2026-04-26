@@ -1,5 +1,4 @@
 ---
-name: chief-task-pull-domain-status
 type: task
 description: >
   Reads the state.md file from a specified plugin vault and returns a summary of current domain

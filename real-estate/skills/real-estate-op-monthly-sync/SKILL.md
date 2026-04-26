@@ -1,5 +1,4 @@
 ---
-name: real-estate-op-monthly-sync
 type: op
 cadence: monthly
 description: >

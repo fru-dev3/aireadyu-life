@@ -1,5 +1,4 @@
 ---
-name: wealth-task-extract-account-balance
 type: task
 cadence: called-by-op
 description: >

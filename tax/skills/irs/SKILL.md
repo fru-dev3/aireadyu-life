@@ -1,5 +1,4 @@
 ---
-name: irs
 type: app
 description: >
   Accesses IRS.gov for account transcripts (payments applied, balance due, prior

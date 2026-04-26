@@ -1,5 +1,4 @@
 ---
-name: real-estate-flow-scan-market-listings
 type: flow
 trigger: called-by-op
 description: >

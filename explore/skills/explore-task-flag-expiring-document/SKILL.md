@@ -1,5 +1,4 @@
 ---
-name: explore-task-flag-expiring-document
 type: task
 description: >
   Writes a document expiration flag to vault/explore/open-loops.md with document type, person,

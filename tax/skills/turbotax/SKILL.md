@@ -1,5 +1,4 @@
 ---
-name: turbotax
 type: app
 description: >
   Accesses TurboTax Online for prior year return downloads (PDF), current year filing

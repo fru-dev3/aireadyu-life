@@ -1,5 +1,4 @@
 ---
-name: insurance-portal
 type: app
 description: >
   Accesses policy documents, coverage details, premium amounts, renewal dates, and claim status from any personal insurance carrier's online portal via Playwright with Chrome cookie session. Used by insurance-agent for coverage audits, renewal date verification, and claims status checking. Requires headless=False. Configure carrier portal URLs in vault/insurance/config.md.

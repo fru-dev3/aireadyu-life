@@ -1,5 +1,4 @@
 ---
-name: real-estate-task-log-listing
 type: task
 cadence: as-found
 description: >

@@ -1,5 +1,4 @@
 ---
-name: benefits-op-coverage-review
 type: op
 cadence: quarterly
 description: >

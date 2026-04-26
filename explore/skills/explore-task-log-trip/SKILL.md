@@ -1,5 +1,4 @@
 ---
-name: explore-task-log-trip
 type: task
 cadence: as-planned
 description: >

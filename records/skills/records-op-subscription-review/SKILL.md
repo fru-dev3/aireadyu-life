@@ -1,5 +1,4 @@
 ---
-name: records-op-subscription-review
 type: op
 cadence: monthly
 description: >

@@ -1,5 +1,4 @@
 ---
-name: social-task-log-interaction
 type: task
 cadence: as-happened
 description: >

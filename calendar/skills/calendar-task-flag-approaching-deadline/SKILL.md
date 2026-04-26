@@ -1,5 +1,4 @@
 ---
-name: calendar-task-flag-approaching-deadline
 type: task
 description: >
   Writes a deadline alert to vault/calendar/open-loops.md when a cross-domain item

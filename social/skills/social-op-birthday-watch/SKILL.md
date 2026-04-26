@@ -1,5 +1,4 @@
 ---
-name: social-op-birthday-watch
 type: op
 cadence: weekly
 description: >

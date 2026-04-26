@@ -1,5 +1,4 @@
 ---
-name: home-flow-build-expense-summary
 type: flow
 trigger: called-by-op
 description: >

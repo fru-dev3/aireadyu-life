@@ -1,5 +1,4 @@
 ---
-name: business-task-log-invoice
 type: task
 cadence: as-received
 description: >

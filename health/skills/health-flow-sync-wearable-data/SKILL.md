@@ -1,5 +1,4 @@
 ---
-name: health-flow-sync-wearable-data
 type: flow
 trigger: called-by-op
 description: >

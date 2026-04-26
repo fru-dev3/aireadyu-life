@@ -1,5 +1,4 @@
 ---
-name: google-flights
 type: app
 description: >
   Scrapes flight prices, route options, and price calendar data from Google Flights via Playwright.

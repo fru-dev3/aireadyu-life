@@ -1,5 +1,4 @@
 ---
-name: gumroad
 type: app
 description: >
   Queries product sales and revenue data from Gumroad via their API. Used by

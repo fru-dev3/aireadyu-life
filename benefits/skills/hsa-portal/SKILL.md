@@ -1,5 +1,4 @@
 ---
-name: hsa-portal
 type: app
 description: >
   Accesses HSA account balance (cash and invested), YTD employee and employer contributions vs. IRS limit, investment allocation and performance, and eligible expense transaction history from any major HSA carrier portal via Playwright with Chrome cookie session. Supports Fidelity, HSA Bank, Optum/ConnectYourCare, HealthEquity, and WEX. Requires headless=False. Configure carrier URL and Chrome profile in vault/benefits/config.md.

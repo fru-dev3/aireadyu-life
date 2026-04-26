@@ -1,5 +1,4 @@
 ---
-name: adp
 type: app
 description: >
   Accesses pay stubs, W-2 documents, YTD earnings breakdowns, 401k contribution deductions, and benefit deduction details from ADP Workforce Now or MyADP via Playwright with Chrome cookie session. Used by benefits-agent for monthly payroll verification, 401k match capture confirmation, and year-end document retrieval. Requires headless=False. Configure ADP portal URL and Chrome profile in vault/benefits/config.md.

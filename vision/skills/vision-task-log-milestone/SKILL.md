@@ -1,5 +1,4 @@
 ---
-name: vision-task-log-milestone
 type: task
 cadence: as-achieved
 description: >

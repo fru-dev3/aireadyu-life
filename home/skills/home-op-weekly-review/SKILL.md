@@ -1,5 +1,4 @@
 ---
-name: home-op-weekly-review
 type: op
 cadence: weekly
 description: >

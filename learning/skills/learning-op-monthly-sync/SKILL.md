@@ -1,5 +1,4 @@
 ---
-name: learning-op-monthly-sync
 type: op
 cadence: monthly
 description: >

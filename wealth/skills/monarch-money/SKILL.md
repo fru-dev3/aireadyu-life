@@ -1,5 +1,4 @@
 ---
-name: monarch-money
 type: app
 description: >
   Pulls transaction history, spending by category, budget vs. actual, net worth

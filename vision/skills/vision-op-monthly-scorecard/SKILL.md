@@ -1,5 +1,4 @@
 ---
-name: vision-op-monthly-scorecard
 type: op
 cadence: monthly
 description: >

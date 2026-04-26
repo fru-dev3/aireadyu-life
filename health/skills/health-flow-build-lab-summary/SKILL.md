@@ -1,5 +1,4 @@
 ---
-name: health-flow-build-lab-summary
 type: flow
 trigger: called-by-op
 description: >

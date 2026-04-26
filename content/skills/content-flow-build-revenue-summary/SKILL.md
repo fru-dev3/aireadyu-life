@@ -1,5 +1,4 @@
 ---
-name: content-flow-build-revenue-summary
 type: flow
 trigger: called-by-op
 description: >

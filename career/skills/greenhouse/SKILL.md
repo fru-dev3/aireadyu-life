@@ -1,5 +1,4 @@
 ---
-name: greenhouse
 type: app
 description: >
   Tracks job application status, interview stages, offer details, and recruiter contacts from employer Greenhouse ATS candidate portals via Playwright. Used by career-agent for pipeline management, stage updates, and interview scheduling. Each employer has their own Greenhouse subdomain or custom URL. Configure target company portal URL in vault/career/config.md.

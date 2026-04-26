@@ -1,5 +1,4 @@
 ---
-name: angi
 type: app
 description: >
   Searches contractor listings, ratings, license status, and cost guides on Angi (formerly

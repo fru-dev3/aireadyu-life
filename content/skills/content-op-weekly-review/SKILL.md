@@ -1,5 +1,4 @@
 ---
-name: content-op-weekly-review
 type: op
 cadence: weekly
 description: >

@@ -1,5 +1,4 @@
 ---
-name: learning-task-flag-falling-behind
 type: task
 description: >
   Writes a behind-pace flag to vault/learning/open-loops.md when a learning item's completion percentage is more than 15 percentage points behind the time-elapsed percentage. Flag includes item title, type, platform, completion percentage, time-elapsed percentage, pace deficit, remaining content, days remaining, required daily pace to recover, and a decision prompt (accelerate / adjust deadline / drop).

@@ -1,5 +1,4 @@
 ---
-name: business-task-update-open-loops
 type: task
 description: >
   Writes all business flags (overdue invoices, compliance deadlines, stalled proposals, expense

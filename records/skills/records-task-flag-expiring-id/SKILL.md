@@ -1,5 +1,4 @@
 ---
-name: records-task-flag-expiring-id
 type: task
 description: >
   Writes an ID expiration flag to open-loops.md with document type, holder name, expiration

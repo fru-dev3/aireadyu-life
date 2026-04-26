@@ -1,5 +1,4 @@
 ---
-name: home-task-update-open-loops
 type: task
 description: >
   Writes all home flags (overdue maintenance, budget overruns, expiring warranties, renewal

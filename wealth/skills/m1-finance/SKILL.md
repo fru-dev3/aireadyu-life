@@ -1,5 +1,4 @@
 ---
-name: m1-finance
 type: app
 description: >
   Accesses automated investment portfolio data from M1 Finance via Playwright with

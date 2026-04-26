@@ -1,5 +1,4 @@
 ---
-name: business-flow-build-pl-summary
 type: flow
 trigger: called-by-op
 description: >

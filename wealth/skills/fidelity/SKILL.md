@@ -1,5 +1,4 @@
 ---
-name: fidelity
 type: app
 description: >
   Accesses brokerage and retirement account data from Fidelity Investments via

@@ -1,5 +1,4 @@
 ---
-name: chief-op-weekly-preview
 type: op
 cadence: weekly
 description: >

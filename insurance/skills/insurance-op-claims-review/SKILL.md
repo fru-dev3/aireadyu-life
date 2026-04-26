@@ -1,5 +1,4 @@
 ---
-name: insurance-op-claims-review
 type: op
 cadence: on-demand
 description: >

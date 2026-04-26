@@ -1,5 +1,4 @@
 ---
-name: coursera
 type: app
 description: >
   Tracks enrolled course progress, completion percentages, certificate status, and upcoming assignment deadlines on Coursera via Playwright with Chrome cookie session. Used by learning-agent for monthly progress sync and the weekly learning brief. Requires headless=False. Configure Coursera email and Chrome profile in vault/learning/config.md.

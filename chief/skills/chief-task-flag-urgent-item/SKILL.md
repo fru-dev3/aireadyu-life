@@ -1,5 +1,4 @@
 ---
-name: chief-task-flag-urgent-item
 type: task
 cadence: as-received
 description: >

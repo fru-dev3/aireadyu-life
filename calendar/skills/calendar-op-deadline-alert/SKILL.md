@@ -1,5 +1,4 @@
 ---
-name: calendar-op-deadline-alert
 type: op
 cadence: weekly
 description: >

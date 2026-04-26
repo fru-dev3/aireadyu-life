@@ -1,5 +1,4 @@
 ---
-name: insurance-op-coverage-audit
 type: op
 cadence: annual
 description: >

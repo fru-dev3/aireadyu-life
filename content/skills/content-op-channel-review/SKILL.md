@@ -1,5 +1,4 @@
 ---
-name: content-op-channel-review
 type: op
 cadence: monthly
 description: >

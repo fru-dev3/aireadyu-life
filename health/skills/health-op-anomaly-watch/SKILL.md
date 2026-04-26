@@ -1,5 +1,4 @@
 ---
-name: health-op-anomaly-watch
 type: op
 cadence: weekly
 description: >

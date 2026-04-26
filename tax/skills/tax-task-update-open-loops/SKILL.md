@@ -1,5 +1,4 @@
 ---
-name: tax-task-update-open-loops
 type: task
 cadence: called-by-op
 description: >

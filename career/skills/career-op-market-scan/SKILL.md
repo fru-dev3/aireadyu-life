@@ -1,5 +1,4 @@
 ---
-name: career-op-market-scan
 type: op
 cadence: monthly
 description: >

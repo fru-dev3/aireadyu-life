@@ -1,5 +1,4 @@
 ---
-name: real-estate-task-update-open-loops
 type: task
 description: >
   Writes all real-estate flags (market shifts, affordability changes, buy-window signals, interesting

@@ -1,5 +1,4 @@
 ---
-name: twitter
 type: app
 description: >
   Pulls follower count, impressions, and mention data from Twitter/X via Playwright.

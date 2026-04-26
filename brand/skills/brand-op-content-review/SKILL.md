@@ -1,5 +1,4 @@
 ---
-name: brand-op-content-review
 type: op
 cadence: monthly
 description: >

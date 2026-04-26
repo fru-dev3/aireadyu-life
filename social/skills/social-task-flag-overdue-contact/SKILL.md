@@ -1,5 +1,4 @@
 ---
-name: social-task-flag-overdue-contact
 type: task
 description: >
   Writes a relationship flag to vault/social/open-loops.md when a close contact hasn't been reached

@@ -1,5 +1,4 @@
 ---
-name: stessa
 type: app
 description: >
   Accesses rental income, expense tracking, cash flow reports, and property valuations from

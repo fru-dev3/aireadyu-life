@@ -1,5 +1,4 @@
 ---
-name: career-task-flag-comp-gap
 type: task
 cadence: quarterly
 description: >

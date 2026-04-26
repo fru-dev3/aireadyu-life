@@ -1,5 +1,4 @@
 ---
-name: home-op-expense-review
 type: op
 cadence: monthly
 description: >

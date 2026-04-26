@@ -1,5 +1,4 @@
 ---
-name: vision-op-annual-review
 type: op
 cadence: annual
 description: >

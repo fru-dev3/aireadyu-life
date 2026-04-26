@@ -1,5 +1,4 @@
 ---
-name: health-task-flag-upcoming-refill
 type: task
 cadence: monthly
 description: >

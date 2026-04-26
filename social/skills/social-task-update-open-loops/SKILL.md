@@ -1,5 +1,4 @@
 ---
-name: social-task-update-open-loops
 type: task
 description: >
   Writes all social flags (overdue relationships, upcoming birthdays, promised follow-ups) to

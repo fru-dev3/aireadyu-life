@@ -1,5 +1,4 @@
 ---
-name: calendar-flow-collect-deadlines
 type: flow
 trigger: called-by-op
 description: >

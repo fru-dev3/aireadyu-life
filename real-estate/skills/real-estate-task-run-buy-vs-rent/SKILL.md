@@ -1,5 +1,4 @@
 ---
-name: real-estate-task-run-buy-vs-rent
 type: task
 description: >
   Runs a time-value-adjusted buy vs. rent comparison for a specific purchase price and holding

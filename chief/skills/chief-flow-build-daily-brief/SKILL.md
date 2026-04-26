@@ -1,5 +1,4 @@
 ---
-name: chief-flow-build-daily-brief
 type: flow
 trigger: called-by-op
 description: >

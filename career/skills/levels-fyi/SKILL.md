@@ -1,5 +1,4 @@
 ---
-name: levels-fyi
 type: app
 description: >
   Scrapes compensation data by company, role, and level from Levels.fyi — the most accurate source for tech compensation benchmarking. Provides P25/P50/P75/P90 breakdowns for total comp, base, bonus, and equity separately. Also provides level ladder comparisons and job postings with reported compensation. No authentication required. Configure target role, companies, and location in vault/career/config.md.

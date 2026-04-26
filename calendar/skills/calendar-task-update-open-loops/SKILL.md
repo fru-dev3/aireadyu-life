@@ -1,5 +1,4 @@
 ---
-name: calendar-task-update-open-loops
 type: task
 description: >
   Writes calendar flags (upcoming deadline clusters, focus time deficits, unscheduled

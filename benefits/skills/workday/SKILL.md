@@ -1,5 +1,4 @@
 ---
-name: workday
 type: app
 description: >
   Accesses employer benefits elections, 401k contribution rate, HSA payroll election, open enrollment options, life event changes, and pay stubs from Workday HCM via Playwright with Chrome cookie session. Used by benefits-agent to verify benefit deductions, confirm contribution rates match elections, and navigate enrollment windows. Employer SSO required (Okta, Azure AD, or Google Workspace). Requires headless=False. Configure employer-specific Workday URL and Chrome profile in vault/benefits/config.md.

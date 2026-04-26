@@ -1,5 +1,4 @@
 ---
-name: home-task-flag-maintenance-item
 type: task
 description: >
   Writes a maintenance flag to open-loops.md and creates a maintenance item record in

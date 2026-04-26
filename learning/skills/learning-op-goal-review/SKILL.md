@@ -1,5 +1,4 @@
 ---
-name: learning-op-goal-review
 type: op
 cadence: quarterly
 description: >

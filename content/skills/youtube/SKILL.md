@@ -1,5 +1,4 @@
 ---
-name: youtube
 type: app
 description: >
   Queries YouTube channel analytics (views, watch time, subscribers, revenue) via

@@ -1,5 +1,4 @@
 ---
-name: pocket
 type: app
 description: >
   Accesses saved articles and reading queue from Pocket (Mozilla) via OAuth API.

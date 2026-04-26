@@ -1,5 +1,4 @@
 ---
-name: linkedin
 type: app
 description: >
   Accesses LinkedIn for job market scanning, compensation research, professional network review, and recruiter message monitoring via Playwright with Chrome cookie session. Requires headless=False. Max 50 job results per search session to avoid rate limiting. Configure profile URL and Chrome profile path in vault/career/config.md.

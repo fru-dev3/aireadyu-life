@@ -1,5 +1,4 @@
 ---
-name: home-op-seasonal-maintenance
 type: op
 cadence: quarterly
 description: >

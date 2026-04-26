@@ -1,5 +1,4 @@
 ---
-name: vision-task-flag-stalled-goal
 type: task
 description: >
   Writes a stalled goal flag to vault/vision/open-loops.md when a goal has had no

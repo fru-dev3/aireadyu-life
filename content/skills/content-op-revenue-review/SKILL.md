@@ -1,5 +1,4 @@
 ---
-name: content-op-revenue-review
 type: op
 cadence: monthly
 description: >

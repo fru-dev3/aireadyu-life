@@ -1,5 +1,4 @@
 ---
-name: appfolio
 type: app
 description: >
   Downloads owner statements, lease documents, maintenance requests, and tenant ledgers from an

@@ -1,5 +1,4 @@
 ---
-name: benefits-op-401k-review
 type: op
 cadence: monthly
 description: >

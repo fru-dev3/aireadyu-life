@@ -1,5 +1,4 @@
 ---
-name: calendar-flow-build-agenda
 type: flow
 trigger: called-by-op
 description: >

@@ -1,5 +1,4 @@
 ---
-name: chief-task-check-open-loops
 type: task
 description: >
   Reads all open-loops.md files across installed plugin vaults and returns a count and priority

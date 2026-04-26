@@ -1,5 +1,4 @@
 ---
-name: tax-op-quarterly-estimate
 type: op
 cadence: quarterly
 description: >

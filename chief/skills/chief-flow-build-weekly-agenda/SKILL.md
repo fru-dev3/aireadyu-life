@@ -1,5 +1,4 @@
 ---
-name: chief-flow-build-weekly-agenda
 type: flow
 trigger: called-by-op
 description: >

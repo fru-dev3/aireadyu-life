@@ -1,5 +1,4 @@
 ---
-name: calendar-op-review-brief
 type: op
 cadence: weekly
 description: >

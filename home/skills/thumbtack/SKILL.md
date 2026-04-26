@@ -1,5 +1,4 @@
 ---
-name: thumbtack
 type: app
 description: >
   Searches local professional listings and quote requests on Thumbtack via Playwright. Used

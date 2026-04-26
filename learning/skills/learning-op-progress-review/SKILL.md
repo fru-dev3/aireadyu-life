@@ -1,5 +1,4 @@
 ---
-name: learning-op-progress-review
 type: op
 cadence: monthly
 description: >

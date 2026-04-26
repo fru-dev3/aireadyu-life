@@ -1,5 +1,4 @@
 ---
-name: tax-task-extract-income-ytd
 type: task
 cadence: called-by-op
 description: >

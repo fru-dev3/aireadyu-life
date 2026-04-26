@@ -1,5 +1,4 @@
 ---
-name: calendar-op-weekly-agenda
 type: op
 cadence: weekly
 description: >

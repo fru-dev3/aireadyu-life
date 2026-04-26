@@ -1,5 +1,4 @@
 ---
-name: google-analytics
 type: app
 description: >
   Queries GA4 website analytics via the Google Analytics Data API for traffic,

@@ -1,5 +1,4 @@
 ---
-name: insurance-task-flag-coverage-gap
 type: task
 description: >
   Writes a structured coverage gap flag to vault/insurance/open-loops.md with coverage type, current limit, recommended limit, financial exposure of the gap (in dollars), severity rating (minor/moderate/significant), estimated annual premium to close, and specific recommended action. Called by coverage-audit for each identified gap.

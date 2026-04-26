@@ -1,5 +1,4 @@
 ---
-name: estate-task-log-expense
 type: task
 cadence: as-received
 description: >

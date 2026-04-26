@@ -1,5 +1,4 @@
 ---
-name: tax-op-deadline-watch
 type: op
 cadence: monthly
 description: >
