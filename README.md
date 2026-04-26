@@ -1,6 +1,6 @@
 # AI Ready Life
 
-**Meet your AI team.** 20 agents that manage every domain of your life — health, wealth, taxes, career, and more. Installed once. Runs locally on your machine. Your data stays yours.
+**Meet your AI team.** Agents that manage every domain of your life — health, wealth, career, and more. Installed once. Runs locally on your machine. Your data stays yours.
 
 Built by [fru.dev](https://fru.dev) · Site: [aireadyu.dev](https://aireadyu.dev)
 
@@ -27,31 +27,17 @@ Each plugin reads only its own vault folder. Each vault stays on your machine. N
 |---|---|---|
 | [`health`](https://frudev.gumroad.com/l/aireadylife-health) | Labs, medications, preventive care, wearables | $29 |
 | [`wealth`](https://frudev.gumroad.com/l/aireadylife-wealth) | Net worth, investments, debt, cash flow | $29 |
-| [`tax`](https://frudev.gumroad.com/l/aireadylife-tax) | Tax planning, filing, deadlines, deductions | $29 |
 | [`career`](https://frudev.gumroad.com/l/aireadylife-career) | Compensation, market data, job search, skills | $29 |
-| [`benefits`](https://frudev.gumroad.com/l/aireadylife-benefits) | 401k, HSA, employer benefits, enrollment | $29 |
-| [`brand`](https://frudev.gumroad.com/l/aireadylife-brand) | Personal brand, social analytics, content | $29 |
-| [`business`](https://frudev.gumroad.com/l/aireadylife-business) | Revenue, expenses, compliance, contracts | $29 |
 | [`calendar`](https://frudev.gumroad.com/l/aireadylife-calendar) | Deadlines, focus time, agenda | $29 |
-| [`chief`](https://frudev.gumroad.com/l/aireadylife-chief) | Cross-domain daily brief and life overview | $29 |
-| [`content`](https://frudev.gumroad.com/l/aireadylife-content) | Content pipeline, SEO, revenue tracking | $29 |
-| [`estate`](https://frudev.gumroad.com/l/aireadylife-estate) | Rental properties, tenants, cash flow | $29 |
+| [`insurance`](https://frudev.gumroad.com/l/aireadylife-insurance) | Policies, claims, renewals, coverage gaps | $29 |
+| [`vision`](https://frudev.gumroad.com/l/aireadylife-vision) | Goals, OKRs, quarterly planning, scorecard | $29 |
 | [`explore`](https://frudev.gumroad.com/l/aireadylife-explore) | Travel, trips, documents, wishlist | $19 |
 | [`home`](https://frudev.gumroad.com/l/aireadylife-home) | Maintenance, expenses, seasonal tasks | $19 |
-| [`insurance`](https://frudev.gumroad.com/l/aireadylife-insurance) | Policies, claims, renewals, coverage gaps | $29 |
-| [`intel`](https://frudev.gumroad.com/l/aireadylife-intel) | News sources, topics, research briefs | $19 |
 | [`learning`](https://frudev.gumroad.com/l/aireadylife-learning) | Courses, books, goals, progress | $19 |
-| [`real-estate`](https://frudev.gumroad.com/l/aireadylife-real-estate) | Market data, listings, buy vs. rent | $19 |
 | [`records`](https://frudev.gumroad.com/l/aireadylife-records) | Identity documents, legal, subscriptions | $19 |
 | [`social`](https://frudev.gumroad.com/l/aireadylife-social) | Contacts, relationships, birthdays, outreach | $19 |
-| [`vision`](https://frudev.gumroad.com/l/aireadylife-vision) | Goals, OKRs, quarterly planning, scorecard | $29 |
 
-### Bundles
-
-| Bundle | What's inside | Price |
-|---|---|---|
-| [Core](https://frudev.gumroad.com/l/aireadylife-core) | health + wealth + tax + career | $79 |
-| [Complete](https://frudev.gumroad.com/l/aireadylife-complete) | all 20 domains | $199 |
+More domains (taxes, benefits, brand, business, content, real estate, intel) are in development and will be added as they're tested.
 
 ---
 

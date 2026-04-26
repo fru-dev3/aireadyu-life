@@ -6,14 +6,14 @@
   },
   "metadata": {
     "displayName": "AI Ready Life",
-    "description": "AI Ready Life \u2014 20 domain plugins for personal life management. Install one domain at a time.",
+    "description": "AI Ready Life — domain plugins for personal life management. Install one domain at a time.",
     "version": "1.0.11"
   },
   "plugins": [
     {
       "name": "health",
       "source": "./health",
-      "description": "2 AI agents that manage your personal health \u2014 wellness tracking, lab review, medication monitoring, appointment management, and insurance/HSA oversight.",
+      "description": "2 AI agents that manage your personal health — wellness tracking, lab review, medication monitoring, appointment management, and insurance/HSA oversight.",
       "category": "personal",
       "keywords": [
         "health",
@@ -29,7 +29,7 @@
     {
       "name": "wealth",
       "source": "./wealth",
-      "description": "2 AI agents that manage your personal wealth \u2014 net worth tracking, investment performance, cash flow analysis, and estate planning oversight.",
+      "description": "2 AI agents that manage your personal wealth — net worth tracking, investment performance, cash flow analysis, and estate planning oversight.",
       "category": "finance",
       "keywords": [
         "wealth",
@@ -41,24 +41,9 @@
       "license": "MIT"
     },
     {
-      "name": "tax",
-      "source": "./tax",
-      "description": "2 AI agents that manage your personal tax picture \u2014 deadline tracking, estimate calculations, deduction reviews, entity compliance, and accountant readiness.",
-      "category": "finance",
-      "keywords": [
-        "tax",
-        "deadlines",
-        "estimates",
-        "deductions",
-        "compliance",
-        "filing"
-      ],
-      "license": "MIT"
-    },
-    {
       "name": "career",
       "source": "./career",
-      "description": "2 AI agents that manage your career \u2014 compensation benchmarking, job market scanning, application pipeline, skills gap analysis, and network outreach.",
+      "description": "2 AI agents that manage your career — compensation benchmarking, job market scanning, application pipeline, skills gap analysis, and network outreach.",
       "category": "career",
       "keywords": [
         "career",
@@ -71,67 +56,9 @@
       "license": "MIT"
     },
     {
-      "name": "benefits",
-      "source": "./benefits",
-      "description": "2 AI agents \u2014 Chief of Staff + Benefits Director. Maximize your 401k match, HSA triple-tax advantage, and coverage optimization.",
-      "category": "finance",
-      "keywords": [
-        "benefits",
-        "401k",
-        "hsa",
-        "open-enrollment",
-        "equity",
-        "espp"
-      ],
-      "license": "MIT"
-    },
-    {
-      "name": "brand",
-      "source": "./brand",
-      "description": "2 AI agents \u2014 Chief of Staff + Brand Director. Consistent brand presence, mention monitoring, analytics tracking, and monthly synthesis reports.",
-      "category": "content",
-      "keywords": [
-        "brand",
-        "online-presence",
-        "reputation",
-        "analytics",
-        "social"
-      ],
-      "license": "MIT"
-    },
-    {
-      "name": "business",
-      "source": "./business",
-      "description": "2 AI agents \u2014 Chief of Staff + Chief Corporate Officer. Track LLC/entity revenue and expenses, compliance deadlines, and books.",
-      "category": "business",
-      "keywords": [
-        "business",
-        "llc",
-        "p-and-l",
-        "invoicing",
-        "compliance",
-        "contractors"
-      ],
-      "license": "MIT"
-    },
-    {
-      "name": "chief",
-      "source": "./chief",
-      "description": "1 AI agent \u2014 your personal Chief of Staff. Orchestrates all other life plugins, synthesizes daily briefs, syncs tasks, and monitors priorities.",
-      "category": "personal",
-      "keywords": [
-        "chief-of-staff",
-        "personal-assistant",
-        "tasks",
-        "priorities",
-        "inbox"
-      ],
-      "license": "MIT"
-    },
-    {
       "name": "calendar",
       "source": "./calendar",
-      "description": "2 AI agents \u2014 Chief of Staff + Calendar Director. Protect focus time, surface deadlines before they're urgent, align schedule with priorities.",
+      "description": "2 AI agents — Calendar Director that protects focus time, surfaces deadlines before they're urgent, and aligns schedule with priorities.",
       "category": "personal",
       "keywords": [
         "calendar",
@@ -143,39 +70,9 @@
       "license": "MIT"
     },
     {
-      "name": "content",
-      "source": "./content",
-      "description": "2 AI agents that manage your content business \u2014 YouTube analytics, newsletter metrics, LinkedIn growth, Gumroad revenue, and publishing schedule.",
-      "category": "content",
-      "keywords": [
-        "content",
-        "youtube",
-        "newsletter",
-        "linkedin",
-        "gumroad",
-        "seo"
-      ],
-      "license": "MIT"
-    },
-    {
-      "name": "estate",
-      "source": "./estate",
-      "description": "2 AI agents that manage your rental property portfolio \u2014 cash flow tracking, tenant management, maintenance, insurance, and investment performance.",
-      "category": "finance",
-      "keywords": [
-        "rentals",
-        "property",
-        "cash-flow",
-        "tenants",
-        "maintenance",
-        "real-estate"
-      ],
-      "license": "MIT"
-    },
-    {
       "name": "explore",
       "source": "./explore",
-      "description": "1 AI agent that manages your travel life \u2014 trip planning, passport and document status, travel wishlist, and upcoming adventure prep.",
+      "description": "1 AI agent that manages your travel life — trip planning, passport and document status, travel wishlist, and upcoming adventure prep.",
       "category": "personal",
       "keywords": [
         "travel",
@@ -190,7 +87,7 @@
     {
       "name": "home",
       "source": "./home",
-      "description": "1 AI agent that manages your home \u2014 maintenance tracking, home expenses, seasonal task lists, and household organization.",
+      "description": "1 AI agent that manages your home — maintenance tracking, home expenses, seasonal task lists, and household organization.",
       "category": "personal",
       "keywords": [
         "home",
@@ -204,7 +101,7 @@
     {
       "name": "insurance",
       "source": "./insurance",
-      "description": "2 AI agents that manage all your insurance policies \u2014 health, life, auto, home/renters, umbrella. Renewal tracking, coverage gap analysis, and claims.",
+      "description": "2 AI agents that manage all your insurance policies — health, life, auto, home/renters, umbrella. Renewal tracking, coverage gap analysis, and claims.",
       "category": "finance",
       "keywords": [
         "insurance",
@@ -217,23 +114,9 @@
       "license": "MIT"
     },
     {
-      "name": "intel",
-      "source": "./intel",
-      "description": "1 AI agent that scans your curated news sources daily \u2014 AI, tech, finance, and world news filtered to your interests.",
-      "category": "personal",
-      "keywords": [
-        "news",
-        "intelligence",
-        "research",
-        "monitoring",
-        "signals"
-      ],
-      "license": "MIT"
-    },
-    {
       "name": "learning",
       "source": "./learning",
-      "description": "1 AI agent that manages your skill development \u2014 active courses, reading list, certifications, and learning goals.",
+      "description": "1 AI agent that manages your skill development — active courses, reading list, certifications, and learning goals.",
       "category": "career",
       "keywords": [
         "learning",
@@ -246,24 +129,9 @@
       "license": "MIT"
     },
     {
-      "name": "real-estate",
-      "source": "./real-estate",
-      "description": "1 AI agent focused on real estate market research \u2014 home purchase analysis, buy vs. rent decisions, market trends, and portfolio expansion strategy.",
-      "category": "finance",
-      "keywords": [
-        "real-estate",
-        "buy-vs-rent",
-        "market",
-        "mortgage",
-        "listings",
-        "investment"
-      ],
-      "license": "MIT"
-    },
-    {
       "name": "records",
       "source": "./records",
-      "description": "1 AI agent that manages your document inventory and subscriptions \u2014 tracks expiring IDs, memberships, subscriptions to cancel.",
+      "description": "1 AI agent that manages your document inventory and subscriptions — tracks expiring IDs, memberships, subscriptions to cancel.",
       "category": "personal",
       "keywords": [
         "records",
@@ -278,7 +146,7 @@
     {
       "name": "social",
       "source": "./social",
-      "description": "1 AI agent that manages your personal relationships \u2014 birthday and milestone tracking, relationship health scores, check-in reminders.",
+      "description": "1 AI agent that manages your personal relationships — birthday and milestone tracking, relationship health scores, check-in reminders.",
       "category": "personal",
       "keywords": [
         "relationships",
@@ -293,7 +161,7 @@
     {
       "name": "vision",
       "source": "./vision",
-      "description": "2 AI agents focused on your life vision \u2014 quarterly planning, goal tracking, 13-domain life scorecard, and strategic alignment.",
+      "description": "2 AI agents focused on your life vision — quarterly planning, goal tracking, 13-domain life scorecard, and strategic alignment.",
       "category": "personal",
       "keywords": [
         "vision",
