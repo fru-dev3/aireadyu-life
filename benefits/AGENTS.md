@@ -89,16 +89,16 @@ Before running **any skill or flow** in this domain — including flows called b
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
 - **`adp`** — Accesses pay stubs, W-2 documents, YTD earnings breakdowns, 401k contribution deductions, and benefit deduction details from ADP Workforce Now or MyADP via Playwright with Chrome cookie session.
-- **`benefits-flow-analyze-401k-allocation`** — Analyzes 401k fund allocation against target, checks employer match capture, calculates allocation drift per fund (flagging drift > 5 percentage points), runs a retirement balance projection at assumed 7% average annual return, and returns structured results to the calling op.
-- **`benefits-flow-build-coverage-summary`** — Compiles a structured coverage table for all active employer benefits — medical plan with deductible and OOP limits + YTD spend, dental, vision, 401k match rate and YTD, HSA contribution pace, life insurance face value, and disability income replacement rate.
-- **`benefits-flow-check-hsa-balance`** — Reads HSA account data to produce a complete balance snapshot: cash vs.
-- **`benefits-op-401k-review`** — Monthly 401k review covering employer match capture rate, YTD contribution progress vs.
-- **`benefits-op-coverage-review`** — Quarterly benefits coverage audit verifying active elections match what was chosen at enrollment and checking coverage limits against current assets, liabilities, and income.
-- **`benefits-op-enrollment-review`** — Annual open enrollment planner comparing medical, dental, vision, FSA/HSA plan options by modeling total annual cost under three utilization scenarios (healthy year, moderate, worst-case hitting OOP max).
-- **`benefits-op-hsa-review`** — Monthly HSA review tracking YTD contributions vs.
-- **`benefits-op-review-brief`** — Monthly benefits brief compiling 401k match capture status, YTD vs.
-- **`benefits-task-extract-coverage-limit`** — Reads a specific coverage limit value — deductible, OOP max, HSA IRS limit, life insurance face value, disability benefit amount, dental annual max — from vault/benefits/00_current/ plan documents.
-- **`benefits-task-flag-enrollment-window`** — Writes an urgent enrollment deadline alert to vault/benefits/open-loops.md when the open enrollment window is active or approaching.
-- **`benefits-task-update-open-loops`** — Maintains vault/benefits/open-loops.md as the canonical list of outstanding benefits action items.
+- **`flow-analyze-401k-allocation`** — Analyzes 401k fund allocation against target, checks employer match capture, calculates allocation drift per fund (flagging drift > 5 percentage points), runs a retirement balance projection at assumed 7% average annual return, and returns structured results to the calling op.
+- **`flow-build-coverage-summary`** — Compiles a structured coverage table for all active employer benefits — medical plan with deductible and OOP limits + YTD spend, dental, vision, 401k match rate and YTD, HSA contribution pace, life insurance face value, and disability income replacement rate.
+- **`flow-check-hsa-balance`** — Reads HSA account data to produce a complete balance snapshot: cash vs.
+- **`op-401k-review`** — Monthly 401k review covering employer match capture rate, YTD contribution progress vs.
+- **`op-coverage-review`** — Quarterly benefits coverage audit verifying active elections match what was chosen at enrollment and checking coverage limits against current assets, liabilities, and income.
+- **`op-enrollment-review`** — Annual open enrollment planner comparing medical, dental, vision, FSA/HSA plan options by modeling total annual cost under three utilization scenarios (healthy year, moderate, worst-case hitting OOP max).
+- **`op-hsa-review`** — Monthly HSA review tracking YTD contributions vs.
+- **`op-review-brief`** — Monthly benefits brief compiling 401k match capture status, YTD vs.
+- **`task-extract-coverage-limit`** — Reads a specific coverage limit value — deductible, OOP max, HSA IRS limit, life insurance face value, disability benefit amount, dental annual max — from vault/benefits/00_current/ plan documents.
+- **`task-flag-enrollment-window`** — Writes an urgent enrollment deadline alert to vault/benefits/open-loops.md when the open enrollment window is active or approaching.
+- **`task-update-open-loops`** — Maintains vault/benefits/open-loops.md as the canonical list of outstanding benefits action items.
 - **`hsa-portal`** — Accesses HSA account balance (cash and invested), YTD employee and employer contributions vs.
 - **`workday`** — Accesses employer benefits elections, 401k contribution rate, HSA payroll election, open enrollment options, life event changes, and pay stubs from Workday HCM via Playwright with Chrome cookie session.

@@ -64,7 +64,7 @@ Authorization: Bearer {oauth_token}
 
 ## Focus Time Analysis
 
-When running focus time analysis (`calendar-flow-analyze-focus-time`), read events from all
+When running focus time analysis (`flow-analyze-focus-time`), read events from all
 configured calendars merged and sorted by start time. For each day:
 1. Build a timeline of all events (start, end, duration, type)
 2. Identify gaps of 90+ minutes with no scheduled events — these are qualifying focus windows
@@ -95,11 +95,11 @@ When creating focus blocks as part of weekly agenda:
 
 ## Used By
 
-- `calendar-op-weekly-agenda` — read next 7 days of events across all calendars; create focus block events; write agenda to vault
-- `calendar-op-focus-time-review` — read past 7 days of events to calculate qualifying focus blocks; compare against 8-hour weekly target
-- `calendar-op-deadline-planning` — create deadline reminder events on the calendar for hard deadlines flagged in the vault
-- `calendar-flow-analyze-focus-time` — merge multi-calendar event data for focus time calculation
-- `calendar-flow-build-agenda` — use free/busy data to place focus blocks in the weekly schedule
+- `op-weekly-agenda` — read next 7 days of events across all calendars; create focus block events; write agenda to vault
+- `op-focus-time-review` — read past 7 days of events to calculate qualifying focus blocks; compare against 8-hour weekly target
+- `op-deadline-planning` — create deadline reminder events on the calendar for hard deadlines flagged in the vault
+- `flow-analyze-focus-time` — merge multi-calendar event data for focus time calculation
+- `flow-build-agenda` — use free/busy data to place focus blocks in the weekly schedule
 
 ## Vault Output
 

@@ -45,8 +45,8 @@ tripit_chrome_profile: /Users/YOU/Library/Application Support/Google/Chrome/Defa
 
 ## Used By
 
-- `explore-op-monthly-sync` — pull upcoming confirmed bookings into vault/explore/00_current/ to update booking status fields (populating confirmation numbers the user doesn't need to type manually)
-- `explore-flow-build-trip-summary` — cross-reference TripIt itinerary against trip record to verify all booked items are correctly reflected in the vault
+- `op-monthly-sync` — pull upcoming confirmed bookings into vault/explore/00_current/ to update booking status fields (populating confirmation numbers the user doesn't need to type manually)
+- `flow-build-trip-summary` — cross-reference TripIt itinerary against trip record to verify all booked items are correctly reflected in the vault
 
 ## Vault Output
 

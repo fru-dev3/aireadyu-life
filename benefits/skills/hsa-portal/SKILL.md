@@ -77,9 +77,9 @@ The 5498-SA is provided by the HSA carrier each May showing total contributions 
 
 ## Used By
 
-- `benefits-op-hsa-review` — monthly balance check, contribution pace vs. IRS limit, investment threshold status, pending reimbursements
-- `benefits-flow-check-hsa-balance` — detailed HSA snapshot for the monthly brief
-- `benefits-op-enrollment-review` — confirm HSA election is active and properly funded for the new plan year
+- `op-hsa-review` — monthly balance check, contribution pace vs. IRS limit, investment threshold status, pending reimbursements
+- `flow-check-hsa-balance` — detailed HSA snapshot for the monthly brief
+- `op-enrollment-review` — confirm HSA election is active and properly funded for the new plan year
 
 ## Vault Output
 

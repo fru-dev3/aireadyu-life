@@ -89,16 +89,16 @@ Before running **any skill or flow** in this domain — including flows called b
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
 - **`beehiiv`** — Queries newsletter subscriber and revenue metrics from Beehiiv via their API.
-- **`content-flow-analyze-channel-performance`** — Builds a cross-channel performance dashboard with 30-day totals per platform, MoM comparisons, and flags for channels underperforming vs.
-- **`content-flow-build-revenue-summary`** — Aggregates revenue from all content channels into a single monthly summary with MoM comparison, identifying the top channel and flagging declines >20%.
-- **`content-flow-build-seo-summary`** — Summarizes keyword rankings, search impressions, and top content performance; identifies quick-win keywords (positions 4-15), ranking drops, and top 3 optimization opportunities.
-- **`content-op-channel-review`** — Monthly cross-channel performance review; subscriber growth, video views, newsletter opens, and product sales all in one brief.
-- **`content-op-revenue-review`** — Monthly revenue review across all content channels: YouTube AdSense, newsletter sponsorships and paid tiers, and digital product sales (Gumroad).
-- **`content-op-review-brief`** — Monthly content review brief.
-- **`content-op-seo-review`** — Monthly SEO health check; reviews keyword rankings, search impressions, top-performing content, and quick-win optimization opportunities.
-- **`content-op-weekly-review`** — Weekly content performance review.
-- **`content-task-flag-seo-gap`** — Writes a flag to vault/content/open-loops.md when a content piece drops in ranking or a high-value keyword has no content coverage.
-- **`content-task-log-revenue`** — Records a revenue event to vault/content/ with: platform, amount, date, type (AdSense, sponsorship, product sale, subscription).
-- **`content-task-update-open-loops`** — Writes all content flags (revenue dips, SEO gaps, publishing misses, channel anomalies) to vault/content/open-loops.md and resolves completed items.
+- **`flow-analyze-channel-performance`** — Builds a cross-channel performance dashboard with 30-day totals per platform, MoM comparisons, and flags for channels underperforming vs.
+- **`flow-build-revenue-summary`** — Aggregates revenue from all content channels into a single monthly summary with MoM comparison, identifying the top channel and flagging declines >20%.
+- **`flow-build-seo-summary`** — Summarizes keyword rankings, search impressions, and top content performance; identifies quick-win keywords (positions 4-15), ranking drops, and top 3 optimization opportunities.
+- **`op-channel-review`** — Monthly cross-channel performance review; subscriber growth, video views, newsletter opens, and product sales all in one brief.
+- **`op-revenue-review`** — Monthly revenue review across all content channels: YouTube AdSense, newsletter sponsorships and paid tiers, and digital product sales (Gumroad).
+- **`op-review-brief`** — Monthly content review brief.
+- **`op-seo-review`** — Monthly SEO health check; reviews keyword rankings, search impressions, top-performing content, and quick-win optimization opportunities.
+- **`op-weekly-review`** — Weekly content performance review.
+- **`task-flag-seo-gap`** — Writes a flag to vault/content/open-loops.md when a content piece drops in ranking or a high-value keyword has no content coverage.
+- **`task-log-revenue`** — Records a revenue event to vault/content/ with: platform, amount, date, type (AdSense, sponsorship, product sale, subscription).
+- **`task-update-open-loops`** — Writes all content flags (revenue dips, SEO gaps, publishing misses, channel anomalies) to vault/content/open-loops.md and resolves completed items.
 - **`gumroad`** — Queries product sales and revenue data from Gumroad via their API.
 - **`youtube`** — Queries YouTube channel analytics (views, watch time, subscribers, revenue) via the YouTube Data API v3.

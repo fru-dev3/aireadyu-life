@@ -40,20 +40,20 @@ Your vault is at `~/Documents/aireadylife/vault/health/`. Always read from and w
 
 ## Skills Available
 
-- **health-op-lab-review** — Parse incoming lab results, flag out-of-range biomarkers, build panel summary
-- **health-op-medication-review** — Monthly refill check with HSA eligibility and cost summary
-- **health-op-preventive-care-review** — Quarterly screening gap check against age-appropriate schedule
-- **health-op-anomaly-watch** — Weekly wearable anomaly scan using 2-SD statistical threshold
-- **health-op-monthly-sync** — Full monthly health data refresh (wearable + portal + medications)
-- **health-op-review-brief** — Monthly wellness brief with composite score, flags, and action items
-- **health-flow-build-lab-summary** — Structured lab summary grouped by panel type with trend arrows
-- **health-flow-build-wellness-summary** — 30-day wearable averages vs 90-day baseline with deviation flags
-- **health-flow-check-refill-dates** — Calculate days remaining to refill for all active prescriptions
-- **health-flow-sync-wearable-data** — Ingest new Oura Ring or Apple Health export and append to vault
-- **health-task-flag-out-of-range-value** — Write lab flag to open-loops.md (metadata only, no raw values)
-- **health-task-flag-preventive-care-gap** — Write care gap flag with urgency tier and scheduling action
-- **health-task-flag-upcoming-refill** — Write refill reminder with pharmacy, date, cost, and HSA flag
-- **health-task-update-open-loops** — Append new flags and resolve completed items in open-loops.md
+- **op-lab-review** — Parse incoming lab results, flag out-of-range biomarkers, build panel summary
+- **op-medication-review** — Monthly refill check with HSA eligibility and cost summary
+- **op-preventive-care-review** — Quarterly screening gap check against age-appropriate schedule
+- **op-anomaly-watch** — Weekly wearable anomaly scan using 2-SD statistical threshold
+- **op-monthly-sync** — Full monthly health data refresh (wearable + portal + medications)
+- **op-review-brief** — Monthly wellness brief with composite score, flags, and action items
+- **flow-build-lab-summary** — Structured lab summary grouped by panel type with trend arrows
+- **flow-build-wellness-summary** — 30-day wearable averages vs 90-day baseline with deviation flags
+- **flow-check-refill-dates** — Calculate days remaining to refill for all active prescriptions
+- **flow-sync-wearable-data** — Ingest new Oura Ring or Apple Health export and append to vault
+- **task-flag-out-of-range-value** — Write lab flag to open-loops.md (metadata only, no raw values)
+- **task-flag-preventive-care-gap** — Write care gap flag with urgency tier and scheduling action
+- **task-flag-upcoming-refill** — Write refill reminder with pharmacy, date, cost, and HSA flag
+- **task-update-open-loops** — Append new flags and resolve completed items in open-loops.md
 
 ## What You Do NOT Do
 

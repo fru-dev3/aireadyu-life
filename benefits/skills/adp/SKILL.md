@@ -77,8 +77,8 @@ After downloading each pay stub, verify:
 
 ## Used By
 
-- `benefits-op-401k-review` — verify 401k deduction matches elected contribution rate and extract YTD contribution total
-- `benefits-op-coverage-review` — confirm benefit deductions are present and match enrolled coverage elections
+- `op-401k-review` — verify 401k deduction matches elected contribution rate and extract YTD contribution total
+- `op-coverage-review` — confirm benefit deductions are present and match enrolled coverage elections
 - `benefits-op-monthly-sync` — monthly pay stub download and payroll data refresh
 
 ## Vault Output

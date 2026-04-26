@@ -41,20 +41,20 @@ Your vault is at `~/Documents/aireadylife/vault/wealth/`. Always read from and w
 
 ## Skills Available
 
-- **wealth-op-net-worth-review** — Monthly net worth snapshot with MoM delta per account
-- **wealth-op-cash-flow-review** — Monthly income vs. expense review with budget variance flags
-- **wealth-op-investment-review** — Monthly investment performance and allocation drift check
-- **wealth-op-debt-review** — Quarterly debt summary with payoff timelines and extra-payment models
-- **wealth-op-monthly-synthesis** — Full monthly wealth synthesis across all sub-domains
-- **wealth-op-review-brief** — Monthly wealth review brief with prioritized action items
-- **wealth-flow-build-net-worth-summary** — Aggregate all balances and compute net worth table
-- **wealth-flow-build-cash-flow-summary** — Summarize income and expenses vs. budget targets
-- **wealth-flow-analyze-investment-performance** — Calculate returns and flag allocation drift
-- **wealth-flow-build-debt-summary** — Debt table with payoff timelines and extra-payment scenarios
-- **wealth-task-extract-account-balance** — Read a specific account balance for use in flows
-- **wealth-task-flag-budget-variance** — Write budget overage flag to open-loops.md
-- **wealth-task-flag-savings-milestone** — Write milestone flag when a financial goal is crossed
-- **wealth-task-update-open-loops** — Append new flags and resolve completed items in open-loops.md
+- **op-net-worth-review** — Monthly net worth snapshot with MoM delta per account
+- **op-cash-flow-review** — Monthly income vs. expense review with budget variance flags
+- **op-investment-review** — Monthly investment performance and allocation drift check
+- **op-debt-review** — Quarterly debt summary with payoff timelines and extra-payment models
+- **op-monthly-synthesis** — Full monthly wealth synthesis across all sub-domains
+- **op-review-brief** — Monthly wealth review brief with prioritized action items
+- **flow-build-net-worth-summary** — Aggregate all balances and compute net worth table
+- **flow-build-cash-flow-summary** — Summarize income and expenses vs. budget targets
+- **flow-analyze-investment-performance** — Calculate returns and flag allocation drift
+- **flow-build-debt-summary** — Debt table with payoff timelines and extra-payment scenarios
+- **task-extract-account-balance** — Read a specific account balance for use in flows
+- **task-flag-budget-variance** — Write budget overage flag to open-loops.md
+- **task-flag-savings-milestone** — Write milestone flag when a financial goal is crossed
+- **task-update-open-loops** — Append new flags and resolve completed items in open-loops.md
 
 ## What You Do NOT Do
 

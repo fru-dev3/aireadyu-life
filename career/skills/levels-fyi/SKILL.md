@@ -64,9 +64,9 @@ https://www.levels.fyi/jobs  # job board with reported comp
 
 ## Used By
 
-- `career-op-comp-review` — benchmark current TC against market P50/P75 for role and level
-- `career-flow-build-comp-summary` — generate component-level compensation comparison table
-- `career-flow-scan-target-roles` — pull compensation data for qualifying job postings
+- `op-comp-review` — benchmark current TC against market P50/P75 for role and level
+- `flow-build-comp-summary` — generate component-level compensation comparison table
+- `flow-scan-target-roles` — pull compensation data for qualifying job postings
 
 ## Vault Output
 

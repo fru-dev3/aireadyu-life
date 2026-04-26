@@ -89,16 +89,16 @@ Before running **any skill or flow** in this domain — including flows called b
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
 - **`appfolio`** — Downloads owner statements, lease documents, maintenance requests, and tenant ledgers from an AppFolio owner portal via Playwright.
-- **`estate-flow-analyze-cash-flow`** — Detailed cash flow analysis per rental property: gross rent, vacancy loss, all operating expenses, NOI, debt service, net cash flow, cash-on-cash return, and expense ratio.
-- **`estate-flow-build-portfolio-summary`** — Generates a complete portfolio snapshot: all properties with address, purchase price, current value, equity, outstanding mortgage balance, monthly cash flow, cap rate, and cash-on-cash return.
-- **`estate-flow-check-maintenance-schedule`** — Reviews all open maintenance items and upcoming seasonal tasks across all rental properties against the current date.
-- **`estate-op-cash-flow-review`** — Monthly cash flow review run after rent collection.
-- **`estate-op-maintenance-review`** — Monthly maintenance review across all rental properties.
-- **`estate-op-portfolio-review`** — Quarterly portfolio performance review: cap rates, cash-on-cash return, equity positions, depreciation schedule, hold vs.
-- **`estate-op-review-brief`** — Monthly portfolio review brief.
-- **`estate-op-tenant-review`** — Monthly tenant review: lease expiration countdown, rent payment history, security deposit tracking, vacancy planning, and renewal decision workflow.
-- **`estate-task-flag-maintenance-item`** — Writes a maintenance flag to open-loops.md and creates a detailed maintenance item record in vault/estate/00_current/.
-- **`estate-task-log-expense`** — Records a rental property expense to vault/estate/00_current/ with property address, date, vendor, IRS-standard expense category, amount, notes, and receipt reference.
-- **`estate-task-update-open-loops`** — Writes estate flags (overdue maintenance, lease expirations, cash flow anomalies, vacancy risks, property tax deadlines, CapEx approaching) to open-loops.md and resolves completed items.
+- **`flow-analyze-cash-flow`** — Detailed cash flow analysis per rental property: gross rent, vacancy loss, all operating expenses, NOI, debt service, net cash flow, cash-on-cash return, and expense ratio.
+- **`flow-build-portfolio-summary`** — Generates a complete portfolio snapshot: all properties with address, purchase price, current value, equity, outstanding mortgage balance, monthly cash flow, cap rate, and cash-on-cash return.
+- **`flow-check-maintenance-schedule`** — Reviews all open maintenance items and upcoming seasonal tasks across all rental properties against the current date.
+- **`op-cash-flow-review`** — Monthly cash flow review run after rent collection.
+- **`op-maintenance-review`** — Monthly maintenance review across all rental properties.
+- **`op-portfolio-review`** — Quarterly portfolio performance review: cap rates, cash-on-cash return, equity positions, depreciation schedule, hold vs.
+- **`op-review-brief`** — Monthly portfolio review brief.
+- **`op-tenant-review`** — Monthly tenant review: lease expiration countdown, rent payment history, security deposit tracking, vacancy planning, and renewal decision workflow.
+- **`task-flag-maintenance-item`** — Writes a maintenance flag to open-loops.md and creates a detailed maintenance item record in vault/estate/00_current/.
+- **`task-log-expense`** — Records a rental property expense to vault/estate/00_current/ with property address, date, vendor, IRS-standard expense category, amount, notes, and receipt reference.
+- **`task-update-open-loops`** — Writes estate flags (overdue maintenance, lease expirations, cash flow anomalies, vacancy risks, property tax deadlines, CapEx approaching) to open-loops.md and resolves completed items.
 - **`stessa`** — Accesses rental income, expense tracking, cash flow reports, and property valuations from Stessa via Playwright.
 - **`zillow`** — Fetches Zestimate property valuations, rental estimates, and market trend data from Zillow via web research.

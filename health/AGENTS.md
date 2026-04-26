@@ -90,19 +90,19 @@ Before running **any skill or flow** in this domain — including flows called b
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
 - **`apple-health`** — Exports iPhone Health data — steps, active energy, resting heart rate, body weight, and workouts — via an iOS Shortcut that saves a CSV or XML export to iCloud Drive for automatic Mac sync.
-- **`health-flow-build-lab-summary`** — Builds a structured lab result summary with current biomarker values, reference ranges, trend direction vs.
-- **`health-flow-build-wellness-summary`** — Compiles a monthly wearable wellness summary covering sleep score, sleep duration, HRV (RMSSD), resting heart rate, readiness score, daily steps, and active energy.
-- **`health-flow-check-refill-dates`** — Scans the active medication list in vault/health/00_current/ and computes the projected refill date for each prescription based on fill date and days supply.
-- **`health-flow-sync-wearable-data`** — Ingests new wearable device exports from Oura Ring (JSON) or Apple Health (XML/CSV) and appends new daily records to vault/health/00_current/ without overwriting existing data.
-- **`health-op-anomaly-watch`** — Weekly wearable anomaly watch.
-- **`health-op-lab-review`** — Triggered when new lab results arrive from a patient portal (MyChart/Epic) or are uploaded manually.
-- **`health-op-medication-review`** — Monthly medication review.
-- **`health-op-monthly-sync`** — Full health data sync on the 1st of each month.
-- **`health-op-preventive-care-review`** — Quarterly preventive care check.
-- **`health-op-review-brief`** — Monthly health review brief.
-- **`health-task-flag-out-of-range-value`** — Writes a structured flag to vault/health/open-loops.md when a lab biomarker falls outside its clinical reference range.
-- **`health-task-flag-preventive-care-gap`** — Writes a flag to vault/health/open-loops.md for any overdue or due-soon preventive care screening.
-- **`health-task-flag-upcoming-refill`** — Writes a medication refill reminder to vault/health/open-loops.md when a prescription is due within 30 days.
-- **`health-task-update-open-loops`** — The single write point for vault/health/open-loops.md.
+- **`flow-build-lab-summary`** — Builds a structured lab result summary with current biomarker values, reference ranges, trend direction vs.
+- **`flow-build-wellness-summary`** — Compiles a monthly wearable wellness summary covering sleep score, sleep duration, HRV (RMSSD), resting heart rate, readiness score, daily steps, and active energy.
+- **`flow-check-refill-dates`** — Scans the active medication list in vault/health/00_current/ and computes the projected refill date for each prescription based on fill date and days supply.
+- **`flow-sync-wearable-data`** — Ingests new wearable device exports from Oura Ring (JSON) or Apple Health (XML/CSV) and appends new daily records to vault/health/00_current/ without overwriting existing data.
+- **`op-anomaly-watch`** — Weekly wearable anomaly watch.
+- **`op-lab-review`** — Triggered when new lab results arrive from a patient portal (MyChart/Epic) or are uploaded manually.
+- **`op-medication-review`** — Monthly medication review.
+- **`op-monthly-sync`** — Full health data sync on the 1st of each month.
+- **`op-preventive-care-review`** — Quarterly preventive care check.
+- **`op-review-brief`** — Monthly health review brief.
+- **`task-flag-out-of-range-value`** — Writes a structured flag to vault/health/open-loops.md when a lab biomarker falls outside its clinical reference range.
+- **`task-flag-preventive-care-gap`** — Writes a flag to vault/health/open-loops.md for any overdue or due-soon preventive care screening.
+- **`task-flag-upcoming-refill`** — Writes a medication refill reminder to vault/health/open-loops.md when a prescription is due within 30 days.
+- **`task-update-open-loops`** — The single write point for vault/health/open-loops.md.
 - **`mychart`** — Accesses patient portal records — lab results (PDF and structured values), visit notes, after-visit summaries, upcoming appointments, current medication list, and immunization records — from a provider's MyChart instance via Playwright with Chrome cookie authentication.
 - **`oura-ring`** — Fetches daily sleep, readiness, and activity data from the Oura Ring API v2 using a personal API key.

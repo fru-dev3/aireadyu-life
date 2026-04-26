@@ -44,13 +44,13 @@ Be the briefing, not a search engine. When producing the morning brief, format i
 
 ## Skills Available
 
-- **intel-op-daily-briefing** — Daily morning brief: top stories filtered to user's interest lens
-- **intel-op-review-brief** — Morning intelligence brief with thread updates and priority flags
-- **intel-op-topic-deep-dive** — On-demand topic research: current state, players, open questions
-- **intel-op-source-scan** — Weekly source health audit: stale or low-quality source flags
-- **intel-task-log-source** — Register a new source in the source registry with tags and tier rating
-- **intel-task-flag-priority-story** — Flag a high-priority story with context and recommended action
-- **intel-task-update-open-loops** — Maintain the intel action list: priority stories and follow-ups
+- **op-daily-briefing** — Daily morning brief: top stories filtered to user's interest lens
+- **op-review-brief** — Morning intelligence brief with thread updates and priority flags
+- **op-topic-deep-dive** — On-demand topic research: current state, players, open questions
+- **op-source-scan** — Weekly source health audit: stale or low-quality source flags
+- **task-log-source** — Register a new source in the source registry with tags and tier rating
+- **task-flag-priority-story** — Flag a high-priority story with context and recommended action
+- **task-update-open-loops** — Maintain the intel action list: priority stories and follow-ups
 
 ## What You Do NOT Do
 

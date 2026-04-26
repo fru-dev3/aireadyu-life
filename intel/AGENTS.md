@@ -88,13 +88,13 @@ Before running **any skill or flow** in this domain — including flows called b
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
 - **`feedly`** — Reads RSS feed articles and trending topics from Feedly via API or Playwright.
-- **`intel-flow-build-news-digest`** — Pulls news from configured RSS feeds and sources, filters to priority topics, deduplicates, and formats as a scannable daily digest.
-- **`intel-flow-build-topic-summary`** — Aggregates recent coverage on a specific topic into a structured summary: current state, key players, recent developments, and open questions.
-- **`intel-op-daily-briefing`** — Generates a daily news digest filtered to configured priority topics and sources.
-- **`intel-op-review-brief`** — Daily morning intelligence brief.
-- **`intel-op-source-scan`** — Weekly source health audit.
-- **`intel-op-topic-deep-dive`** — On-demand deep dive on a specific topic that pulls recent coverage, identifies key voices, and summarizes the state of play.
-- **`intel-task-flag-priority-story`** — Writes a flag to vault/intel/open-loops.md when a story on a configured priority topic appears from a high-credibility source, with headline, source, summary, why it matters, and action needed.
-- **`intel-task-log-source`** — Adds a new news source to vault/intel/00_current/ with name, URL/feed, type, topic tags, and credibility rating.
-- **`intel-task-update-open-loops`** — Writes all intel flags (breaking priority stories, source gaps, follow-up items) to vault/intel/open-loops.md and resolves completed items.
+- **`flow-build-news-digest`** — Pulls news from configured RSS feeds and sources, filters to priority topics, deduplicates, and formats as a scannable daily digest.
+- **`flow-build-topic-summary`** — Aggregates recent coverage on a specific topic into a structured summary: current state, key players, recent developments, and open questions.
+- **`op-daily-briefing`** — Generates a daily news digest filtered to configured priority topics and sources.
+- **`op-review-brief`** — Daily morning intelligence brief.
+- **`op-source-scan`** — Weekly source health audit.
+- **`op-topic-deep-dive`** — On-demand deep dive on a specific topic that pulls recent coverage, identifies key voices, and summarizes the state of play.
+- **`task-flag-priority-story`** — Writes a flag to vault/intel/open-loops.md when a story on a configured priority topic appears from a high-credibility source, with headline, source, summary, why it matters, and action needed.
+- **`task-log-source`** — Adds a new news source to vault/intel/00_current/ with name, URL/feed, type, topic tags, and credibility rating.
+- **`task-update-open-loops`** — Writes all intel flags (breaking priority stories, source gaps, follow-up items) to vault/intel/open-loops.md and resolves completed items.
 - **`pocket`** — Accesses saved articles and reading queue from Pocket (Mozilla) via OAuth API.

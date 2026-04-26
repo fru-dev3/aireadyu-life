@@ -1,6 +1,6 @@
 {
   "name": "chief",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "1 AI agent \u2014 your personal Chief of Staff. Orchestrates all other life plugins, synthesizes daily briefs, syncs tasks, and monitors priorities.",
   "author": {
     "name": "fru.dev",
@@ -18,7 +18,6 @@
     "inbox"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
   "interface": {
     "displayName": "AI Ready Life: Chief",
     "shortDescription": "1 AI agent \u2014 your personal Chief of Staff. Orchestrates all other life plugins, synthesizes daily briefs, syncs tasks, and monitors priorities.",

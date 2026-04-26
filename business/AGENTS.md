@@ -88,17 +88,17 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`business-flow-build-pipeline-summary`** — Summarizes active proposals by stage, expected close dates, total pipeline value, and flags proposals needing follow-up due to inactivity.
-- **`business-flow-build-pl-summary`** — Builds a monthly P&L summary: revenue by client/source, expense categories, net profit, margin, and comparison to prior month.
-- **`business-flow-check-compliance-status`** — Reviews entity compliance checklist: annual report filed, registered agent current, tax elections in place, and operating agreement updated.
-- **`business-op-compliance-review`** — Quarterly entity compliance check that reviews LLC/S-Corp filing requirements, state deadlines, registered agent status, and annual report filings.
-- **`business-op-monthly-synthesis`** — Monthly business synthesis.
-- **`business-op-pipeline-review`** — Monthly client pipeline review that tracks active proposals, follow-ups needed, total pipeline value, and conversion rate.
-- **`business-op-pl-review`** — Monthly P&L review that compares revenue vs expenses, calculates net profit margin, and flags variances vs prior month and budget.
-- **`business-op-review-brief`** — Monthly business brief.
-- **`business-task-flag-overdue-invoice`** — Writes an overdue invoice flag to vault/business/open-loops.md when an invoice is unpaid more than 30 days past due.
-- **`business-task-log-invoice`** — Records a new invoice to vault/business/00_current/ with client, amount, date issued, due date, service description, and payment status.
-- **`business-task-update-open-loops`** — Writes all business flags (overdue invoices, compliance deadlines, stalled proposals, expense anomalies) to vault/business/open-loops.md.
+- **`flow-build-pipeline-summary`** — Summarizes active proposals by stage, expected close dates, total pipeline value, and flags proposals needing follow-up due to inactivity.
+- **`flow-build-pl-summary`** — Builds a monthly P&L summary: revenue by client/source, expense categories, net profit, margin, and comparison to prior month.
+- **`flow-check-compliance-status`** — Reviews entity compliance checklist: annual report filed, registered agent current, tax elections in place, and operating agreement updated.
+- **`op-compliance-review`** — Quarterly entity compliance check that reviews LLC/S-Corp filing requirements, state deadlines, registered agent status, and annual report filings.
+- **`op-monthly-synthesis`** — Monthly business synthesis.
+- **`op-pipeline-review`** — Monthly client pipeline review that tracks active proposals, follow-ups needed, total pipeline value, and conversion rate.
+- **`op-pl-review`** — Monthly P&L review that compares revenue vs expenses, calculates net profit margin, and flags variances vs prior month and budget.
+- **`op-review-brief`** — Monthly business brief.
+- **`task-flag-overdue-invoice`** — Writes an overdue invoice flag to vault/business/open-loops.md when an invoice is unpaid more than 30 days past due.
+- **`task-log-invoice`** — Records a new invoice to vault/business/00_current/ with client, amount, date issued, due date, service description, and payment status.
+- **`task-update-open-loops`** — Writes all business flags (overdue invoices, compliance deadlines, stalled proposals, expense anomalies) to vault/business/open-loops.md.
 - **`gusto`** — Accesses payroll records, contractor payments, and year-end tax forms from Gusto via Playwright.
 - **`quickbooks`** — Pulls P&L, balance sheet, and transaction data from QuickBooks Online for business performance tracking and financial reporting.
 - **`stripe`** — Queries Stripe for payment, payout, and revenue data via the Stripe API.

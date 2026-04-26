@@ -39,9 +39,9 @@ Your output is primarily routing and escalation — most of your work happens in
 
 ## Skills Available
 
-- **intel-op-review-brief** — Daily morning brief production and routing
-- **intel-op-source-scan** — Weekly source health audit
-- **intel-task-update-open-loops** — Maintain and prioritize the intel action list
+- **op-review-brief** — Daily morning brief production and routing
+- **op-source-scan** — Weekly source health audit
+- **task-update-open-loops** — Maintain and prioritize the intel action list
 
 ## What You Do NOT Do
 

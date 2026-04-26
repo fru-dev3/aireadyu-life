@@ -86,15 +86,15 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`chief-flow-build-daily-brief`** — Assembles the daily brief from domain alerts, calendar items, and open loops into a prioritized ACTION TODAY format with Top 3 callout, domain alert table, and full open-loops list.
-- **`chief-flow-build-weekly-agenda`** — Builds a week-ahead view with all cross-domain deadlines, meetings, top priorities, and focus time block recommendations.
-- **`chief-flow-collect-domain-alerts`** — Scans open-loops.md across all installed plugin vaults and collects all active flags sorted by priority and domain.
-- **`chief-op-daily-brief`** — Generates today's prioritized brief: top 3 actions, domain alerts, calendar items, and open loops across all installed plugins.
-- **`chief-op-review-brief`** — Daily morning executive brief.
-- **`chief-op-system-health`** — Weekly system health check.
-- **`chief-op-weekly-preview`** — Monday morning weekly preview covering this week's deadlines, cross-domain priorities, and recommended focus time.
-- **`chief-task-check-open-loops`** — Reads all open-loops.md files across installed plugin vaults and returns a count and priority summary.
-- **`chief-task-flag-urgent-item`** — Writes a cross-domain urgent flag to vault/chief/00_current/ when an item from any domain is 🔴 priority.
-- **`chief-task-pull-domain-status`** — Reads the state.md file from a specified plugin vault and returns a summary of current domain status: last updated, wellness or score if present, and open item count.
+- **`flow-build-daily-brief`** — Assembles the daily brief from domain alerts, calendar items, and open loops into a prioritized ACTION TODAY format with Top 3 callout, domain alert table, and full open-loops list.
+- **`flow-build-weekly-agenda`** — Builds a week-ahead view with all cross-domain deadlines, meetings, top priorities, and focus time block recommendations.
+- **`flow-collect-domain-alerts`** — Scans open-loops.md across all installed plugin vaults and collects all active flags sorted by priority and domain.
+- **`op-daily-brief`** — Generates today's prioritized brief: top 3 actions, domain alerts, calendar items, and open loops across all installed plugins.
+- **`op-review-brief`** — Daily morning executive brief.
+- **`op-system-health`** — Weekly system health check.
+- **`op-weekly-preview`** — Monday morning weekly preview covering this week's deadlines, cross-domain priorities, and recommended focus time.
+- **`task-check-open-loops`** — Reads all open-loops.md files across installed plugin vaults and returns a count and priority summary.
+- **`task-flag-urgent-item`** — Writes a cross-domain urgent flag to vault/chief/00_current/ when an item from any domain is 🔴 priority.
+- **`task-pull-domain-status`** — Reads the state.md file from a specified plugin vault and returns a summary of current domain status: last updated, wellness or score if present, and open item count.
 - **`gdrive`** — Reads and writes files in configured Google Drive folders via the Drive API.
 - **`notion`** — Reads and writes Notion pages and databases via the Notion API.

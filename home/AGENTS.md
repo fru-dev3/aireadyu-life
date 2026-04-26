@@ -89,14 +89,14 @@ Before running **any skill or flow** in this domain — including flows called b
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
 - **`angi`** — Searches contractor listings, ratings, license status, and cost guides on Angi (formerly Angie's List) via Playwright.
-- **`home-flow-build-expense-summary`** — Summarizes monthly home expenses by category (utilities, repairs, supplies, services) vs.
-- **`home-flow-build-maintenance-schedule`** — Generates the complete seasonal maintenance checklist for the current season: task name, frequency, last-done date, next-due date, urgency, assigned vendor, and estimated cost.
-- **`home-op-expense-review`** — Monthly home expense review.
-- **`home-op-monthly-sync`** — Full monthly home sync on the 1st of each month.
-- **`home-op-review-brief`** — Home review brief — produced weekly when maintenance items are flagged or seasonal tasks are due, or on-demand.
-- **`home-op-seasonal-maintenance`** — Quarterly seasonal maintenance planner.
-- **`home-op-weekly-review`** — Weekly home check.
-- **`home-task-flag-maintenance-item`** — Writes a maintenance flag to open-loops.md and creates a maintenance item record in vault/home/00_current/.
-- **`home-task-log-expense`** — Records a home expense to vault/home/00_current/ with date, category (utilities/repairs/ supplies/services), subcategory, vendor, amount, notes, and receipt reference.
-- **`home-task-update-open-loops`** — Writes all home flags (overdue maintenance, budget overruns, expiring warranties, renewal deadlines) to open-loops.md and resolves completed items.
+- **`flow-build-expense-summary`** — Summarizes monthly home expenses by category (utilities, repairs, supplies, services) vs.
+- **`flow-build-maintenance-schedule`** — Generates the complete seasonal maintenance checklist for the current season: task name, frequency, last-done date, next-due date, urgency, assigned vendor, and estimated cost.
+- **`op-expense-review`** — Monthly home expense review.
+- **`op-monthly-sync`** — Full monthly home sync on the 1st of each month.
+- **`op-review-brief`** — Home review brief — produced weekly when maintenance items are flagged or seasonal tasks are due, or on-demand.
+- **`op-seasonal-maintenance`** — Quarterly seasonal maintenance planner.
+- **`op-weekly-review`** — Weekly home check.
+- **`task-flag-maintenance-item`** — Writes a maintenance flag to open-loops.md and creates a maintenance item record in vault/home/00_current/.
+- **`task-log-expense`** — Records a home expense to vault/home/00_current/ with date, category (utilities/repairs/ supplies/services), subcategory, vendor, amount, notes, and receipt reference.
+- **`task-update-open-loops`** — Writes all home flags (overdue maintenance, budget overruns, expiring warranties, renewal deadlines) to open-loops.md and resolves completed items.
 - **`thumbtack`** — Searches local professional listings and quote requests on Thumbtack via Playwright.

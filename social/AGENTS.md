@@ -89,12 +89,12 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 
 - **`contacts`** — Reads contact data from iOS Contacts (via vCard export) or Google Contacts (via People API) for birthday monitoring, relationship tracking, and outreach logging.
 - **`linkedin`** — Accesses LinkedIn connections list, profile data, and messaging via Playwright with Chrome cookies.
-- **`social-flow-build-outreach-queue`** — Generates a prioritized outreach list covering birthdays in 14 days, overdue relationships, and warm reconnect opportunities.
-- **`social-flow-build-relationship-health-summary`** — Generates a relationship health table showing all tracked contacts with last contact date, health status, and relationship tier.
-- **`social-op-birthday-watch`** — Weekly birthday and milestone watch that surfaces upcoming birthdays and life events in the next 14 days with suggested actions.
-- **`social-op-monthly-sync`** — Full social data sync on the 1st of each month.
-- **`social-op-relationship-review`** — Monthly relationship health check that reviews contact recency, flags relationships going cold, and generates a prioritized outreach queue.
-- **`social-op-review-brief`** — Weekly social review brief.
-- **`social-task-flag-overdue-contact`** — Writes a relationship flag to vault/social/open-loops.md when a close contact hasn't been reached in 90+ days or a professional contact in 180+ days, with name, last contact date, and suggested outreach type.
-- **`social-task-log-interaction`** — Records a contact interaction to vault/social/00_current/ with contact name, date, type, notes, and any follow-up promised.
-- **`social-task-update-open-loops`** — Writes all social flags (overdue relationships, upcoming birthdays, promised follow-ups) to vault/social/open-loops.md and resolves completed items.
+- **`flow-build-outreach-queue`** — Generates a prioritized outreach list covering birthdays in 14 days, overdue relationships, and warm reconnect opportunities.
+- **`flow-build-relationship-health-summary`** — Generates a relationship health table showing all tracked contacts with last contact date, health status, and relationship tier.
+- **`op-birthday-watch`** — Weekly birthday and milestone watch that surfaces upcoming birthdays and life events in the next 14 days with suggested actions.
+- **`op-monthly-sync`** — Full social data sync on the 1st of each month.
+- **`op-relationship-review`** — Monthly relationship health check that reviews contact recency, flags relationships going cold, and generates a prioritized outreach queue.
+- **`op-review-brief`** — Weekly social review brief.
+- **`task-flag-overdue-contact`** — Writes a relationship flag to vault/social/open-loops.md when a close contact hasn't been reached in 90+ days or a professional contact in 180+ days, with name, last contact date, and suggested outreach type.
+- **`task-log-interaction`** — Records a contact interaction to vault/social/00_current/ with contact name, date, type, notes, and any follow-up promised.
+- **`task-update-open-loops`** — Writes all social flags (overdue relationships, upcoming birthdays, promised follow-ups) to vault/social/open-loops.md and resolves completed items.

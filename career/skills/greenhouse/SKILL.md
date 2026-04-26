@@ -53,8 +53,8 @@ Note: Greenhouse candidate portals use passwordless email links for login. You m
 
 ## Used By
 
-- `career-task-log-application` — record initial stage and role details when application is submitted
-- `career-flow-review-pipeline` — check for stage updates across all active Greenhouse applications
+- `task-log-application` — record initial stage and role details when application is submitted
+- `flow-review-pipeline` — check for stage updates across all active Greenhouse applications
 
 ## Vault Output
 

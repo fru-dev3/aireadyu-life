@@ -89,15 +89,15 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`insurance-flow-analyze-coverage-gaps`** — Compares all coverage limits to current assets, income, and liabilities to identify meaningful gaps.
-- **`insurance-flow-build-coverage-summary`** — Compiles a full coverage matrix from all active insurance policies: carrier, policy type, coverage limits (per-occurrence and aggregate), deductible, annual premium, and renewal date.
-- **`insurance-flow-check-renewal-dates`** — Reads all policy renewal dates, calculates days until renewal, filters to policies renewing within 60 days, and categorizes each as shop/auto-renew/coverage-review.
-- **`insurance-op-claims-review`** — On-demand claims management covering the full claim lifecycle: initial filing steps with documentation checklist, active claim status tracking with adjuster follow-up actions, settlement offer adequacy review, stall detection (claims open 30+ days without status update), and denial appeal guidance.
-- **`insurance-op-coverage-audit`** — Annual comprehensive insurance portfolio audit comparing all coverage limits to current assets, income, and liabilities.
-- **`insurance-op-renewal-watch`** — Monthly renewal watch scanning all policy renewal dates and flagging anything renewing within 60 days.
-- **`insurance-op-review-brief`** — Monthly insurance brief compiling all active policy premiums and renewal dates, policies renewing within 60 days with recommended action, active claims status, total annual premium spend, and top coverage gaps from the most recent audit.
-- **`insurance-portal`** — Accesses policy documents, coverage details, premium amounts, renewal dates, and claim status from any personal insurance carrier's online portal via Playwright with Chrome cookie session.
-- **`insurance-task-flag-coverage-gap`** — Writes a structured coverage gap flag to vault/insurance/open-loops.md with coverage type, current limit, recommended limit, financial exposure of the gap (in dollars), severity rating (minor/moderate/significant), estimated annual premium to close, and specific recommended action.
-- **`insurance-task-flag-renewal-within-60-days`** — Writes a structured renewal alert to vault/insurance/open-loops.md with policy type, carrier, renewal date, current premium, prior year premium (if available for change detection), action category (shop/auto-renew/coverage-review), and specific action steps.
-- **`insurance-task-update-open-loops`** — Maintains vault/insurance/open-loops.md as the canonical list of outstanding insurance action items.
+- **`flow-analyze-coverage-gaps`** — Compares all coverage limits to current assets, income, and liabilities to identify meaningful gaps.
+- **`flow-build-coverage-summary`** — Compiles a full coverage matrix from all active insurance policies: carrier, policy type, coverage limits (per-occurrence and aggregate), deductible, annual premium, and renewal date.
+- **`flow-check-renewal-dates`** — Reads all policy renewal dates, calculates days until renewal, filters to policies renewing within 60 days, and categorizes each as shop/auto-renew/coverage-review.
+- **`op-claims-review`** — On-demand claims management covering the full claim lifecycle: initial filing steps with documentation checklist, active claim status tracking with adjuster follow-up actions, settlement offer adequacy review, stall detection (claims open 30+ days without status update), and denial appeal guidance.
+- **`op-coverage-audit`** — Annual comprehensive insurance portfolio audit comparing all coverage limits to current assets, income, and liabilities.
+- **`op-renewal-watch`** — Monthly renewal watch scanning all policy renewal dates and flagging anything renewing within 60 days.
+- **`op-review-brief`** — Monthly insurance brief compiling all active policy premiums and renewal dates, policies renewing within 60 days with recommended action, active claims status, total annual premium spend, and top coverage gaps from the most recent audit.
+- **`portal`** — Accesses policy documents, coverage details, premium amounts, renewal dates, and claim status from any personal insurance carrier's online portal via Playwright with Chrome cookie session.
+- **`task-flag-coverage-gap`** — Writes a structured coverage gap flag to vault/insurance/open-loops.md with coverage type, current limit, recommended limit, financial exposure of the gap (in dollars), severity rating (minor/moderate/significant), estimated annual premium to close, and specific recommended action.
+- **`task-flag-renewal-within-60-days`** — Writes a structured renewal alert to vault/insurance/open-loops.md with policy type, carrier, renewal date, current premium, prior year premium (if available for change detection), action category (shop/auto-renew/coverage-review), and specific action steps.
+- **`task-update-open-loops`** — Maintains vault/insurance/open-loops.md as the canonical list of outstanding insurance action items.
 - **`policygenius`** — Accesses insurance comparison quotes for term life, disability income, and umbrella liability policies on PolicyGenius.

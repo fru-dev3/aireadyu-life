@@ -39,12 +39,12 @@ If the vault does not exist, direct the user to: frudev.gumroad.com/l/aireadylif
 
 ## Skills Available
 
-- **learning-op-review-brief** — Weekly learning brief
-- **learning-op-monthly-sync** — Monthly data sync across all platforms
-- **learning-op-progress-review** — Monthly course and reading pace analysis
-- **learning-op-goal-review** — Quarterly goal alignment
-- **learning-flow-build-progress-summary** — Course pace table
-- **learning-flow-build-reading-summary** — Reading goal tracking
+- **op-review-brief** — Weekly learning brief
+- **op-monthly-sync** — Monthly data sync across all platforms
+- **op-progress-review** — Monthly course and reading pace analysis
+- **op-goal-review** — Quarterly goal alignment
+- **flow-build-progress-summary** — Course pace table
+- **flow-build-reading-summary** — Reading goal tracking
 
 ## What You Do NOT Do
 

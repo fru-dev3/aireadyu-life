@@ -92,18 +92,18 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 
 - **`irs`** — Accesses IRS.gov for account transcripts (payments applied, balance due, prior year tax summary), IRS Direct Pay for estimated tax payments (1040-ES), and notice/letter downloads via Playwright with ID.me authentication.
 - **`quickbooks`** — Pulls Profit & Loss reports, Balance Sheet, and transaction-level expense data from QuickBooks Online via Playwright with Intuit account authentication.
-- **`tax-flow-build-deadline-list`** — Builds a prioritized list of all tax deadlines falling within the next 90 days, sorted by days remaining.
-- **`tax-flow-build-estimate`** — Projects the current quarter's estimated federal tax payment by aggregating YTD income across all sources (W-2 wages, 1099-NEC, rental, capital gains, dividends, business income), subtracting YTD withholding and prior estimated payments, and running both the safe harbor method (110% of prior year liability if AGI >$150k) and the actual current-year liability method.
-- **`tax-flow-document-completeness`** — Checks the expected tax document checklist for the current tax year against files actually received in vault/tax/00_current/ and flags anything expected but not yet received.
-- **`tax-flow-review-deductions`** — Scans transaction records and vault documents in vault/tax/00_current/ for deductible expenses, classifies each against IRS deduction categories (home office simplified or actual method, business expenses, charitable contributions, medical expenses >7.5% AGI, vehicle business use at 70 cents/mile for 2025), verifies documentation reference exists for each item, computes YTD totals per category, and flags categories running more than 20% behind prior year same-period pace.
-- **`tax-op-deadline-watch`** — Monthly tax deadline monitor.
-- **`tax-op-deduction-review`** — Monthly deduction review.
-- **`tax-op-document-sync`** — Tax document intake op, active January through April 15.
-- **`tax-op-entity-compliance`** — Quarterly entity compliance check for all active LLCs and S-corps.
-- **`tax-op-quarterly-estimate`** — Calculates the current quarter's estimated federal tax payment.
-- **`tax-op-review-brief`** — Monthly tax review brief.
-- **`tax-task-extract-income-ytd`** — Reads YTD income totals from vault/tax/ across all income source types and returns a structured breakdown for use by estimated tax flows.
-- **`tax-task-flag-approaching-deadline`** — Writes a deadline alert to vault/tax/open-loops.md when a tax deadline is within 30 days.
-- **`tax-task-log-deductible-expense`** — Records a deductible expense to vault/tax/00_current/ with all metadata required to support the deduction at filing: date, vendor/payee, amount, deduction category (home office, vehicle/mileage, business expense, charitable, medical), IRS basis for deductibility, supporting document reference, business purpose note (for meals/travel), and tax year.
-- **`tax-task-update-open-loops`** — The single write point for vault/tax/open-loops.md.
+- **`flow-build-deadline-list`** — Builds a prioritized list of all tax deadlines falling within the next 90 days, sorted by days remaining.
+- **`flow-build-estimate`** — Projects the current quarter's estimated federal tax payment by aggregating YTD income across all sources (W-2 wages, 1099-NEC, rental, capital gains, dividends, business income), subtracting YTD withholding and prior estimated payments, and running both the safe harbor method (110% of prior year liability if AGI >$150k) and the actual current-year liability method.
+- **`flow-document-completeness`** — Checks the expected tax document checklist for the current tax year against files actually received in vault/tax/00_current/ and flags anything expected but not yet received.
+- **`flow-review-deductions`** — Scans transaction records and vault documents in vault/tax/00_current/ for deductible expenses, classifies each against IRS deduction categories (home office simplified or actual method, business expenses, charitable contributions, medical expenses >7.5% AGI, vehicle business use at 70 cents/mile for 2025), verifies documentation reference exists for each item, computes YTD totals per category, and flags categories running more than 20% behind prior year same-period pace.
+- **`op-deadline-watch`** — Monthly tax deadline monitor.
+- **`op-deduction-review`** — Monthly deduction review.
+- **`op-document-sync`** — Tax document intake op, active January through April 15.
+- **`op-entity-compliance`** — Quarterly entity compliance check for all active LLCs and S-corps.
+- **`op-quarterly-estimate`** — Calculates the current quarter's estimated federal tax payment.
+- **`op-review-brief`** — Monthly tax review brief.
+- **`task-extract-income-ytd`** — Reads YTD income totals from vault/tax/ across all income source types and returns a structured breakdown for use by estimated tax flows.
+- **`task-flag-approaching-deadline`** — Writes a deadline alert to vault/tax/open-loops.md when a tax deadline is within 30 days.
+- **`task-log-deductible-expense`** — Records a deductible expense to vault/tax/00_current/ with all metadata required to support the deduction at filing: date, vendor/payee, amount, deduction category (home office, vehicle/mileage, business expense, charitable, medical), IRS basis for deductibility, supporting document reference, business purpose note (for meals/travel), and tax year.
+- **`task-update-open-loops`** — The single write point for vault/tax/open-loops.md.
 - **`turbotax`** — Accesses TurboTax Online for prior year return downloads (PDF), current year filing status, imported W-2 and 1099 data summary, estimated refund or amount owed, and key return metrics (AGI, effective tax rate, total deductions).

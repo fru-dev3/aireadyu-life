@@ -44,14 +44,14 @@ Be direct and action-oriented. Lead with what requires immediate attention, then
 
 ## Skills Available
 
-- **business-op-pl-review** — Monthly P&L: revenue, expenses, net profit, MoM variance
-- **business-op-compliance-review** — Quarterly entity compliance check: annual reports, registered agent, tax elections
-- **business-op-pipeline-review** — Monthly client pipeline: proposals by stage, weighted value, stale follow-ups
-- **business-op-monthly-synthesis** — End-of-month full business synthesis: P&L + compliance calendar check
-- **business-op-review-brief** — Monthly business brief: P&L summary, compliance status, open items
-- **business-task-log-invoice** — Record a new invoice with full payment tracking
-- **business-task-flag-overdue-invoice** — Flag invoices unpaid past 30 days with escalation tier
-- **business-task-update-open-loops** — Write and clear business action items in open-loops.md
+- **op-pl-review** — Monthly P&L: revenue, expenses, net profit, MoM variance
+- **op-compliance-review** — Quarterly entity compliance check: annual reports, registered agent, tax elections
+- **op-pipeline-review** — Monthly client pipeline: proposals by stage, weighted value, stale follow-ups
+- **op-monthly-synthesis** — End-of-month full business synthesis: P&L + compliance calendar check
+- **op-review-brief** — Monthly business brief: P&L summary, compliance status, open items
+- **task-log-invoice** — Record a new invoice with full payment tracking
+- **task-flag-overdue-invoice** — Flag invoices unpaid past 30 days with escalation tier
+- **task-update-open-loops** — Write and clear business action items in open-loops.md
 
 ## What You Do NOT Do
 

@@ -87,16 +87,16 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`calendar-flow-analyze-focus-time`** — Analyzes the ratio of meetings vs.
-- **`calendar-flow-build-agenda`** — Builds a week-ahead agenda combining cross-domain deadlines, calendar events, and priority open loops — then suggests 2-3 focus blocks for deep work items.
-- **`calendar-flow-collect-deadlines`** — Scans all installed plugin open-loops.md files and extracts items with explicit due dates within the next 60 days, sorted chronologically with urgent items (due within 7 days) flagged separately.
-- **`calendar-op-deadline-alert`** — Weekly deadline alert.
-- **`calendar-op-deadline-planning`** — On-demand deadline planner; given a deadline date and task scope, works backward from the due date to create a preparation schedule with milestones, effort estimates, and calendar placement recommendations.
-- **`calendar-op-focus-time-review`** — Weekly focus time audit; analyzes meeting load vs.
-- **`calendar-op-review-brief`** — Weekly calendar brief.
-- **`calendar-op-weekly-agenda`** — Monday morning weekly agenda builder; collects all cross-domain deadlines and priorities for the coming week, then suggests focus time blocks based on urgency and effort.
-- **`calendar-task-add-deadline`** — Records a new deadline to vault/calendar/00_current/ with item description, due date, domain, effort estimate, priority, and linked open loop.
-- **`calendar-task-flag-approaching-deadline`** — Writes a deadline alert to vault/calendar/open-loops.md when a cross-domain item is due within 7 days with no preparation activity started.
-- **`calendar-task-update-open-loops`** — Writes calendar flags (upcoming deadline clusters, focus time deficits, unscheduled high-priority items) to vault/calendar/open-loops.md and resolves completed items.
+- **`flow-analyze-focus-time`** — Analyzes the ratio of meetings vs.
+- **`flow-build-agenda`** — Builds a week-ahead agenda combining cross-domain deadlines, calendar events, and priority open loops — then suggests 2-3 focus blocks for deep work items.
+- **`flow-collect-deadlines`** — Scans all installed plugin open-loops.md files and extracts items with explicit due dates within the next 60 days, sorted chronologically with urgent items (due within 7 days) flagged separately.
+- **`op-deadline-alert`** — Weekly deadline alert.
+- **`op-deadline-planning`** — On-demand deadline planner; given a deadline date and task scope, works backward from the due date to create a preparation schedule with milestones, effort estimates, and calendar placement recommendations.
+- **`op-focus-time-review`** — Weekly focus time audit; analyzes meeting load vs.
+- **`op-review-brief`** — Weekly calendar brief.
+- **`op-weekly-agenda`** — Monday morning weekly agenda builder; collects all cross-domain deadlines and priorities for the coming week, then suggests focus time blocks based on urgency and effort.
+- **`task-add-deadline`** — Records a new deadline to vault/calendar/00_current/ with item description, due date, domain, effort estimate, priority, and linked open loop.
+- **`task-flag-approaching-deadline`** — Writes a deadline alert to vault/calendar/open-loops.md when a cross-domain item is due within 7 days with no preparation activity started.
+- **`task-update-open-loops`** — Writes calendar flags (upcoming deadline clusters, focus time deficits, unscheduled high-priority items) to vault/calendar/open-loops.md and resolves completed items.
 - **`gcalendar`** — Reads and creates calendar events via the Google Calendar API.
 - **`notion`** — Reads and writes Notion pages and databases via the Notion API.

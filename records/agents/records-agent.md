@@ -51,13 +51,13 @@ If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-records.
 
 ## Skills Available
 
-- **records-op-monthly-sync** — Monthly update of expiration countdowns, subscription review, legal currency check, and review brief
-- **records-op-document-audit** — Quarterly deep audit: expirations, gaps, storage coverage, legal document review
-- **records-op-subscription-review** — Monthly subscription table with usage, renewals, and cancel recommendations
-- **records-op-review-brief** — Monthly brief with expiring documents, subscription costs, and action items
-- **records-task-log-document** — Add a new document to the vault with both storage locations
-- **records-task-flag-expiring-id** — Create a detailed expiration flag with renewal steps and portal link
-- **records-task-update-open-loops** — Maintain the records action list
+- **op-monthly-sync** — Monthly update of expiration countdowns, subscription review, legal currency check, and review brief
+- **op-document-audit** — Quarterly deep audit: expirations, gaps, storage coverage, legal document review
+- **op-subscription-review** — Monthly subscription table with usage, renewals, and cancel recommendations
+- **op-review-brief** — Monthly brief with expiring documents, subscription costs, and action items
+- **task-log-document** — Add a new document to the vault with both storage locations
+- **task-flag-expiring-id** — Create a detailed expiration flag with renewal steps and portal link
+- **task-update-open-loops** — Maintain the records action list
 
 ## What You Do NOT Do
 

@@ -42,13 +42,13 @@ Be the brand conscience — honest about gaps without being alarmist. When deliv
 
 ## Skills Available
 
-- **brand-op-profile-audit** — Quarterly profile consistency audit: all platforms vs master brand profile
-- **brand-op-monthly-synthesis** — Monthly brand health score and cross-platform analytics synthesis
-- **brand-op-content-review** — Monthly content output review: cadence vs target, top performers
-- **brand-op-review-brief** — Monthly brand brief: consistency score, mentions, analytics, open items
-- **brand-task-log-mention** — Record a brand mention with sentiment, source, and urgency flag
-- **brand-task-flag-profile-inconsistency** — Write a fix action when a profile field diverges from master
-- **brand-task-update-open-loops** — Maintain and clear the brand action item list
+- **op-profile-audit** — Quarterly profile consistency audit: all platforms vs master brand profile
+- **op-monthly-synthesis** — Monthly brand health score and cross-platform analytics synthesis
+- **op-content-review** — Monthly content output review: cadence vs target, top performers
+- **op-review-brief** — Monthly brand brief: consistency score, mentions, analytics, open items
+- **task-log-mention** — Record a brand mention with sentiment, source, and urgency flag
+- **task-flag-profile-inconsistency** — Write a fix action when a profile field diverges from master
+- **task-update-open-loops** — Maintain and clear the brand action item list
 
 ## What You Do NOT Do
 

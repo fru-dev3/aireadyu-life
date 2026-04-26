@@ -89,14 +89,14 @@ Before running **any skill or flow** in this domain — including flows called b
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
 - **`airbnb`** — Scrapes Airbnb for property listings, availability, and pricing for target destinations and date ranges via Playwright.
-- **`explore-flow-build-trip-summary`** — Generates a trip brief for an upcoming trip covering destination, dates, lodging, transport, total budget, and open booking items.
-- **`explore-flow-check-travel-docs`** — Verifies all travel documents are valid for upcoming trips, including the 6-month passport validity rule and vaccination requirements for wishlist destinations.
-- **`explore-op-document-check`** — Quarterly travel document audit that checks passport, Global Entry, TSA PreCheck, and vaccination records for expiration within 12 months.
-- **`explore-op-monthly-sync`** — Monthly explore sync.
-- **`explore-op-review-brief`** — Monthly explore review brief.
-- **`explore-op-trip-planning-review`** — On-demand trip planning review that checks visa requirements, passport validity, travel insurance, vaccinations, and key booking deadlines for an upcoming trip.
-- **`explore-task-flag-expiring-document`** — Writes a document expiration flag to vault/explore/open-loops.md with document type, person, expiration date, renewal timeline, and action needed.
-- **`explore-task-log-trip`** — Records a new trip to vault/explore/00_current/ with destination, dates, purpose, total budget, booking status, and companions.
-- **`explore-task-update-open-loops`** — Writes all explore flags (expiring documents, unbooked trip items, budget overruns) to vault/explore/open-loops.md and resolves completed items.
+- **`flow-build-trip-summary`** — Generates a trip brief for an upcoming trip covering destination, dates, lodging, transport, total budget, and open booking items.
+- **`flow-check-travel-docs`** — Verifies all travel documents are valid for upcoming trips, including the 6-month passport validity rule and vaccination requirements for wishlist destinations.
+- **`op-document-check`** — Quarterly travel document audit that checks passport, Global Entry, TSA PreCheck, and vaccination records for expiration within 12 months.
+- **`op-monthly-sync`** — Monthly explore sync.
+- **`op-review-brief`** — Monthly explore review brief.
+- **`op-trip-planning-review`** — On-demand trip planning review that checks visa requirements, passport validity, travel insurance, vaccinations, and key booking deadlines for an upcoming trip.
+- **`task-flag-expiring-document`** — Writes a document expiration flag to vault/explore/open-loops.md with document type, person, expiration date, renewal timeline, and action needed.
+- **`task-log-trip`** — Records a new trip to vault/explore/00_current/ with destination, dates, purpose, total budget, booking status, and companions.
+- **`task-update-open-loops`** — Writes all explore flags (expiring documents, unbooked trip items, budget overruns) to vault/explore/open-loops.md and resolves completed items.
 - **`google-flights`** — Scrapes flight prices, route options, and price calendar data from Google Flights via Playwright.
 - **`trip-it`** — Reads unified trip itineraries from TripIt for travel tracking and confirmation aggregation.

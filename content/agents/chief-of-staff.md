@@ -40,9 +40,9 @@ Lead with the content business health status: growing, stable, or at risk — on
 
 ## Skills Available
 
-- **content-op-review-brief** — Monthly executive content brief: all metrics + revenue + action items
-- **content-op-weekly-review** — Monday weekly publishing health check
-- **content-task-update-open-loops** — Maintain and archive the content action list
+- **op-review-brief** — Monthly executive content brief: all metrics + revenue + action items
+- **op-weekly-review** — Monday weekly publishing health check
+- **task-update-open-loops** — Maintain and archive the content action list
 
 ## What You Do NOT Do
 

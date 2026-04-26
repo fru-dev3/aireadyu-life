@@ -97,9 +97,9 @@ a duplicate entry.
 
 ## Used By
 
-- `calendar-op-weekly-agenda` — publish completed weekly agenda to Notion agenda page after local write
-- `calendar-op-deadline-alert` — sync flagged deadlines to Notion deadlines database
-- `calendar-op-focus-time-review` — write focus time weekly report to Notion calendar page
+- `op-weekly-agenda` — publish completed weekly agenda to Notion agenda page after local write
+- `op-deadline-alert` — sync flagged deadlines to Notion deadlines database
+- `op-focus-time-review` — write focus time weekly report to Notion calendar page
 
 ## Notes
 

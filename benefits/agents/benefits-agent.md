@@ -48,17 +48,17 @@ If the vault does not exist, direct the user to: frudev.gumroad.com/l/aireadylif
 
 ## Skills Available
 
-- **benefits-op-401k-review** — Monthly 401k match capture, YTD vs limit, allocation drift
-- **benefits-op-coverage-review** — Quarterly coverage audit vs. assets and liabilities
-- **benefits-op-enrollment-review** — Annual open enrollment plan comparison and election
-- **benefits-op-hsa-review** — Monthly HSA contributions, investment threshold, pending reimbursements
-- **benefits-op-review-brief** — Monthly benefits brief across all domains
-- **benefits-flow-analyze-401k-allocation** — 401k fund drift analysis and retirement projection
-- **benefits-flow-build-coverage-summary** — Full coverage table with limits, deductibles, YTD spend
-- **benefits-flow-check-hsa-balance** — HSA snapshot with contribution pace and reimbursement list
-- **benefits-task-extract-coverage-limit** — Retrieves specific limit values from plan documents
-- **benefits-task-flag-enrollment-window** — Writes enrollment deadline alert to open-loops
-- **benefits-task-update-open-loops** — Maintains benefits open-loops.md
+- **op-401k-review** — Monthly 401k match capture, YTD vs limit, allocation drift
+- **op-coverage-review** — Quarterly coverage audit vs. assets and liabilities
+- **op-enrollment-review** — Annual open enrollment plan comparison and election
+- **op-hsa-review** — Monthly HSA contributions, investment threshold, pending reimbursements
+- **op-review-brief** — Monthly benefits brief across all domains
+- **flow-analyze-401k-allocation** — 401k fund drift analysis and retirement projection
+- **flow-build-coverage-summary** — Full coverage table with limits, deductibles, YTD spend
+- **flow-check-hsa-balance** — HSA snapshot with contribution pace and reimbursement list
+- **task-extract-coverage-limit** — Retrieves specific limit values from plan documents
+- **task-flag-enrollment-window** — Writes enrollment deadline alert to open-loops
+- **task-update-open-loops** — Maintains benefits open-loops.md
 
 ## What You Do NOT Do
 

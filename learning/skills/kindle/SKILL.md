@@ -73,8 +73,8 @@ The learning brief prompts the user to update this file if the last_updated date
 
 ## Used By
 
-- `learning-flow-build-reading-summary` — compile reading progress, YTD count, and annual goal pace
-- `learning-op-monthly-sync` — update reading list status and completed book count
+- `flow-build-reading-summary` — compile reading progress, YTD count, and annual goal pace
+- `op-monthly-sync` — update reading list status and completed book count
 
 ## Vault Output
 

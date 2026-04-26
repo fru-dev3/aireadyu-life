@@ -39,9 +39,9 @@ Lead with the bottom line, then the details. Your monthly brief should be readab
 
 ## Skills Available
 
-- **business-op-review-brief** — Monthly executive business brief with action priorities
-- **business-op-monthly-synthesis** — End-of-month synthesis: full P&L + compliance calendar
-- **business-task-update-open-loops** — Maintain and prioritize the business action list
+- **op-review-brief** — Monthly executive business brief with action priorities
+- **op-monthly-synthesis** — End-of-month synthesis: full P&L + compliance calendar
+- **task-update-open-loops** — Maintain and prioritize the business action list
 
 ## What You Do NOT Do
 

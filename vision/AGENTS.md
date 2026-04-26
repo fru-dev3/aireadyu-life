@@ -90,13 +90,13 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 
 - **`gdrive`** — Reads and writes files in configured Google Drive folders via the Drive API.
 - **`notion`** — Reads and writes Notion pages and databases via the Notion API.
-- **`vision-flow-build-scorecard`** — Assembles a domain-by-domain life scorecard with score (1-10), trend indicator, open loop count, and 1-line status per installed plugin.
-- **`vision-flow-draft-quarterly-plan`** — Drafts next quarter's OKRs based on current domain scores, open milestones, and life vision priorities.
-- **`vision-flow-score-domain-progress`** — Evaluates progress toward quarterly OKRs across all domains; calculates percent complete per key result and flags OKRs at less than 50% with less than 2 weeks remaining in the quarter.
-- **`vision-op-annual-review`** — December annual life review; retrospective on goals achieved across all domains, life vision document refresh, and next year's priority targets.
-- **`vision-op-monthly-scorecard`** — Monthly life scorecard; scores each active life domain (1-10) based on open loops resolved, goals on pace, and positive milestones.
-- **`vision-op-quarterly-planning`** — Structured quarterly planning session.
-- **`vision-op-review-brief`** — Monthly vision review brief.
-- **`vision-task-flag-stalled-goal`** — Writes a stalled goal flag to vault/vision/open-loops.md when a goal has had no progress for more than 42 days.
-- **`vision-task-log-milestone`** — Records a life milestone to vault/vision/00_current/ with domain, description, date achieved, and notes.
-- **`vision-task-update-open-loops`** — Writes all vision flags (stalled goals, OKRs off-pace, domain score declines) to vault/vision/open-loops.md and resolves completed items.
+- **`flow-build-scorecard`** — Assembles a domain-by-domain life scorecard with score (1-10), trend indicator, open loop count, and 1-line status per installed plugin.
+- **`flow-draft-quarterly-plan`** — Drafts next quarter's OKRs based on current domain scores, open milestones, and life vision priorities.
+- **`flow-score-domain-progress`** — Evaluates progress toward quarterly OKRs across all domains; calculates percent complete per key result and flags OKRs at less than 50% with less than 2 weeks remaining in the quarter.
+- **`op-annual-review`** — December annual life review; retrospective on goals achieved across all domains, life vision document refresh, and next year's priority targets.
+- **`op-monthly-scorecard`** — Monthly life scorecard; scores each active life domain (1-10) based on open loops resolved, goals on pace, and positive milestones.
+- **`op-quarterly-planning`** — Structured quarterly planning session.
+- **`op-review-brief`** — Monthly vision review brief.
+- **`task-flag-stalled-goal`** — Writes a stalled goal flag to vault/vision/open-loops.md when a goal has had no progress for more than 42 days.
+- **`task-log-milestone`** — Records a life milestone to vault/vision/00_current/ with domain, description, date achieved, and notes.
+- **`task-update-open-loops`** — Writes all vision flags (stalled goals, OKRs off-pace, domain score declines) to vault/vision/open-loops.md and resolves completed items.

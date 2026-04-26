@@ -47,9 +47,9 @@ Scopes: https://www.googleapis.com/auth/drive.file
 
 ## Used By
 
-- `vision-op-monthly-scorecard` — archive completed monthly scorecard to Drive scorecards folder
-- `vision-op-annual-review` — read prior year documents and write new annual review to Drive
-- `vision-op-quarterly-planning` — archive finalized quarterly OKR document to Drive goals folder
+- `op-monthly-scorecard` — archive completed monthly scorecard to Drive scorecards folder
+- `op-annual-review` — read prior year documents and write new annual review to Drive
+- `op-quarterly-planning` — archive finalized quarterly OKR document to Drive goals folder
 
 ## Vault Output
 

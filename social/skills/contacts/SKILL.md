@@ -18,7 +18,7 @@ description: >
 Provides the social-agent with structured contact data — names, birthdays, phone numbers, email
 addresses, and notes — to power birthday alerts, outreach queuing, and relationship health tracking.
 The Contacts app is the canonical source of birthday dates for people the user knows personally.
-Interaction notes logged via `social-task-log-interaction` may be stored in the contact notes field
+Interaction notes logged via `task-log-interaction` may be stored in the contact notes field
 (Google Contacts) or in the vault contact file — the skill reads both and reconciles.
 
 ## Data Available
@@ -81,21 +81,21 @@ When year is present: calculate age and include in birthday alert context ("turn
 
 ## Used By
 
-- `social-op-birthday-watch` — scan all contacts with BDAY set for upcoming birthdays in the next 14 days
-- `social-op-monthly-sync` — full contact roster refresh; reconcile vault contact files against contacts export to detect new contacts, missing tiers, and birthday gaps
-- `social-flow-build-outreach-queue` — pull email/phone for outreach medium selection (e.g., if mobile number exists, SMS is an option for T1/T2)
-- `social-flow-build-relationship-health-summary` — cross-reference contact notes for supplemental last-interaction dates when vault interaction log is sparse
-- `social-task-log-interaction` — optionally update contact notes field in Google Contacts after logging to vault (configurable; off by default)
+- `op-birthday-watch` — scan all contacts with BDAY set for upcoming birthdays in the next 14 days
+- `op-monthly-sync` — full contact roster refresh; reconcile vault contact files against contacts export to detect new contacts, missing tiers, and birthday gaps
+- `flow-build-outreach-queue` — pull email/phone for outreach medium selection (e.g., if mobile number exists, SMS is an option for T1/T2)
+- `flow-build-relationship-health-summary` — cross-reference contact notes for supplemental last-interaction dates when vault interaction log is sparse
+- `task-log-interaction` — optionally update contact notes field in Google Contacts after logging to vault (configurable; off by default)
 
 ## Notes
 
 - The vault contact files at `~/Documents/aireadylife/vault/social/00_current/` are the primary source of truth for relationship tier, health status, and interaction history. Contacts app is the supplemental source for birthday dates and contact details.
 - If a contact has a birthday in the Contacts app but no vault file, flag it during monthly sync so the user can create a contact record for that person.
 - Google Contacts notes field is often empty; do not rely on it as the sole source of interaction history — always check the vault interaction log first.
-- Contact export should be refreshed monthly or before each `social-op-monthly-sync` run to ensure birthday data is current.
+- Contact export should be refreshed monthly or before each `op-monthly-sync` run to ensure birthday data is current.
 - Contacts that exist in the vault but not in the Contacts app (e.g., deceased, estranged) should be preserved in the vault without being deleted from the contact roster.
 
 ## Vault Output
 
 `~/Documents/aireadylife/vault/social/00_current/contacts-export.vcf` — raw export file
-`~/Documents/aireadylife/vault/social/00_current/` — individual contact profile files (written by social-task-log-interaction and social-op-monthly-sync, not by this skill directly)
+`~/Documents/aireadylife/vault/social/00_current/` — individual contact profile files (written by task-log-interaction and op-monthly-sync, not by this skill directly)

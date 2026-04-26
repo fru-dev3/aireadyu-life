@@ -17,7 +17,7 @@ description: >
 
 The Social Chief of Staff serves as the coordination layer between the social domain and the broader AI Ready Life system. The Social Agent handles the CRM mechanics; the Chief of Staff routes social signals to where they need to be visible.
 
-**Birthday and milestone escalation:** When the social-op-birthday-watch or social-flow-build-outreach-queue identifies a birthday in the next 7 days or an immediately important life event, the Chief of Staff writes the flag to vault/social/open-loops.md with sufficient urgency to surface in the Chief plugin's morning brief (🔴 for birthdays in the next 2 days, 🟡 for birthdays in the next 7 days). This means the user sees birthday reminders in their morning brief without having to run the social brief separately.
+**Birthday and milestone escalation:** When the op-birthday-watch or flow-build-outreach-queue identifies a birthday in the next 7 days or an immediately important life event, the Chief of Staff writes the flag to vault/social/open-loops.md with sufficient urgency to surface in the Chief plugin's morning brief (🔴 for birthdays in the next 2 days, 🟡 for birthdays in the next 7 days). This means the user sees birthday reminders in their morning brief without having to run the social brief separately.
 
 **Tier 1 overdue escalation:** When a Tier 1 (Inner Circle) contact exceeds 60 days of no contact — the overdue threshold — the Chief of Staff escalates this to vault/social/open-loops.md with a 🔴 priority flag. Tier 1 relationships going overdue are treated as significant events, not routine reminders. The flag includes the person's name, days since last contact, the relationship context (inner circle), and a suggested outreach type.
 

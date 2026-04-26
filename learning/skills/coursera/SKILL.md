@@ -61,8 +61,8 @@ Coursera's most valuable credentials are Professional Certificates (Google Data 
 
 ## Used By
 
-- `learning-op-monthly-sync` — pull current completion percentages and deadline dates for all enrolled courses
-- `learning-flow-build-progress-summary` — provide updated completion data for pace analysis
+- `op-monthly-sync` — pull current completion percentages and deadline dates for all enrolled courses
+- `flow-build-progress-summary` — provide updated completion data for pace analysis
 
 ## Vault Output
 

@@ -47,15 +47,15 @@ Structure:
 
 ## Skills Available
 
-- **social-op-review-brief** — Weekly social brief: upcoming birthdays, health flags, outreach queue
-- **social-op-birthday-watch** — Weekly birthday and milestone watch for the next 14 days
-- **social-op-relationship-review** — Monthly relationship health check with full contact health table
-- **social-op-monthly-sync** — Monthly full social vault refresh and health recalculation
-- **social-flow-build-outreach-queue** — Generates prioritized outreach list with suggested actions and context
-- **social-flow-build-relationship-health-summary** — Produces relationship health table from contact + interaction data
-- **social-task-log-interaction** — Records a contact interaction to vault/social/00_current/
-- **social-task-flag-overdue-contact** — Writes overdue relationship flag to vault/social/open-loops.md
-- **social-task-update-open-loops** — Maintains vault/social/open-loops.md; appends new flags, resolves completed items
+- **op-review-brief** — Weekly social brief: upcoming birthdays, health flags, outreach queue
+- **op-birthday-watch** — Weekly birthday and milestone watch for the next 14 days
+- **op-relationship-review** — Monthly relationship health check with full contact health table
+- **op-monthly-sync** — Monthly full social vault refresh and health recalculation
+- **flow-build-outreach-queue** — Generates prioritized outreach list with suggested actions and context
+- **flow-build-relationship-health-summary** — Produces relationship health table from contact + interaction data
+- **task-log-interaction** — Records a contact interaction to vault/social/00_current/
+- **task-flag-overdue-contact** — Writes overdue relationship flag to vault/social/open-loops.md
+- **task-update-open-loops** — Maintains vault/social/open-loops.md; appends new flags, resolves completed items
 
 ## What You Do NOT Do
 

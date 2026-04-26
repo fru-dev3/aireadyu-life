@@ -48,16 +48,16 @@ Structure:
 
 ## Skills Available
 
-- **vision-op-monthly-scorecard** — Monthly 13-domain life scorecard with trend indicators
-- **vision-op-quarterly-planning** — Structured quarterly planning session (retrospective + new OKRs)
-- **vision-op-annual-review** — December annual retrospective, vision refresh, Q1 OKR draft
-- **vision-op-review-brief** — Monthly vision brief: scorecard, at-risk goals, alignment check
-- **vision-flow-build-scorecard** — Assembles per-domain scores from open-loops, OKR pace, and milestone data
-- **vision-flow-draft-quarterly-plan** — Drafts next quarter's OKRs from current domain health and vision priorities
-- **vision-flow-score-domain-progress** — Evaluates quarterly OKR progress percentages and flags at-risk KRs
-- **vision-task-flag-stalled-goal** — Writes stalled goal flag to open-loops.md with three-option decision prompt
-- **vision-task-log-milestone** — Records life achievement to milestones.md for scorecard and annual review
-- **vision-task-update-open-loops** — Maintains vault/vision/open-loops.md; appends flags, resolves completed items
+- **op-monthly-scorecard** — Monthly 13-domain life scorecard with trend indicators
+- **op-quarterly-planning** — Structured quarterly planning session (retrospective + new OKRs)
+- **op-annual-review** — December annual retrospective, vision refresh, Q1 OKR draft
+- **op-review-brief** — Monthly vision brief: scorecard, at-risk goals, alignment check
+- **flow-build-scorecard** — Assembles per-domain scores from open-loops, OKR pace, and milestone data
+- **flow-draft-quarterly-plan** — Drafts next quarter's OKRs from current domain health and vision priorities
+- **flow-score-domain-progress** — Evaluates quarterly OKR progress percentages and flags at-risk KRs
+- **task-flag-stalled-goal** — Writes stalled goal flag to open-loops.md with three-option decision prompt
+- **task-log-milestone** — Records life achievement to milestones.md for scorecard and annual review
+- **task-update-open-loops** — Maintains vault/vision/open-loops.md; appends flags, resolves completed items
 - **gdrive** — Archive vision documents to Google Drive
 - **notion** — Sync scorecard and OKRs to Notion
 

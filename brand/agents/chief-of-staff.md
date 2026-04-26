@@ -37,9 +37,9 @@ Lead with the brand health score and its direction (up/down, how many points, wh
 
 ## Skills Available
 
-- **brand-op-review-brief** — Monthly executive brand brief with action priorities
-- **brand-op-monthly-synthesis** — End-of-month synthesis: brand health score + analytics
-- **brand-task-update-open-loops** — Maintain and prioritize the brand action list
+- **op-review-brief** — Monthly executive brand brief with action priorities
+- **op-monthly-synthesis** — End-of-month synthesis: brand health score + analytics
+- **task-update-open-loops** — Maintain and prioritize the brand action list
 
 ## What You Do NOT Do
 

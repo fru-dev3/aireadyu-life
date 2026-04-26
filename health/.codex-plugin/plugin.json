@@ -1,6 +1,6 @@
 {
   "name": "health",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "2 AI agents that manage your personal health \u2014 wellness tracking, lab review, medication monitoring, appointment management, and insurance/HSA oversight.",
   "author": {
     "name": "fru.dev",
@@ -20,7 +20,6 @@
     "hsa"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
   "interface": {
     "displayName": "AI Ready Life: Health",
     "shortDescription": "2 AI agents that manage your personal health \u2014 wellness tracking, lab review, medication monitoring, appointment management, and insurance/HSA oversight.",

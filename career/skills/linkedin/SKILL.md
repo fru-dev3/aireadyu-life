@@ -58,9 +58,9 @@ Standard filter parameters for target role search:
 
 ## Used By
 
-- `career-flow-scan-target-roles` — search open roles matching target criteria
-- `career-op-network-review` — review connections and recruiter inbox
-- `career-op-monthly-sync` — capture profile analytics and recruiter message activity
+- `flow-scan-target-roles` — search open roles matching target criteria
+- `op-network-review` — review connections and recruiter inbox
+- `op-monthly-sync` — capture profile analytics and recruiter message activity
 
 ## Vault Output
 

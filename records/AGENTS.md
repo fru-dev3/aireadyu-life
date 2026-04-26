@@ -90,12 +90,12 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 
 - **`1password`** — Accesses the 1Password vault via the local CLI (`op`) using a service account token.
 - **`gdrive`** — Reads and writes document scans and records files to configured Google Drive folders via the Drive API.
-- **`records-flow-build-subscription-summary`** — Builds a complete subscription table: service name, billing cycle, monthly equivalent, annual equivalent, last-used date, usage flag (unused >2 months), annual renewal approaching within 30 days, and keep/cancel recommendation.
-- **`records-flow-check-expiring-documents`** — Scans all identity and legal documents for expiration dates within 12 months.
-- **`records-op-document-audit`** — Quarterly document audit.
-- **`records-op-monthly-sync`** — Full records data sync on the 1st of each month.
-- **`records-op-review-brief`** — Monthly records review brief.
-- **`records-op-subscription-review`** — Monthly subscription review.
-- **`records-task-flag-expiring-id`** — Writes an ID expiration flag to open-loops.md with document type, holder name, expiration date, days until effective renewal deadline (using document-specific lead times), step-by-step renewal action, official renewal portal link, and cost.
-- **`records-task-log-document`** — Adds a new document to vault/records/ with document type, holder, issue date, expiration date, issuing authority, physical storage location, and digital storage location.
-- **`records-task-update-open-loops`** — Writes records flags (expiring IDs with renewal deadlines, outdated legal documents, unused subscriptions approaching renewal, missing documents, storage gaps) to open-loops.md and resolves completed items.
+- **`flow-build-subscription-summary`** — Builds a complete subscription table: service name, billing cycle, monthly equivalent, annual equivalent, last-used date, usage flag (unused >2 months), annual renewal approaching within 30 days, and keep/cancel recommendation.
+- **`flow-check-expiring-documents`** — Scans all identity and legal documents for expiration dates within 12 months.
+- **`op-document-audit`** — Quarterly document audit.
+- **`op-monthly-sync`** — Full records data sync on the 1st of each month.
+- **`op-review-brief`** — Monthly records review brief.
+- **`op-subscription-review`** — Monthly subscription review.
+- **`task-flag-expiring-id`** — Writes an ID expiration flag to open-loops.md with document type, holder name, expiration date, days until effective renewal deadline (using document-specific lead times), step-by-step renewal action, official renewal portal link, and cost.
+- **`task-log-document`** — Adds a new document to vault/records/ with document type, holder, issue date, expiration date, issuing authority, physical storage location, and digital storage location.
+- **`task-update-open-loops`** — Writes records flags (expiring IDs with renewal deadlines, outdated legal documents, unused subscriptions approaching renewal, missing documents, storage gaps) to open-loops.md and resolves completed items.

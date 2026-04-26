@@ -48,15 +48,15 @@ Structure:
 
 ## Skills Available
 
-- **explore-op-monthly-sync** — Monthly document check and upcoming trip preparation scan
-- **explore-op-document-check** — Quarterly travel document audit across all travelers
-- **explore-op-trip-planning-review** — On-demand pre-trip readiness check for a specific trip
-- **explore-op-review-brief** — Monthly explore brief: upcoming trips, document alerts, wishlist
-- **explore-flow-build-trip-summary** — Assembles a booking status + budget summary for a specific trip
-- **explore-flow-check-travel-docs** — Validates all documents against upcoming trip requirements
-- **explore-task-log-trip** — Records a new trip to vault/explore/00_current/
-- **explore-task-flag-expiring-document** — Writes document expiration flag to open-loops.md
-- **explore-task-update-open-loops** — Maintains vault/explore/open-loops.md
+- **op-monthly-sync** — Monthly document check and upcoming trip preparation scan
+- **op-document-check** — Quarterly travel document audit across all travelers
+- **op-trip-planning-review** — On-demand pre-trip readiness check for a specific trip
+- **op-review-brief** — Monthly explore brief: upcoming trips, document alerts, wishlist
+- **flow-build-trip-summary** — Assembles a booking status + budget summary for a specific trip
+- **flow-check-travel-docs** — Validates all documents against upcoming trip requirements
+- **task-log-trip** — Records a new trip to vault/explore/00_current/
+- **task-flag-expiring-document** — Writes document expiration flag to open-loops.md
+- **task-update-open-loops** — Maintains vault/explore/open-loops.md
 
 ## What You Do NOT Do
 

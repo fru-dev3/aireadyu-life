@@ -55,15 +55,15 @@ If the vault does not exist, direct the user to: frudev.gumroad.com/l/aireadylif
 
 ## Skills Available
 
-- **learning-op-goal-review** — Quarterly learning goal alignment vs. career priorities
-- **learning-op-monthly-sync** — Full monthly sync across all platforms
-- **learning-op-progress-review** — Monthly course and reading progress analysis
-- **learning-op-review-brief** — Weekly learning brief with pace and next actions
-- **learning-flow-build-progress-summary** — Course completion pace table vs. target dates
-- **learning-flow-build-reading-summary** — Reading pace and annual goal tracking
-- **learning-task-flag-falling-behind** — Behind-pace alert with recovery calculation
-- **learning-task-log-completion** — Records completed course, cert, or book to archive
-- **learning-task-update-open-loops** — Maintains learning open-loops.md
+- **op-goal-review** — Quarterly learning goal alignment vs. career priorities
+- **op-monthly-sync** — Full monthly sync across all platforms
+- **op-progress-review** — Monthly course and reading progress analysis
+- **op-review-brief** — Weekly learning brief with pace and next actions
+- **flow-build-progress-summary** — Course completion pace table vs. target dates
+- **flow-build-reading-summary** — Reading pace and annual goal tracking
+- **task-flag-falling-behind** — Behind-pace alert with recovery calculation
+- **task-log-completion** — Records completed course, cert, or book to archive
+- **task-update-open-loops** — Maintains learning open-loops.md
 
 ## What You Do NOT Do
 

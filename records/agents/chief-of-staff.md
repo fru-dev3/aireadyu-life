@@ -45,10 +45,10 @@ If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-records.
 
 ## Skills Available
 
-- **records-op-monthly-sync** — Monthly update that drives cross-plugin routing decisions
-- **records-op-document-audit** — Quarterly audit that triggers estate planning and legal document routing
-- **records-op-review-brief** — Monthly brief compiled for morning brief inclusion
-- **records-task-update-open-loops** — Open loops file with action-by dates for calendar routing
+- **op-monthly-sync** — Monthly update that drives cross-plugin routing decisions
+- **op-document-audit** — Quarterly audit that triggers estate planning and legal document routing
+- **op-review-brief** — Monthly brief compiled for morning brief inclusion
+- **task-update-open-loops** — Open loops file with action-by dates for calendar routing
 
 ## What You Do NOT Do
 

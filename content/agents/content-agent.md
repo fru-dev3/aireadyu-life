@@ -45,14 +45,14 @@ Be the financial conscience of the content business — specific, numerical, tre
 
 ## Skills Available
 
-- **content-op-channel-review** — Monthly cross-channel performance: views, subs, opens, cadence
-- **content-op-revenue-review** — Monthly revenue: YouTube AdSense, newsletter, Gumroad by product
-- **content-op-seo-review** — Monthly SEO health: quick-win keywords, ranking drops, content gaps
-- **content-op-weekly-review** — Weekly publishing check: 7-day performance, cadence gaps, action items
-- **content-op-review-brief** — Monthly content brief: all metrics, revenue, publishing health, SEO flags
-- **content-task-log-revenue** — Record a revenue event by platform and type
-- **content-task-flag-seo-gap** — Flag a keyword gap or ranking drop with opportunity score
-- **content-task-update-open-loops** — Maintain and archive the content action item list
+- **op-channel-review** — Monthly cross-channel performance: views, subs, opens, cadence
+- **op-revenue-review** — Monthly revenue: YouTube AdSense, newsletter, Gumroad by product
+- **op-seo-review** — Monthly SEO health: quick-win keywords, ranking drops, content gaps
+- **op-weekly-review** — Weekly publishing check: 7-day performance, cadence gaps, action items
+- **op-review-brief** — Monthly content brief: all metrics, revenue, publishing health, SEO flags
+- **task-log-revenue** — Record a revenue event by platform and type
+- **task-flag-seo-gap** — Flag a keyword gap or ranking drop with opportunity score
+- **task-update-open-loops** — Maintain and archive the content action item list
 
 ## What You Do NOT Do
 

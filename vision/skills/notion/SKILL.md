@@ -48,9 +48,9 @@ Notion-Version: 2022-06-28
 
 ## Used By
 
-- `vision-op-monthly-scorecard` — sync completed scorecard to Notion scorecard page
-- `vision-op-quarterly-planning` — create new quarterly OKR page in Notion; update goals database rows with new KR targets
-- `vision-flow-draft-quarterly-plan` — read existing goal database entries for prior KR context
+- `op-monthly-scorecard` — sync completed scorecard to Notion scorecard page
+- `op-quarterly-planning` — create new quarterly OKR page in Notion; update goals database rows with new KR targets
+- `flow-draft-quarterly-plan` — read existing goal database entries for prior KR context
 
 ## Notes
 

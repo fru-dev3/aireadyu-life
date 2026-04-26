@@ -69,15 +69,15 @@ analysis rather than scraping the connections list page.
 
 ## Used By
 
-- `social-op-relationship-review` — audit dormant professional connections (T3/T4) against vault
+- `op-relationship-review` — audit dormant professional connections (T3/T4) against vault
   records; surface work anniversary and job change reconnect opportunities
-- `social-op-monthly-sync` — check for new connections added since last sync; identify LinkedIn
+- `op-monthly-sync` — check for new connections added since last sync; identify LinkedIn
   contacts who should be added to vault contact files; pull recent activity for context refresh
-- `social-flow-build-outreach-queue` — enrich queue entries for professional contacts with current
+- `flow-build-outreach-queue` — enrich queue entries for professional contacts with current
   title, company, and recent LinkedIn activity for outreach personalization
 
 ## Vault Output
 
 `~/Documents/aireadylife/vault/social/00_current/linkedin-connections.csv` — raw connections export
 `~/Documents/aireadylife/vault/social/00_current/` — enriched context written to individual contact
-files by social-op-monthly-sync and social-flow-build-outreach-queue, not by this skill directly
+files by op-monthly-sync and flow-build-outreach-queue, not by this skill directly

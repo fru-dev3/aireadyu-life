@@ -90,12 +90,12 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 
 - **`coursera`** — Tracks enrolled course progress, completion percentages, certificate status, and upcoming assignment deadlines on Coursera via Playwright with Chrome cookie session.
 - **`kindle`** — Accesses Kindle reading progress and highlights via Amazon's Manage Content page or Goodreads RSS sync.
-- **`learning-flow-build-progress-summary`** — Reads all active learning items from vault, calculates completion percentage vs.
-- **`learning-flow-build-reading-summary`** — Reads the reading list and completion log to produce a reading progress summary: books completed YTD (count and titles), current book with percentage complete and projected completion date at current pace, books/month pace vs.
-- **`learning-op-goal-review`** — Quarterly learning goal alignment review evaluating whether the active learning portfolio is pointed at career and life vision priorities for the next quarter.
-- **`learning-op-monthly-sync`** — Full learning data sync on the 1st of each month.
-- **`learning-op-progress-review`** — Monthly learning progress review checking all active courses and certifications for completion pace vs.
-- **`learning-op-review-brief`** — Weekly learning brief compiling active course progress with pace status, current book chapter and reading pace vs.
-- **`learning-task-flag-falling-behind`** — Writes a behind-pace flag to vault/learning/open-loops.md when a learning item's completion percentage is more than 15 percentage points behind the time-elapsed percentage.
-- **`learning-task-log-completion`** — Records a completed course, certification, or book to vault/learning/01_prior/ with full context: title, type, platform, completion date, estimated hours invested, 1-3 key takeaways in plain language (Feynman-style), personal rating (1-5), and any credential earned with ID or URL.
-- **`learning-task-update-open-loops`** — Maintains vault/learning/open-loops.md as the canonical list of outstanding learning action items.
+- **`flow-build-progress-summary`** — Reads all active learning items from vault, calculates completion percentage vs.
+- **`flow-build-reading-summary`** — Reads the reading list and completion log to produce a reading progress summary: books completed YTD (count and titles), current book with percentage complete and projected completion date at current pace, books/month pace vs.
+- **`op-goal-review`** — Quarterly learning goal alignment review evaluating whether the active learning portfolio is pointed at career and life vision priorities for the next quarter.
+- **`op-monthly-sync`** — Full learning data sync on the 1st of each month.
+- **`op-progress-review`** — Monthly learning progress review checking all active courses and certifications for completion pace vs.
+- **`op-review-brief`** — Weekly learning brief compiling active course progress with pace status, current book chapter and reading pace vs.
+- **`task-flag-falling-behind`** — Writes a behind-pace flag to vault/learning/open-loops.md when a learning item's completion percentage is more than 15 percentage points behind the time-elapsed percentage.
+- **`task-log-completion`** — Records a completed course, certification, or book to vault/learning/01_prior/ with full context: title, type, platform, completion date, estimated hours invested, 1-3 key takeaways in plain language (Feynman-style), personal rating (1-5), and any credential earned with ID or URL.
+- **`task-update-open-loops`** — Maintains vault/learning/open-loops.md as the canonical list of outstanding learning action items.

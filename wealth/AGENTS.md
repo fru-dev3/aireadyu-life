@@ -91,17 +91,17 @@ Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.m
 - **`fidelity`** — Accesses brokerage and retirement account data from Fidelity Investments via Playwright with Chrome cookie authentication.
 - **`m1-finance`** — Accesses automated investment portfolio data from M1 Finance via Playwright with Chrome cookie authentication.
 - **`monarch-money`** — Pulls transaction history, spending by category, budget vs.
-- **`wealth-flow-analyze-investment-performance`** — Reviews all investment accounts — 401k, Roth IRA, Traditional IRA, HSA (invested), taxable brokerage — and calculates 30-day and YTD returns per account.
-- **`wealth-flow-build-cash-flow-summary`** — Summarizes all income and expenses for the month, compares each expense category to its configured budget target, and flags categories more than 20% over budget.
-- **`wealth-flow-build-debt-summary`** — Builds a debt table with outstanding balance, interest rate, minimum monthly payment, projected payoff date at current pace, and total remaining interest cost for each loan.
-- **`wealth-flow-build-net-worth-summary`** — Aggregates all asset balances and outstanding liabilities into a net worth table with month-over-month delta for each line item.
-- **`wealth-op-cash-flow-review`** — Monthly income vs.
-- **`wealth-op-debt-review`** — Quarterly debt review.
-- **`wealth-op-investment-review`** — Monthly investment performance review.
-- **`wealth-op-monthly-synthesis`** — Full monthly wealth synthesis.
-- **`wealth-op-net-worth-review`** — Monthly net worth snapshot.
-- **`wealth-op-review-brief`** — Monthly wealth review brief.
-- **`wealth-task-extract-account-balance`** — Reads a specific account's current balance, prior-period balance, and institution name from vault/wealth/00_current/ and returns the structured record to the calling flow.
-- **`wealth-task-flag-budget-variance`** — Writes a flag to vault/wealth/open-loops.md when an expense category exceeds its monthly budget by more than 20%.
-- **`wealth-task-flag-savings-milestone`** — Writes a positive milestone flag to vault/wealth/open-loops.md when an account or metric crosses a meaningful financial threshold: emergency fund reaching 3 or 6 months, invested assets crossing $50k/$100k/$250k/$500k, a debt fully paid off, or a savings account hitting a configured target.
-- **`wealth-task-update-open-loops`** — The single write point for vault/wealth/open-loops.md.
+- **`flow-analyze-investment-performance`** — Reviews all investment accounts — 401k, Roth IRA, Traditional IRA, HSA (invested), taxable brokerage — and calculates 30-day and YTD returns per account.
+- **`flow-build-cash-flow-summary`** — Summarizes all income and expenses for the month, compares each expense category to its configured budget target, and flags categories more than 20% over budget.
+- **`flow-build-debt-summary`** — Builds a debt table with outstanding balance, interest rate, minimum monthly payment, projected payoff date at current pace, and total remaining interest cost for each loan.
+- **`flow-build-net-worth-summary`** — Aggregates all asset balances and outstanding liabilities into a net worth table with month-over-month delta for each line item.
+- **`op-cash-flow-review`** — Monthly income vs.
+- **`op-debt-review`** — Quarterly debt review.
+- **`op-investment-review`** — Monthly investment performance review.
+- **`op-monthly-synthesis`** — Full monthly wealth synthesis.
+- **`op-net-worth-review`** — Monthly net worth snapshot.
+- **`op-review-brief`** — Monthly wealth review brief.
+- **`task-extract-account-balance`** — Reads a specific account's current balance, prior-period balance, and institution name from vault/wealth/00_current/ and returns the structured record to the calling flow.
+- **`task-flag-budget-variance`** — Writes a flag to vault/wealth/open-loops.md when an expense category exceeds its monthly budget by more than 20%.
+- **`task-flag-savings-milestone`** — Writes a positive milestone flag to vault/wealth/open-loops.md when an account or metric crosses a meaningful financial threshold: emergency fund reaching 3 or 6 months, invested assets crossing $50k/$100k/$250k/$500k, a debt fully paid off, or a savings account hitting a configured target.
+- **`task-update-open-loops`** — The single write point for vault/wealth/open-loops.md.

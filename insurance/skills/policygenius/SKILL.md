@@ -71,8 +71,8 @@ https://www.policygenius.com/homeowners-insurance/
 
 ## Used By
 
-- `insurance-op-coverage-audit` — estimate cost to close life, disability, and umbrella gaps for gap analysis output
-- `insurance-flow-analyze-coverage-gaps` — populate premium estimate fields in gap severity ratings
+- `op-coverage-audit` — estimate cost to close life, disability, and umbrella gaps for gap analysis output
+- `flow-analyze-coverage-gaps` — populate premium estimate fields in gap severity ratings
 
 ## Vault Output
 

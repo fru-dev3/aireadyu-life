@@ -47,9 +47,9 @@ If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-estate.
 
 ## Skills Available
 
-- **estate-op-portfolio-review** — Quarterly strategic review that drives the most important cross-domain routing decisions
-- **estate-op-review-brief** — Monthly brief that consolidates all estate signals for morning brief routing
-- **estate-task-update-open-loops** — Open loops file that feeds the calendar and morning brief integrations
+- **op-portfolio-review** — Quarterly strategic review that drives the most important cross-domain routing decisions
+- **op-review-brief** — Monthly brief that consolidates all estate signals for morning brief routing
+- **task-update-open-loops** — Open loops file that feeds the calendar and morning brief integrations
 
 ## What You Do NOT Do
 

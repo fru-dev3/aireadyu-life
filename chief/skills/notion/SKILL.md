@@ -81,8 +81,8 @@ If a match is found, PATCH the existing page rather than creating a duplicate.
 
 ## Used By
 
-- `chief-op-daily-brief` — publish completed daily brief to Notion briefs page after local write
-- `chief-op-weekly-preview` — publish completed weekly preview to Notion briefs page
+- `op-daily-brief` — publish completed daily brief to Notion briefs page after local write
+- `op-weekly-preview` — publish completed weekly preview to Notion briefs page
 
 ## Notes
 

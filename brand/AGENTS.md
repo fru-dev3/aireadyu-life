@@ -88,16 +88,16 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`brand-flow-analyze-mentions`** — Scans recent brand mentions for sentiment, source type, and context.
-- **`brand-flow-build-analytics-summary`** — Compiles cross-platform analytics: followers, growth, engagement rate, and impressions per platform with month-over-month deltas and top-performing content identified.
-- **`brand-flow-check-profile-consistency`** — Compares brand profile elements (bio, headshot, handle, URL) across all platforms to the master brand profile and flags any discrepancies.
-- **`brand-op-content-review`** — Monthly content output review that tracks publishing cadence vs goal, cross-platform performance, and top-performing content.
-- **`brand-op-monthly-synthesis`** — Monthly brand synthesis.
-- **`brand-op-profile-audit`** — Quarterly audit of brand profile consistency across platforms (LinkedIn, Twitter/X, GitHub, YouTube, personal site).
-- **`brand-op-review-brief`** — Monthly brand brief.
-- **`brand-task-flag-profile-inconsistency`** — Writes a flag to vault/brand/open-loops.md when a platform profile field diverges from the master brand profile.
-- **`brand-task-log-mention`** — Records a brand mention to vault/brand/00_current/ with platform, author, date, sentiment, content summary, and link.
-- **`brand-task-update-open-loops`** — Writes all brand flags (profile inconsistencies, content gaps, unanswered mentions, publishing cadence misses) to vault/brand/open-loops.md.
+- **`flow-analyze-mentions`** — Scans recent brand mentions for sentiment, source type, and context.
+- **`flow-build-analytics-summary`** — Compiles cross-platform analytics: followers, growth, engagement rate, and impressions per platform with month-over-month deltas and top-performing content identified.
+- **`flow-check-profile-consistency`** — Compares brand profile elements (bio, headshot, handle, URL) across all platforms to the master brand profile and flags any discrepancies.
+- **`op-content-review`** — Monthly content output review that tracks publishing cadence vs goal, cross-platform performance, and top-performing content.
+- **`op-monthly-synthesis`** — Monthly brand synthesis.
+- **`op-profile-audit`** — Quarterly audit of brand profile consistency across platforms (LinkedIn, Twitter/X, GitHub, YouTube, personal site).
+- **`op-review-brief`** — Monthly brand brief.
+- **`task-flag-profile-inconsistency`** — Writes a flag to vault/brand/open-loops.md when a platform profile field diverges from the master brand profile.
+- **`task-log-mention`** — Records a brand mention to vault/brand/00_current/ with platform, author, date, sentiment, content summary, and link.
+- **`task-update-open-loops`** — Writes all brand flags (profile inconsistencies, content gaps, unanswered mentions, publishing cadence misses) to vault/brand/open-loops.md.
 - **`google-analytics`** — Queries GA4 website analytics via the Google Analytics Data API for traffic, engagement, and audience data.
 - **`linkedin`** — Reads LinkedIn profile and post analytics for brand consistency auditing and audience engagement review via Playwright.
 - **`twitter`** — Pulls follower count, impressions, and mention data from Twitter/X via Playwright.

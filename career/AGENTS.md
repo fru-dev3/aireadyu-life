@@ -88,20 +88,20 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`career-flow-build-comp-summary`** — Builds a total compensation comparison table showing your current TC broken down by component (base, bonus, equity, benefits) versus market P25/P50/P75 for your role, level, and location.
-- **`career-flow-build-skills-gap-summary`** — Compares the current skills inventory (with proficiency levels and recency) to target role requirements aggregated from recent market scan data.
-- **`career-flow-review-pipeline`** — Reviews the active application pipeline for staleness and stall signals.
-- **`career-flow-scan-target-roles`** — Searches LinkedIn Jobs, Glassdoor, and Levels.fyi for open roles matching your configured target criteria.
-- **`career-op-comp-review`** — Quarterly total comp benchmarking vs.
-- **`career-op-market-scan`** — Monthly job market scan searching for open roles matching your target criteria: role titles, company tier, tech stack, compensation minimums, and remote policy.
-- **`career-op-monthly-sync`** — Full career data sync on the 1st of each month.
-- **`career-op-network-review`** — Monthly professional network health check.
-- **`career-op-review-brief`** — Monthly career review brief compiling market position, application pipeline status, comp vs.
-- **`career-op-skills-gap-review`** — Quarterly skills gap analysis comparing your current skills inventory to target role requirements scraped from the monthly market scan.
-- **`career-task-draft-outreach-message`** — Drafts a personalized professional outreach message for a specific contact, tailored to the context type (warm reconnect, referral request, networking maintenance, or intro request).
-- **`career-task-flag-comp-gap`** — Writes a structured compensation gap flag to vault/career/open-loops.md when current TC falls below market P50 for role, level, and metro.
-- **`career-task-log-application`** — Records a new job application (or pre-application watch item) to vault/career/00_current/ with full context: company, role, date, source, contact, comp range, tech stack, work arrangement, fit notes, and default follow-up window.
-- **`career-task-update-open-loops`** — Maintains vault/career/open-loops.md as the canonical list of outstanding career action items.
+- **`flow-build-comp-summary`** — Builds a total compensation comparison table showing your current TC broken down by component (base, bonus, equity, benefits) versus market P25/P50/P75 for your role, level, and location.
+- **`flow-build-skills-gap-summary`** — Compares the current skills inventory (with proficiency levels and recency) to target role requirements aggregated from recent market scan data.
+- **`flow-review-pipeline`** — Reviews the active application pipeline for staleness and stall signals.
+- **`flow-scan-target-roles`** — Searches LinkedIn Jobs, Glassdoor, and Levels.fyi for open roles matching your configured target criteria.
+- **`op-comp-review`** — Quarterly total comp benchmarking vs.
+- **`op-market-scan`** — Monthly job market scan searching for open roles matching your target criteria: role titles, company tier, tech stack, compensation minimums, and remote policy.
+- **`op-monthly-sync`** — Full career data sync on the 1st of each month.
+- **`op-network-review`** — Monthly professional network health check.
+- **`op-review-brief`** — Monthly career review brief compiling market position, application pipeline status, comp vs.
+- **`op-skills-gap-review`** — Quarterly skills gap analysis comparing your current skills inventory to target role requirements scraped from the monthly market scan.
+- **`task-draft-outreach-message`** — Drafts a personalized professional outreach message for a specific contact, tailored to the context type (warm reconnect, referral request, networking maintenance, or intro request).
+- **`task-flag-comp-gap`** — Writes a structured compensation gap flag to vault/career/open-loops.md when current TC falls below market P50 for role, level, and metro.
+- **`task-log-application`** — Records a new job application (or pre-application watch item) to vault/career/00_current/ with full context: company, role, date, source, contact, comp range, tech stack, work arrangement, fit notes, and default follow-up window.
+- **`task-update-open-loops`** — Maintains vault/career/open-loops.md as the canonical list of outstanding career action items.
 - **`greenhouse`** — Tracks job application status, interview stages, offer details, and recruiter contacts from employer Greenhouse ATS candidate portals via Playwright.
 - **`levels-fyi`** — Scrapes compensation data by company, role, and level from Levels.fyi — the most accurate source for tech compensation benchmarking.
 - **`linkedin`** — Accesses LinkedIn for job market scanning, compensation research, professional network review, and recruiter message monitoring via Playwright with Chrome cookie session.

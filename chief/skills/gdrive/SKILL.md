@@ -68,9 +68,9 @@ patch (update) the existing file rather than creating a duplicate.
 
 ## Used By
 
-- `chief-op-daily-brief` — archive completed daily brief to Drive briefs folder after local write
-- `chief-op-weekly-preview` — archive completed weekly preview to Drive briefs folder
-- `chief-op-system-health` — write system health report to Drive system folder
+- `op-daily-brief` — archive completed daily brief to Drive briefs folder after local write
+- `op-weekly-preview` — archive completed weekly preview to Drive briefs folder
+- `op-system-health` — write system health report to Drive system folder
 
 ## Notes
 

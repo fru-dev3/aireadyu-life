@@ -89,14 +89,14 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`real-estate-flow-build-affordability-analysis`** — Calculates home affordability based on income, debts, down payment savings, and current mortgage rates using 28/36 DTI rules.
-- **`real-estate-flow-scan-market-listings`** — Searches configured target neighborhoods for active listings matching criteria and summarizes market stats including median price, active inventory, average days on market, price-to-rent ratio, and months of supply.
-- **`real-estate-op-affordability-review`** — On-demand affordability analysis that calculates max purchase price, monthly PITI payment, required down payment, PMI exposure, and break-even horizon for buying vs.
-- **`real-estate-op-market-scan`** — Monthly market scan for target neighborhoods tracking median price, inventory, days on market, price/sqft, months of supply, and price-to-rent ratio.
-- **`real-estate-op-monthly-sync`** — Full real estate data sync on the 1st of each month.
-- **`real-estate-op-review-brief`** — Monthly real estate review brief.
-- **`real-estate-task-log-listing`** — Saves a listing of interest to vault/real-estate/00_current/ with address, price, beds/baths, sqft, price/sqft, days on market, Zestimate, list-to-Zestimate ratio, user notes, Zillow/Redfin link, and status.
-- **`real-estate-task-run-buy-vs-rent`** — Runs a time-value-adjusted buy vs.
-- **`real-estate-task-update-open-loops`** — Writes all real-estate flags (market shifts, affordability changes, buy-window signals, interesting listings) to ~/Documents/aireadylife/vault/real-estate/open-loops.md and resolves items that are no longer relevant.
+- **`flow-build-affordability-analysis`** — Calculates home affordability based on income, debts, down payment savings, and current mortgage rates using 28/36 DTI rules.
+- **`flow-scan-market-listings`** — Searches configured target neighborhoods for active listings matching criteria and summarizes market stats including median price, active inventory, average days on market, price-to-rent ratio, and months of supply.
+- **`op-affordability-review`** — On-demand affordability analysis that calculates max purchase price, monthly PITI payment, required down payment, PMI exposure, and break-even horizon for buying vs.
+- **`op-market-scan`** — Monthly market scan for target neighborhoods tracking median price, inventory, days on market, price/sqft, months of supply, and price-to-rent ratio.
+- **`op-monthly-sync`** — Full real estate data sync on the 1st of each month.
+- **`op-review-brief`** — Monthly real estate review brief.
+- **`task-log-listing`** — Saves a listing of interest to vault/real-estate/00_current/ with address, price, beds/baths, sqft, price/sqft, days on market, Zestimate, list-to-Zestimate ratio, user notes, Zillow/Redfin link, and status.
+- **`task-run-buy-vs-rent`** — Runs a time-value-adjusted buy vs.
+- **`task-update-open-loops`** — Writes all real-estate flags (market shifts, affordability changes, buy-window signals, interesting listings) to ~/Documents/aireadylife/vault/real-estate/open-loops.md and resolves items that are no longer relevant.
 - **`redfin`** — Pulls active listings, comparable sales, market statistics, and property estimates from Redfin via web research.
 - **`zillow`** — Fetches Zestimate property valuations, active listings, rental estimates, and market trend data from Zillow via web research.

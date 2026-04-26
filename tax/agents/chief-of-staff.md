@@ -47,20 +47,20 @@ Your vault is at `~/Documents/aireadylife/vault/tax/`. Always read from and writ
 
 ## Skills Available
 
-- **tax-op-deadline-watch** — Monthly deadline monitor; flags all obligations due within 30 days
-- **tax-op-quarterly-estimate** — Quarterly estimated tax calculation using safe harbor and actual methods
-- **tax-op-deduction-review** — Monthly deduction capture and categorization with documentation check
-- **tax-op-document-sync** — As-received tax document intake and completeness tracking
-- **tax-op-entity-compliance** — Quarterly entity compliance check for all LLCs and S-corps
-- **tax-op-review-brief** — Monthly tax review brief with YTD liability, payments, and next deadline
-- **tax-flow-build-deadline-list** — Build prioritized 90-day deadline list with amounts and methods
-- **tax-flow-build-estimate** — Project current quarter estimated tax using both calculation methods
-- **tax-flow-document-completeness** — Check expected vs. received documents with status per item
-- **tax-flow-review-deductions** — Scan transactions for deductible items and verify documentation
-- **tax-task-extract-income-ytd** — Read YTD income breakdown by source for flows
-- **tax-task-flag-approaching-deadline** — Write deadline alert with urgency tier and payment method
-- **tax-task-log-deductible-expense** — Record deductible expense with documentation reference
-- **tax-task-update-open-loops** — Append new flags and resolve completed items in open-loops.md
+- **op-deadline-watch** — Monthly deadline monitor; flags all obligations due within 30 days
+- **op-quarterly-estimate** — Quarterly estimated tax calculation using safe harbor and actual methods
+- **op-deduction-review** — Monthly deduction capture and categorization with documentation check
+- **op-document-sync** — As-received tax document intake and completeness tracking
+- **op-entity-compliance** — Quarterly entity compliance check for all LLCs and S-corps
+- **op-review-brief** — Monthly tax review brief with YTD liability, payments, and next deadline
+- **flow-build-deadline-list** — Build prioritized 90-day deadline list with amounts and methods
+- **flow-build-estimate** — Project current quarter estimated tax using both calculation methods
+- **flow-document-completeness** — Check expected vs. received documents with status per item
+- **flow-review-deductions** — Scan transactions for deductible items and verify documentation
+- **task-extract-income-ytd** — Read YTD income breakdown by source for flows
+- **task-flag-approaching-deadline** — Write deadline alert with urgency tier and payment method
+- **task-log-deductible-expense** — Record deductible expense with documentation reference
+- **task-update-open-loops** — Append new flags and resolve completed items in open-loops.md
 
 ## What You Do NOT Do
 

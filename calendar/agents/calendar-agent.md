@@ -46,17 +46,17 @@ Structure:
 
 ## Skills Available
 
-- **calendar-op-weekly-agenda** — Monday weekly agenda builder; collects deadlines and priorities, suggests focus blocks
-- **calendar-op-focus-time-review** — Weekly focus time audit; flags deficit weeks and recommends calendar changes
-- **calendar-op-deadline-alert** — Weekly 30-day deadline scan across all installed plugins
-- **calendar-op-deadline-planning** — On-demand reverse deadline planner; builds preparation schedule from due date
-- **calendar-op-review-brief** — Weekly calendar brief; upcoming deadlines, focus health, scheduling flags
-- **calendar-flow-collect-deadlines** — Scans all plugin open-loops.md files and extracts dated deadline items
-- **calendar-flow-build-agenda** — Assembles the weekly agenda document with rankings and focus block proposals
-- **calendar-flow-analyze-focus-time** — Analyzes meeting vs. focus time ratio with per-day quality scores
-- **calendar-task-add-deadline** — Records a new deadline to vault/calendar/00_current/
-- **calendar-task-flag-approaching-deadline** — Writes urgent flag to open-loops.md for items due within 7 days with no prep
-- **calendar-task-update-open-loops** — Maintains vault/calendar/open-loops.md; appends new flags, resolves completed items
+- **op-weekly-agenda** — Monday weekly agenda builder; collects deadlines and priorities, suggests focus blocks
+- **op-focus-time-review** — Weekly focus time audit; flags deficit weeks and recommends calendar changes
+- **op-deadline-alert** — Weekly 30-day deadline scan across all installed plugins
+- **op-deadline-planning** — On-demand reverse deadline planner; builds preparation schedule from due date
+- **op-review-brief** — Weekly calendar brief; upcoming deadlines, focus health, scheduling flags
+- **flow-collect-deadlines** — Scans all plugin open-loops.md files and extracts dated deadline items
+- **flow-build-agenda** — Assembles the weekly agenda document with rankings and focus block proposals
+- **flow-analyze-focus-time** — Analyzes meeting vs. focus time ratio with per-day quality scores
+- **task-add-deadline** — Records a new deadline to vault/calendar/00_current/
+- **task-flag-approaching-deadline** — Writes urgent flag to open-loops.md for items due within 7 days with no prep
+- **task-update-open-loops** — Maintains vault/calendar/open-loops.md; appends new flags, resolves completed items
 - **gcalendar** — Google Calendar read/write integration
 - **notion** — Agenda sync to Notion
 

@@ -50,14 +50,14 @@ If vault is missing: direct user to frudev.gumroad.com/l/aireadylife-estate.
 
 ## Skills Available
 
-- **estate-op-cash-flow-review** — Monthly per-property income statement: gross rent, NOI, debt service, net cash flow
-- **estate-op-maintenance-review** — Monthly maintenance audit across all properties with seasonal tasks and vendor follow-ups
-- **estate-op-tenant-review** — Monthly lease timeline, payment history, security deposits, and renewal planning
-- **estate-op-portfolio-review** — Quarterly strategic review: cap rates, cash-on-cash, hold/sell analysis, CapEx modeling
-- **estate-op-review-brief** — Monthly portfolio brief with all dimensions consolidated and action items sorted by urgency
-- **estate-task-log-expense** — Record a property expense with IRS category for Schedule E and cash flow tracking
-- **estate-task-flag-maintenance-item** — Log a maintenance issue with urgency and vendor tracking
-- **estate-task-update-open-loops** — Maintain the estate watchlist for proactive action tracking
+- **op-cash-flow-review** — Monthly per-property income statement: gross rent, NOI, debt service, net cash flow
+- **op-maintenance-review** — Monthly maintenance audit across all properties with seasonal tasks and vendor follow-ups
+- **op-tenant-review** — Monthly lease timeline, payment history, security deposits, and renewal planning
+- **op-portfolio-review** — Quarterly strategic review: cap rates, cash-on-cash, hold/sell analysis, CapEx modeling
+- **op-review-brief** — Monthly portfolio brief with all dimensions consolidated and action items sorted by urgency
+- **task-log-expense** — Record a property expense with IRS category for Schedule E and cash flow tracking
+- **task-flag-maintenance-item** — Log a maintenance issue with urgency and vendor tracking
+- **task-update-open-loops** — Maintain the estate watchlist for proactive action tracking
 
 ## What You Do NOT Do
 
