@@ -1,12 +1,17 @@
 ---
 type: app
 description: >
-  Reads and writes document scans and records files to configured Google Drive folders via
-  the Drive API. Used by records-agent for storing scanned document copies and retrieving
-  them during audits. Configure OAuth credentials and folder IDs in vault/records/config.md.
+  Fallback for users without Claude Desktop's native Google Drive connector. Reads and writes
+  document scans and records files to configured Google Drive folders via the Drive API when
+  the native connector is unavailable (other clients, headless / API-only contexts, write-
+  automation workflows). Prefer the native connector when present; fall back to this skill
+  for OAuth + folder-ID API access. Configure credentials and folder IDs in
+  vault/records/config.md.
 ---
 
-# Google Drive
+# Google Drive (fallback)
+
+**Use this only when Claude Desktop's native Google Drive connector is not available.** When the native connector is connected, prefer it for reads — it handles auth, search, and file content extraction without any per-folder configuration. Use this `app-gdrive` skill for write / upload automation, headless or API-only environments, or non-Claude-Desktop clients.
 
 **Auth:** OAuth2 via Google Drive API credentials (`GDRIVE_CREDENTIALS` from `~/.ai/env/.env`)
 **URL:** https://drive.google.com

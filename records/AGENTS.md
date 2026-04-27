@@ -88,14 +88,32 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`1password`** — Accesses the 1Password vault via the local CLI (`op`) using a service account token.
-- **`gdrive`** — Reads and writes document scans and records files to configured Google Drive folders via the Drive API.
-- **`flow-build-subscription-summary`** — Builds a complete subscription table: service name, billing cycle, monthly equivalent, annual equivalent, last-used date, usage flag (unused >2 months), annual renewal approaching within 30 days, and keep/cancel recommendation.
-- **`flow-check-expiring-documents`** — Scans all identity and legal documents for expiration dates within 12 months.
-- **`op-document-audit`** — Quarterly document audit.
-- **`op-monthly-sync`** — Full records data sync on the 1st of each month.
-- **`op-review-brief`** — Monthly records review brief.
-- **`op-subscription-review`** — Monthly subscription review.
-- **`task-flag-expiring-id`** — Writes an ID expiration flag to open-loops.md with document type, holder name, expiration date, days until effective renewal deadline (using document-specific lead times), step-by-step renewal action, official renewal portal link, and cost.
-- **`task-log-document`** — Adds a new document to vault/records/ with document type, holder, issue date, expiration date, issuing authority, physical storage location, and digital storage location.
-- **`task-update-open-loops`** — Writes records flags (expiring IDs with renewal deadlines, outdated legal documents, unused subscriptions approaching renewal, missing documents, storage gaps) to open-loops.md and resolves completed items.
+**Apps (data connectors — fallback when no native MCP connector is available):**
+- **`app-1password`** — 1Password vault metadata via the local `op` CLI (read-only; never reads passwords).
+- **`app-gdrive`** — Google Drive read/write fallback for users without Claude Desktop's native Drive connector.
+
+**Operations (user-facing routines):**
+- **`op-document-audit`** — Quarterly document audit. Storage gaps, missing scans, naming-convention lint, retention sweep input.
+- **`op-monthly-sync`** — Monthly full records data sync. Refreshes index, subscriptions, renewal calendar, manifests.
+- **`op-review-brief`** — Monthly records review brief. Includes the full subscription review (replaces the prior standalone op).
+- **`op-digital-legacy-plan`** — Annual survivor packet: account inventory, password-manager unlock plan, legacy-contact verification, key contacts, cleanup checklist.
+
+**Flows (multi-step internals called by ops):**
+- **`flow-check-expiring-documents`** — Scans identity and legal documents for expirations within 12 months.
+- **`flow-renewal-calendar`** — Cross-category renewal timeline (IDs, vehicles, pro licenses, HOA, insurance, subscriptions).
+- **`flow-share-paths-with-agents`** — Emits per-domain JSON manifests (tax, health, insurance, career, vehicle, legacy) consumed by other plugins.
+
+**Tasks (atomic operations called by flows / ops):**
+- **`task-log-document`** — Add a new document to the vault with type, holder, dates, issuing authority, physical + digital storage locations.
+- **`task-ingest-from-gmail`** — Scan Gmail for receipts, policy docs, account confirmations, IRS letters; surface candidates for `task-log-document`.
+- **`task-detect-subscriptions-from-email`** — Parse Gmail recurring-charge receipts; rebuild `subscriptions.md` with the authoritative table.
+- **`task-build-vault-index`** — Generate `00_current/INDEX.md` listing every document with category, holder, expiration, storage locations, dependent agents.
+- **`task-rename-to-convention`** — Lint and rename files to `YYYY-MM-DD_Source-Type-Description.ext`; user-confirmed execution.
+- **`task-apply-retention-policy`** — Annual sweep moving expired / aged documents from `00_current/` to `01_prior/` per category retention rules.
+- **`task-build-account-inventory`** — Comprehensive online-account list assembled from password-manager metadata + Gmail confirmations + manual entries.
+- **`task-update-vehicle-records`** — Per-vehicle record: registration, title, insurance card, maintenance log, recall status.
+- **`task-update-key-contacts`** — User-configurable directory of critical professional contacts (lawyer, accountant, doctor, etc.).
+- **`task-verify-backup`** — Monthly check that critical-document backups are current and an offsite legal copy exists.
+- **`task-flag-expiring-id`** — Writes an ID expiration flag to `open-loops.md` with renewal action, portal link, cost.
+- **`task-track-password-rotation`** *(opt-in)* — Tracks rotation cadence for high-value accounts; flags breach-implicated accounts.
+- **`task-update-open-loops`** — Single write-point for `open-loops.md`; resolves completed items.
