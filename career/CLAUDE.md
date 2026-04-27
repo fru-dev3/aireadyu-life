@@ -36,10 +36,12 @@ Skills are located under `career/skills/` — each skill has its own folder cont
 
 ## Vault Access
 
-**Mac:** If a file read fails with a permission error, Claude Desktop needs filesystem access. Tell the user:
-> *Go to **System Settings → Privacy & Security → Full Disk Access**, add **Claude**, then restart Claude Desktop.*
+**Mac:** If a file read fails with a permission error, the AI tool needs filesystem access to your Documents folder. Tell the user:
+> *Go to **System Settings → Privacy & Security → Full Disk Access**, then add the app you are running this from:*
+> - *Claude Code or Codex CLI in a terminal → add **Terminal**, **iTerm**, or **Ghostty** (whichever you use), then restart it.*
+> - *Claude Desktop → add **Claude**, then restart it.*
 
-**Windows:** Claude Desktop runs unrestricted — no permission grant needed.
+**Windows:** No permission grant needed — terminal apps and Claude Desktop run unrestricted by default.
 
 Do not proceed with the skill until access is confirmed (Mac) or reassure the user that no action is needed (Windows).
 
