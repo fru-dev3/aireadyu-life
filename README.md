@@ -48,6 +48,60 @@ That's the entire loop. Vault in, brief out, gaps logged.
 
 ---
 
+## The twelve agents in detail
+
+Each agent ships with somewhere between 20 and 30 skills covering the full lifecycle of its domain. Below is what each one actually does day-to-day. Numbers in parentheses are the current skill count per plugin.
+
+### [`health`](https://frudev.gumroad.com/l/aireadylife-health) — your medical operations center (30 skills)
+
+Tracks lab results, medications, allergies, vaccinations, providers, and family medical history. Reads pay-stub HSA contributions and EOBs to reconcile what your insurance actually paid. Pulls daily metrics from Apple Health and Oura. Prepares a brief before any doctor's appointment summarizing what's changed since last visit and what you wanted to ask. Flags refills coming due, missed preventive care (colonoscopy, mammogram, annual physical) by age, and >20-point trend changes in resting heart rate or sleep. Produces an emergency medical info card you can print and keep in your wallet. Logs symptoms over time so you can see whether that thing has been going on for two weeks or two months.
+
+### [`wealth`](https://frudev.gumroad.com/l/aireadylife-wealth) — your CFO (29 skills)
+
+Builds a categorized net-worth statement every month with per-account month-over-month deltas. Tracks income and expense by category against budget. Calculates emergency-fund runway from your liquid balances and trailing burn. Benchmarks each investment account against an appropriate index (S&P 500, total bond, target-date) and flags underperformers. Detects allocation drift from your target and suggests rebalancing trades. Flags single positions over 10% of the portfolio (5% for employer stock). Projects retirement readiness deterministically and offers three remedies if you're behind. Scans for cash drag (low-yield savings), mortgage refinance opportunities, and credit-card balance-transfer arbitrage with quantified annual savings. Runs an annual estate-plan freshness check (will, beneficiaries, healthcare directive, POAs).
+
+### [`tax`](https://frudev.gumroad.com/l/aireadylife-tax) — your year-round tax desk (27 skills)
+
+Tracks every federal and state filing deadline, with safe-harbor quarterly estimates calculated from prior-year liability. Logs deductible expenses and charitable giving as they happen instead of in a frantic March. Watches 1099 issuers for missing forms. Flags retirement-contribution limits as you approach them, and home-office deductions if you qualify. Prepares a year-end packet for your CPA — every W-2, 1099, 1098, K-1, summary statement, and supporting document indexed and ready. Optional advanced flows handle equity-comp tax events (RSU vest, ESPP, NSO/ISO exercise), tax-loss harvesting scans, multi-state residency tracking, and rental-property summaries.
+
+### [`career`](https://frudev.gumroad.com/l/aireadylife-career) — your career operator (30 skills)
+
+Captures wins as they happen so you have ammunition at performance-review time. Parses pay stubs to track compensation and exports the data to wealth. Watches the market for relevant openings, salary bands, and emerging skills in your function. Logs every recruiter conversation with the role, comp range, and next step. Builds an interview-prep brief tailored to a specific company. Prepares a negotiation packet with comparables and a walk-away number. Maintains a current reference list. Tracks license and certification renewals so you don't lose your stripes to a missed deadline. Optional promotion-campaign skill tracks the case-building over months.
+
+### [`calendar`](https://frudev.gumroad.com/l/aireadylife-calendar) — your time architect (25 skills)
+
+Scans for conflicts (overlapping meetings, double-booked focus blocks). Audits recurring meetings quarterly — what's still earning its place on the calendar, what isn't. Adds prep time before high-stakes meetings and travel buffers around flights. Auto-recovers a block after long travel. Imports birthdays from social so they actually show up. Tracks PTO and OOO. Reviews where your time actually went each quarter against where you said it would go (vision agent feeds the targets). Suggests recurring blocks to protect (deep-work, exercise, family) and flags when something is eating them.
+
+### [`insurance`](https://frudev.gumroad.com/l/aireadylife-insurance) — your coverage analyst (23 skills)
+
+Indexes every policy you own — auto, home/renters, health, dental, vision, life, disability, umbrella. Flags renewals 60 days out with apples-to-apples re-quote prompts. Watches deductible progress through the year so you know whether to schedule that procedure now or wait. Triggers a coverage review on every life event (marriage, baby, home purchase, job change). Walks you through open enrollment with a decision matrix. Audits beneficiaries against current life status. Optional advanced flows handle Medicare planning, long-term care evaluation, and umbrella-policy sizing.
+
+### [`vision`](https://frudev.gumroad.com/l/aireadylife-vision) — your strategic planner (20 skills)
+
+Holds your life vision, values, and 10-year picture in one place — the things you actually want, written down. Sets quarterly goals and OKRs from the vision and reviews them at quarter-end. Runs a decision-alignment check when you're considering something big ("does this job offer move me toward the picture or away?"). Builds an annual year-in-review pulling from every other domain. Tracks identity-level milestones (becoming a parent, leaving a career, moving cities) without losing the throughline.
+
+### [`home`](https://frudev.gumroad.com/l/aireadylife-home) — your house manager (26 skills)
+
+Builds a recurring maintenance calendar (HVAC filters, gutters, water heater flush, smoke detectors). Logs a home inventory for insurance purposes. Tracks utility usage to catch anomalies. Plans meals and groceries against your actual schedule. Audits the home-office setup. Runs an annual emergency-prep review (go-bag, water, batteries, evac plan). For renters, watches lease renewal. For owners, tracks mortgage paydown, property tax, HOA dues, and home-improvement projects with cost basis. Has a move-planning op for the move you're not even sure you're doing yet.
+
+### [`explore`](https://frudev.gumroad.com/l/aireadylife-explore) — your travel desk (24 skills)
+
+Logs every outing and trip you take so the rhythm of your life shows up. Maintains a wishlist (places, experiences, restaurants) so the next free weekend isn't spent scrolling. Tracks your travel budget and loyalty status across airlines, hotels, and rental cars. Builds a packing checklist tuned to the trip. Checks entry requirements (visa, vaccination, passport-validity-six-months) for international trips and flags expiring documents. Coordinates plans with co-travelers. Reflects on each trip after — what worked, what didn't — so the next one is better.
+
+### [`learning`](https://frudev.gumroad.com/l/aireadylife-learning) — your knowledge desk (21 skills)
+
+Sets a monthly theme so your reading and courses ladder to something. Tracks books, courses, podcasts, and articles you actually finished — not the ones in the wishlist. Logs applied output: what you actually built or shipped from what you learned (the only metric that matters). Watches your learning budget against an annual cap. Captures notes and links them to the domain they help (a tax book strengthens the tax agent; a leadership book feeds career). Optional language-learning progress tracker and mentor/mentee log.
+
+### [`records`](https://frudev.gumroad.com/l/aireadylife-records) — your document vault (22 skills)
+
+Indexes every important document you own — passport, driver's license, social security card, birth certificate, marriage license, property deeds, vehicle titles, professional licenses. Tracks every subscription you pay for, what it costs annually, and whether you actually use it. Maintains an account inventory (every login that matters). Builds a renewal calendar so the passport doesn't expire two weeks before the trip. Ingests new documents from Gmail attachments and Google Drive into the right folder automatically.
+
+### [`social`](https://frudev.gumroad.com/l/aireadylife-social) — your relationship manager (21 skills)
+
+Sorts your people by closeness — close circle, family, broader network, local community — and watches the cadence on each. Flags unanswered messages from your close circle. Detects reciprocity gaps (you've initiated the last six conversations with someone). Reminds you of birthdays and special occasions and helps you plan the gift. Logs new people you meet and introductions you've made. Sets a weekly outreach goal and tracks against it. Pulls signals from Gmail and Calendar to keep the picture honest without being creepy.
+
+---
+
 ## Install
 
 Three steps in order: pick the AI tool, add the plugin, drop in your vault.
