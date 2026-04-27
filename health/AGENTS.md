@@ -89,20 +89,40 @@ Before running **any skill or flow** in this domain — including flows called b
 
 Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
 
-- **`apple-health`** — Exports iPhone Health data — steps, active energy, resting heart rate, body weight, and workouts — via an iOS Shortcut that saves a CSV or XML export to iCloud Drive for automatic Mac sync.
-- **`flow-build-lab-summary`** — Builds a structured lab result summary with current biomarker values, reference ranges, trend direction vs.
-- **`flow-build-wellness-summary`** — Compiles a monthly wearable wellness summary covering sleep score, sleep duration, HRV (RMSSD), resting heart rate, readiness score, daily steps, and active energy.
-- **`flow-check-refill-dates`** — Scans the active medication list in vault/health/00_current/ and computes the projected refill date for each prescription based on fill date and days supply.
-- **`flow-sync-wearable-data`** — Ingests new wearable device exports from Oura Ring (JSON) or Apple Health (XML/CSV) and appends new daily records to vault/health/00_current/ without overwriting existing data.
-- **`op-anomaly-watch`** — Weekly wearable anomaly watch.
-- **`op-lab-review`** — Triggered when new lab results arrive from a patient portal (MyChart/Epic) or are uploaded manually.
-- **`op-medication-review`** — Monthly medication review.
-- **`op-monthly-sync`** — Full health data sync on the 1st of each month.
-- **`op-preventive-care-review`** — Quarterly preventive care check.
-- **`op-review-brief`** — Monthly health review brief.
-- **`task-flag-out-of-range-value`** — Writes a structured flag to vault/health/open-loops.md when a lab biomarker falls outside its clinical reference range.
-- **`task-flag-preventive-care-gap`** — Writes a flag to vault/health/open-loops.md for any overdue or due-soon preventive care screening.
-- **`task-flag-upcoming-refill`** — Writes a medication refill reminder to vault/health/open-loops.md when a prescription is due within 30 days.
-- **`task-update-open-loops`** — The single write point for vault/health/open-loops.md.
-- **`mychart`** — Accesses patient portal records — lab results (PDF and structured values), visit notes, after-visit summaries, upcoming appointments, current medication list, and immunization records — from a provider's MyChart instance via Playwright with Chrome cookie authentication.
-- **`oura-ring`** — Fetches daily sleep, readiness, and activity data from the Oura Ring API v2 using a personal API key.
+**Apps (data connectors — fallback when no native MCP connector available):**
+- `app-apple-health` — iPhone HealthKit export (steps, active energy, resting HR, body weight, workouts) via iOS Shortcut → iCloud Drive. Owns dedup/append into `wearable-log.csv`.
+- `app-mychart.portal` — Patient portal records (lab results, visit notes, after-visit summaries, upcoming appointments, current med list, immunizations) via Playwright with Chrome cookie authentication.
+- `app-oura-ring.api` — Daily sleep, readiness, activity data from Oura Ring API v2 (sleep score, HRV RMSSD, resting HR, readiness, steps, active calories). Owns dedup/append into `wearable-log.csv`.
+
+**Operations (user-facing routines):**
+- `op-anomaly-watch` — Weekly wearable anomaly watch (HRV drops, low readiness streaks, RHR elevation).
+- `op-appointment-readiness` — Scans appointments in next 7 days, triggers prep brief, verifies in-network status before electives.
+- `op-lab-review` — Triggered on new lab results; runs lab summary and flagging.
+- `op-medication-review` — Monthly medication review; calls refill-flag task and post-visit reconciliation.
+- `op-monthly-sync` — Full monthly sync of wearables, labs, meds, and refresh of all briefs.
+- `op-preventive-care-review` — Quarterly preventive-care check.
+- `op-review-brief` — Lightweight current-state snapshot (read-only).
+- `op-symptom-log-review` — Monthly pattern check on user-maintained symptom log; correlations with sleep/HRV/stress (v2; opt-in).
+- `op-vaccination-tracking` — Annual vaccination review against CDC adult schedule; surfaces what's due / overdue.
+
+**Flows (multi-step internals called by ops):**
+- `flow-build-hsa-utilization-summary` — Monthly HSA brief: YTD spend, balance, $2k investment threshold, missing-receipt audit.
+- `flow-build-lab-summary` — Structured lab summary with biomarker values, reference ranges, trend direction.
+- `flow-build-wellness-summary` — Monthly wearable wellness summary (sleep, HRV, RHR, readiness, steps, active energy).
+- `flow-eob-reconciliation` — Matches EOBs to provider bills; flags discrepancies, balance billing, surprise OON; tracks deductible/OOP-max progress.
+- `flow-fitness-goal-review` — Weight/steps/exercise-minutes/resistance-training vs user-configured goals; streaks and underperformance flags.
+- `flow-prep-appointment-brief` — 24h pre-visit packet: last visit, current meds, open lab flags with trends, three prepared questions. PHI-redacted.
+- `flow-reconcile-medications-post-visit` — Diffs new visit-note med list against active meds; adds, discontinues, updates dose changes.
+
+**Tasks (atomic operations called by flows / ops):**
+- `task-attach-trend-context` — Single primitive: given biomarker + current value, returns prior value, delta, direction (improving/stable/worsening) using reference range polarity.
+- `task-flag-out-of-range-value` — Writes structured flag for any lab biomarker outside reference range.
+- `task-flag-preventive-care-gap` — Writes flag for any overdue or due-soon preventive-care screening.
+- `task-flag-upcoming-refill` — Single refill-flag entry point: scans medications, computes refill dates, writes 30-day reminders.
+- `task-prepare-emergency-medical-info` — Generates wallet-card / lock-screen / Apple Medical ID emergency card from severe allergies, active meds, conditions, blood type, insurance, ICE contacts.
+- `task-redact-phi-for-brief` — Deterministic PHI scrub run on every brief; replaces identifiers and raw lab numerics with categorical bands.
+- `task-track-mental-health` — Mood/stress/sleep-quality logging; rolling baselines, streak detection, optional wearable correlation (opt-in).
+- `task-update-allergy-medication-list` — Single source of truth for allergies, adverse reactions, active meds; ER-readable format.
+- `task-update-family-medical-history` — Structured first-degree (and known second-degree) family medical history; surfaces risk-relevant patterns to preventive-care.
+- `task-update-open-loops` — Single write point for `open-loops.md`.
+- `task-update-provider-directory` — Maintains provider directory (PCP, dentist, eye, derm, OB-GYN, mental health, specialists) with in-network status + last-verified date.

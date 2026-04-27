@@ -4,7 +4,9 @@ description: >
   Fetches daily sleep, readiness, and activity data from the Oura Ring API v2 using
   a personal API key. Returns sleep score, total sleep duration, deep/REM/light sleep
   stages, HRV RMSSD (nightly), resting heart rate, readiness score (0-100), steps,
-  and active calories. Used by the health agent for wearable data sync, 90-day
+  and active calories. Owns dedup and append into vault/health/00_current/wearable-log.csv:
+  every fetch checks each incoming day's date against existing rows and appends only
+  records not already present. Used by the health agent for wearable data sync, 90-day
   baseline trend analysis, and anomaly detection. Configure API key in vault/health/config.md.
 ---
 

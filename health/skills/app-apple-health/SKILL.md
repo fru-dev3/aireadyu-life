@@ -4,7 +4,9 @@ description: >
   Exports iPhone Health data — steps, active energy, resting heart rate, body weight,
   and workouts — via an iOS Shortcut that saves a CSV or XML export to iCloud Drive
   for automatic Mac sync. No API key required; uses device-local export. The health
-  agent reads the synced file from the configured iCloud Drive path. Can be used
+  agent reads the synced file from the configured iCloud Drive path. Owns dedup and
+  append into vault/health/00_current/wearable-log.csv: every ingest checks each
+  incoming row's date against existing dates and writes only new records. Can be used
   standalone or alongside Oura Ring. Configure the iCloud export path in vault/health/config.md.
 ---
 

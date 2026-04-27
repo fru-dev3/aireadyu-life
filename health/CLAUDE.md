@@ -82,3 +82,45 @@ Before running **any skill or flow** in this domain — including flows called b
 > You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.
 >
 > **Stop here.** Do not scaffold files, do not offer options, do not ask questions. Wait for the user to complete setup and re-run the skill.
+
+## Skill Index
+
+Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside.
+
+**Apps (data connectors — fallback when no native MCP connector available):**
+- `app-apple-health` — iPhone HealthKit export (steps, active energy, resting HR, body weight, workouts) via iOS Shortcut → iCloud Drive. Owns dedup/append into `wearable-log.csv`.
+- `app-mychart.portal` — Patient portal records (lab results, visit notes, after-visit summaries, upcoming appointments, current med list, immunizations) via Playwright with Chrome cookie authentication.
+- `app-oura-ring.api` — Daily sleep, readiness, activity data from Oura Ring API v2 (sleep score, HRV RMSSD, resting HR, readiness, steps, active calories). Owns dedup/append into `wearable-log.csv`.
+
+**Operations (user-facing routines):**
+- `op-anomaly-watch` — Weekly wearable anomaly watch (HRV drops, low readiness streaks, RHR elevation).
+- `op-appointment-readiness` — Scans appointments in next 7 days, triggers prep brief, verifies in-network status before electives.
+- `op-lab-review` — Triggered on new lab results; runs lab summary and flagging.
+- `op-medication-review` — Monthly medication review; calls refill-flag task and post-visit reconciliation.
+- `op-monthly-sync` — Full monthly sync of wearables, labs, meds, and refresh of all briefs.
+- `op-preventive-care-review` — Quarterly preventive-care check.
+- `op-review-brief` — Lightweight current-state snapshot (read-only).
+- `op-symptom-log-review` — Monthly pattern check on user-maintained symptom log; correlations with sleep/HRV/stress (v2; opt-in).
+- `op-vaccination-tracking` — Annual vaccination review against CDC adult schedule; surfaces what's due / overdue.
+
+**Flows (multi-step internals called by ops):**
+- `flow-build-hsa-utilization-summary` — Monthly HSA brief: YTD spend, balance, $2k investment threshold, missing-receipt audit.
+- `flow-build-lab-summary` — Structured lab summary with biomarker values, reference ranges, trend direction.
+- `flow-build-wellness-summary` — Monthly wearable wellness summary (sleep, HRV, RHR, readiness, steps, active energy).
+- `flow-eob-reconciliation` — Matches EOBs to provider bills; flags discrepancies, balance billing, surprise OON; tracks deductible/OOP-max progress.
+- `flow-fitness-goal-review` — Weight/steps/exercise-minutes/resistance-training vs user-configured goals; streaks and underperformance flags.
+- `flow-prep-appointment-brief` — 24h pre-visit packet: last visit, current meds, open lab flags with trends, three prepared questions. PHI-redacted.
+- `flow-reconcile-medications-post-visit` — Diffs new visit-note med list against active meds; adds, discontinues, updates dose changes.
+
+**Tasks (atomic operations called by flows / ops):**
+- `task-attach-trend-context` — Single primitive: given biomarker + current value, returns prior value, delta, direction (improving/stable/worsening) using reference range polarity.
+- `task-flag-out-of-range-value` — Writes structured flag for any lab biomarker outside reference range.
+- `task-flag-preventive-care-gap` — Writes flag for any overdue or due-soon preventive-care screening.
+- `task-flag-upcoming-refill` — Single refill-flag entry point: scans medications, computes refill dates, writes 30-day reminders.
+- `task-prepare-emergency-medical-info` — Generates wallet-card / lock-screen / Apple Medical ID emergency card from severe allergies, active meds, conditions, blood type, insurance, ICE contacts.
+- `task-redact-phi-for-brief` — Deterministic PHI scrub run on every brief; replaces identifiers and raw lab numerics with categorical bands.
+- `task-track-mental-health` — Mood/stress/sleep-quality logging; rolling baselines, streak detection, optional wearable correlation (opt-in).
+- `task-update-allergy-medication-list` — Single source of truth for allergies, adverse reactions, active meds; ER-readable format.
+- `task-update-family-medical-history` — Structured first-degree (and known second-degree) family medical history; surfaces risk-relevant patterns to preventive-care.
+- `task-update-open-loops` — Single write point for `open-loops.md`.
+- `task-update-provider-directory` — Maintains provider directory (PCP, dentist, eye, derm, OB-GYN, mental health, specialists) with in-network status + last-verified date.
