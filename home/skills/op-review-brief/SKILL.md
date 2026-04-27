@@ -4,14 +4,32 @@ cadence: weekly
 description: >
   Home review brief — produced weekly when maintenance items are flagged or seasonal tasks
   are due, or on-demand. Compiles open maintenance items, seasonal tasks due within 14 days,
-  current month home expenses, renewal alerts, and home value tracking.
-  Triggers: "home brief", "home review", "maintenance check", "home status", "what's due at home".
+  current month home expenses, renewal alerts, and home value tracking. Supports a
+  weekly "silent unless flagged" mode (parameter mode=weekly): in that mode, exits
+  silently when no overdue items, no tasks due within 7 days, and no stale vendor
+  follow-ups.
+  Triggers: "home brief", "home review", "maintenance check", "home status",
+  "what's due at home", "weekly home review", "home check this week".
 ---
 
 # home-review-brief
 
 **Cadence:** Weekly (when items flagged) or on-demand
 **Produces:** Home brief — open maintenance, seasonal tasks, home expenses, renewal alerts, and action items
+
+## Modes
+
+This op runs in two modes:
+
+- **`mode=full`** (default) — always emits the full brief, even when nothing is
+  flagged. Used for on-demand "where do I stand" requests.
+- **`mode=weekly`** — Monday lightweight check. Exits silently with the message
+  *"Home is on track this week. No overdue items, no tasks due within 7 days."* when
+  all three checks come back clean: no maintenance items past target, no seasonal
+  tasks due within 7 days, no stale vendor follow-ups (no vendor reply in 7+ days
+  on an open item). When any item is flagged, emits a minimal flagged-only snapshot
+  to `vault/home/00_current/weekly-snapshot.md` plus a conversational reply with
+  vendor contact info inlined. This replaces the deprecated `op-weekly-review`.
 
 ## What It Does
 
@@ -38,18 +56,22 @@ For homeowners, the brief optionally includes a home value section: the most rec
 - "What's happening at home this week?"
 - "Any home items I should know about?"
 - "Run the home brief"
+- "Weekly home review" → run with `mode=weekly`
+- "Home check this week" → run with `mode=weekly`
 
 ## Steps
 
-1. Read all open maintenance items from `~/Documents/aireadylife/vault/home/00_current/`; sort by urgency and days open
-2. Read seasonal maintenance schedule from most recent schedule file; filter to tasks due within 14 days with no completion record
-3. Read current month expense file from `~/Documents/aireadylife/vault/home/00_current/YYYY-MM-expenses.md`; calculate total to date
-4. Read open-loops.md for any existing unresolved flags
-5. Check renewal dates from config.md (insurance, lease, home warranty); flag any within threshold
-6. If homeowner: pull Zestimate or most recent appraisal value from `~/Documents/aireadylife/vault/home/config.md`; calculate equity snapshot
-7. Compile all sections into brief structure
-8. Write brief to `~/Documents/aireadylife/vault/home/02_briefs/YYYY-MM-DD-home-brief.md`
-9. Call `home-update-open-loops` with any new flags from the brief
+1. Determine mode (default `full`, or `weekly` if invoked from a weekly trigger).
+2. Read all open maintenance items from `~/Documents/aireadylife/vault/home/00_current/`; sort by urgency and days open.
+3. **Weekly-mode short-circuit:** if `mode=weekly`, run the three weekly checks: (a) any maintenance item past target completion date; (b) any seasonal task due within 7 days with no completion record; (c) any open item with a vendor follow-up note older than 7 days. If all three are clean, output *"Home is on track this week. No overdue items, no tasks due within 7 days."* and exit. Do not write a brief. Otherwise, continue but emit only the flagged items to `weekly-snapshot.md` instead of the full brief.
+4. Read seasonal maintenance schedule from most recent schedule file; filter to tasks due within 14 days with no completion record.
+5. Read current month expense file from `~/Documents/aireadylife/vault/home/00_current/YYYY-MM-expenses.md`; calculate total to date.
+6. Read open-loops.md for any existing unresolved flags.
+7. Check renewal dates from config.md (insurance, lease, home warranty); flag any within threshold.
+8. If homeowner: pull Zestimate or most recent appraisal value from config.md; calculate equity snapshot.
+9. Compile all sections into brief structure (full mode) or flagged-only snapshot (weekly mode with flags).
+10. Write brief to `~/Documents/aireadylife/vault/home/02_briefs/YYYY-MM-DD-home-brief.md` (full) or `~/Documents/aireadylife/vault/home/00_current/weekly-snapshot.md` (weekly with flags).
+11. Call `home-update-open-loops` with any new flags from the brief.
 
 ## Input
 

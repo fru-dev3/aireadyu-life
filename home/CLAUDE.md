@@ -81,3 +81,41 @@ Before running **any skill or flow** in this domain — including flows called b
 > You don't need everything perfect to start — add what you have and the skills will tell you what's still missing.
 >
 > **Stop here.** Do not scaffold files, do not offer options, do not ask questions. Wait for the user to complete setup and re-run the skill.
+
+## Skill Index
+
+Skills live in `skills/<skill-name>/SKILL.md`. To run a skill, read its `SKILL.md` and follow the instructions inside. Skills tagged **(renter-only)** auto-skip when `home_type` in config is "own"; **(owner-only)** auto-skip when `home_type` is "rent"; **(pet households)** auto-skip when `pet_count` is 0; **(HOA owners)** auto-skip when `hoa_active` is false.
+
+**Apps (data connectors — fallback when no native MCP connector available):**
+- `app-angi` — Contractor listings, ratings, license status, and cost guides on Angi via Playwright.
+- `app-thumbtack` — Local pro listings and quote requests on Thumbtack via Playwright.
+
+**Operations (user-facing routines):**
+- `op-review-brief` — Home review brief. Default `mode=full` for on-demand status. `mode=weekly` runs the silent-unless-flagged Monday check (replaces deprecated op-weekly-review).
+- `op-monthly-sync` — Full monthly home sync on the 1st of each month.
+- `op-monthly-synthesis` — Deep monthly home synthesis: re-runs every flow, archives prior month, hands monthly home spend to wealth plugin.
+- `op-seasonal-maintenance` — Quarterly seasonal maintenance planner.
+- `op-expense-review` — Monthly home expense review.
+- `op-meal-grocery-plan` — Weekly meal plan + grocery list aligned to nutrition goals (reads health plugin) and the week's calendar.
+- `op-organize-documents` — Indexes lease, insurance, warranties, manuals, HOA docs (renter / owner categories auto-applied) into a searchable document index.
+- `op-home-office-audit` — Semi-annual home-office friction audit (lighting, ergonomics, hardware, network, acoustic) feeding flagged items to the maintenance queue.
+- `op-emergency-prep-review` — Semi-annual preparedness check: detectors, first aid, water / food, batteries, evacuation plan.
+- `op-lease-renewal-review` — **(renter-only)** Triggered 60 days before lease end. Renew-vs-move decision brief with market-rent comparison.
+- `op-pet-care-review` — **(pet households)** Monthly pet-care review: vet appointments, vaccinations, meds, supply runway.
+- `op-home-improvement-project-log` — **(owner-only)** Per-project record of scope, budget, contractor, permits, payments, photos, warranty, cost-basis tag.
+- `op-hoa-tracking` — **(HOA owners)** Tracks dues, special assessments, meeting calendar, and rule changes that affect the user.
+- `op-move-planning` — Active-move planner (8 / 4 / 2 / 1 weeks + move-day + first-week checklists). Branches by from-type / to-type (renter / owner).
+
+**Flows (multi-step internals called by ops):**
+- `flow-build-expense-summary` — Monthly home expenses by category vs. budget.
+- `flow-build-maintenance-schedule` — Complete seasonal maintenance checklist with vendor and cost columns.
+- `flow-build-cleaning-routine` — Recurring cleaning cadence (daily / weekly / monthly / quarterly / annual) calibrated to household composition + pets.
+
+**Tasks (atomic operations called by flows / ops):**
+- `task-flag-maintenance-item` — Writes a maintenance flag to open-loops and creates an item record.
+- `task-log-expense` — Records a home expense (utilities / repairs / supplies / services) with vendor and receipt.
+- `task-update-open-loops` — Single write point for `open-loops.md`.
+- `task-update-home-inventory` — Annual photo / video walkthrough; writes high-value items to insurance plugin.
+- `task-track-utility-usage` — Monthly utility log with YoY usage / amount comparison and spike flags.
+- `task-track-mortgage` — **(owner-only)** Monthly mortgage payment log; refi opportunity + PMI removal flags.
+- `task-track-property-tax` — **(owner-only)** Property-tax assessment log + payment schedule + appeal-window awareness.
